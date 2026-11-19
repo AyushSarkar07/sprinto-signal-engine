@@ -1,0 +1,12 @@
+.env
+credentials/
+output/cache/
+.venv/
+__pycache__/
+sprinto-dashboard/
+sprinto-panel/
+deploy-panel/
+*.log
+.claude/
+.pytest_cache/
+.DS_Store

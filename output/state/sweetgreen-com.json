@@ -1,0 +1,558 @@
+{
+ "company": "Sweetgreen",
+ "domain": "sweetgreen.com",
+ "slug": "sweetgreen-com",
+ "stages_completed": [
+  "scrape",
+  "extract",
+  "qualify",
+  "research"
+ ],
+ "scrape": {
+  "company": "Sweetgreen",
+  "domain": "sweetgreen.com",
+  "homepage_url": "https://sweetgreen.com/",
+  "pages_scraped": [
+   {
+    "url": "https://sweetgreen.com/",
+    "category": "homepage",
+    "title": "sweetgreen | Inspiring healthier communities",
+    "text": "healthy salads, hearty wraps, grain bowls, and warm plates made in-house from scratch, using whole produce delivered that morning.\nsweetgreen | Inspiring healthier communities\nEnable Accessibility\nskip to content\nAnd Rolled Into A Wrap\nThe Caesar Got Dilly\nOrder now\nWhere should we\nopen next?\nLet us know\nCome join our team\nLearn more\nKale Caesar\nKale, romaine, roasted chicken, bread crumbs, parm crisps, lemon squeeze, Caesar dressing\nContains milk, eggs, fish, meat, wheat\nGuacamole Greens\nRoasted chicken, avocado, pickled onions, shredded cabbage, corn salsa (x2), spring mix, chopped romaine, lime squeeze, lime cilantro jalapeño sauce\nContains meat\nOnline only\nBuffalo Chicken\nAntibiotic-free blackened chicken, pickled onions, tomatoes, shredded carrots, cilantro, feta crumble, garlic breadcrumbs, shredded kale, chopped romaine, Sweetgreen hot sauce, caesar\nContains meat, milk, eggs, fish, wheat\nHarvest Bowl\nAntibiotic-free roasted chicken, roasted sweet potatoes, apples, goat cheese, roasted almonds, wild rice, organic shredded kale and balsamic vinaigrette\nContains milk, meat, tree nuts\nChicken Pesto Parm\nRoasted chicken, spicy broccoli, tomatoes, shaved parmesan, za’atar breadcrumbs, warm quinoa, baby spinach, sweetgreen hot sauce, pesto vinaigrette\nShroomami\nRoasted tofu, warm portobello mix, cucumbers, basil, shredded cabbage, roasted almonds, wild\nrice, organic shredded kale and miso sesame ginger\nContains soybeans, sesame, tree nuts\nRosemary Focaccia\nLocally-made rosemary focaccia. Check out our regional bakery partners\nhere\nContains wheat\nRoasted Sweet Potatoes\nWarm roasted sweet potatoes served with a choice of hot honey mustard or green goddess ranch\nHIBISCUS CLOVER TEA\nRefreshing crimson clover tea mixed with bright berries and tangy hibiscus\nSWEETGREEN FOR WORK\nAll the ways we keep your workplace working\nCatering\nFor the little things and the big milestones alike, we’re here to bring the plant party\nOutpost\nA daily batch delivery right to your office to keep your team firing on all cylinders.\nIn the lab\nStep inside the\nsweetgreen kitchen\nHead over to TikTok for an exclusive tutorial—how to make our famed cashew dressing.\nFollow along",
+    "status": "ok",
+    "http_status": 200,
+    "rendered_with": "requests",
+    "discovered_from": ""
+   },
+   {
+    "url": "https://sweetgreen.com/about",
+    "category": "about",
+    "title": "HTTP 404",
+    "text": "",
+    "status": "not_found",
+    "http_status": 404,
+    "rendered_with": "requests",
+    "discovered_from": "https://sweetgreen.com/"
+   },
+   {
+    "url": "https://sweetgreen.com/security",
+    "category": "security",
+    "title": "HTTP 404",
+    "text": "",
+    "status": "not_found",
+    "http_status": 404,
+    "rendered_with": "requests",
+    "discovered_from": "https://sweetgreen.com/"
+   },
+   {
+    "url": "https://sweetgreen.com/trust",
+    "category": "trust",
+    "title": "HTTP 404",
+    "text": "",
+    "status": "not_found",
+    "http_status": 404,
+    "rendered_with": "requests",
+    "discovered_from": "https://sweetgreen.com/"
+   },
+   {
+    "url": "https://sweetgreen.com/customers",
+    "category": "customers",
+    "title": "HTTP 404",
+    "text": "",
+    "status": "not_found",
+    "http_status": 404,
+    "rendered_with": "requests",
+    "discovered_from": "https://sweetgreen.com/"
+   },
+   {
+    "url": "https://sweetgreen.com/pricing",
+    "category": "pricing",
+    "title": "sweetgreen | Inspiring healthier communities",
+    "text": "healthy salads, hearty wraps, grain bowls, and warm plates made in-house from scratch, using whole produce delivered that morning.\nsweetgreen | Inspiring healthier communities\nEnable Accessibility\nskip to content\nAnd Rolled Into A Wrap\nThe Caesar Got Dilly\nOrder now\nWhere should we\nopen next?\nLet us know\nCome join our team\nLearn more\nKale Caesar\nKale, romaine, roasted chicken, bread crumbs, parm crisps, lemon squeeze, Caesar dressing\nContains milk, eggs, fish, meat, wheat\nGuacamole Greens\nRoasted chicken, avocado, pickled onions, shredded cabbage, corn salsa (x2), spring mix, chopped romaine, lime squeeze, lime cilantro jalapeño sauce\nContains meat\nOnline only\nBuffalo Chicken\nAntibiotic-free blackened chicken, pickled onions, tomatoes, shredded carrots, cilantro, feta crumble, garlic breadcrumbs, shredded kale, chopped romaine, Sweetgreen hot sauce, caesar\nContains meat, milk, eggs, fish, wheat\nHarvest Bowl\nAntibiotic-free roasted chicken, roasted sweet potatoes, apples, goat cheese, roasted almonds, wild rice, organic shredded kale and balsamic vinaigrette\nContains milk, meat, tree nuts\nChicken Pesto Parm\nRoasted chicken, spicy broccoli, tomatoes, shaved parmesan, za’atar breadcrumbs, warm quinoa, baby spinach, sweetgreen hot sauce, pesto vinaigrette\nShroomami\nRoasted tofu, warm portobello mix, cucumbers, basil, shredded cabbage, roasted almonds, wild\nrice, organic shredded kale and miso sesame ginger\nContains soybeans, sesame, tree nuts\nRosemary Focaccia\nLocally-made rosemary focaccia. Check out our regional bakery partners\nhere\nContains wheat\nRoasted Sweet Potatoes\nWarm roasted sweet potatoes served with a choice of hot honey mustard or green goddess ranch\nHIBISCUS CLOVER TEA\nRefreshing crimson clover tea mixed with bright berries and tangy hibiscus\nSWEETGREEN FOR WORK\nAll the ways we keep your workplace working\nCatering\nFor the little things and the big milestones alike, we’re here to bring the plant party\nOutpost\nA daily batch delivery right to your office to keep your team firing on all cylinders.\nIn the lab\nStep inside the\nsweetgreen kitchen\nHead over to TikTok for an exclusive tutorial—how to make our famed cashew dressing.\nFollow along",
+    "status": "ok",
+    "http_status": 200,
+    "rendered_with": "requests",
+    "discovered_from": "research_agent"
+   },
+   {
+    "url": "https://order.sweetgreen.com/order-product/rosemary-focaccia",
+    "category": "product",
+    "title": "sweetgreen",
+    "text": "sweetgreen",
+    "status": "ok",
+    "http_status": 200,
+    "rendered_with": "requests",
+    "discovered_from": "research_agent"
+   },
+   {
+    "url": "https://sweetgreen.com/company",
+    "category": "about",
+    "title": "HTTP 404",
+    "text": "",
+    "status": "not_found",
+    "http_status": 404,
+    "rendered_with": "requests",
+    "discovered_from": "research_agent"
+   },
+   {
+    "url": "https://sweetgreen.com/press",
+    "category": "news",
+    "title": "sweetgreen | Press | sweetgreen",
+    "text": "Read press and news articles featuring sweetgreen to learn the latest about the brand.\nsweetgreen | Press | sweetgreen\nEnable Accessibility\nskip to content\nGood Morning America\nNaomi Osaka joins sweetgreen as youngest investor\nNew York Times\nIn a burger world, can sweetgreen scale up?\nNPR How I Built This\nsweetgreen: Nicolas Jammet\n& Jonathan Neman\nFast Company\nHow sweetgreen plans to cut its carbon footprint in half in the next 6 years\nCBS This Morning\nsweetgreen now offers 5 months of parental leave\nWashington Post\nFor sweetgreen, 2020 is the year kelp becomes cool\nForbes\nPurpose at work: how sweetgreen is building a healthy food movement\nInc\nCan any company be a tech company? Inside the unlikely journey of salad brand sweetgreen\nWhat if children ran the school lunchroom?\nSweetgreen pilots no-fee delivery service to corporate offices\nWall Street Journal\nSweetgreen, pointing to its own past, hatches new model\nFortune\nCan sweetgreen’s salad evangelists get America to finally eat its vegetables?",
+    "status": "ok",
+    "http_status": 200,
+    "rendered_with": "requests",
+    "discovered_from": "research_agent"
+   },
+   {
+    "url": "https://order.sweetgreen.com/order-product/pesto-chicken-parmesan",
+    "category": "product",
+    "title": "sweetgreen",
+    "text": "sweetgreen",
+    "status": "ok",
+    "http_status": 200,
+    "rendered_with": "requests",
+    "discovered_from": "research_agent"
+   },
+   {
+    "url": "https://careers.sweetgreen.com/",
+    "category": "careers",
+    "title": "Sweetgreen | Careers",
+    "text": "Sweetgreen | Careers\nJoin\nFuture\nFood\nALL TEAMS\nSweetgreen Support Center teams\n(Main Campus)\nCreative\n2 ROLES\nFinance\n1 ROLE\nFood Safety\nMarketing\n4 ROLES\nOperations\nRestaurant Technology\nWorkplace\nRestaurant Management\nArizona\nArkansas\nCalifornia\nColorado\nConnecticut\nFlorida\nGeorgia\nIllinois\nIndiana\nMaryland\nMassachusetts\nMichigan\nMinneapolis\nNew Hampshire\nNew Jersey\nNew York\nNorth Carolina\nOhio\nPennsylvania\nRhode Island\nTexas\nVirginia\nWashington\nWashington DC\nWisconsin\nRestaurant Teams\nCore Team Member\nShift Leader\nKitchen Lead\npeople\nCalling all tastemakers and taste-testers who aren’t afraid to get their hands dirty. Come join us as we reinvent the food industry.\n“The winner of the fast-casual salad wars”\n“The most innovative company in restaurant technology”\n\"One of the most impressive [parental leaves] in the industry\"\nSweetgreen Support Center\nMain Campus\nOur main campus in sunny Los Angeles is home to a diverse group of people, from chefs to engineers, designers to data scientists, and everyone in between.\nView All departments\nOur restaurants\nFrom scratch cooking to customer service, our field team makes magic happen every day in each of our 100+ stores (across 8 states and counting!)\nCLICK HERE\nView All Locations\nA FEW SWEET PERKS\nOur benefits are designed to be best in class across all our teams, from folks working in the\nmain campus to those in each of our stores. Here are just a few of the benefits we offer.\n401k Plan\nHelping you invest in your future.\nPaid Family Leave\nWe believe in fully supporting new parents.\nFree Greens\nGet your fill of sweetgreen with a regular stipend.\nGROWTH STORIES\nA company can’t grow unless its people grow, too. That’s why we empower our team members to do\ntheir best work, develop lifelong skills, and have some fun along the way.\nKae S.\nFrom\nService Captain\nHead Coach\nFavorite Core Value:\nBuild For Tomorrow\nLoves the\nHummus Crunch\nSweetgreen was the first company to take my development seriously and allow me to show what I could do. I am proud to have been part of so much of our growth as a company.\nBrendan C.\nAssistant Coach\nArea Leader\nGrow Together\nBBQ Chicken Salad\nI started as an Assistant Coach and became Head Coach a few months in. I learned so much about myself and how to grow an effective team, including with people at the Support Center. Working and being a leader at sweetgreen has taught me to be a more selfless, appreciative, and positive human being.\nJillian R.\nSr. Talent Acquisition Specialist\nElote Bowl\nSweetgreen's values resonate deeply with me, inspiring me to share them with loved ones and members of our local communities. It's not just about career growth; it's about personal development, empowerment, and truly living by their mission.\nSam J.\nOperations Services Coordinator\nCrispy Rice Bowl\nI joined sweetgreen to help open their first restaurant in Indiana, just a mile from where I grew up. The ability to play a role in building a healthier community in my hometown by expanding access to nutrient-dense and sustainable food was what drove me to join.\nLeslie D.\nItalian Chopped Salad\nIn 3.5 years, I grew from an Assistant Coach to a Head Coach for 3 locations to an Area Leader overseeing 7 locations. I am especially proud of the people I have had the pleasure of developing along with me. Watching my team grow into impactful, passionate, strong leaders has been incredibly rewarding.\nMeha U.\nAssociate, Delivery Operations & Logistics\nSr. Manager, Workforce Solutions\nWin, Win, Win\nGuacamole Greens & Harvest Bowl\nSweetgreen's emphasis on collaboration and fostering a supportive community has led to meaningful relationships with colleagues who have served as mentors and sources of inspiration and have become close friends. Working alongside talented and passionate individuals has enriched my professional experience and contributed to my personal growth and development.\nTony W.\nProgram Manager, DEIB & Social Impact\nShroomami\nI'm in my 7th year at sweetgreen and have had the opportunity to pursue my passion and purpose (the \"Sweetlife\") while growing my career. Sweetgreen has enabled me to broaden my horizons, immerse myself in different cultures, connect with people and partners, and foster a sense of community.\nFIND YOUR ROLE\npassion\nOur mission is to build healthier communities by connecting people to real food.\nOur core values\nThese six core values embody our culture, spirit and dedication to doing what’s right.\n1. Win , win, win\n2. Think sustainably\n3. Keep it real\n4. Add the sweet touch\n5. Make an impact\n6. Live the sweet life\nFOOD ETHOS\nWe believe the choices we make about food have a powerful impact on the health of individuals,\ncommunities and the environment.\nTransparency\nScratch cooking\nLocal sourcing\nSustainability\nAnimal Welfare\npurpose\nWe’re building community, one authentic connection at a time—and we’re just getting started\nMAKING AN IMPACT\nFrom expanding food access to a more sustainable supply chain, we're committed to positively impacting the\nfuture of food.\nAlways innovating\nWith 91 restaurants in eight states and a network of 150 farmers across the country,\nsweetgreen has created a fast-casual, farm-to-table empire…”\nRead more\nBuilding the future of food\nCo-founder Jonathan Neman tells Recode’s Kara Swish the company is way bigger than a\nchain of salad restaurants.\nLISTEN TO THE PODCAST\nRedefining the school lunch\nPledging $1M over the next two years, sweetgreen is committed to advancing the health of\nour nation’s 30 million students eating lunch every day.\nfollow us\nSHOP\nLocations\nFAQS\nTerms\nPrivacy\nYour CA privacy rights\nPress\nContact\nMeet our app for\niOS\nAndroid",
+    "status": "ok",
+    "http_status": 200,
+    "rendered_with": "requests",
+    "discovered_from": "research_agent"
+   },
+   {
+    "url": "https://sweetgreen.com/case-studies",
+    "category": "customers",
+    "title": "HTTP 404",
+    "text": "",
+    "status": "not_found",
+    "http_status": 404,
+    "rendered_with": "requests",
+    "discovered_from": "research_agent"
+   },
+   {
+    "url": "https://sweetgreen.com/enterprise",
+    "category": "enterprise",
+    "title": "HTTP 404",
+    "text": "",
+    "status": "not_found",
+    "http_status": 404,
+    "rendered_with": "requests",
+    "discovered_from": "research_agent"
+   }
+  ],
+  "discovered_links": {
+   "careers": [
+    "https://careers.sweetgreen.com/"
+   ],
+   "product": [
+    "https://order.sweetgreen.com/order-product/rosemary-focaccia",
+    "https://order.sweetgreen.com/order-product/pesto-chicken-parmesan"
+   ],
+   "news": [
+    "https://sweetgreen.com/press"
+   ],
+   "legal": [
+    "https://sweetgreen.com/terms",
+    "https://sweetgreen.com/privacy-policy",
+    "https://www.sweetgreen.com/privacy-policy"
+   ]
+  },
+  "raw_text": "### SOURCE: https://sweetgreen.com/\nhealthy salads, hearty wraps, grain bowls, and warm plates made in-house from scratch, using whole produce delivered that morning.\nsweetgreen | Inspiring healthier communities\nEnable Accessibility\nskip to content\nAnd Rolled Into A Wrap\nThe Caesar Got Dilly\nOrder now\nWhere should we\nopen next?\nLet us know\nCome join our team\nLearn more\nKale Caesar\nKale, romaine, roasted chicken, bread crumbs, parm crisps, lemon squeeze, Caesar dressing\nContains milk, eggs, fish, meat, wheat\nGuacamole Greens\nRoasted chicken, avocado, pickled onions, shredded cabbage, corn salsa (x2), spring mix, chopped romaine, lime squeeze, lime cilantro jalapeño sauce\nContains meat\nOnline only\nBuffalo Chicken\nAntibiotic-free blackened chicken, pickled onions, tomatoes, shredded carrots, cilantro, feta crumble, garlic breadcrumbs, shredded kale, chopped romaine, Sweetgreen hot sauce, caesar\nContains meat, milk, eggs, fish, wheat\nHarvest Bowl\nAntibiotic-free roasted chicken, roasted sweet potatoes, apples, goat cheese, roasted almonds, wild rice, organic shredded kale and balsamic vinaigrette\nContains milk, meat, tree nuts\nChicken Pesto Parm\nRoasted chicken, spicy broccoli, tomatoes, shaved parmesan, za’atar breadcrumbs, warm quinoa, baby spinach, sweetgreen hot sauce, pesto vinaigrette\nShroomami\nRoasted tofu, warm portobello mix, cucumbers, basil, shredded cabbage, roasted almonds, wild\nrice, organic shredded kale and miso sesame ginger\nContains soybeans, sesame, tree nuts\nRosemary Focaccia\nLocally-made rosemary focaccia. Check out our regional bakery partners\nhere\nContains wheat\nRoasted Sweet Potatoes\nWarm roasted sweet potatoes served with a choice of hot honey mustard or green goddess ranch\nHIBISCUS CLOVER TEA\nRefreshing crimson clover tea mixed with bright berries and tangy hibiscus\nSWEETGREEN FOR WORK\nAll the ways we keep your workplace working\nCatering\nFor the little things and the big milestones alike, we’re here to bring the plant party\nOutpost\nA daily batch delivery right to your office to keep your team firing on all cylinders.\nIn the lab\nStep inside the\nsweetgreen kitchen\nHead over to TikTok for an exclusive tutorial—how to make our famed cashew dressing.\nFollow along\n\n### SOURCE: https://sweetgreen.com/pricing\nhealthy salads, hearty wraps, grain bowls, and warm plates made in-house from scratch, using whole produce delivered that morning.\nsweetgreen | Inspiring healthier communities\nEnable Accessibility\nskip to content\nAnd Rolled Into A Wrap\nThe Caesar Got Dilly\nOrder now\nWhere should we\nopen next?\nLet us know\nCome join our team\nLearn more\nKale Caesar\nKale, romaine, roasted chicken, bread crumbs, parm crisps, lemon squeeze, Caesar dressing\nContains milk, eggs, fish, meat, wheat\nGuacamole Greens\nRoasted chicken, avocado, pickled onions, shredded cabbage, corn salsa (x2), spring mix, chopped romaine, lime squeeze, lime cilantro jalapeño sauce\nContains meat\nOnline only\nBuffalo Chicken\nAntibiotic-free blackened chicken, pickled onions, tomatoes, shredded carrots, cilantro, feta crumble, garlic breadcrumbs, shredded kale, chopped romaine, Sweetgreen hot sauce, caesar\nContains meat, milk, eggs, fish, wheat\nHarvest Bowl\nAntibiotic-free roasted chicken, roasted sweet potatoes, apples, goat cheese, roasted almonds, wild rice, organic shredded kale and balsamic vinaigrette\nContains milk, meat, tree nuts\nChicken Pesto Parm\nRoasted chicken, spicy broccoli, tomatoes, shaved parmesan, za’atar breadcrumbs, warm quinoa, baby spinach, sweetgreen hot sauce, pesto vinaigrette\nShroomami\nRoasted tofu, warm portobello mix, cucumbers, basil, shredded cabbage, roasted almonds, wild\nrice, organic shredded kale and miso sesame ginger\nContains soybeans, sesame, tree nuts\nRosemary Focaccia\nLocally-made rosemary focaccia. Check out our regional bakery partners\nhere\nContains wheat\nRoasted Sweet Potatoes\nWarm roasted sweet potatoes served with a choice of hot honey mustard or green goddess ranch\nHIBISCUS CLOVER TEA\nRefreshing crimson clover tea mixed with bright berries and tangy hibiscus\nSWEETGREEN FOR WORK\nAll the ways we keep your workplace working\nCatering\nFor the little things and the big milestones alike, we’re here to bring the plant party\nOutpost\nA daily batch delivery right to your office to keep your team firing on all cylinders.\nIn the lab\nStep inside the\nsweetgreen kitchen\nHead over to TikTok for an exclusive tutorial—how to make our famed cashew dressing.\nFollow along\n\n### SOURCE: https://order.sweetgreen.com/order-product/rosemary-focaccia\nsweetgreen\n\n### SOURCE: https://sweetgreen.com/press\nRead press and news articles featuring sweetgreen to learn the latest about the brand.\nsweetgreen | Press | sweetgreen\nEnable Accessibility\nskip to content\nGood Morning America\nNaomi Osaka joins sweetgreen as youngest investor\nNew York Times\nIn a burger world, can sweetgreen scale up?\nNPR How I Built This\nsweetgreen: Nicolas Jammet\n& Jonathan Neman\nFast Company\nHow sweetgreen plans to cut its carbon footprint in half in the next 6 years\nCBS This Morning\nsweetgreen now offers 5 months of parental leave\nWashington Post\nFor sweetgreen, 2020 is the year kelp becomes cool\nForbes\nPurpose at work: how sweetgreen is building a healthy food movement\nInc\nCan any company be a tech company? Inside the unlikely journey of salad brand sweetgreen\nWhat if children ran the school lunchroom?\nSweetgreen pilots no-fee delivery service to corporate offices\nWall Street Journal\nSweetgreen, pointing to its own past, hatches new model\nFortune\nCan sweetgreen’s salad evangelists get America to finally eat its vegetables?\n\n### SOURCE: https://order.sweetgreen.com/order-product/pesto-chicken-parmesan\nsweetgreen\n\n### SOURCE: https://careers.sweetgreen.com/\nSweetgreen | Careers\nJoin\nFuture\nFood\nALL TEAMS\nSweetgreen Support Center teams\n(Main Campus)\nCreative\n2 ROLES\nFinance\n1 ROLE\nFood Safety\nMarketing\n4 ROLES\nOperations\nRestaurant Technology\nWorkplace\nRestaurant Management\nArizona\nArkansas\nCalifornia\nColorado\nConnecticut\nFlorida\nGeorgia\nIllinois\nIndiana\nMaryland\nMassachusetts\nMichigan\nMinneapolis\nNew Hampshire\nNew Jersey\nNew York\nNorth Carolina\nOhio\nPennsylvania\nRhode Island\nTexas\nVirginia\nWashington\nWashington DC\nWisconsin\nRestaurant Teams\nCore Team Member\nShift Leader\nKitchen Lead\npeople\nCalling all tastemakers and taste-testers who aren’t afraid to get their hands dirty. Come join us as we reinvent the food industry.\n“The winner of the fast-casual salad wars”\n“The most innovative company in restaurant technology”\n\"One of the most impressive [parental leaves] in the industry\"\nSweetgreen Support Center\nMain Campus\nOur main campus in sunny Los Angeles is home to a diverse group of people, from chefs to engineers, designers to data scientists, and everyone in between.\nView All departments\nOur restaurants\nFrom scratch cooking to customer service, our field team makes magic happen every day in each of our 100+ stores (across 8 states and counting!)\nCLICK HERE\nView All Locations\nA FEW SWEET PERKS\nOur benefits are designed to be best in class across all our teams, from folks working in the\nmain campus to those in each of our stores. Here are just a few of the benefits we offer.\n401k Plan\nHelping you invest in your future.\nPaid Family Leave\nWe believe in fully supporting new parents.\nFree Greens\nGet your fill of sweetgreen with a regular stipend.\nGROWTH STORIES\nA company can’t grow unless its people grow, too. That’s why we empower our team members to do\ntheir best work, develop lifelong skills, and have some fun along the way.\nKae S.\nFrom\nService Captain\nHead Coach\nFavorite Core Value:\nBuild For Tomorrow\nLoves the\nHummus Crunch\nSweetgreen was the first company to take my development seriously and allow me to show what I could do. I am proud to have been part of so much of our growth as a company.\nBrendan C.\nAssistant Coach\nArea Leader\nGrow Together\nBBQ Chicken Salad\nI started as an Assistant Coach and became Head Coach a few months in. I learned so much about myself and how to grow an effective team, including with people at the Support Center. Working and being a leader at sweetgreen has taught me to be a more selfless, appreciative, and positive human being.\nJillian R.\nSr. Talent Acquisition Specialist\nElote Bowl\nSweetgreen's values resonate deeply with me, inspiring me to share them with loved ones and members of our local communities. It's not just about career growth; it's about personal development, empowerment, and truly living by their mission.\nSam J.\nOperations Services Coordinator\nCrispy Rice Bowl\nI joined sweetgreen to help open their first restaurant in Indiana, just a mile from where I grew up. The ability to play a role in building a healthier community in my hometown by expanding access to nutrient-dense and sustainable food was what drove me to join.\nLeslie D.\nItalian Chopped Salad\nIn 3.5 years, I grew from an Assistant Coach to a Head Coach for 3 locations to an Area Leader overseeing 7 locations. I am especially proud of the people I have had the pleasure of developing along with me. Watching my team grow into impactful, passionate, strong leaders has been incredibly rewarding.\nMeha U.\nAssociate, Delivery Operations & Logistics\nSr. Manager, Workforce Solutions\nWin, Win, Win\nGuacamole Greens & Harvest Bowl\nSweetgreen's emphasis on collaboration and fostering a supportive community has led to meaningful relationships with colleagues who have served as mentors and sources of inspiration and have become close friends. Working alongside talented and passionate individuals has enriched my professional experience and contributed to my personal growth and development.\nTony W.\nProgram Manager, DEIB & Social Impact\nShroomami\nI'm in my 7th year at sweetgreen and have had the opportunity to pursue my passion and purpose (the \"Sweetlife\") while growing my career. Sweetgreen has enabled me to broaden my horizons, immerse myself in different cultures, connect with people and partners, and foster a sense of community.\nFIND YOUR ROLE\npassion\nOur mission is to build healthier communities by connecting people to real food.\nOur core values\nThese six core values embody our culture, spirit and dedication to doing what’s right.\n1. Win , win, win\n2. Think sustainably\n3. Keep it real\n4. Add the sweet touch\n5. Make an impact\n6. Live the sweet life\nFOOD ETHOS\nWe believe the choices we make about food have a powerful impact on the health of individuals,\ncommunities and the environment.\nTransparency\nScratch cooking\nLocal sourcing\nSustainability\nAnimal Welfare\npurpose\nWe’re building community, one authentic connection at a time—and we’re just getting started\nMAKING AN IMPACT\nFrom expanding food access to a more sustainable supply chain, we're committed to positively impacting the\nfuture of food.\nAlways innovating\nWith 91 restaurants in eight states and a network of 150 farmers across the country,\nsweetgreen has created a fast-casual, farm-to-table empire…”\nRead more\nBuilding the future of food\nCo-founder Jonathan Neman tells Recode’s Kara Swish the company is way bigger than a\nchain of salad restaurants.\nLISTEN TO THE PODCAST\nRedefining the school lunch\nPledging $1M over the next two years, sweetgreen is committed to advancing the health of\nour nation’s 30 million students eating lunch every day.\nfollow us\nSHOP\nLocations\nFAQS\nTerms\nPrivacy\nYour CA privacy rights\nPress\nContact\nMeet our app for\niOS\nAndroid",
+  "scraping_status": "partial",
+  "errors": [
+   "https://sweetgreen.com/about: not_found",
+   "https://sweetgreen.com/security: not_found",
+   "https://sweetgreen.com/trust: not_found",
+   "https://sweetgreen.com/customers: not_found"
+  ]
+ },
+ "extraction": {
+  "company_profile": {
+   "company_name": "Sweetgreen",
+   "domain": "sweetgreen.com",
+   "business_model": "Not SaaS (rule-based assessment)",
+   "business_description": {
+    "finding": "Business description (homepage / meta description)",
+    "source_url": "https://sweetgreen.com/",
+    "excerpt": "healthy salads, hearty wraps, grain bowls, and warm plates made in-house from scratch, using whole produce delivered that morning.",
+    "evidence_type": "explicit",
+    "confidence": 0.7,
+    "category": "other"
+   },
+   "is_saas": false,
+   "is_saas_evidence": [
+    {
+     "finding": "Hospitality / retail locations",
+     "source_url": "https://careers.sweetgreen.com/",
+     "excerpt": "Our restaurants",
+     "evidence_type": "explicit",
+     "confidence": 0.6,
+     "category": "non_saas_indicator"
+    },
+    {
+     "finding": "Food & beverage",
+     "source_url": "https://sweetgreen.com/",
+     "excerpt": "Check out our regional bakery partners",
+     "evidence_type": "explicit",
+     "confidence": 0.6,
+     "category": "non_saas_indicator"
+    }
+   ],
+   "employee_range": {
+    "value": null,
+    "evidence": null
+   },
+   "funding_stage": {
+    "value": null,
+    "evidence": null
+   },
+   "enterprise_customers": [],
+   "customer_industries": [],
+   "tech_stack": []
+  },
+  "compliance_signals": {
+   "soc2_mentions": [],
+   "iso27001_mentions": [],
+   "gdpr_mentions": [],
+   "security_pages": [],
+   "trust_centre": false,
+   "trust_centre_evidence": [],
+   "compliance_hiring": [],
+   "enterprise_security_signals": []
+  },
+  "growth_signals": [],
+  "other_signals": [],
+  "potential_buying_moments": [],
+  "missing_information": [
+   "growth_stage: Funding stage or headcount",
+   "enterprise_customers: Evidence of enterprise customers or an enterprise motion",
+   "compliance_status: Any SOC 2 / ISO 27001 / GDPR status",
+   "security_hiring: Security, compliance or engineering hiring activity",
+   "security_page: A security or trust page describing controls"
+  ],
+  "contradictory_information": [],
+  "provenance": "deterministic_fallback"
+ },
+ "extraction_notes": [
+  "Claude not configured — deterministic fallback extraction (not AI-verified)."
+ ],
+ "qualification": {
+  "qualified": false,
+  "decision_status": "not_qualified",
+  "recommended_action": "disqualify",
+  "icp_fit_score": 0,
+  "buying_timing_score": 0,
+  "evidence_confidence": 0.58,
+  "icp_breakdown": [
+   {
+    "criterion": "SaaS business model",
+    "max_points": 25,
+    "points": 0.0,
+    "rationale": "Evidence indicates a non-SaaS business.",
+    "evidence_ids": []
+   },
+   {
+    "criterion": "Relevant growth stage (Series A–C)",
+    "max_points": 15,
+    "points": 0.0,
+    "rationale": "Growth stage unknown (missing, not negative).",
+    "evidence_ids": []
+   },
+   {
+    "criterion": "Enterprise customer orientation",
+    "max_points": 20,
+    "points": 0.0,
+    "rationale": "No enterprise orientation observed.",
+    "evidence_ids": []
+   },
+   {
+    "criterion": "Relevant customer industry",
+    "max_points": 10,
+    "points": 0.0,
+    "rationale": "Customer industries not identified.",
+    "evidence_ids": []
+   },
+   {
+    "criterion": "Company scaling signals",
+    "max_points": 10,
+    "points": 0.0,
+    "rationale": "No scaling signals observed.",
+    "evidence_ids": []
+   },
+   {
+    "criterion": "Security / compliance complexity",
+    "max_points": 20,
+    "points": 0.0,
+    "rationale": "No security/compliance content observed.",
+    "evidence_ids": []
+   }
+  ],
+  "timing_breakdown": [
+   {
+    "criterion": "Explicit SOC 2 / ISO 27001 / audit requirement",
+    "max_points": 30,
+    "points": 0.0,
+    "rationale": "No explicit audit or certification requirement observed.",
+    "evidence_ids": []
+   },
+   {
+    "criterion": "Enterprise security review / procurement pressure",
+    "max_points": 25,
+    "points": 0.0,
+    "rationale": "No security-review pressure observed.",
+    "evidence_ids": []
+   },
+   {
+    "criterion": "Security or compliance hiring",
+    "max_points": 20,
+    "points": 0.0,
+    "rationale": "No security roles found.",
+    "evidence_ids": []
+   },
+   {
+    "criterion": "Trust centre or compliance activity",
+    "max_points": 10,
+    "points": 0.0,
+    "rationale": "No trust centre found.",
+    "evidence_ids": []
+   },
+   {
+    "criterion": "Recent enterprise expansion / scaling",
+    "max_points": 15,
+    "points": 0.0,
+    "rationale": "No recent expansion signal.",
+    "evidence_ids": []
+   }
+  ],
+  "penalties": [],
+  "qualification_reasoning": [
+   "Evidence Map → DROP: Short-circuit on 'Is it a SaaS business?': Not SaaS — outside Sprinto's ICP whatever else is true.",
+   "Scores: ICP 0/100, timing 0/100, evidence confidence 0.58.",
+   "Biggest ICP drivers: SaaS business model (0/25) — Evidence indicates a non-SaaS business.; Relevant growth stage (Series A–C) (0/15) — Growth stage unknown (missing, not negative).",
+   "Biggest timing drivers: Explicit SOC 2 / ISO 27001 / audit requirement (0/30) — No explicit audit or certification requirement observed.; Enterprise security review / procurement pressure (0/25) — No security-review pressure observed.",
+   "Extraction ran in deterministic fallback mode (Claude not used); confidence capped at 0.75. Results are rule-based, not AI-verified."
+  ],
+  "positive_signals": [],
+  "negative_signals": [
+   "SaaS business model: Evidence indicates a non-SaaS business.",
+   "Relevant growth stage (Series A–C): Growth stage unknown (missing, not negative).",
+   "Enterprise customer orientation: No enterprise orientation observed.",
+   "Relevant customer industry: Customer industries not identified.",
+   "Company scaling signals: No scaling signals observed.",
+   "Security / compliance complexity: No security/compliance content observed.",
+   "Explicit SOC 2 / ISO 27001 / audit requirement: No explicit audit or certification requirement observed.",
+   "Enterprise security review / procurement pressure: No security-review pressure observed.",
+   "Security or compliance hiring: No security roles found.",
+   "Trust centre or compliance activity: No trust centre found.",
+   "Recent enterprise expansion / scaling: No recent expansion signal."
+  ],
+  "missing_information": [
+   "growth_stage: Funding stage or headcount",
+   "enterprise_customers: Evidence of enterprise customers or an enterprise motion",
+   "compliance_status: Any SOC 2 / ISO 27001 / GDPR status",
+   "security_hiring: Security, compliance or engineering hiring activity",
+   "security_page: A security or trust page describing controls"
+  ],
+  "risks_and_uncertainty": [
+   "Unknown: Funding stage or headcount.",
+   "Unknown: Evidence of enterprise customers or an enterprise motion.",
+   "Unknown: Any SOC 2 / ISO 27001 / GDPR status.",
+   "Unknown: Security, compliance or engineering hiring activity.",
+   "Unknown: A security or trust page describing controls.",
+   "Overall evidence confidence is modest (0.58).",
+   "Keyword rules can misread context (e.g. 'SOC 2' in a blog post about a customer, not the company itself)."
+  ],
+  "secondary_research_performed": true,
+  "research_rounds": 2,
+  "provenance": "deterministic_fallback",
+  "gate_decision": "DROP",
+  "evidence_map": [
+   {
+    "key": "saas",
+    "question": "Is it a SaaS business?",
+    "core": true,
+    "answer": "no",
+    "basis": "Evidence describes a non-software business.",
+    "evidence": [
+     "\"Our restaurants\" — https://careers.sweetgreen.com/",
+     "\"Check out our regional bakery partners\" — https://sweetgreen.com/"
+    ],
+    "tries_used": 4,
+    "limit": 3,
+    "if_unanswered": "Flag at review gate",
+    "short_circuit_hit": "Not SaaS — outside Sprinto's ICP whatever else is true."
+   },
+   {
+    "key": "growth_stage",
+    "question": "Is it Series A–C / 50–200 employees?",
+    "core": true,
+    "answer": "unknown",
+    "basis": "Neither funding stage nor headcount stated on the pages read.",
+    "evidence": [],
+    "tries_used": 1,
+    "limit": 3,
+    "if_unanswered": "Flag at review gate",
+    "short_circuit_hit": null
+   },
+   {
+    "key": "audit_intent",
+    "question": "Is it preparing for an audit (SOC 2 / ISO 27001)?",
+    "core": true,
+    "answer": "no",
+    "basis": "No audit preparation found after reading 1 security/trust/careers page(s) (timing 0/100).",
+    "evidence": [],
+    "tries_used": 1,
+    "limit": 4,
+    "if_unanswered": "Nurture (right company, wrong time)",
+    "short_circuit_hit": null
+   },
+   {
+    "key": "clients",
+    "question": "Does it have >50 clients / larger customers?",
+    "core": false,
+    "answer": "unknown",
+    "basis": "No customer references found.",
+    "evidence": [],
+    "tries_used": 1,
+    "limit": 2,
+    "if_unanswered": "Neutral",
+    "short_circuit_hit": null
+   },
+   {
+    "key": "industry",
+    "question": "Does it serve a regulated industry?",
+    "core": false,
+    "answer": "unknown",
+    "basis": "Customer industries not identified as regulated.",
+    "evidence": [],
+    "tries_used": 2,
+    "limit": 1,
+    "if_unanswered": "Neutral",
+    "short_circuit_hit": null
+   },
+   {
+    "key": "cloud_stack",
+    "question": "Is it on AWS / GCP / Azure?",
+    "core": false,
+    "answer": "unknown",
+    "basis": "Cloud provider not stated.",
+    "evidence": [],
+    "tries_used": 1,
+    "limit": 2,
+    "if_unanswered": "Neutral",
+    "short_circuit_hit": null
+   }
+  ],
+  "review_flags": []
+ },
+ "research_rounds": [
+  {
+   "round": 1,
+   "missing_before": [
+    "Is this a subscription software business?",
+    "What stage / size is the company?",
+    "Does it sell to enterprises?",
+    "What is its SOC 2 / ISO 27001 / GDPR status?",
+    "Is it hiring for security, compliance or engineering?",
+    "Does it publish security controls or a trust centre?",
+    "Is there any evidence compliance matters right now?"
+   ],
+   "pages_targeted": [
+    "https://sweetgreen.com/pricing [pricing] — Is this a subscription software business?, Does it sell to enterprises?",
+    "https://order.sweetgreen.com/order-product/rosemary-focaccia [product] — Is this a subscription software business?",
+    "https://sweetgreen.com/company [about] — Is this a subscription software business?, What stage / size is the company?",
+    "https://sweetgreen.com/press [news] — What stage / size is the company?, Is there any evidence compliance matters right now?"
+   ],
+   "pages_successfully_read": [
+    "https://sweetgreen.com/pricing",
+    "https://order.sweetgreen.com/order-product/rosemary-focaccia",
+    "https://sweetgreen.com/press"
+   ],
+   "new_findings": [],
+   "icp_before": 0,
+   "icp_after": 0,
+   "timing_before": 0,
+   "timing_after": 0,
+   "decision_before": "insufficient_data",
+   "decision_after": "insufficient_data",
+   "what_changed": "ICP 0→0, timing 0→0, decision insufficient_data→insufficient_data. No new evidence found on these pages."
+  },
+  {
+   "round": 2,
+   "missing_before": [
+    "Is this a subscription software business?",
+    "What stage / size is the company?",
+    "Does it sell to enterprises?",
+    "What is its SOC 2 / ISO 27001 / GDPR status?",
+    "Is it hiring for security, compliance or engineering?",
+    "Does it publish security controls or a trust centre?",
+    "Is there any evidence compliance matters right now?"
+   ],
+   "pages_targeted": [
+    "https://order.sweetgreen.com/order-product/pesto-chicken-parmesan [product] — Is this a subscription software business?",
+    "https://careers.sweetgreen.com/ [careers] — What stage / size is the company?, Is it hiring for security, compliance or engineering?, Is there any evidence compliance matters right now?",
+    "https://sweetgreen.com/case-studies [customers] — Does it sell to enterprises?, Is there any evidence compliance matters right now?",
+    "https://sweetgreen.com/enterprise [enterprise] — Does it sell to enterprises?"
+   ],
+   "pages_successfully_read": [
+    "https://order.sweetgreen.com/order-product/pesto-chicken-parmesan",
+    "https://careers.sweetgreen.com/"
+   ],
+   "new_findings": [
+    "Hospitality / retail locations (https://careers.sweetgreen.com/)"
+   ],
+   "icp_before": 0,
+   "icp_after": 0,
+   "timing_before": 0,
+   "timing_after": 0,
+   "decision_before": "insufficient_data",
+   "decision_after": "not_qualified",
+   "what_changed": "ICP 0→0, timing 0→0, decision insufficient_data→not_qualified. 1 new evidence item(s)."
+  }
+ ],
+ "research_notes": [],
+ "contact_selection": null,
+ "pain_points": null,
+ "email": null,
+ "dispatch": null,
+ "errors": {},
+ "ledger": {
+  "company": "Sweetgreen",
+  "domain": "sweetgreen.com",
+  "decision_status": "not_qualified",
+  "recommended_action": "disqualify",
+  "icp_fit_score": 0,
+  "buying_timing_score": 0,
+  "evidence_confidence": 0.58,
+  "gate_decision": "DROP",
+  "evidence_map": {
+   "saas": "no",
+   "growth_stage": "unknown",
+   "audit_intent": "no",
+   "clients": "unknown",
+   "industry": "unknown",
+   "cloud_stack": "unknown"
+  },
+  "review_flags": [],
+  "provenance": "deterministic_fallback",
+  "why_this_company": [
+   "No ICP criteria were satisfied by evidence."
+  ],
+  "why_now": [
+   "No observable buying moment — timing unsupported."
+  ],
+  "what_could_make_this_wrong": [
+   "Unknown: Funding stage or headcount.",
+   "Unknown: Evidence of enterprise customers or an enterprise motion.",
+   "Unknown: Any SOC 2 / ISO 27001 / GDPR status.",
+   "Unknown: Security, compliance or engineering hiring activity.",
+   "Unknown: A security or trust page describing controls.",
+   "Overall evidence confidence is modest (0.58).",
+   "Keyword rules can misread context (e.g. 'SOC 2' in a blog post about a customer, not the company itself)."
+  ]
+ }
+}

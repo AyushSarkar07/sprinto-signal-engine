@@ -1,0 +1,988 @@
+{
+ "company": "Rootly",
+ "domain": "rootly.com",
+ "slug": "rootly-com",
+ "stages_completed": [
+  "scrape",
+  "extract",
+  "qualify",
+  "research",
+  "contact",
+  "pain_points",
+  "email",
+  "dispatch"
+ ],
+ "scrape": {
+  "company": "Rootly",
+  "domain": "rootly.com",
+  "homepage_url": "https://rootly.com/",
+  "pages_scraped": [
+   {
+    "url": "https://rootly.com/",
+    "category": "homepage",
+    "title": "AI-native incident management platform | Rootly",
+    "text": "The all-in-one AI incident management platform for fast-moving engineering teams to detect, manage, resolve, and learn from incidents faster.\nAI-native incident management platform | Rootly\nSkip to content\nAI for on-call and incident response.\nOn-call and incident response that’s crafted to bring AI and modern teams together to prevent and resolve incidents faster.\nBook a demo\nGet started for free\nThere’s never been a better time to switch from PagerDuty.\nWe’ve been buying out contracts and migrating thousands of users for years. Now it’s your turn. Learn more about switching →\n1/2 the price\nAnd quadruple the capability.\nContract buyout\nUp to 12 months of your remaining contract, covered.\nMigrated for you\nAutomated, white glove migration.\n99.99%\nof rock solid reliability.\nInvestigate →\nAll the relevant context surfaced based on alerts, code changes, and past incidents analyzed.\nFind root cause →\nQuickly identified probable root causes with confidence scores you can trust.\nSuggestions →\nSuggested fixes and next steps, with complete visibility into how and why every decision is made.\nRootly MCP server →\nPlugged into your IDE, so you can resolve incidents in seconds—right where you work.\nRootly AI enables us to get to resolutions faster and maintain our 99.99% availability. It helps—a lot.\nPaul Van Liew, Director of Platform Engineering\nSchedules →\nDesigned for the way human responders actually work—with ease and efficiency in mind.\nAlerting →\nGet all your alerts and context in one place.\nMobile →\nEvery detail thoughtfully crafted—from the data at your fingertips to the ringtone that wakes you.\n99.99% →\nYour incidents won’t wait—our redundant infra makes sure your pages don’t either.\nWe cut our resolution times in half and reduced repeat incidents. Rootly has been our best investment in terms of ROI.\nGeoff Powell, Sr. Technical Manager, SRE\nSlack, Google Chat & Teams →\nAll the context, all your tools, all the collaboration—where you’re already working.\nNatively AI →\nReal-time scribe, summaries, and proactive suggestions—all built in. Just ask @Rootly.\nWorkflows →\nAutomate incident workflows in seconds—best practice templates or tailored to your needs.\nCommunications →\nInstantly update the right people, across every channel, from a single place.\nRootly intelligently collects and compiles data, making it simple for us to get an overview of system health and past incidents.\nMatt Iselin, Engineering Manager, SRE\nSmart templates with AI blocks →\nStructure your retro doc once with AI templates—enjoy all the context without all the copy-pasting.\nCollaboration →\nAI generates structured docs in seconds, you refine it collaboratively, and export it when ready.\nTrack action items →\nBi-directionally sync tasks with Jira and other tools to ensure you close the loop.\nConsistent process →\nDefine a consistent and accountable post-incident process.\nRootly has made way for a shift in our culture. We’re now actively making room for prevention—that’s the real benefit.\nColin FitzGerald, Problem & Incident Manager\nOpinionated defaults\nResponders are guided by proven best practices—simple, intuitive, and carefully crafted.\nPurpose-built\nDesigned to prevent and resolve incidents faster. We only ship what serves that mission.\nRooted in reliability\nWe obsess over the boring work so you can count on us when you’re down.\nScales as you do\nBuilt to grow with you—simple at any size. Loved by fast-growing startups and the Fortune 500.\nExtensible by design\nConnect all your existing tools—Slack, Jira, Zoom—and extend further with our Terraform provider, API, or MCP server.\nExplore all integrations\nView all case studies\nHow Canary built incident management from scratch on Rootly while its engineering team quadrupled.\nZivago Lee\nReplit brings structure, speed, and better decision-making to incident response with Rootly.\nMatthew Iselin\nHow Caribou saves 200+ engineering hours a year with Rootly.\nDevree Lewis\nWhy Capa replaced incident.io with Rootly.\nJuan David Torres\nHow Reactiv outgrew incident.io and moved to Rootly for real AI and on-call without the upsell.\nMichael Pezzi\nHow SpotDraft replaced manual follow-ups with synced, measurable incident management on Rootly.\nDarshan S\nYou and your teams deserve modern incident management.\nGet a demo",
+    "status": "ok",
+    "http_status": 200,
+    "rendered_with": "requests",
+    "discovered_from": ""
+   },
+   {
+    "url": "https://rootly.com/about",
+    "category": "about",
+    "title": "About Rootly: the AI-native reliability platform",
+    "text": "Rootly was founded in 2021 on a simple belief: incident management shouldn’t be chaos. Meet the team building the AI-native reliability platform.\nAbout Rootly: the AI-native reliability platform\nSkip to content\nReliability isn’t a feature.\nIt’s the foundation everything else stands on, and the reason Rootly exists.\nRootly is building the future of agentic reliability and proactive intelligence.\nThe complexities of modern technology demand a paradigm shift in how we fundamentally approach reliability.\nWe founded Rootly in 2021 with a simple belief: incident management shouldn’t be chaos. We set out building a category-defining on-call and incident response platform—with AI at the core bringing proactive intelligence to your operational data—enabling clarity, context, and structure to the moments that matter most.\nWe’re a fast-moving team obsessed with building products that make high-stakes moments feel calm, clear, and repeatable—so companies can move faster with confidence and build stronger, more reliable systems.\nOur vision is to make the world a more reliable place.\nOur mission is to become the platform that helps every company move from reactive to proactive, self-driving reliability.\nWe fundamentally believe that reliability isn’t a feature—it’s the foundation everything else stands on.\nJJ Tang\nCEO and Co-founder\nGrew up between Canada and inner Mongolia, where he learned to find something worth enjoying in a hard situation. Started Rootly with Quentin while they were both at Instacart, and took it through Y Combinator in 2021. Forbes 30 Under 30.\nQuentin Rousseau\nCTO and Co-founder\nBuilds the distributed systems underneath Rootly, the ones that absorb absurd traffic without falling over. Has a habit of reverse-engineering things that were never meant to be, and of debugging the failures that make other engineers reconsider their career choices.\nDetect\nAlerts grouped, noise cut, and the right person paged.\nOn-Call\nRespond\nThe incident runs where your team already works.\nIncident Response\nInform\nCustomers updated from the same incident responders are working.\nStatus Pages\nLearn\nRetrospectives drafted from what actually happened.\nRetrospectives\nPrevent\nAgents that surface the failure before it reaches a customer.\nAI SRE\nRootly AI\nAgents running on a living model of your environment: your catalog, your telemetry, your code and every incident you have ever run. It learns how your systems actually fail, and it is sharper at the fifth incident than it was at the first.\nSee what AI Labs is building\nCome build the future of agentic reliability with us.\nSee open roles\nBook a demo",
+    "status": "ok",
+    "http_status": 200,
+    "rendered_with": "requests",
+    "discovered_from": "https://rootly.com/"
+   },
+   {
+    "url": "https://rootly.com/security",
+    "category": "security",
+    "title": "Rootly for Security Teams",
+    "text": "Enterprise-grade incident management for security teams. SOC2, HIPAA, GDPR compliant with private incidents, audit logs, and granular RBAC.\nRootly for Security Teams\nSkip to content\nIncident management that modern security teams trust.\nDesigned with RBAC depth, private incident controls, and flexibility to run every investigation without compromise.\nBook a demo\nEnterprise-grade security and compliance.\nCertified across the compliance standards security teams require—and paired with IaC-native provisioning—governance-as-code isn’t an aspiration; it’s how Rootly operates.\nPermissions that match how security teams operate.\nGranular RBAC across incident roles, services, teams, and components. Control exactly who sees what—across every stage of a sensitive investigation.\nPrivate incidents by default.\nPrivate incidents are invisible to the rest of the org by default. Access is invite-only, access-controlled end-to-end, and never something somebody accidentally stumbles into.\nAudit-ready without extra work.\nEverything is logged as it happens. When regulators ask what occurred, the answer is already documented—not reassembled from Slack threads and memory.\nExtensibility that reaches your entire security stack.\n100+ integrations—SIEMs, SORARs, identity providers, on-prem systems—so your response process doesn't depend on swapping tools out.\nRBAC built for the complexity of enterprise security.\nControl exactly who sees and performs what actions across every stage of a sensitive investigation—by role, team, service, component, severity, and incident type.\nGrant just-in-time access when an incident fires, revoke it automatically when it closes, and extend those permissions to connected docs without a single manual step.\nIncident field and action permissions\nSet the general incident permissions this permission set has.\nPermission to set incident status values\nWhether status can be set when creating an incident, or based on its severity.\nPermission to set incident severity values\nWhether severity can be set when creating an incident, or based on its current severity.\nPermission to set severity to\nSEV 0\nwhen…\nCreating an incident\nNew incident form\nUpdating an incident where severity is…\nSEV 1\nSEV 2\nSEV 3\nSEV 4\nSensitive conversations, shielded by design.\nRun security incidents across two parallel Slack channels—one for technical response, one for legal and business—where incident updates flow one way but sensitive discussions never cross over.\nIf your InfoSec team needs full separation, Rootly supports isolated tenants so operations are entirely independent from the rest of the organization.\n#incident-260402\nTechnical response\nincident-260402\nBusiness response\nAn audit trail that’s ready before anyone asks.\nEvery action, decision, and escalation is logged to a single incident record in real time—no reconstruction required when regulators come calling. Access logs included: who was granted entry, when, and when it was revoked.\nAudit log\nDate\n24 minutes ago\nUser\nPriya S.\nObject\nWorkflow run\nb41f5e55-1736-4a88-b8d4\nAction\nUpdate\nSource\nweb\nStatus\nstarted\ncompleted\nCompleted at\nNo value\n2026-04-09 12:15:05 UTC\nTimeline\nCommunications\nTasks\nFollow-ups\nStatus page\nRetrospective\nInclude system events\nAdd an event to the timeline\nRootly\nupdated the incident\nTeams added\nSearch\nMarco R.\nupdated an action item\nTask added\nCheck access cluster health\nServices added\nelasticsearch-prod\nKnowBe4 switched from PagerDuty and turned Incident Response into a repeatable, predictable system with Rootly.\nMatthew Duren\nReplit brings structure, speed, and better decision-making to incident response with Rootly.\nMatthew Iselin\nWebflow shutdown PagerDuty to use Rootly to build a proactive reliability culture.\nColin FitzGerald\nAchievers switched from PagerDuty and productized reliability on Microsoft Teams with Rootly.\nStefan Kolesnikowicz\nYou and your teams deserve modern incident management.\nGet a demo",
+    "status": "ok",
+    "http_status": 200,
+    "rendered_with": "requests",
+    "discovered_from": "https://rootly.com/"
+   },
+   {
+    "url": "https://rootly.com/trust",
+    "category": "trust",
+    "title": "HTTP 403 (not bypassed)",
+    "text": "",
+    "status": "access_restricted",
+    "http_status": 403,
+    "rendered_with": "requests",
+    "discovered_from": "https://rootly.com/"
+   },
+   {
+    "url": "https://rootly.com/customers",
+    "category": "customers",
+    "title": "Rootly | Customer Stories",
+    "text": "See how teams from the Fortune 100 to fast-growing startups use Rootly for incident response, on-call, retrospectives, and AI SRE.\nRootly | Customer Stories\nSkip to content\nCustomer Stories\nLeading companies build reliable products with Rootly.\nFeatured customer story\nReplit brings structure, speed, and better decision-making to incident response with Rootly.\n100%\nincident timeline capture in a structured, reusable format\nBecause of how intelligently Rootly collects and compiles data from our incidents, it’s simple for us to get an overview of the system’s health and past incidents.\nMatthew Iselin\nEngineering Manager - SRE, Security\nEvery capability Rootly ships is one my team does not have to build.\nThijn Bukkems\nSecurity Tech Lead\nWealthsimple drove a culture of psychological safety for incident commanders with Rootly.\n60–70\nnewly trained incident commanders available across the organization\nMigrated off PagerDuty\nMigrated off Opsgenie\nOthers\nExplore customer stories\nFilter stories\nOverall MTTR since adopting Rootly\nHow Superhuman's Security team made Rootly the central system for closing security incidents faster\n3.8x\nfaster median time from mitigated to closed\nof incidents mitigated within SLA\nClay switched off Opsgenie to use Rootly to streamline incident management.\nFaster\nincident coordination by centralizing communication in one place\nLess\nmanual customer comms work during incidents through Rootly + Intercom automation\nHow Prolific outgrew incident.io and built an AI-assisted reliability operating model on Rootly.\n64%\nreduction in time to resolve\ncompletion for retrospectives\nI chose Rootly over FireHydrant due to the team’s vision, performance, and trajectory\nSantiago Suarez Ordoñez\nFormer CTO and Co-Founder of Blameless (acquired by FireHydrant)\nHow PandaDoc replaced Opsgenie and removed years of internally supported code.\n200 hours\nof engineering time returned every month\n89%\nfewer after-hours pages\nHow Anton built its entire incident response in 15 hours using Rootly's Terraform provider.\n2.5 months → 15 hours\nfrom trying to build incident response to a complete Terraform deployment\n2–3 a day\nfalse alarms replaced by signal he trusts\nHow Auror replaced three tools with Rootly and cut the resolution time that the business watches.\n3 → 1\ntools consolidated\n84%\nreduction in time to close\nHow Recast Software built its entire incident practice on Rootly instead of buying three tools.\n~20%\ntime savings in manual client communication for maintenance with initial status pages\n60%\nannual savings in tooling costs\nWhy CTSO Central chose Rootly over incident.io.\n< 2 days\nto production deployment\nAutomated\ncustomer status updates\nOur time to acknowledge a critical alert went from hours to minutes. We evaluated every alerting tool out there, and nothing else matched Rootly on ease of use, scale, or price.\nPedro Espindula\nSRE\nResolution time is something we actually sell, with contractual SLAs and service credits behind it. Rootly is what makes those resolution times repeatable, so we protect the SLAs our customers are paying for.\nDarshan S\nSenior Manager of Product Support\nHow Reactiv outgrew incident.io and moved to Rootly for real AI and on-call without the upsell.\nScalable growth\nw/ unlimited on-call schedules\nAI assistance\nacross Slack, Web, Mobile\nWhy Capa replaced incident.io with Rootly.\n< 1 day\nto production ready\n46%\nreduction for commons incidents\nHow Caribou saves 200+ engineering hours a year with Rootly.\n200+\nengineering hours saved\n5 minute\nincident response SLA met\nHow Canary built incident management from scratch on Rootly while its engineering team quadrupled.\nengineering growth, no workarounds\n0→formalized\nincident practice\nWebflow shutdown PagerDuty to use Rootly to build a proactive reliability culture.\nLower\nMTTR through consistent, measurable incident workflows\nGreater\nvisibility into incident trends across teams and services\nAchievers switched from PagerDuty and productized reliability on Microsoft Teams with Rootly.\nMicrosoft Teams\nnative incident response where engineers already work\nAI summaries\nkeep stakeholders informed without interrupting responders\nKnowBe4 switched from PagerDuty and turned Incident Response into a repeatable, predictable system with Rootly.\n40%\n90%\nRootly is a big part of how we’ve reached our 99.99% of reliability.\nPaul van Liew\nDirector of Platform Engineering\nPoll Everywhere switched from PagerDuty, cut on-call tooling costs and made response faster with Rootly.\n50%\nfaster time to first response for off-hours alerts.\nfewer unnecessary wake-ups / secondary rollovers.\nHow ROLLER scales globally while keeping a lean SRE team.\n80%\nless time spent on post-mortems\n30+ countries\nsupported with a lean SRE team\nHow Upstart uses Rootly to create an incident response system that grows with them.\nincident response and coordination\nSlack-native\nincident management from a laptop or phone\nHow Lucidworks uses Rootly to create bespoke incident management for their distinct product offering.\n2 product lines\neach with tailored incident workflows\nDays\nto transition from the previous incident management tool\nHow UNiDAYS replaced a decade of PagerDuty in two weeks and opened incident response to the wider business.\nHours → minutes\nto produce an incident timeline\nEngineering-only → business-wide\noperations\ntrained incident commanders available across the organization\nShorter\nless burdensome on-call rotations by distributing incident command more broadly\nNo stories match these tags.\nYou and your teams deserve modern incident management.\nGet a demo\nGet started for free",
+    "status": "ok",
+    "http_status": 200,
+    "rendered_with": "requests",
+    "discovered_from": "https://rootly.com/"
+   },
+   {
+    "url": "enrichment://apollo.io/rootly.com",
+    "category": "enrichment",
+    "title": "Apollo.io company record for rootly.com",
+    "text": "Apollo.io company record for rootly.com (retrieved 2026-11-03). Headcount: 92 employees. Latest funding: Series A round (2023-08). Technologies detected: Amazon AWS; Google Cloud; Microsoft Azure.",
+    "status": "ok",
+    "http_status": null,
+    "rendered_with": "requests",
+    "discovered_from": "Apollo.io"
+   },
+   {
+    "url": "https://rootly.com/careers",
+    "category": "careers",
+    "title": "Rootly Careers: Open Roles in Engineering and GTM",
+    "text": "We're hiring across engineering, design, and go-to-market. Explore open roles and help build the future of incident management at Rootly.\nRootly Careers: Open Roles in Engineering and GTM\nSkip to content\nCareers\nBuild the future of reliability with Rootly.\nWe're building the AI-native reliability platform that helps the world's best engineering teams resolve and prevent incidents, learn continuously, and sleep better.\nJoin an ambitious team that’s building the future of reliability.\nView open roles\nRootly is building the future of agentic reliability and proactive intelligence.\nThe complexities of modern technology demand a paradigm shift in how we fundamentally approach reliability.\nWe founded Rootly in 2021 with a simple belief: incident management shouldn’t be chaos. We set out building a category-defining on-call and incident response platform—with AI at the core bringing proactive intelligence to your operational data—enabling clarity, context, and structure to the moments that matter most.\nWe’re a fast-moving team obsessed with building products that make high-stakes moments feel calm, clear, and repeatable—so companies can move faster with confidence and build stronger, more reliable systems.\nOur vision is to make the world a more reliable place.\nOur mission is to become the platform that helps every company move from reactive to proactive, self-driving reliability.\nWe fundamentally believe that reliability isn’t a feature—it’s the foundation everything else stands on.\nJJ Tang\nCEO and Co-founder\nInsurance\nThe best medical, dental, vision, and life coverage for you and your dependents. We cover the annual amounts for you.\nVacation\nFlexible PTO, plus company holidays, team off-sites, and a year-end shutdown to recharge.\nCompensation\nCompetitive salary, meaningful equity in a high-growth company, and 401(k) matching for US employees.\nHybrid Work\nWe hire across the US, Canada, Europe, and Singapore—your talent matters, not your timezone. Plus free lunches at HQ!\nGrowth\nA fast-moving, high-impact environment where you have autonomy to own big problems from day one.\nEquipment\nTop-tier hardware and tools, plus an annual stipends for home offices. Get the setup you need to do your best work.\nRe-thinking candidate take-homes in the AI Era.\nAI changed what great engineering looks like. Learn why Rootly now requires AI session transcripts in take-homes — and what they reveal that code alone can't.\nRead article\nWhy and how we do work trials at Rootly.\nBuild with confidence at Rootly: learn our transparent interview process—screening, hiring manager chat, AI-era take-home, team interviews, and a paid work trial designed to create the best mutual fit.\nHow we build at Rootly.\nRootly’s mission is to help every organization become more reliable—but how we build matters as much as what we build.\nLearn the principles behind Rootly: simple but powerful design, purpose-built incident workflows, smart defaults, seamless integrations, reliability-first infrastructure, and customer-driven iteration for calm, quick response.\nWhy we love\nworking at Rootly.\n\"We operate in a highly competitive space where everything you build helps move the needle. The fact that we get to do it with such smart and awesome people makes Rootly an incredibly special place to work.\"\nIain MacKenzie\nTechnical Staff\n“Design has a real opportunity to make a difference. It’s especially rewarding to design and work on software that solves real operational problems teams face every day.”\nMarcela Havandjian Begalli\nProduct Design\n“We're solving mission-critical problems for our customers: when something breaks, we help you fix it, quickly. I love working on a team that understands the importance of this, and sees it as an opportunity to do something great.”\nKayla Thomson\nProduct\n“The best thing about working here is the people and the ownership you have. I also get the privilege to take on large, complex problems and build things that will be used by some of the biggest names in tech.”\nHussam Zaghal\nProduct Craft\n\"The best thing about working at Rootly is that everything is real. The mission matters, everyone genuinely cares, and your work actually makes a difference.\"\nSarah Crowe\n“I’m lucky to work alongside some of the smartest people in tech, building something that truly matters. As a QA Lead, I get to push quality at scale while constantly experimenting with new technologies and AI.”\nKatsiaryna Rabtsava\n“I've done more at Rootly than in all my career combined. Everyone here is extremely talented and driven to win. I've even evolved at a personal level, I now know I'm capable of more than I ever thought.”\nJorge Lainfiesta\nGo to Market\n\"I love that Rootly is a company that doesn't treat customer success as a solo function; we are backed by tasteful, intuitive products and continuous innovation which gets me excited to talk to my customers everyday.”\nAmy Song\nCustomer Success\n“I went from founding my own startup to joining Rootly, and honestly? I haven't lost a thing. The autonomy, the impact, the feeling that what you're building truly matters, it's all here.”\nSylvain Kalache\nAI Labs\n“Rootly has that rare mix of urgency and heart. Every day we help teams turn stressful incidents into calm, coordinated action, and I love being part of a crew that’s obsessed with making engineers’ lives easier.”\nAnastasiia Konovalenko\nCommunity\nSee all open roles on our job board",
+    "status": "ok",
+    "http_status": 200,
+    "rendered_with": "requests",
+    "discovered_from": "research_agent"
+   },
+   {
+    "url": "https://security.rootly.com/",
+    "category": "security",
+    "title": "Rootly Trust Center | Powered by SafeBase",
+    "text": "SafeBase monitors your security practices to enable you to win enterprise deals.\nRootly Trust Center | Powered by SafeBase\nTrust Center\nStart your security review\nOverview\nRootly has implemented best-in-class security practices to keep customer data safe and operates in the most regulated markets.\n100s of global organizations from fast growing startups to F500 trust Rootly to be their incident management solution of choice.\nContact:\nsecurity@rootly.com\nCompliance\nCCPA\nGDPR\nSOC 2\nRootly is reviewed and trusted by\nCisco\nCanva\nGrammarly\nWealthsimple\nFaire\nPoshmark\nShell\nCypress.io\nRivian\nSquarespace\nNVIDIA\nDocuments\nFeatured Documents\nREPORTS\nPentest Report\nSOC 2 Report\nProduct Security\nAudit Logging\nData Security\nIntegrations\nView more\nVulnerability Assessment Report\nAccess Monitoring\nData Backups\nData Erasure\nApp Security\nResponsible Disclosure\nCode Analysis\nCredential Management\nLegal\nCyber Insurance\nData Processing Agreement\nMaster Services Agreement\nAccess Control\nData Access\nLogging\nPassword Security\nInfrastructure\nAmazon Web Services\nAnti-DDoS\nBC/DR\nEndpoint Security\nDisk Encryption\nEndpoint Detection & Response\nMobile Device Management\nNetwork Security\nData Loss Prevention\nSecurity Information and Event Management\nZero Trust\nCorporate Security\nEmail Protection\nEmployee Training\nIncident Response\nPolicies\nAcceptable Use Policy\nAccess Control Policy\nAsset Management Policy\nTrust Center Updates\nNPM Supply Chain Attack\nIncidents\nAfter careful review of our infrastructure and npm dependencies, the Rootly team has determined that we are not currently impacted by the recent NPM supply chain attack disclosed on September 8, 2025, which compromised several widely used packages (e.g., debug, chalk).\nFor reference, please see the\nadvisory\nWe will continue to monitor for any updates and ensure our systems remain secure.\nCVE-2024-3094\nVulnerabilities\nAfter careful review of our infrastructure and SBOM, the Rootly team has determined that we are not currently vulnerable to the xz Vulnerability CVE-2024-3094 that were disclosed on March 29th, 2024.\nCVE-2023-34362\nAfter careful review of our infrastructure and SBOM, the Rootly team has determined that we are not currently vulnerable to the MOVEit Transfer Critical Vulnerability CVE-2023-34362 that were disclosed on June 16th, 2023.\nCVE-2022-3602 & CVE-2022-3786\nAfter careful review of our infrastructure and SBOM, the Rootly team has determined that we are not currently vulnerable to the OpenSSL 3 vulnerabilities CVE-2022-3602 and CVE-2022-3786 that were disclosed on November 1, 2022.\nCVE-2022-21449\nNone of our services are running Java 15, 17, and 18 so this vulnerability (CVE-2022-21449) is not exploitable on our side.\nIf you need help using this Trust Center, please contact us.\nContact support\nIf you think you may have discovered a vulnerability, please send us a note.\nReport issue",
+    "status": "ok",
+    "http_status": 200,
+    "rendered_with": "requests",
+    "discovered_from": "research_agent"
+   },
+   {
+    "url": "https://rootly.com/customers/capa",
+    "category": "customers",
+    "title": "Why Capa replaced incident.io with Rootly.",
+    "text": "Capa replaced incident.io with Rootly, went live in under a day, and reduced common incident resolution time by 46%.\nWhy Capa replaced incident.io with Rootly.\nSkip to content\nCustomers\nOn this page\nCapa is a financial infrastructure that connects Latin America to the global financial system through a single API and dashboard. The platform enables seamless cross border payments by handling local pay ins and pay outs, instant conversion between local currencies and stablecoins, and access to deep liquidity, all with full regulatory compliance and cost efficient settlement.\nFounded:\n2024, Mexico City, Mexico\nSize:\n~20\nincident.io got Capa started, and the simplicity was the point. It targeted Slack and didn’t try to do everything, and that focus is exactly why a small team adopted it quickly, including an engineer in his first job with no prior on-call background. When you’re running one or two incidents a day, that’s all you need.\nThen the business grew. Transaction volume climbed, and with it the number of incidents. Capa needed to customize alerts, get richer information out of them, shape the workflow around how the team actually worked. That’s the moment incident.io stopped being the right fit, and it happened fast.\nThe final wall was pricing. The simple tier was fine; the customization Capa now needed sat behind a step up in cost they hadn’t expected. As Juan put it, they wanted to customize a lot of things and got hit by a wall with the prices.\nWhat made the pricing wall worse was that there was no one on the other side of it. Capa never got to talk to anyone at incident.io. The path forward was a credit card field and a higher bill, not a conversation. For a team trying to decide how to grow its incident process, the absence of a relationship was its own kind of friction.\n“We hit a wall with incident.io the second we wanted to customize anything. And the worst part was there was nobody to talk to about it. Just a higher price and a credit card field. That’s a hard way to plan how you’re going to grow.”\n-Juan David Torres, CTO & Co-founder\nCapa is a regulated fintech expanding into new countries, each with its own rules. The needs on the horizon were not smaller and simpler; they were bigger; more auditability, more granular access control, more compliance. A platform that already price-walled basic customization was not going to be the one that carried them into that.\nThe common thread was incident.io is a tool to get you started. Capa had already reached the edge of what it was built for, and the next step it offered was a bill, not a partnership.\nThe same simplicity, with a team behind it\nCapa found Rootly the way a lot of teams do now, by asking an LLM for the best incident management platforms and went looking specifically for something Slack-native and simple. He’d also looked at PagerDuty, but wanted the focused, Slack-first approach incident.io had gotten him used to. Rootly was the one that matched it, and he stopped researching once he found it.\nThe move kept everything that worked and removed the wall. Rootly is just as simple to declare an incident in and just as Slack-native, so the team lost nothing on ease of use. What it added was the part incident.io withheld: a relationship. Every Rootly customer gets a shared Slack channel with the team, not just the ones who buy premium support, because Rootly doesn’t do self-serve-by-credit-card by design. Juan’s read was blunt and unprompted: the support is much better.\nThen he started building. The day before we spoke, Juan set up an alert in Rootly that fires automatically when a transaction gets stuck in a non-terminal, non-starting status, the single most common incident Capa sees. Previously, customer support had to notice the problem and manually open a ticket in a group channel to kick off the incident. Now Rootly catches it and raises it on its own. For a team deliberately growing through automation rather than headcount, that’s the shape of every win they’re after.\n“Rootly is just as simple as incident.io to get into, so we lost nothing. But now I have a team in my Slack when I need them, and I’m automating the incident we hit most instead of waiting for support to file it by hand. That’s the difference.”\nBuilt for where a regulated fintech is going\nPricing you can plan around\nThe friction that pushed Capa off incident.io was cost surprise, so the most direct outcome is the simplest one. There’s no tax on the customization a growing team inevitably needs, and no discount-now, shock-later structure waiting at renewal. For a team watching its burn while it scales volume, predictable pricing is not a nicety, it’s how the decision got made.\nA team in your Slack, not a credit card field\nThe relationship is the part Juan keeps coming back to. A shared Slack channel with the Rootly team means that when Capa wants to customize something or work through a problem, the answer is a conversation, not an upsell screen. That’s a deliberate Rootly design choice, and it’s the exact thing incident.io’s pricing wall lacked.\nAutomating the incident they hit most\nCapa’s growth plan is lean and AI-driven: grow revenue and volume, automate compliance and operational processes, keep the headcount flat. The stuck-transaction alert Juan built is the first instance of that inside Rootly, turning the most frequent incident from a manual catch into an automatic one. As Capa automates more of its operations, an incident platform that’s built to be configured and automated, rather than price-walled, compounds in value.\nRoom to grow into compliance\nThis is the part incident.io couldn’t promise. Capa is a regulated fintech moving money across borders and expanding into new markets, which means the road ahead is paved with more regulation, more auditability, and more granular access control. Rootly is built ground-up for the strictest security and governance requirements, which is why some of the most security-conscious teams in the world, including fintechs like SoFi and Wise, run on it. Capa grows into that posture on the same platform, instead of bolting on workarounds or switching tools the moment compliance gets serious.\n“We’re a regulated fintech, and every new market we enter is new compliance. I didn’t want an incident tool that prices me out the moment I customize it, or one that falls behind when the rules get harder. I wanted one that grows with us. That’s the bet with Rootly.”\nSimple is the right way to start an incident process. The harder question is what happens when simple meets a price wall, or a compliance regime in a country you’ve just entered, and there’s no one on the other end to help you through it. For a lean team planning to grow in revenue and regulation rather than headcount, that’s the whole decision. incident.io is built to get you started. Capa chose the platform built to get you started and for where it’s going next; transparent pricing, with a team in its Slack, and the governance road already paved. If you’re on incident.io and starting to feel the wall, that’s the signal, and Rootly is the platform on the other side of it, built to grow with you.\nMore customer stories\nHow Reactiv outgrew incident.io and moved to Rootly for real AI and on-call without the upsell.\nScalable growth\nw/ unlimited on-call schedules\nAI assistance\nacross Slack, Web, Mobile\nWhy CTSO Central chose Rootly over incident.io.\n< 2 days\nto production deployment\nAutomated\ncustomer status updates\nOur time to acknowledge a critical alert went from hours to minutes. We evaluated every alerting tool out there, and nothing else matched Rootly on ease of use, scale, or price.\nPedro Espindula\nSRE",
+    "status": "ok",
+    "http_status": 200,
+    "rendered_with": "requests",
+    "discovered_from": "research_agent"
+   },
+   {
+    "url": "https://rootly.com/blog",
+    "category": "news",
+    "title": "Incident Management Blog | Rootly",
+    "text": "Incident management insights, guides, and best practices from the AI and reliability experts at Rootly. Learn from SRE leaders.\nIncident Management Blog | Rootly\nSkip to content\nRootly Blog\nPerspectives on AI, engineering, and the humans keeping systems running.\nThe titanic didn't sink for just one reason\nWhy Root Cause Analysis and the Five Whys stop short, told through the Titanic disaster, and what a contributing-factors approach to incidents reveals.\nSteve Mynett\nOct 21, 2026\nIncident Response\nWhy our retrospective template doesn't ask for root cause\nBen McBratney\nHead of Incident Strategy at Rootly\nHumans of Reliability\n\"Hey Claude, where's my database?\": How an AI agent nuked production\nAlexey Grigorev\nFounder of DataTalks.Club\nWebinar\nUsing Rootly AI in your retrospectives\nKayla Thomson\nProduct Enablement at Rootly\nThe hidden cost of vibe coding an incident bot\nI built incident bots at two companies, then replaced the one that worked. What vibe coding speeds up, and the ownership costs it doesn't touch.\nOct 19, 2026\n“Every feature we added in an afternoon was a feature we'd own for years.”\ninterview\nNobody wants to review 1,000 lines of AI-generated code\nBenoit Doyon\nDavin Chia\nRob Zuber\nAnatoly Shiroglazov\nEran Kampf\nSylvain Kalache\nBen On-Call\nIf automation makes an outage worse, who’s accountable?\nGuide\nAI SRE architecture: how to build for incomplete context\nAn AI agent can have the right code and the wrong context. See how AI SRE architecture connects evidence, policy, execution, verification, and rollback.\nQuentin Rousseau\nCTO at Rootly\nCode is cheap, reliability isn’t: Owning production in the AI era\nAuthor Swizec Teller on why users buy reliable services rather than code, managing AI coding agents, writing useful logs, AI SRE benchmarks, and accountability.\nSwizec Teller\nBestselling Author\nWrite it down, replay it, ship it: why we build ERDs to build product\nAngelo Tomasco\nSep 30, 2026\nengineering story\nReplay, don't rebuild: adding week-long deferrals to a pipeline that handles millions of alerts\nOn extending a high-volume production pipeline instead of building alongside it, and the edge cases that only appear at the intersection of correct decisions\nHarneet Singh\nHow we used CRDTs to build real-time collaborative retrospectives\nA dive into how we built collaborative software with real-time features, AI assistance, and workflow automation with Y.js CRDTs).\nMichael Han\nYour next internal developer platform is a library of agent skills\nPostHog's Michael Kutsch on agent skills as an internal developer platform, team autonomy, AI SRE, and where deterministic guardrails matter.\nMichael Kutsch\nStaff SRE and Team Lead, Cloud Foundations at PostHog\nMore stories\nFilter stories\nMaking decisions with incomplete information\nSix questions an incident commander can ask to make good calls under pressure, drawn from Apollo 13, the Berlin Airlift, Everest and more.\nOct 30, 2026\nThe unofficial SRE track for KubeCon NA '26\nSeven KubeCon NA 2026 sessions for SREs, covering infrastructure testing, incident context, clock-skew debugging, GitOps failures, and hands-on recovery.\nAlexandra Chapin\nYour customers will notice before your status page does\nHow to run a status page during an incident: post within minutes, update on a set cadence, separate facts from guesses, and give comms its own role.\nOct 28, 2026\nThe most common mistakes in incident management\nTwelve incident management mistakes I see most, from declaring late to averaging MTTR, and what to do instead before the next incident starts.\nOct 23, 2026\nAudit-ready incident records: what SOC 2 auditors look for and how to evaluate tools\nHow to keep incident records ready for SOC 2 auditors: one record per incident, consistent fields, automatic timestamps and logged changes, plus tool tips.\nAdam Frank\nSep 29, 2026\nDatadog vs PagerDuty for incidents (and when to add Rootly)\nDatadog On-Call vs PagerDuty compared on paging, schedules, alert sources, status pages, retrospectives and pricing, plus when to add Rootly to either.\nSep 15, 2026\nBest incident response tools for SRE and platform engineering teams\nHow platform engineering teams should evaluate incident response tools: adoption, config as code and multi-team governance, with a scenario guide for choosing.\nBest AI incident management platforms for 2026\nA hype-free comparison of the best AI incident management platforms for 2026—what AI actually ships today and which tools do it best.\nJul 24, 2026\nCan AI actually find the root cause? Automating postmortems and RCA\nWhat automation reliably contributes to a post-incident review, what it cannot, and how to run retrospectives that produce fixes instead of documents.\nCould 2027 be the year you turn off human-in-the-loop remediation?\nWith reliability platforms as code and agents that rank probable causes from telemetry, catalog and incident history, could 2027 end human-in-the-loop fixes?\nDo AI SRE agents actually work? An honest capability assessment\nWhat AI SRE agents reliably do today, what they still get wrong, and how to evaluate a vendor claim without taking the demo at face value.\nProduct\nWhy we’re building a channel at Rootly\nRootly’s Partner Program helps MSPs, VARs, consultants, and systems integrators deliver incident response and on-call solutions with flexibility and support.\nTerence Leung\nSep 1, 2026\nStories couldn’t be loaded.\nNo stories match these filters. Try another topic or change your search.\nShow more",
+    "status": "ok",
+    "http_status": 200,
+    "rendered_with": "requests",
+    "discovered_from": "research_agent"
+   }
+  ],
+  "discovered_links": {
+   "product": [
+    "https://rootly.com/integrations"
+   ],
+   "enterprise": [
+    "https://rootly.com/enterprise"
+   ],
+   "security": [
+    "https://rootly.com/security",
+    "https://security.rootly.com/"
+   ],
+   "customers": [
+    "https://rootly.com/customers",
+    "https://rootly.com/customers/capa",
+    "https://rootly.com/customers/cora",
+    "https://rootly.com/customers/clay",
+    "https://rootly.com/customers/replit",
+    "https://rootly.com/customers/motive",
+    "https://rootly.com/customers/roller",
+    "https://rootly.com/customers/caribou"
+   ],
+   "news": [
+    "https://rootly.com/blog"
+   ],
+   "pricing": [
+    "https://rootly.com/pricing"
+   ],
+   "about": [
+    "https://rootly.com/about"
+   ],
+   "careers": [
+    "https://rootly.com/careers"
+   ],
+   "legal": [
+    "https://rootly.com/legal/terms",
+    "https://rootly.com/legal/privacy",
+    "https://rootly.com/legal/vulnerability-disclosure-policy"
+   ]
+  },
+  "raw_text": "### SOURCE: https://rootly.com/\nThe all-in-one AI incident management platform for fast-moving engineering teams to detect, manage, resolve, and learn from incidents faster.\nAI-native incident management platform | Rootly\nSkip to content\nAI for on-call and incident response.\nOn-call and incident response that’s crafted to bring AI and modern teams together to prevent and resolve incidents faster.\nBook a demo\nGet started for free\nThere’s never been a better time to switch from PagerDuty.\nWe’ve been buying out contracts and migrating thousands of users for years. Now it’s your turn. Learn more about switching →\n1/2 the price\nAnd quadruple the capability.\nContract buyout\nUp to 12 months of your remaining contract, covered.\nMigrated for you\nAutomated, white glove migration.\n99.99%\nof rock solid reliability.\nInvestigate →\nAll the relevant context surfaced based on alerts, code changes, and past incidents analyzed.\nFind root cause →\nQuickly identified probable root causes with confidence scores you can trust.\nSuggestions →\nSuggested fixes and next steps, with complete visibility into how and why every decision is made.\nRootly MCP server →\nPlugged into your IDE, so you can resolve incidents in seconds—right where you work.\nRootly AI enables us to get to resolutions faster and maintain our 99.99% availability. It helps—a lot.\nPaul Van Liew, Director of Platform Engineering\nSchedules →\nDesigned for the way human responders actually work—with ease and efficiency in mind.\nAlerting →\nGet all your alerts and context in one place.\nMobile →\nEvery detail thoughtfully crafted—from the data at your fingertips to the ringtone that wakes you.\n99.99% →\nYour incidents won’t wait—our redundant infra makes sure your pages don’t either.\nWe cut our resolution times in half and reduced repeat incidents. Rootly has been our best investment in terms of ROI.\nGeoff Powell, Sr. Technical Manager, SRE\nSlack, Google Chat & Teams →\nAll the context, all your tools, all the collaboration—where you’re already working.\nNatively AI →\nReal-time scribe, summaries, and proactive suggestions—all built in. Just ask @Rootly.\nWorkflows →\nAutomate incident workflows in seconds—best practice templates or tailored to your needs.\nCommunications →\nInstantly update the right people, across every channel, from a single place.\nRootly intelligently collects and compiles data, making it simple for us to get an overview of system health and past incidents.\nMatt Iselin, Engineering Manager, SRE\nSmart templates with AI blocks →\nStructure your retro doc once with AI templates—enjoy all the context without all the copy-pasting.\nCollaboration →\nAI generates structured docs in seconds, you refine it collaboratively, and export it when ready.\nTrack action items →\nBi-directionally sync tasks with Jira and other tools to ensure you close the loop.\nConsistent process →\nDefine a consistent and accountable post-incident process.\nRootly has made way for a shift in our culture. We’re now actively making room for prevention—that’s the real benefit.\nColin FitzGerald, Problem & Incident Manager\nOpinionated defaults\nResponders are guided by proven best practices—simple, intuitive, and carefully crafted.\nPurpose-built\nDesigned to prevent and resolve incidents faster. We only ship what serves that mission.\nRooted in reliability\nWe obsess over the boring work so you can count on us when you’re down.\nScales as you do\nBuilt to grow with you—simple at any size. Loved by fast-growing startups and the Fortune 500.\nExtensible by design\nConnect all your existing tools—Slack, Jira, Zoom—and extend further with our Terraform provider, API, or MCP server.\nExplore all integrations\nView all case studies\nHow Canary built incident management from scratch on Rootly while its engineering team quadrupled.\nZivago Lee\nReplit brings structure, speed, and better decision-making to incident response with Rootly.\nMatthew Iselin\nHow Caribou saves 200+ engineering hours a year with Rootly.\nDevree Lewis\nWhy Capa replaced incident.io with Rootly.\nJuan David Torres\nHow Reactiv outgrew incident.io and moved to Rootly for real AI and on-call without the upsell.\nMichael Pezzi\nHow SpotDraft replaced manual follow-ups with synced, measurable incident management on Rootly.\nDarshan S\nYou and your teams deserve modern incident management.\nGet a demo\n\n### SOURCE: https://rootly.com/about\nRootly was founded in 2021 on a simple belief: incident management shouldn’t be chaos. Meet the team building the AI-native reliability platform.\nAbout Rootly: the AI-native reliability platform\nSkip to content\nReliability isn’t a feature.\nIt’s the foundation everything else stands on, and the reason Rootly exists.\nRootly is building the future of agentic reliability and proactive intelligence.\nThe complexities of modern technology demand a paradigm shift in how we fundamentally approach reliability.\nWe founded Rootly in 2021 with a simple belief: incident management shouldn’t be chaos. We set out building a category-defining on-call and incident response platform—with AI at the core bringing proactive intelligence to your operational data—enabling clarity, context, and structure to the moments that matter most.\nWe’re a fast-moving team obsessed with building products that make high-stakes moments feel calm, clear, and repeatable—so companies can move faster with confidence and build stronger, more reliable systems.\nOur vision is to make the world a more reliable place.\nOur mission is to become the platform that helps every company move from reactive to proactive, self-driving reliability.\nWe fundamentally believe that reliability isn’t a feature—it’s the foundation everything else stands on.\nJJ Tang\nCEO and Co-founder\nGrew up between Canada and inner Mongolia, where he learned to find something worth enjoying in a hard situation. Started Rootly with Quentin while they were both at Instacart, and took it through Y Combinator in 2021. Forbes 30 Under 30.\nQuentin Rousseau\nCTO and Co-founder\nBuilds the distributed systems underneath Rootly, the ones that absorb absurd traffic without falling over. Has a habit of reverse-engineering things that were never meant to be, and of debugging the failures that make other engineers reconsider their career choices.\nDetect\nAlerts grouped, noise cut, and the right person paged.\nOn-Call\nRespond\nThe incident runs where your team already works.\nIncident Response\nInform\nCustomers updated from the same incident responders are working.\nStatus Pages\nLearn\nRetrospectives drafted from what actually happened.\nRetrospectives\nPrevent\nAgents that surface the failure before it reaches a customer.\nAI SRE\nRootly AI\nAgents running on a living model of your environment: your catalog, your telemetry, your code and every incident you have ever run. It learns how your systems actually fail, and it is sharper at the fifth incident than it was at the first.\nSee what AI Labs is building\nCome build the future of agentic reliability with us.\nSee open roles\nBook a demo\n\n### SOURCE: https://rootly.com/security\nEnterprise-grade incident management for security teams. SOC2, HIPAA, GDPR compliant with private incidents, audit logs, and granular RBAC.\nRootly for Security Teams\nSkip to content\nIncident management that modern security teams trust.\nDesigned with RBAC depth, private incident controls, and flexibility to run every investigation without compromise.\nBook a demo\nEnterprise-grade security and compliance.\nCertified across the compliance standards security teams require—and paired with IaC-native provisioning—governance-as-code isn’t an aspiration; it’s how Rootly operates.\nPermissions that match how security teams operate.\nGranular RBAC across incident roles, services, teams, and components. Control exactly who sees what—across every stage of a sensitive investigation.\nPrivate incidents by default.\nPrivate incidents are invisible to the rest of the org by default. Access is invite-only, access-controlled end-to-end, and never something somebody accidentally stumbles into.\nAudit-ready without extra work.\nEverything is logged as it happens. When regulators ask what occurred, the answer is already documented—not reassembled from Slack threads and memory.\nExtensibility that reaches your entire security stack.\n100+ integrations—SIEMs, SORARs, identity providers, on-prem systems—so your response process doesn't depend on swapping tools out.\nRBAC built for the complexity of enterprise security.\nControl exactly who sees and performs what actions across every stage of a sensitive investigation—by role, team, service, component, severity, and incident type.\nGrant just-in-time access when an incident fires, revoke it automatically when it closes, and extend those permissions to connected docs without a single manual step.\nIncident field and action permissions\nSet the general incident permissions this permission set has.\nPermission to set incident status values\nWhether status can be set when creating an incident, or based on its severity.\nPermission to set incident severity values\nWhether severity can be set when creating an incident, or based on its current severity.\nPermission to set severity to\nSEV 0\nwhen…\nCreating an incident\nNew incident form\nUpdating an incident where severity is…\nSEV 1\nSEV 2\nSEV 3\nSEV 4\nSensitive conversations, shielded by design.\nRun security incidents across two parallel Slack channels—one for technical response, one for legal and business—where incident updates flow one way but sensitive discussions never cross over.\nIf your InfoSec team needs full separation, Rootly supports isolated tenants so operations are entirely independent from the rest of the organization.\n#incident-260402\nTechnical response\nincident-260402\nBusiness response\nAn audit trail that’s ready before anyone asks.\nEvery action, decision, and escalation is logged to a single incident record in real time—no reconstruction required when regulators come calling. Access logs included: who was granted entry, when, and when it was revoked.\nAudit log\nDate\n24 minutes ago\nUser\nPriya S.\nObject\nWorkflow run\nb41f5e55-1736-4a88-b8d4\nAction\nUpdate\nSource\nweb\nStatus\nstarted\ncompleted\nCompleted at\nNo value\n2026-04-09 12:15:05 UTC\nTimeline\nCommunications\nTasks\nFollow-ups\nStatus page\nRetrospective\nInclude system events\nAdd an event to the timeline\nRootly\nupdated the incident\nTeams added\nSearch\nMarco R.\nupdated an action item\nTask added\nCheck access cluster health\nServices added\nelasticsearch-prod\nKnowBe4 switched from PagerDuty and turned Incident Response into a repeatable, predictable system with Rootly.\nMatthew Duren\nReplit brings structure, speed, and better decision-making to incident response with Rootly.\nMatthew Iselin\nWebflow shutdown PagerDuty to use Rootly to build a proactive reliability culture.\nColin FitzGerald\nAchievers switched from PagerDuty and productized reliability on Microsoft Teams with Rootly.\nStefan Kolesnikowicz\nYou and your teams deserve modern incident management.\nGet a demo\n\n### SOURCE: https://rootly.com/customers\nSee how teams from the Fortune 100 to fast-growing startups use Rootly for incident response, on-call, retrospectives, and AI SRE.\nRootly | Customer Stories\nSkip to content\nCustomer Stories\nLeading companies build reliable products with Rootly.\nFeatured customer story\nReplit brings structure, speed, and better decision-making to incident response with Rootly.\n100%\nincident timeline capture in a structured, reusable format\nBecause of how intelligently Rootly collects and compiles data from our incidents, it’s simple for us to get an overview of the system’s health and past incidents.\nMatthew Iselin\nEngineering Manager - SRE, Security\nEvery capability Rootly ships is one my team does not have to build.\nThijn Bukkems\nSecurity Tech Lead\nWealthsimple drove a culture of psychological safety for incident commanders with Rootly.\n60–70\nnewly trained incident commanders available across the organization\nMigrated off PagerDuty\nMigrated off Opsgenie\nOthers\nExplore customer stories\nFilter stories\nOverall MTTR since adopting Rootly\nHow Superhuman's Security team made Rootly the central system for closing security incidents faster\n3.8x\nfaster median time from mitigated to closed\nof incidents mitigated within SLA\nClay switched off Opsgenie to use Rootly to streamline incident management.\nFaster\nincident coordination by centralizing communication in one place\nLess\nmanual customer comms work during incidents through Rootly + Intercom automation\nHow Prolific outgrew incident.io and built an AI-assisted reliability operating model on Rootly.\n64%\nreduction in time to resolve\ncompletion for retrospectives\nI chose Rootly over FireHydrant due to the team’s vision, performance, and trajectory\nSantiago Suarez Ordoñez\nFormer CTO and Co-Founder of Blameless (acquired by FireHydrant)\nHow PandaDoc replaced Opsgenie and removed years of internally supported code.\n200 hours\nof engineering time returned every month\n89%\nfewer after-hours pages\nHow Anton built its entire incident response in 15 hours using Rootly's Terraform provider.\n2.5 months → 15 hours\nfrom trying to build incident response to a complete Terraform deployment\n2–3 a day\nfalse alarms replaced by signal he trusts\nHow Auror replaced three tools with Rootly and cut the resolution time that the business watches.\n3 → 1\ntools consolidated\n84%\nreduction in time to close\nHow Recast Software built its entire incident practice on Rootly instead of buying three tools.\n~20%\ntime savings in manual client communication for maintenance with initial status pages\n60%\nannual savings in tooling costs\nWhy CTSO Central chose Rootly over incident.io.\n< 2 days\nto production deployment\nAutomated\ncustomer status updates\nOur time to acknowledge a critical alert went from hours to minutes. We evaluated every alerting tool out there, and nothing else matched Rootly on ease of use, scale, or price.\nPedro Espindula\nSRE\nResolution time is something we actually sell, with contractual SLAs and service credits behind it. Rootly is what makes those resolution times repeatable, so we protect the SLAs our customers are paying for.\nDarshan S\nSenior Manager of Product Support\nHow Reactiv outgrew incident.io and moved to Rootly for real AI and on-call without the upsell.\nScalable growth\nw/ unlimited on-call schedules\nAI assistance\nacross Slack, Web, Mobile\nWhy Capa replaced incident.io with Rootly.\n< 1 day\nto production ready\n46%\nreduction for commons incidents\nHow Caribou saves 200+ engineering hours a year with Rootly.\n200+\nengineering hours saved\n5 minute\nincident response SLA met\nHow Canary built incident management from scratch on Rootly while its engineering team quadrupled.\nengineering growth, no workarounds\n0→formalized\nincident practice\nWebflow shutdown PagerDuty to use Rootly to build a proactive reliability culture.\nLower\nMTTR through consistent, measurable incident workflows\nGreater\nvisibility into incident trends across teams and services\nAchievers switched from PagerDuty and productized reliability on Microsoft Teams with Rootly.\nMicrosoft Teams\nnative incident response where engineers already work\nAI summaries\nkeep stakeholders informed without interrupting responders\nKnowBe4 switched from PagerDuty and turned Incident Response into a repeatable, predictable system with Rootly.\n40%\n90%\nRootly is a big part of how we’ve reached our 99.99% of reliability.\nPaul van Liew\nDirector of Platform Engineering\nPoll Everywhere switched from PagerDuty, cut on-call tooling costs and made response faster with Rootly.\n50%\nfaster time to first response for off-hours alerts.\nfewer unnecessary wake-ups / secondary rollovers.\nHow ROLLER scales globally while keeping a lean SRE team.\n80%\nless time spent on post-mortems\n30+ countries\nsupported with a lean SRE team\nHow Upstart uses Rootly to create an incident response system that grows with them.\nincident response and coordination\nSlack-native\nincident management from a laptop or phone\nHow Lucidworks uses Rootly to create bespoke incident management for their distinct product offering.\n2 product lines\neach with tailored incident workflows\nDays\nto transition from the previous incident management tool\nHow UNiDAYS replaced a decade of PagerDuty in two weeks and opened incident response to the wider business.\nHours → minutes\nto produce an incident timeline\nEngineering-only → business-wide\noperations\ntrained incident commanders available across the organization\nShorter\nless burdensome on-call rotations by distributing incident command more broadly\nNo stories match these tags.\nYou and your teams deserve modern incident management.\nGet a demo\nGet started for free\n\n### SOURCE: enrichment://apollo.io/rootly.com\nApollo.io company record for rootly.com (retrieved 2026-11-03). Headcount: 92 employees. Latest funding: Series A round (2023-08). Technologies detected: Amazon AWS; Google Cloud; Microsoft Azure.\n\n### SOURCE: https://rootly.com/careers\nWe're hiring across engineering, design, and go-to-market. Explore open roles and help build the future of incident management at Rootly.\nRootly Careers: Open Roles in Engineering and GTM\nSkip to content\nCareers\nBuild the future of reliability with Rootly.\nWe're building the AI-native reliability platform that helps the world's best engineering teams resolve and prevent incidents, learn continuously, and sleep better.\nJoin an ambitious team that’s building the future of reliability.\nView open roles\nRootly is building the future of agentic reliability and proactive intelligence.\nThe complexities of modern technology demand a paradigm shift in how we fundamentally approach reliability.\nWe founded Rootly in 2021 with a simple belief: incident management shouldn’t be chaos. We set out building a category-defining on-call and incident response platform—with AI at the core bringing proactive intelligence to your operational data—enabling clarity, context, and structure to the moments that matter most.\nWe’re a fast-moving team obsessed with building products that make high-stakes moments feel calm, clear, and repeatable—so companies can move faster with confidence and build stronger, more reliable systems.\nOur vision is to make the world a more reliable place.\nOur mission is to become the platform that helps every company move from reactive to proactive, self-driving reliability.\nWe fundamentally believe that reliability isn’t a feature—it’s the foundation everything else stands on.\nJJ Tang\nCEO and Co-founder\nInsurance\nThe best medical, dental, vision, and life coverage for you and your dependents. We cover the annual amounts for you.\nVacation\nFlexible PTO, plus company holidays, team off-sites, and a year-end shutdown to recharge.\nCompensation\nCompetitive salary, meaningful equity in a high-growth company, and 401(k) matching for US employees.\nHybrid Work\nWe hire across the US, Canada, Europe, and Singapore—your talent matters, not your timezone. Plus free lunches at HQ!\nGrowth\nA fast-moving, high-impact environment where you have autonomy to own big problems from day one.\nEquipment\nTop-tier hardware and tools, plus an annual stipends for home offices. Get the setup you need to do your best work.\nRe-thinking candidate take-homes in the AI Era.\nAI changed what great engineering looks like. Learn why Rootly now requires AI session transcripts in take-homes — and what they reveal that code alone can't.\nRead article\nWhy and how we do work trials at Rootly.\nBuild with confidence at Rootly: learn our transparent interview process—screening, hiring manager chat, AI-era take-home, team interviews, and a paid work trial designed to create the best mutual fit.\nHow we build at Rootly.\nRootly’s mission is to help every organization become more reliable—but how we build matters as much as what we build.\nLearn the principles behind Rootly: simple but powerful design, purpose-built incident workflows, smart defaults, seamless integrations, reliability-first infrastructure, and customer-driven iteration for calm, quick response.\nWhy we love\nworking at Rootly.\n\"We operate in a highly competitive space where everything you build helps move the needle. The fact that we get to do it with such smart and awesome people makes Rootly an incredibly special place to work.\"\nIain MacKenzie\nTechnical Staff\n“Design has a real opportunity to make a difference. It’s especially rewarding to design and work on software that solves real operational problems teams face every day.”\nMarcela Havandjian Begalli\nProduct Design\n“We're solving mission-critical problems for our customers: when something breaks, we help you fix it, quickly. I love working on a team that understands the importance of this, and sees it as an opportunity to do something great.”\nKayla Thomson\nProduct\n“The best thing about working here is the people and the ownership you have. I also get the privilege to take on large, complex problems and build things that will be used by some of the biggest names in tech.”\nHussam Zaghal\nProduct Craft\n\"The best thing about working at Rootly is that everything is real. The mission matters, everyone genuinely cares, and your work actually makes a difference.\"\nSarah Crowe\n“I’m lucky to work alongside some of the smartest people in tech, building something that truly matters. As a QA Lead, I get to push quality at scale while constantly experimenting with new technologies and AI.”\nKatsiaryna Rabtsava\n“I've done more at Rootly than in all my career combined. Everyone here is extremely talented and driven to win. I've even evolved at a personal level, I now know I'm capable of more than I ever thought.”\nJorge Lainfiesta\nGo to Market\n\"I love that Rootly is a company that doesn't treat customer success as a solo function; we are backed by tasteful, intuitive products and continuous innovation which gets me excited to talk to my customers everyday.”\nAmy Song\nCustomer Success\n“I went from founding my own startup to joining Rootly, and honestly? I haven't lost a thing. The autonomy, the impact, the feeling that what you're building truly matters, it's all here.”\nSylvain Kalache\nAI Labs\n“Rootly has that rare mix of urgency and heart. Every day we help teams turn stressful incidents into calm, coordinated action, and I love being part of a crew that’s obsessed with making engineers’ lives easier.”\nAnastasiia Konovalenko\nCommunity\nSee all open roles on our job board\n\n### SOURCE: https://security.rootly.com/\nSafeBase monitors your security practices to enable you to win enterprise deals.\nRootly Trust Center | Powered by SafeBase\nTrust Center\nStart your security review\nOverview\nRootly has implemented best-in-class security practices to keep customer data safe and operates in the most regulated markets.\n100s of global organizations from fast growing startups to F500 trust Rootly to be their incident management solution of choice.\nContact:\nsecurity@rootly.com\nCompliance\nCCPA\nGDPR\nSOC 2\nRootly is reviewed and trusted by\nCisco\nCanva\nGrammarly\nWealthsimple\nFaire\nPoshmark\nShell\nCypress.io\nRivian\nSquarespace\nNVIDIA\nDocuments\nFeatured Documents\nREPORTS\nPentest Report\nSOC 2 Report\nProduct Security\nAudit Logging\nData Security\nIntegrations\nView more\nVulnerability Assessment Report\nAccess Monitoring\nData Backups\nData Erasure\nApp Security\nResponsible Disclosure\nCode Analysis\nCredential Management\nLegal\nCyber Insurance\nData Processing Agreement\nMaster Services Agreement\nAccess Control\nData Access\nLogging\nPassword Security\nInfrastructure\nAmazon Web Services\nAnti-DDoS\nBC/DR\nEndpoint Security\nDisk Encryption\nEndpoint Detection & Response\nMobile Device Management\nNetwork Security\nData Loss Prevention\nSecurity Information and Event Management\nZero Trust\nCorporate Security\nEmail Protection\nEmployee Training\nIncident Response\nPolicies\nAcceptable Use Policy\nAccess Control Policy\nAsset Management Policy\nTrust Center Updates\nNPM Supply Chain Attack\nIncidents\nAfter careful review of our infrastructure and npm dependencies, the Rootly team has determined that we are not currently impacted by the recent NPM supply chain attack disclosed on September 8, 2025, which compromised several widely used packages (e.g., debug, chalk).\nFor reference, please see the\nadvisory\nWe will continue to monitor for any updates and ensure our systems remain secure.\nCVE-2024-3094\nVulnerabilities\nAfter careful review of our infrastructure and SBOM, the Rootly team has determined that we are not currently vulnerable to the xz Vulnerability CVE-2024-3094 that were disclosed on March 29th, 2024.\nCVE-2023-34362\nAfter careful review of our infrastructure and SBOM, the Rootly team has determined that we are not currently vulnerable to the MOVEit Transfer Critical Vulnerability CVE-2023-34362 that were disclosed on June 16th, 2023.\nCVE-2022-3602 & CVE-2022-3786\nAfter careful review of our infrastructure and SBOM, the Rootly team has determined that we are not currently vulnerable to the OpenSSL 3 vulnerabilities CVE-2022-3602 and CVE-2022-3786 that were disclosed on November 1, 2022.\nCVE-2022-21449\nNone of our services are running Java 15, 17, and 18 so this vulnerability (CVE-2022-21449) is not exploitable on our side.\nIf you need help using this Trust Center, please contact us.\nContact support\nIf you think you may have discovered a vulnerability, please send us a note.\nReport issue\n\n### SOURCE: https://rootly.com/customers/capa\nCapa replaced incident.io with Rootly, went live in under a day, and reduced common incident resolution time by 46%.\nWhy Capa replaced incident.io with Rootly.\nSkip to content\nCustomers\nOn this page\nCapa is a financial infrastructure that connects Latin America to the global financial system through a single API and dashboard. The platform enables seamless cross border payments by handling local pay ins and pay outs, instant conversion between local currencies and stablecoins, and access to deep liquidity, all with full regulatory compliance and cost efficient settlement.\nFounded:\n2024, Mexico City, Mexico\nSize:\n~20\nincident.io got Capa started, and the simplicity was the point. It targeted Slack and didn’t try to do everything, and that focus is exactly why a small team adopted it quickly, including an engineer in his first job with no prior on-call background. When you’re running one or two incidents a day, that’s all you need.\nThen the business grew. Transaction volume climbed, and with it the number of incidents. Capa needed to customize alerts, get richer information out of them, shape the workflow around how the team actually worked. That’s the moment incident.io stopped being the right fit, and it happened fast.\nThe final wall was pricing. The simple tier was fine; the customization Capa now needed sat behind a step up in cost they hadn’t expected. As Juan put it, they wanted to customize a lot of things and got hit by a wall with the prices.\nWhat made the pricing wall worse was that there was no one on the other side of it. Capa never got to talk to anyone at incident.io. The path forward was a credit card field and a higher bill, not a conversation. For a team trying to decide how to grow its incident process, the absence of a relationship was its own kind of friction.\n“We hit a wall with incident.io the second we wanted to customize anything. And the worst part was there was nobody to talk to about it. Just a higher price and a credit card field. That’s a hard way to plan how you’re going to grow.”\n-Juan David Torres, CTO & Co-founder\nCapa is a regulated fintech expanding into new countries, each with its own rules. The needs on the horizon were not smaller and simpler; they were bigger; more auditability, more granular access control, more compliance. A platform that already price-walled basic customization was not going to be the one that carried them into that.\nThe common thread was incident.io is a tool to get you started. Capa had already reached the edge of what it was built for, and the next step it offered was a bill, not a partnership.\nThe same simplicity, with a team behind it\nCapa found Rootly the way a lot of teams do now, by asking an LLM for the best incident management platforms and went looking specifically for something Slack-native and simple. He’d also looked at PagerDuty, but wanted the focused, Slack-first approach incident.io had gotten him used to. Rootly was the one that matched it, and he stopped researching once he found it.\nThe move kept everything that worked and removed the wall. Rootly is just as simple to declare an incident in and just as Slack-native, so the team lost nothing on ease of use. What it added was the part incident.io withheld: a relationship. Every Rootly customer gets a shared Slack channel with the team, not just the ones who buy premium support, because Rootly doesn’t do self-serve-by-credit-card by design. Juan’s read was blunt and unprompted: the support is much better.\nThen he started building. The day before we spoke, Juan set up an alert in Rootly that fires automatically when a transaction gets stuck in a non-terminal, non-starting status, the single most common incident Capa sees. Previously, customer support had to notice the problem and manually open a ticket in a group channel to kick off the incident. Now Rootly catches it and raises it on its own. For a team deliberately growing through automation rather than headcount, that’s the shape of every win they’re after.\n“Rootly is just as simple as incident.io to get into, so we lost nothing. But now I have a team in my Slack when I need them, and I’m automating the incident we hit most instead of waiting for support to file it by hand. That’s the difference.”\nBuilt for where a regulated fintech is going\nPricing you can plan around\nThe friction that pushed Capa off incident.io was cost surprise, so the most direct outcome is the simplest one. There’s no tax on the customization a growing team inevitably needs, and no discount-now, shock-later structure waiting at renewal. For a team watching its burn while it scales volume, predictable pricing is not a nicety, it’s how the decision got made.\nA team in your Slack, not a credit card field\nThe relationship is the part Juan keeps coming back to. A shared Slack channel with the Rootly team means that when Capa wants to customize something or work through a problem, the answer is a conversation, not an upsell screen. That’s a deliberate Rootly design choice, and it’s the exact thing incident.io’s pricing wall lacked.\nAutomating the incident they hit most\nCapa’s growth plan is lean and AI-driven: grow revenue and volume, automate compliance and operational processes, keep the headcount flat. The stuck-transaction alert Juan built is the first instance of that inside Rootly, turning the most frequent incident from a manual catch into an automatic one. As Capa automates more of its operations, an incident platform that’s built to be configured and automated, rather than price-walled, compounds in value.\nRoom to grow into compliance\nThis is the part incident.io couldn’t promise. Capa is a regulated fintech moving money across borders and expanding into new markets, which means the road ahead is paved with more regulation, more auditability, and more granular access control. Rootly is built ground-up for the strictest security and governance requirements, which is why some of the most security-conscious teams in the world, including fintechs like SoFi and Wise, run on it. Capa grows into that posture on the same platform, instead of bolting on workarounds or switching tools the moment compliance gets serious.\n“We’re a regulated fintech, and every new market we enter is new compliance. I didn’t want an incident tool that prices me out the moment I customize it, or one that falls behind when the rules get harder. I wanted one that grows with us. That’s the bet with Rootly.”\nSimple is the right way to start an incident process. The harder question is what happens when simple meets a price wall, or a compliance regime in a country you’ve just entered, and there’s no one on the other end to help you through it. For a lean team planning to grow in revenue and regulation rather than headcount, that’s the whole decision. incident.io is built to get you started. Capa chose the platform built to get you started and for where it’s going next; transparent pricing, with a team in its Slack, and the governance road already paved. If you’re on incident.io and starting to feel the wall, that’s the signal, and Rootly is the platform on the other side of it, built to grow with you.\nMore customer stories\nHow Reactiv outgrew incident.io and moved to Rootly for real AI and on-call without the upsell.\nScalable growth\nw/ unlimited on-call schedules\nAI assistance\nacross Slack, Web, Mobile\nWhy CTSO Central chose Rootly over incident.io.\n< 2 days\nto production deployment\nAutomated\ncustomer status updates\nOur time to acknowledge a critical alert went from hours to minutes. We evaluated every alerting tool out there, and nothing else matched Rootly on ease of use, scale, or price.\nPedro Espindula\nSRE\n\n### SOURCE: https://rootly.com/blog\nIncident management insights, guides, and best practices from the AI and reliability experts at Rootly. Learn from SRE leaders.\nIncident Management Blog | Rootly\nSkip to content\nRootly Blog\nPerspectives on AI, engineering, and the humans keeping systems running.\nThe titanic didn't sink for just one reason\nWhy Root Cause Analysis and the Five Whys stop short, told through the Titanic disaster, and what a contributing-factors approach to incidents reveals.\nSteve Mynett\nOct 21, 2026\nIncident Response\nWhy our retrospective template doesn't ask for root cause\nBen McBratney\nHead of Incident Strategy at Rootly\nHumans of Reliability\n\"Hey Claude, where's my database?\": How an AI agent nuked production\nAlexey Grigorev\nFounder of DataTalks.Club\nWebinar\nUsing Rootly AI in your retrospectives\nKayla Thomson\nProduct Enablement at Rootly\nThe hidden cost of vibe coding an incident bot\nI built incident bots at two companies, then replaced the one that worked. What vibe coding speeds up, and the ownership costs it doesn't touch.\nOct 19, 2026\n“Every feature we added in an afternoon was a feature we'd own for years.”\ninterview\nNobody wants to review 1,000 lines of AI-generated code\nBenoit Doyon\nDavin Chia\nRob Zuber\nAnatoly Shiroglazov\nEran Kampf\nSylvain Kalache\nBen On-Call\nIf automation makes an outage worse, who’s accountable?\nGuide\nAI SRE architecture: how to build for incomplete context\nAn AI agent can have the right code and the wrong context. See how AI SRE architecture connects evidence, policy, execution, verification, and rollback.\nQuentin Rousseau\nCTO at Rootly\nCode is cheap, reliability isn’t: Owning production in the AI era\nAuthor Swizec Teller on why users buy reliable services rather than code, managing AI coding agents, writing useful logs, AI SRE benchmarks, and accountability.\nSwizec Teller\nBestselling Author\nWrite it down, replay it, ship it: why we build ERDs to build product\nAngelo Tomasco\nSep 30, 2026\nengineering story\nReplay, don't rebuild: adding week-long deferrals to a pipeline that handles millions of alerts\nOn extending a high-volume production pipeline instead of building alongside it, and the edge cases that only appear at the intersection of correct decisions\nHarneet Singh\nHow we used CRDTs to build real-time collaborative retrospectives\nA dive into how we built collaborative software with real-time features, AI assistance, and workflow automation with Y.js CRDTs).\nMichael Han\nYour next internal developer platform is a library of agent skills\nPostHog's Michael Kutsch on agent skills as an internal developer platform, team autonomy, AI SRE, and where deterministic guardrails matter.\nMichael Kutsch\nStaff SRE and Team Lead, Cloud Foundations at PostHog\nMore stories\nFilter stories\nMaking decisions with incomplete information\nSix questions an incident commander can ask to make good calls under pressure, drawn from Apollo 13, the Berlin Airlift, Everest and more.\nOct 30, 2026\nThe unofficial SRE track for KubeCon NA '26\nSeven KubeCon NA 2026 sessions for SREs, covering infrastructure testing, incident context, clock-skew debugging, GitOps failures, and hands-on recovery.\nAlexandra Chapin\nYour customers will notice before your status page does\nHow to run a status page during an incident: post within minutes, update on a set cadence, separate facts from guesses, and give comms its own role.\nOct 28, 2026\nThe most common mistakes in incident management\nTwelve incident management mistakes I see most, from declaring late to averaging MTTR, and what to do instead before the next incident starts.\nOct 23, 2026\nAudit-ready incident records: what SOC 2 auditors look for and how to evaluate tools\nHow to keep incident records ready for SOC 2 auditors: one record per incident, consistent fields, automatic timestamps and logged changes, plus tool tips.\nAdam Frank\nSep 29, 2026\nDatadog vs PagerDuty for incidents (and when to add Rootly)\nDatadog On-Call vs PagerDuty compared on paging, schedules, alert sources, status pages, retrospectives and pricing, plus when to add Rootly to either.\nSep 15, 2026\nBest incident response tools for SRE and platform engineering teams\nHow platform engineering teams should evaluate incident response tools: adoption, config as code and multi-team governance, with a scenario guide for choosing.\nBest AI incident management platforms for 2026\nA hype-free comparison of the best AI incident management platforms for 2026—what AI actually ships today and which tools do it best.\nJul 24, 2026\nCan AI actually find the root cause? Automating postmortems and RCA\nWhat automation reliably contributes to a post-incident review, what it cannot, and how to run retrospectives that produce fixes instead of documents.\nCould 2027 be the year you turn off human-in-the-loop remediation?\nWith reliability platforms as code and agents that rank probable causes from telemetry, catalog and incident history, could 2027 end human-in-the-loop fixes?\nDo AI SRE agents actually work? An honest capability assessment\nWhat AI SRE agents reliably do today, what they still get wrong, and how to evaluate a vendor claim without taking the demo at face value.\nProduct\nWhy we’re building a channel at Rootly\nRootly’s Partner Program helps MSPs, VARs, consultants, and systems integrators deliver incident response and on-call solutions with flexibility and support.\nTerence Leung\nSep 1, 2026\nStories couldn’t be loaded.\nNo stories match these filters. Try another topic or change your search.\nShow more",
+  "scraping_status": "partial",
+  "errors": [
+   "https://rootly.com/trust: access_restricted"
+  ]
+ },
+ "extraction": {
+  "company_profile": {
+   "company_name": "Rootly",
+   "domain": "rootly.com",
+   "business_model": "B2B SaaS (rule-based assessment)",
+   "business_description": {
+    "finding": "Business description (homepage / meta description)",
+    "source_url": "https://rootly.com/",
+    "excerpt": "The all-in-one AI incident management platform for fast-moving engineering teams to detect, manage, resolve, and learn from incidents faster.",
+    "evidence_type": "explicit",
+    "confidence": 0.7,
+    "category": "other"
+   },
+   "is_saas": true,
+   "is_saas_evidence": [
+    {
+     "finding": "Self-serve free trial / sign-up",
+     "source_url": "https://rootly.com/",
+     "excerpt": "Get started for free",
+     "evidence_type": "explicit",
+     "confidence": 0.6,
+     "category": "saas_indicator"
+    },
+    {
+     "finding": "Product demo / sales-led motion",
+     "source_url": "https://rootly.com/",
+     "excerpt": "Book a demo",
+     "evidence_type": "explicit",
+     "confidence": 0.6,
+     "category": "saas_indicator"
+    },
+    {
+     "finding": "Developer API",
+     "source_url": "https://rootly.com/",
+     "excerpt": "Connect all your existing tools—Slack, Jira, Zoom—and extend further with our Terraform provider, API, or MCP server.",
+     "evidence_type": "inferred",
+     "confidence": 0.4,
+     "category": "saas_indicator"
+    },
+    {
+     "finding": "Product integrations",
+     "source_url": "https://rootly.com/",
+     "excerpt": "Explore all integrations",
+     "evidence_type": "inferred",
+     "confidence": 0.4,
+     "category": "saas_indicator"
+    },
+    {
+     "finding": "Platform positioning",
+     "source_url": "https://rootly.com/",
+     "excerpt": "The all-in-one AI incident management platform for fast-moving engineering teams to detect, manage, resolve, and learn from incidents faster.",
+     "evidence_type": "inferred",
+     "confidence": 0.4,
+     "category": "saas_indicator"
+    },
+    {
+     "finding": "Workflow / automation product",
+     "source_url": "https://rootly.com/",
+     "excerpt": "Workflows →",
+     "evidence_type": "inferred",
+     "confidence": 0.4,
+     "category": "saas_indicator"
+    }
+   ],
+   "employee_range": {
+    "value": "92 employees",
+    "evidence": {
+     "finding": "Headcount mention: 92 employees",
+     "source_url": "enrichment://apollo.io/rootly.com",
+     "excerpt": "Headcount: 92 employees.",
+     "evidence_type": "explicit",
+     "confidence": 0.7,
+     "category": "other"
+    }
+   },
+   "funding_stage": {
+    "value": "Series A",
+    "evidence": {
+     "finding": "Funding announcement: Series A round",
+     "source_url": "enrichment://apollo.io/rootly.com",
+     "excerpt": "Latest funding: Series A round (2023-08).",
+     "evidence_type": "explicit",
+     "confidence": 0.42,
+     "category": "funding"
+    }
+   },
+   "enterprise_customers": [
+    {
+     "finding": "Customer reference: Loved by fast-growing startups and the Fortune 500",
+     "source_url": "https://rootly.com/",
+     "excerpt": "Loved by fast-growing startups and the Fortune 500.",
+     "evidence_type": "inferred",
+     "confidence": 0.55,
+     "category": "enterprise_customer"
+    },
+    {
+     "finding": "Customer stories page exists: Rootly | Customer Stories",
+     "source_url": "https://rootly.com/customers",
+     "excerpt": "See how teams from the Fortune 100 to fast-growing startups use Rootly for incident response, on-call, retrospectives, and AI SRE.",
+     "evidence_type": "explicit",
+     "confidence": 0.6,
+     "category": "enterprise_customer"
+    }
+   ],
+   "customer_industries": [
+    {
+     "finding": "Serves or targets healthcare",
+     "source_url": "https://rootly.com/security",
+     "excerpt": "SOC2, HIPAA, GDPR compliant with private incidents, audit logs, and granular RBAC.",
+     "evidence_type": "inferred",
+     "confidence": 0.55,
+     "category": "regulated_industry"
+    },
+    {
+     "finding": "Serves or targets financial services",
+     "source_url": "https://security.rootly.com/",
+     "excerpt": "Cyber Insurance",
+     "evidence_type": "inferred",
+     "confidence": 0.55,
+     "category": "regulated_industry"
+    }
+   ],
+   "tech_stack": []
+  },
+  "compliance_signals": {
+   "soc2_mentions": [
+    {
+     "finding": "Mentions SOC2 — appears to be held",
+     "source_url": "https://rootly.com/security",
+     "excerpt": "SOC2, HIPAA, GDPR compliant with private incidents, audit logs, and granular RBAC.",
+     "evidence_type": "explicit",
+     "confidence": 0.8,
+     "category": "certification_held"
+    },
+    {
+     "finding": "Mentions SOC 2 — appears to be held",
+     "source_url": "https://security.rootly.com/",
+     "excerpt": "SOC 2 Report",
+     "evidence_type": "explicit",
+     "confidence": 0.8,
+     "category": "certification_held"
+    },
+    {
+     "finding": "Mentions SOC 2 (in a blog/news post — may not describe the company itself)",
+     "source_url": "https://rootly.com/blog",
+     "excerpt": "Audit-ready incident records: what SOC 2 auditors look for and how to evaluate tools",
+     "evidence_type": "inferred",
+     "confidence": 0.35,
+     "category": "compliance_mention"
+    }
+   ],
+   "iso27001_mentions": [],
+   "gdpr_mentions": [
+    {
+     "finding": "Mentions GDPR",
+     "source_url": "https://rootly.com/security",
+     "excerpt": "SOC2, HIPAA, GDPR compliant with private incidents, audit logs, and granular RBAC.",
+     "evidence_type": "explicit",
+     "confidence": 0.6,
+     "category": "compliance_mention"
+    }
+   ],
+   "security_pages": [
+    {
+     "finding": "Security control described: audit logs",
+     "source_url": "https://rootly.com/security",
+     "excerpt": "SOC2, HIPAA, GDPR compliant with private incidents, audit logs, and granular RBAC.",
+     "evidence_type": "explicit",
+     "confidence": 0.6,
+     "category": "security_page"
+    },
+    {
+     "finding": "Security control described: Audit log",
+     "source_url": "https://rootly.com/security",
+     "excerpt": "Audit log",
+     "evidence_type": "explicit",
+     "confidence": 0.6,
+     "category": "security_page"
+    },
+    {
+     "finding": "Security control described: Pentest",
+     "source_url": "https://security.rootly.com/",
+     "excerpt": "Pentest Report",
+     "evidence_type": "explicit",
+     "confidence": 0.6,
+     "category": "security_page"
+    }
+   ],
+   "trust_centre": true,
+   "trust_centre_evidence": [
+    {
+     "finding": "References a Trust Center",
+     "source_url": "https://security.rootly.com/",
+     "excerpt": "Rootly Trust Center | Powered by SafeBase",
+     "evidence_type": "explicit",
+     "confidence": 0.7,
+     "category": "trust_centre"
+    }
+   ],
+   "compliance_hiring": [],
+   "enterprise_security_signals": [
+    {
+     "finding": "Enterprise orientation: Fortune 500",
+     "source_url": "https://rootly.com/",
+     "excerpt": "Loved by fast-growing startups and the Fortune 500.",
+     "evidence_type": "explicit",
+     "confidence": 0.65,
+     "category": "enterprise_orientation"
+    },
+    {
+     "finding": "Enterprise orientation: Enterprise-grade",
+     "source_url": "https://rootly.com/security",
+     "excerpt": "Enterprise-grade incident management for security teams.",
+     "evidence_type": "explicit",
+     "confidence": 0.65,
+     "category": "enterprise_orientation"
+    },
+    {
+     "finding": "Security review / procurement process: security review",
+     "source_url": "https://security.rootly.com/",
+     "excerpt": "Start your security review",
+     "evidence_type": "explicit",
+     "confidence": 0.7,
+     "category": "security_review_pressure"
+    }
+   ]
+  },
+  "growth_signals": [
+   {
+    "finding": "Funding announcement: Series A round",
+    "source_url": "enrichment://apollo.io/rootly.com",
+    "excerpt": "Latest funding: Series A round (2023-08).",
+    "evidence_type": "explicit",
+    "confidence": 0.42,
+    "category": "funding"
+   }
+  ],
+  "other_signals": [
+   {
+    "finding": "Mentions additional framework HIPAA",
+    "source_url": "https://rootly.com/security",
+    "excerpt": "SOC2, HIPAA, GDPR compliant with private incidents, audit logs, and granular RBAC.",
+    "evidence_type": "explicit",
+    "confidence": 0.7,
+    "category": "compliance_mention"
+   }
+  ],
+  "potential_buying_moments": [
+   {
+    "signal": "Mentions SOC2 — appears to be held",
+    "category": "certification_held",
+    "source_url": "https://rootly.com/security",
+    "evidence": "SOC2, HIPAA, GDPR compliant with private incidents, audit logs, and granular RBAC.",
+    "why_it_matters": "An existing certification must be renewed every year and usually expands to further frameworks as the customer base grows; continuous compliance becomes the ongoing cost.",
+    "confidence": 0.8,
+    "requires_further_research": false,
+    "hook_phrase": "your security page says \"SOC2, HIPAA, GDPR compliant with private incidents, audit logs, and granular RBAC\""
+   },
+   {
+    "signal": "References a Trust Center",
+    "category": "trust_centre",
+    "source_url": "https://security.rootly.com/",
+    "evidence": "Rootly Trust Center | Powered by SafeBase",
+    "why_it_matters": "A trust centre signals that customers are actively asking for security documentation during deals.",
+    "confidence": 0.7,
+    "requires_further_research": false,
+    "hook_phrase": "you've published a trust centre"
+   },
+   {
+    "signal": "Security review / procurement process: security review",
+    "category": "security_review_pressure",
+    "source_url": "https://security.rootly.com/",
+    "evidence": "Start your security review",
+    "why_it_matters": "References to security questionnaires, DPAs or procurement suggest deals already pass through vendor security review.",
+    "confidence": 0.7,
+    "requires_further_research": false,
+    "hook_phrase": "your trust centre says \"Start your security review\""
+   },
+   {
+    "signal": "Enterprise orientation: Fortune 500",
+    "category": "enterprise_orientation",
+    "source_url": "https://rootly.com/",
+    "evidence": "Loved by fast-growing startups and the Fortune 500.",
+    "why_it_matters": "Selling to enterprises almost always triggers SOC 2 / ISO 27001 requests in procurement.",
+    "confidence": 0.65,
+    "requires_further_research": false,
+    "hook_phrase": "your homepage says \"Loved by fast-growing startups and the Fortune 500\""
+   },
+   {
+    "signal": "Customer stories page exists: Rootly | Customer Stories",
+    "category": "enterprise_customer",
+    "source_url": "https://rootly.com/customers",
+    "evidence": "See how teams from the Fortune 100 to fast-growing startups use Rootly for incident response, on-call, retrospectives, and AI SRE.",
+    "why_it_matters": "Named larger customers suggest the company is already exposed to enterprise security requirements.",
+    "confidence": 0.6,
+    "requires_further_research": false,
+    "hook_phrase": "your customer stories features customer work with larger teams"
+   },
+   {
+    "signal": "Serves or targets healthcare",
+    "category": "regulated_industry",
+    "source_url": "https://rootly.com/security",
+    "evidence": "SOC2, HIPAA, GDPR compliant with private incidents, audit logs, and granular RBAC.",
+    "why_it_matters": "Customers in regulated industries (finance, healthcare, public sector) routinely require formal attestations from vendors.",
+    "confidence": 0.55,
+    "requires_further_research": true,
+    "hook_phrase": "you work with customers in healthcare"
+   },
+   {
+    "signal": "Funding announcement: Series A round",
+    "category": "funding",
+    "source_url": "enrichment://apollo.io/rootly.com",
+    "evidence": "Latest funding: Series A round (2023-08).",
+    "why_it_matters": "A new round usually funds go-to-market expansion into larger accounts, which brings security reviews with it.",
+    "confidence": 0.42,
+    "requires_further_research": true,
+    "hook_phrase": "your recent Series A announcement"
+   }
+  ],
+  "missing_information": [
+   "security_hiring: Security, compliance or engineering hiring activity"
+  ],
+  "contradictory_information": [],
+  "provenance": "deterministic_fallback"
+ },
+ "extraction_notes": [
+  "Claude not configured — deterministic fallback extraction (not AI-verified)."
+ ],
+ "qualification": {
+  "qualified": true,
+  "decision_status": "qualified",
+  "recommended_action": "outreach",
+  "icp_fit_score": 80,
+  "buying_timing_score": 39,
+  "evidence_confidence": 0.74,
+  "icp_breakdown": [
+   {
+    "criterion": "SaaS business model",
+    "max_points": 25,
+    "points": 22.5,
+    "rationale": "SaaS model supported by 6 indicator(s).",
+    "evidence_ids": [
+     "bcc558f5e9",
+     "135ee99d81",
+     "afca70acf5",
+     "51888a39c4",
+     "44d4738607",
+     "df09c930b5"
+    ]
+   },
+   {
+    "criterion": "Relevant growth stage (Series A–C)",
+    "max_points": 15,
+    "points": 7.4,
+    "rationale": "Explicit Series A — inside Sprinto's sweet spot.",
+    "evidence_ids": [
+     "9ea8ee1ab8",
+     "4a0c2560a1"
+    ]
+   },
+   {
+    "criterion": "Enterprise customer orientation",
+    "max_points": 20,
+    "points": 20.0,
+    "rationale": "4 enterprise reference(s) / enterprise-tier signals.",
+    "evidence_ids": [
+     "eab89c40bb",
+     "0b501829d6",
+     "056bf5ac60",
+     "399039550a"
+    ]
+   },
+   {
+    "criterion": "Relevant customer industry",
+    "max_points": 10,
+    "points": 10.0,
+    "rationale": "Serves regulated industries: healthcare, financial services",
+    "evidence_ids": [
+     "562dba2ff5",
+     "ed254e56dd"
+    ]
+   },
+   {
+    "criterion": "Company scaling signals",
+    "max_points": 10,
+    "points": 0.0,
+    "rationale": "No scaling signals observed.",
+    "evidence_ids": []
+   },
+   {
+    "criterion": "Security / compliance complexity",
+    "max_points": 20,
+    "points": 20.0,
+    "rationale": "7 security/compliance artefact(s) on the site.",
+    "evidence_ids": [
+     "76a871df87",
+     "9e8083a358",
+     "16ae7060f6",
+     "861e451534",
+     "1ebf0e9702",
+     "4260150cd6",
+     "4f69184f9d"
+    ]
+   }
+  ],
+  "timing_breakdown": [
+   {
+    "criterion": "Explicit SOC 2 / ISO 27001 / audit requirement",
+    "max_points": 30,
+    "points": 19.0,
+    "rationale": "Certification already held — renewal and multi-framework expansion, not a first audit.",
+    "evidence_ids": [
+     "1ebf0e9702",
+     "4260150cd6",
+     "4f69184f9d"
+    ]
+   },
+   {
+    "criterion": "Enterprise security review / procurement pressure",
+    "max_points": 25,
+    "points": 8.4,
+    "rationale": "1 reference(s) to security reviews, DPAs or procurement.",
+    "evidence_ids": [
+     "00b1c9de87"
+    ]
+   },
+   {
+    "criterion": "Security or compliance hiring",
+    "max_points": 20,
+    "points": 0.0,
+    "rationale": "No security roles found.",
+    "evidence_ids": []
+   },
+   {
+    "criterion": "Trust centre or compliance activity",
+    "max_points": 10,
+    "points": 8.2,
+    "rationale": "Trust centre published.",
+    "evidence_ids": [
+     "574a3c7827"
+    ]
+   },
+   {
+    "criterion": "Recent enterprise expansion / scaling",
+    "max_points": 15,
+    "points": 3.4,
+    "rationale": "1 expansion / funding signal(s).",
+    "evidence_ids": [
+     "9ea8ee1ab8"
+    ]
+   }
+  ],
+  "penalties": [],
+  "qualification_reasoning": [
+   "Evidence Map → QUALIFY: SaaS, in the growth band, and preparing for an audit — all backed by cited evidence.",
+   "Scores: ICP 80/100, timing 39/100, evidence confidence 0.74.",
+   "Biggest ICP drivers: SaaS business model (22.5/25) — SaaS model supported by 6 indicator(s).; Enterprise customer orientation (20/20) — 4 enterprise reference(s) / enterprise-tier signals.",
+   "Biggest timing drivers: Explicit SOC 2 / ISO 27001 / audit requirement (19/30) — Certification already held — renewal and multi-framework expansion, not a first audit.; Enterprise security review / procurement pressure (8.4/25) — 1 reference(s) to security reviews, DPAs or procurement.",
+   "Extraction ran in deterministic fallback mode (Claude not used); confidence capped at 0.75. Results are rule-based, not AI-verified."
+  ],
+  "positive_signals": [
+   "SaaS business model: SaaS model supported by 6 indicator(s). (+22.5/25)",
+   "Relevant growth stage (Series A–C): Explicit Series A — inside Sprinto's sweet spot. (+7.4/15)",
+   "Enterprise customer orientation: 4 enterprise reference(s) / enterprise-tier signals. (+20/20)",
+   "Relevant customer industry: Serves regulated industries: healthcare, financial services (+10/10)",
+   "Security / compliance complexity: 7 security/compliance artefact(s) on the site. (+20/20)",
+   "Explicit SOC 2 / ISO 27001 / audit requirement: Certification already held — renewal and multi-framework expansion, not a first audit. (+19/30)",
+   "Enterprise security review / procurement pressure: 1 reference(s) to security reviews, DPAs or procurement. (+8.4/25)",
+   "Trust centre or compliance activity: Trust centre published. (+8.2/10)",
+   "Recent enterprise expansion / scaling: 1 expansion / funding signal(s). (+3.4/15)"
+  ],
+  "negative_signals": [
+   "Company scaling signals: No scaling signals observed.",
+   "Security or compliance hiring: No security roles found."
+  ],
+  "missing_information": [
+   "security_hiring: Security, compliance or engineering hiring activity"
+  ],
+  "risks_and_uncertainty": [
+   "8 of 24 evidence items are inferred rather than explicitly stated.",
+   "Unknown: Security, compliance or engineering hiring activity.",
+   "1 evidence item(s) reference older years — may be outdated (e.g. 'Latest funding: Series A round (2023-08).').",
+   "Company already holds SOC 2 — the conversation is about continuous compliance / extra frameworks, not a first audit.",
+   "Keyword rules can misread context (e.g. 'SOC 2' in a blog post about a customer, not the company itself)."
+  ],
+  "secondary_research_performed": true,
+  "research_rounds": 1,
+  "provenance": "deterministic_fallback",
+  "gate_decision": "QUALIFY",
+  "evidence_map": [
+   {
+    "key": "saas",
+    "question": "Is it a SaaS business?",
+    "core": true,
+    "answer": "yes",
+    "basis": "Subscription-software indicators found (pricing/trial/login/API).",
+    "evidence": [
+     "\"Get started for free\" — https://rootly.com/",
+     "\"Book a demo\" — https://rootly.com/"
+    ],
+    "tries_used": 1,
+    "limit": 3,
+    "if_unanswered": "Flag at review gate",
+    "short_circuit_hit": null
+   },
+   {
+    "key": "growth_stage",
+    "question": "Is it Series A–C / 50–200 employees?",
+    "core": true,
+    "answer": "yes",
+    "basis": "Inside the Series A–C / 50–200 employee band (Series A, 92 employees).",
+    "evidence": [
+     "\"Latest funding: Series A round (2023-08).\" — enrichment://apollo.io/rootly.com",
+     "\"Headcount: 92 employees.\" — enrichment://apollo.io/rootly.com"
+    ],
+    "tries_used": 2,
+    "limit": 3,
+    "if_unanswered": "Flag at review gate",
+    "short_circuit_hit": null
+   },
+   {
+    "key": "audit_intent",
+    "question": "Is it preparing for an audit (SOC 2 / ISO 27001)?",
+    "core": true,
+    "answer": "yes",
+    "basis": "Audit work, compliance hiring or security-review pressure observed.",
+    "evidence": [
+     "\"Start your security review\" — https://security.rootly.com/"
+    ],
+    "tries_used": 3,
+    "limit": 4,
+    "if_unanswered": "Nurture (right company, wrong time)",
+    "short_circuit_hit": null
+   },
+   {
+    "key": "clients",
+    "question": "Does it have >50 clients / larger customers?",
+    "core": false,
+    "answer": "yes",
+    "basis": "Customer base of meaningful size / named larger customers.",
+    "evidence": [
+     "\"Loved by fast-growing startups and the Fortune 500.\" — https://rootly.com/",
+     "\"See how teams from the Fortune 100 to fast-growing startups use Rootly for incident response, on-call, retrospectives, and AI SRE.\" — https://rootly.com/customers"
+    ],
+    "tries_used": 3,
+    "limit": 2,
+    "if_unanswered": "Neutral",
+    "short_circuit_hit": null
+   },
+   {
+    "key": "industry",
+    "question": "Does it serve a regulated industry?",
+    "core": false,
+    "answer": "yes",
+    "basis": "Serves regulated buyers: financial services, healthcare.",
+    "evidence": [
+     "\"SOC2, HIPAA, GDPR compliant with private incidents, audit logs, and granular RBAC.\" — https://rootly.com/security",
+     "\"Cyber Insurance\" — https://security.rootly.com/"
+    ],
+    "tries_used": 2,
+    "limit": 1,
+    "if_unanswered": "Neutral",
+    "short_circuit_hit": null
+   },
+   {
+    "key": "cloud_stack",
+    "question": "Is it on AWS / GCP / Azure?",
+    "core": false,
+    "answer": "yes",
+    "basis": "AWS in the technologies list of Apollo.io company record for rootly.com.",
+    "evidence": [
+     "\"Technologies detected: Amazon AWS\" — enrichment://apollo.io/rootly.com"
+    ],
+    "tries_used": 3,
+    "limit": 2,
+    "if_unanswered": "Neutral",
+    "short_circuit_hit": null
+   }
+  ],
+  "review_flags": []
+ },
+ "research_rounds": [
+  {
+   "round": 1,
+   "missing_before": [
+    "Is it hiring for security, compliance or engineering?",
+    "Is there any evidence compliance matters right now?"
+   ],
+   "pages_targeted": [
+    "https://rootly.com/careers [careers] — Is it hiring for security, compliance or engineering?, Is there any evidence compliance matters right now?",
+    "https://security.rootly.com/ [security] — Is there any evidence compliance matters right now?",
+    "https://rootly.com/customers/capa [customers] — Is there any evidence compliance matters right now?",
+    "https://rootly.com/blog [news] — Is there any evidence compliance matters right now?"
+   ],
+   "pages_successfully_read": [
+    "https://rootly.com/careers",
+    "https://security.rootly.com/",
+    "https://rootly.com/customers/capa",
+    "https://rootly.com/blog"
+   ],
+   "new_findings": [
+    "Serves or targets financial services (https://security.rootly.com/)",
+    "Mentions SOC 2 — appears to be held (https://security.rootly.com/)",
+    "Mentions SOC 2 (in a blog/news post — may not describe the company itself) (https://rootly.com/blog)",
+    "Security control described: Pentest (https://security.rootly.com/)",
+    "References a Trust Center (https://security.rootly.com/)",
+    "Security review / procurement process: security review (https://security.rootly.com/)"
+   ],
+   "icp_before": 73,
+   "icp_after": 80,
+   "timing_before": 20,
+   "timing_after": 39,
+   "decision_before": "not_qualified",
+   "decision_after": "qualified",
+   "what_changed": "ICP 73→80, timing 20→39, decision not_qualified→qualified. 6 new evidence item(s)."
+  }
+ ],
+ "research_notes": [
+  "Stopped before round 2: Decision already well supported."
+ ],
+ "contact_selection": {
+  "status": "selected",
+  "contact": {
+   "first_name": "Quentin",
+   "last_name": "Rousseau",
+   "full_name": "Quentin Rousseau",
+   "job_title": "CTO and Co-founder",
+   "email": null,
+   "email_confidence": null,
+   "verification_status": null,
+   "department": null,
+   "seniority": null,
+   "linkedin_url": null,
+   "source": "Company website (team page)",
+   "source_url": "https://rootly.com/about"
+  },
+  "role_family": "CTO",
+  "selection_reasoning": "Quentin Rousseau, CTO and Co-founder (relevance 67.0): CTO: accountable for technical controls and usually sponsors the first SOC 2. A security function exists, so the CTO is one step removed from day-to-day compliance. No email address available — reachable only after manual verification. Preferred over JJ Tang (CEO and Co-founder, score 40.0). Email not yet verified — the test preview will show the prospect address as unavailable.",
+  "alternative_contacts": [
+   {
+    "contact": {
+     "first_name": "JJ",
+     "last_name": "Tang",
+     "full_name": "JJ Tang",
+     "job_title": "CEO and Co-founder",
+     "email": null,
+     "email_confidence": null,
+     "verification_status": null,
+     "department": null,
+     "seniority": null,
+     "linkedin_url": null,
+     "source": "Company website (team page)",
+     "source_url": "https://rootly.com/about"
+    },
+    "relevance_score": 40.0,
+    "role_family": "CEO / Founder",
+    "reasons": [
+     "CEO / Founder: final sponsor in small companies, but far from the evidence work.",
+     "No email address available — reachable only after manual verification."
+    ]
+   }
+  ],
+  "providers_tried": [
+   "Manual mapping (Apollo / research)",
+   "Company website (team page)"
+  ],
+  "provider_notes": [
+   "Hunter.io skipped: HUNTER_API_KEY not set.",
+   "Manual mapping returned 0 contact(s)",
+   "Company website listed 2 named leader(s)"
+  ]
+ },
+ "pain_points": {
+  "pain_points": [
+   {
+    "pain_point": "Security questionnaires and vendor reviews slowing enterprise deals",
+    "basis": "observed",
+    "reasoning": "The site points to an enterprise motion (security review); enterprise buyers send security questionnaires that usually land with the CTO and Co-founder.",
+    "supporting_evidence": [
+     "\"Start your security review\" — https://security.rootly.com/",
+     "\"Rootly Trust Center | Powered by SafeBase\" — https://security.rootly.com/",
+     "\"Loved by fast-growing startups and the Fortune 500.\" — https://rootly.com/"
+    ],
+    "confidence": 0.9
+   },
+   {
+    "pain_point": "Keeping SOC 2 / ISO 27001 controls continuously audit-ready as the company scales",
+    "basis": "observed",
+    "reasoning": "Rootly already references SOC 2; certifications must be re-evidenced every year while headcount and systems grow (Mentions SOC2 — appears to be held).",
+    "supporting_evidence": [
+     "\"SOC2, HIPAA, GDPR compliant with private incidents, audit logs, and granular RBAC.\" — https://rootly.com/security",
+     "\"SOC 2 Report\" — https://security.rootly.com/",
+     "\"Latest funding: Series A round (2023-08).\" — enrichment://apollo.io/rootly.com"
+    ],
+    "confidence": 0.87
+   }
+  ],
+  "provenance": "deterministic_fallback"
+ },
+ "email": {
+  "recipient_name": "Quentin Rousseau",
+  "recipient_email": null,
+  "subject": "security reviews at Rootly",
+  "subject_candidates": [
+   "security reviews at Rootly",
+   "Rootly and SOC 2",
+   "question on security reviews"
+  ],
+  "subject_choice_reason": "Chosen for specificity to the observed signal and brevity (score 4 vs 4, 3).",
+  "email_body": "Hi Quentin,\n\nNoticed your trust centre says \"Start your security review\". That usually means security questionnaires sit right inside the sales cycle.\n\nAre security questionnaires starting to slow down your larger deals?\n\nSprinto automates evidence collection and continuous control monitoring for SOC 2, ISO 27001 and GDPR, so audit prep stops being a side project for engineering. If it's relevant, would a 20-minute conversation be useful?\n\nBest,\nSprinto Growth Team",
+  "personalisation_hook": "your trust centre says \"Start your security review\"",
+  "hook_source_url": "https://security.rootly.com/",
+  "pain_point_used": "Security questionnaires and vendor reviews slowing enterprise deals",
+  "why_this_email_was_written": "Security review / procurement process: security review (https://security.rootly.com/) suggests references to security questionnaires, DPAs or procurement suggest deals already pass through vendor security review. Quentin Rousseau (CTO and Co-founder) is the likely owner of 'Security questionnaires and vendor reviews slowing enterprise deals'.",
+  "evidence_to_email_trace": [
+   {
+    "sentence": "Noticed your trust centre says \"Start your security review\".",
+    "purpose": "Website observation (hook)",
+    "evidence": "Start your security review",
+    "source_url": "https://security.rootly.com/"
+   },
+   {
+    "sentence": "That usually means security questionnaires sit right inside the sales cycle.",
+    "purpose": "Business implication of the observation",
+    "evidence": "References to security questionnaires, DPAs or procurement suggest deals already pass through vendor security review.",
+    "source_url": "https://security.rootly.com/"
+   },
+   {
+    "sentence": "Are security questionnaires starting to slow down your larger deals?",
+    "purpose": "Role-specific challenge (observed)",
+    "evidence": "\"Start your security review\" — https://security.rootly.com/; \"Rootly Trust Center | Powered by SafeBase\" — https://security.rootly.com/",
+    "source_url": "https://security.rootly.com/"
+   },
+   {
+    "sentence": "Sprinto automates evidence collection and continuous control monitoring for SOC 2, ISO 27001 and GDPR, so audit prep stops being a side project for engineering.",
+    "purpose": "Relevant Sprinto value proposition (core product, no extra claims)",
+    "evidence": "",
+    "source_url": ""
+   },
+   {
+    "sentence": "If it's relevant, would a 20-minute conversation be useful?",
+    "purpose": "Single low-pressure CTA",
+    "evidence": "",
+    "source_url": ""
+   }
+  ],
+  "quality_checks": {
+   "length_60_110_words": true,
+   "greets_by_first_name": true,
+   "hook_is_grounded_in_evidence": true,
+   "no_banned_phrases": true,
+   "no_exclamation_marks": true,
+   "single_cta": true,
+   "no_unsupported_sprinto_claims": true
+  },
+  "word_count": 64,
+  "provenance": "deterministic_fallback"
+ },
+ "dispatch": {
+  "status": "pending_review",
+  "delivered_to": null,
+  "preview_path": "/Users/anishasarkar/sprinto-case-study/sprinto-signal-engine/output/review/rootly-com.txt",
+  "message_id": null,
+  "detail": "Waiting for a human at the review gate."
+ },
+ "errors": {},
+ "ledger": {
+  "company": "Rootly",
+  "domain": "rootly.com",
+  "decision_status": "qualified",
+  "recommended_action": "outreach",
+  "icp_fit_score": 80,
+  "buying_timing_score": 39,
+  "evidence_confidence": 0.74,
+  "gate_decision": "QUALIFY",
+  "evidence_map": {
+   "saas": "yes",
+   "growth_stage": "yes",
+   "audit_intent": "yes",
+   "clients": "yes",
+   "industry": "yes",
+   "cloud_stack": "yes"
+  },
+  "review_flags": [],
+  "provenance": "deterministic_fallback",
+  "why_this_company": [
+   "SaaS business model +22.5/25: SaaS model supported by 6 indicator(s). [bcc558f5e9] \"Get started for free\" (https://rootly.com/); [135ee99d81] \"Book a demo\" (https://rootly.com/)",
+   "Relevant growth stage (Series A–C) +7.4/15: Explicit Series A — inside Sprinto's sweet spot. [9ea8ee1ab8] \"Latest funding: Series A round (2023-08).\" (enrichment://apollo.io/rootly.com); [4a0c2560a1] \"Headcount: 92 employees.\" (enrichment://apollo.io/rootly.com)",
+   "Enterprise customer orientation +20/20: 4 enterprise reference(s) / enterprise-tier signals. [eab89c40bb] \"Loved by fast-growing startups and the Fortune 500.\" (https://rootly.com/); [0b501829d6] \"See how teams from the Fortune 100 to fast-growing startups use Rootly for incident response, on-call, retrosp\" (https://rootly.com/customers)",
+   "Relevant customer industry +10/10: Serves regulated industries: healthcare, financial services [562dba2ff5] \"SOC2, HIPAA, GDPR compliant with private incidents, audit logs, and granular RBAC.\" (https://rootly.com/security); [ed254e56dd] \"Cyber Insurance\" (https://security.rootly.com/)",
+   "Security / compliance complexity +20/20: 7 security/compliance artefact(s) on the site. [76a871df87] \"SOC2, HIPAA, GDPR compliant with private incidents, audit logs, and granular RBAC.\" (https://rootly.com/security); [9e8083a358] \"Audit log\" (https://rootly.com/security)"
+  ],
+  "why_now": [
+   "Explicit SOC 2 / ISO 27001 / audit requirement +19/30: Certification already held — renewal and multi-framework expansion, not a first audit. [1ebf0e9702] \"SOC2, HIPAA, GDPR compliant with private incidents, audit logs, and granular RBAC.\" (https://rootly.com/security); [4260150cd6] \"SOC 2 Report\" (https://security.rootly.com/)",
+   "Enterprise security review / procurement pressure +8.4/25: 1 reference(s) to security reviews, DPAs or procurement. [00b1c9de87] \"Start your security review\" (https://security.rootly.com/)",
+   "Trust centre or compliance activity +8.2/10: Trust centre published. [574a3c7827] \"Rootly Trust Center | Powered by SafeBase\" (https://security.rootly.com/)",
+   "Recent enterprise expansion / scaling +3.4/15: 1 expansion / funding signal(s). [9ea8ee1ab8] \"Latest funding: Series A round (2023-08).\" (enrichment://apollo.io/rootly.com)",
+   "Buying moment — Mentions SOC2 — appears to be held: An existing certification must be renewed every year and usually expands to further frameworks as the customer base grows; continuous compliance becomes the ongoing cost. (https://rootly.com/security)",
+   "Buying moment — References a Trust Center: A trust centre signals that customers are actively asking for security documentation during deals. (https://security.rootly.com/)",
+   "Buying moment — Security review / procurement process: security review: References to security questionnaires, DPAs or procurement suggest deals already pass through vendor security review. (https://security.rootly.com/)"
+  ],
+  "what_could_make_this_wrong": [
+   "8 of 24 evidence items are inferred rather than explicitly stated.",
+   "Unknown: Security, compliance or engineering hiring activity.",
+   "1 evidence item(s) reference older years — may be outdated (e.g. 'Latest funding: Series A round (2023-08).').",
+   "Company already holds SOC 2 — the conversation is about continuous compliance / extra frameworks, not a first audit.",
+   "Keyword rules can misread context (e.g. 'SOC 2' in a blog post about a customer, not the company itself)."
+  ],
+  "why_this_person": [
+   "Quentin Rousseau, CTO and Co-founder (relevance 67.0): CTO: accountable for technical controls and usually sponsors the first SOC 2. A security function exists, so the CTO is one step removed from day-to-day compliance. No email address available — reachable only after manual verification. Preferred over JJ Tang (CEO and Co-founder, score 40.0). Email not yet verified — the test preview will show the prospect address as unavailable.",
+   "Alternative: JJ Tang (CEO and Co-founder) relevance 40.0 — CEO / Founder: final sponsor in small companies, but far from the evidence work."
+  ],
+  "why_this_pain_point": [
+   "Security questionnaires and vendor reviews slowing enterprise deals [observed, confidence 0.9]: The site points to an enterprise motion (security review); enterprise buyers send security questionnaires that usually land with the CTO and Co-founder. Evidence: \"Start your security review\" — https://security.rootly.com/ | \"Rootly Trust Center | Powered by SafeBase\" — https://security.rootly.com/",
+   "Keeping SOC 2 / ISO 27001 controls continuously audit-ready as the company scales [observed, confidence 0.87]: Rootly already references SOC 2; certifications must be re-evidenced every year while headcount and systems grow (Mentions SOC2 — appears to be held). Evidence: \"SOC2, HIPAA, GDPR compliant with private incidents, audit logs, and granular RBAC.\" — https://rootly.com/security | \"SOC 2 Report\" — https://security.rootly.com/"
+  ],
+  "why_this_email": [
+   "Hook: your trust centre says \"Start your security review\" (https://security.rootly.com/)",
+   "Pain point used: Security questionnaires and vendor reviews slowing enterprise deals",
+   "Security review / procurement process: security review (https://security.rootly.com/) suggests references to security questionnaires, DPAs or procurement suggest deals already pass through vendor security review. Quentin Rousseau (CTO and Co-founder) is the likely owner of 'Security questionnaires and vendor reviews slowing enterprise deals'."
+  ]
+ }
+}

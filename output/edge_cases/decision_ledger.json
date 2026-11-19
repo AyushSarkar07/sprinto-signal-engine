@@ -1,0 +1,29 @@
+[
+  {
+    "company": "Unreachable Example (robustness test)",
+    "domain": "this-domain-does-not-exist-sprinto-test.invalid",
+    "decision_status": "insufficient_data",
+    "recommended_action": "manual_review",
+    "icp_fit_score": 0,
+    "buying_timing_score": 0,
+    "evidence_confidence": 0.1,
+    "provenance": "deterministic_fallback",
+    "why_this_company": [
+      "No ICP criteria were satisfied by evidence."
+    ],
+    "why_now": [
+      "No observable buying moment \u2014 timing unsupported."
+    ],
+    "what_could_make_this_wrong": [
+      "Unknown: Whether the company is a SaaS business.",
+      "Unknown: Funding stage or headcount.",
+      "Unknown: Evidence of enterprise customers or an enterprise motion.",
+      "Unknown: Any SOC 2 / ISO 27001 / GDPR status.",
+      "Unknown: Security, compliance or engineering hiring activity.",
+      "Unknown: A security or trust page describing controls.",
+      "SaaS model not confirmed \u2014 ICP fit may be overstated or understated.",
+      "Overall evidence confidence is modest (0.1).",
+      "Keyword rules can misread context (e.g. 'SOC 2' in a blog post about a customer, not the company itself)."
+    ]
+  }
+]

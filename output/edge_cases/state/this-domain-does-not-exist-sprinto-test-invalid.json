@@ -1,0 +1,240 @@
+{
+ "company": "Unreachable Example (robustness test)",
+ "domain": "this-domain-does-not-exist-sprinto-test.invalid",
+ "slug": "this-domain-does-not-exist-sprinto-test-invalid",
+ "stages_completed": [
+  "scrape",
+  "extract",
+  "qualify",
+  "research"
+ ],
+ "scrape": {
+  "company": "Unreachable Example (robustness test)",
+  "domain": "this-domain-does-not-exist-sprinto-test.invalid",
+  "homepage_url": "",
+  "pages_scraped": [],
+  "discovered_links": {},
+  "raw_text": "",
+  "scraping_status": "failed",
+  "errors": [
+   "https://this-domain-does-not-exist-sprinto-test.invalid: error Could not connect (DNS failure or host unreachable)",
+   "https://www.this-domain-does-not-exist-sprinto-test.invalid: error Could not connect (DNS failure or host unreachable)",
+   "http://this-domain-does-not-exist-sprinto-test.invalid: error Could not connect (DNS failure or host unreachable)"
+  ]
+ },
+ "extraction": {
+  "company_profile": {
+   "company_name": "Unreachable Example (robustness test)",
+   "domain": "this-domain-does-not-exist-sprinto-test.invalid",
+   "business_model": "Unclear from available pages",
+   "business_description": null,
+   "is_saas": null,
+   "is_saas_evidence": [],
+   "employee_range": {
+    "value": null,
+    "evidence": null
+   },
+   "funding_stage": {
+    "value": null,
+    "evidence": null
+   },
+   "enterprise_customers": [],
+   "customer_industries": [],
+   "tech_stack": []
+  },
+  "compliance_signals": {
+   "soc2_mentions": [],
+   "iso27001_mentions": [],
+   "gdpr_mentions": [],
+   "security_pages": [],
+   "trust_centre": false,
+   "trust_centre_evidence": [],
+   "compliance_hiring": [],
+   "enterprise_security_signals": []
+  },
+  "growth_signals": [],
+  "other_signals": [],
+  "potential_buying_moments": [],
+  "missing_information": [
+   "saas_model: Whether the company is a SaaS business",
+   "growth_stage: Funding stage or headcount",
+   "enterprise_customers: Evidence of enterprise customers or an enterprise motion",
+   "compliance_status: Any SOC 2 / ISO 27001 / GDPR status",
+   "security_hiring: Security, compliance or engineering hiring activity",
+   "security_page: A security or trust page describing controls"
+  ],
+  "contradictory_information": [],
+  "provenance": "deterministic_fallback"
+ },
+ "extraction_notes": [
+  "Claude not configured — deterministic fallback extraction (not AI-verified)."
+ ],
+ "qualification": {
+  "qualified": false,
+  "decision_status": "insufficient_data",
+  "recommended_action": "manual_review",
+  "icp_fit_score": 0,
+  "buying_timing_score": 0,
+  "evidence_confidence": 0.1,
+  "icp_breakdown": [
+   {
+    "criterion": "SaaS business model",
+    "max_points": 25,
+    "points": 0.0,
+    "rationale": "SaaS model not established from available pages (missing, not negative).",
+    "evidence_ids": []
+   },
+   {
+    "criterion": "Relevant growth stage (Series A–C)",
+    "max_points": 15,
+    "points": 0.0,
+    "rationale": "Growth stage unknown (missing, not negative).",
+    "evidence_ids": []
+   },
+   {
+    "criterion": "Enterprise customer orientation",
+    "max_points": 20,
+    "points": 0.0,
+    "rationale": "No enterprise orientation observed.",
+    "evidence_ids": []
+   },
+   {
+    "criterion": "Relevant customer industry",
+    "max_points": 10,
+    "points": 0.0,
+    "rationale": "Customer industries not identified.",
+    "evidence_ids": []
+   },
+   {
+    "criterion": "Company scaling signals",
+    "max_points": 10,
+    "points": 0.0,
+    "rationale": "No scaling signals observed.",
+    "evidence_ids": []
+   },
+   {
+    "criterion": "Security / compliance complexity",
+    "max_points": 20,
+    "points": 0.0,
+    "rationale": "No security/compliance content observed.",
+    "evidence_ids": []
+   }
+  ],
+  "timing_breakdown": [
+   {
+    "criterion": "Explicit SOC 2 / ISO 27001 / audit requirement",
+    "max_points": 30,
+    "points": 0.0,
+    "rationale": "No explicit audit or certification requirement observed.",
+    "evidence_ids": []
+   },
+   {
+    "criterion": "Enterprise security review / procurement pressure",
+    "max_points": 25,
+    "points": 0.0,
+    "rationale": "No security-review pressure observed.",
+    "evidence_ids": []
+   },
+   {
+    "criterion": "Security or compliance hiring",
+    "max_points": 20,
+    "points": 0.0,
+    "rationale": "No security roles found.",
+    "evidence_ids": []
+   },
+   {
+    "criterion": "Trust centre or compliance activity",
+    "max_points": 10,
+    "points": 0.0,
+    "rationale": "No trust centre found.",
+    "evidence_ids": []
+   },
+   {
+    "criterion": "Recent enterprise expansion / scaling",
+    "max_points": 15,
+    "points": 0.0,
+    "rationale": "No recent expansion signal.",
+    "evidence_ids": []
+   }
+  ],
+  "penalties": [],
+  "qualification_reasoning": [
+   "The website could not be read well enough to evaluate this company (https://this-domain-does-not-exist-sprinto-test.invalid: error Could not connect (DNS failure or host unreachable); https://www.this-domain-does-not-exist-sprinto-test.invalid: error Could not connect (DNS failure or host unreachable)). This is NOT a rejection.",
+   "Biggest ICP drivers: SaaS business model (0/25) — SaaS model not established from available pages (missing, not negative).; Relevant growth stage (Series A–C) (0/15) — Growth stage unknown (missing, not negative).",
+   "Biggest timing drivers: Explicit SOC 2 / ISO 27001 / audit requirement (0/30) — No explicit audit or certification requirement observed.; Enterprise security review / procurement pressure (0/25) — No security-review pressure observed.",
+   "Extraction ran in deterministic fallback mode (Claude not used); confidence capped at 0.75. Results are rule-based, not AI-verified."
+  ],
+  "positive_signals": [],
+  "negative_signals": [
+   "SaaS business model: SaaS model not established from available pages (missing, not negative).",
+   "Relevant growth stage (Series A–C): Growth stage unknown (missing, not negative).",
+   "Enterprise customer orientation: No enterprise orientation observed.",
+   "Relevant customer industry: Customer industries not identified.",
+   "Company scaling signals: No scaling signals observed.",
+   "Security / compliance complexity: No security/compliance content observed.",
+   "Explicit SOC 2 / ISO 27001 / audit requirement: No explicit audit or certification requirement observed.",
+   "Enterprise security review / procurement pressure: No security-review pressure observed.",
+   "Security or compliance hiring: No security roles found.",
+   "Trust centre or compliance activity: No trust centre found.",
+   "Recent enterprise expansion / scaling: No recent expansion signal."
+  ],
+  "missing_information": [
+   "saas_model: Whether the company is a SaaS business",
+   "growth_stage: Funding stage or headcount",
+   "enterprise_customers: Evidence of enterprise customers or an enterprise motion",
+   "compliance_status: Any SOC 2 / ISO 27001 / GDPR status",
+   "security_hiring: Security, compliance or engineering hiring activity",
+   "security_page: A security or trust page describing controls"
+  ],
+  "risks_and_uncertainty": [
+   "Unknown: Whether the company is a SaaS business.",
+   "Unknown: Funding stage or headcount.",
+   "Unknown: Evidence of enterprise customers or an enterprise motion.",
+   "Unknown: Any SOC 2 / ISO 27001 / GDPR status.",
+   "Unknown: Security, compliance or engineering hiring activity.",
+   "Unknown: A security or trust page describing controls.",
+   "SaaS model not confirmed — ICP fit may be overstated or understated.",
+   "Overall evidence confidence is modest (0.1).",
+   "Keyword rules can misread context (e.g. 'SOC 2' in a blog post about a customer, not the company itself)."
+  ],
+  "secondary_research_performed": false,
+  "research_rounds": 0,
+  "provenance": "deterministic_fallback"
+ },
+ "research_rounds": [],
+ "research_notes": [
+  "Secondary research skipped: homepage unreachable, nothing to follow."
+ ],
+ "contact_selection": null,
+ "pain_points": null,
+ "email": null,
+ "dispatch": null,
+ "errors": {},
+ "ledger": {
+  "company": "Unreachable Example (robustness test)",
+  "domain": "this-domain-does-not-exist-sprinto-test.invalid",
+  "decision_status": "insufficient_data",
+  "recommended_action": "manual_review",
+  "icp_fit_score": 0,
+  "buying_timing_score": 0,
+  "evidence_confidence": 0.1,
+  "provenance": "deterministic_fallback",
+  "why_this_company": [
+   "No ICP criteria were satisfied by evidence."
+  ],
+  "why_now": [
+   "No observable buying moment — timing unsupported."
+  ],
+  "what_could_make_this_wrong": [
+   "Unknown: Whether the company is a SaaS business.",
+   "Unknown: Funding stage or headcount.",
+   "Unknown: Evidence of enterprise customers or an enterprise motion.",
+   "Unknown: Any SOC 2 / ISO 27001 / GDPR status.",
+   "Unknown: Security, compliance or engineering hiring activity.",
+   "Unknown: A security or trust page describing controls.",
+   "SaaS model not confirmed — ICP fit may be overstated or understated.",
+   "Overall evidence confidence is modest (0.1).",
+   "Keyword rules can misread context (e.g. 'SOC 2' in a blog post about a customer, not the company itself)."
+  ]
+ }
+}

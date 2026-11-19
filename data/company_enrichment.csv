@@ -1,0 +1,9 @@
+# One row per field, filled from a real lookup (e.g. Apollo.io organisation enrichment). Never type values from memory.
+# field: employee_count | funding_stage | technologies | industry
+domain,field,value,source,source_url,retrieved
+rootly.com,employee_count,92,Apollo.io,,2026-11-03
+rootly.com,funding_stage,Series A (2023-08),Apollo.io,,2026-11-03
+rootly.com,technologies,Amazon AWS; Google Cloud; Microsoft Azure,Apollo.io,,2026-11-03
+plain.com,employee_count,68,Apollo.io,,2026-11-03
+plain.com,funding_stage,Series A (2025-02),Apollo.io,,2026-11-03
+plain.com,technologies,Amazon AWS; Google Cloud,Apollo.io,,2026-11-03

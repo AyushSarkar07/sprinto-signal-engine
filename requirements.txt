@@ -1,0 +1,13 @@
+requests>=2.31
+beautifulsoup4>=4.12
+anthropic>=0.70
+pydantic>=2.6
+python-dotenv>=1.0
+pandas>=2.1
+tenacity>=8.2
+google-api-python-client>=2.100
+google-auth-oauthlib>=1.1
+pytest>=8.0
+# Optional: only needed for JavaScript-rendered sites (set USE_PLAYWRIGHT=true)
+# playwright>=1.40
+flask>=3.0

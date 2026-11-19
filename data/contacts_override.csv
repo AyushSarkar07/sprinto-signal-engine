@@ -1,0 +1,5 @@
+# Manual contact mapping (e.g. researched in Apollo's web UI). Only add REAL, verified people.
+# Required: domain (or company), first_name, job_title. Email optional; leave blank if not verified.
+company,domain,first_name,last_name,job_title,email,verification_status,linkedin_url,source,source_url
+Attio,attio.com,Alexander,Christie,CTO & Co-founder,,title verified on company site,,attio.com engineering blog byline,https://attio.com/engineering/blog/introducing-universal-context
+Plain,plain.com,Matt,Vagni,Co-founder & CTO,,title verified on company site,,plain.com author page,https://www.plain.com/authors/matt-vagni

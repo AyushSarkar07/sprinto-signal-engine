@@ -1,0 +1,14 @@
+{
+  "_note": "PLANNING ASSUMPTIONS, not facts. Replace with Sprinto's real ACV and your own historical funnel rates. They drive expected-value estimates only; recorded outcomes in data/outcomes.csv override the priors as data accumulates.",
+  "currency": "USD",
+  "default_acv": 10000,
+  "acv_by_employees": [[50, 6000], [200, 12000], [1000, 25000]],
+  "stage_priors": {
+    "replied":     [1, 19],
+    "meeting":     [1, 1],
+    "opportunity": [1, 1],
+    "won":         [1, 2]
+  },
+  "timing_lift": {"enabled": true, "min": 0.5, "max": 2.0},
+  "min_sends_to_learn": 10
+}

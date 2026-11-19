@@ -1,0 +1,858 @@
+{
+ "company": "Plain",
+ "domain": "plain.com",
+ "slug": "plain-com",
+ "stages_completed": [
+  "scrape",
+  "extract",
+  "qualify",
+  "research",
+  "contact",
+  "pain_points",
+  "email",
+  "dispatch"
+ ],
+ "scrape": {
+  "company": "Plain",
+  "domain": "plain.com",
+  "homepage_url": "https://plain.com/",
+  "pages_scraped": [
+   {
+    "url": "https://plain.com/",
+    "category": "homepage",
+    "title": "Plain — The AI Support Stack Built for B2B",
+    "text": "Plain is the AI support stack built for B2B teams. Composable infrastructure that gives you complete flexibility to build a support motion that grows with your business — no-code or all-code.\nPlain — The AI Support Stack Built for B2B\nProduct\nSolutions\nResources\nCustomers\nPricing\nSign in\nBook a demo\nBuild support\nyour own way\nPlain is AI support infrastructure that enables B2B teams to build anything – no-code or all-code.\nPlain is AI support infrastructure that enables B2B teams to build anything. No-code or all-code.\nStart a trial\nWebhook events dropping under load\nT-23434\nSlack 10m\nago\nJosh Henderson\n10m ago\nWe’re seeing webhook events getting dropped when traffic spikes above ~200 events/min. Any help?\nWorkflow\nInvestigate with AI\nassigned\nCustomer Agent\nCustomer Agent used 1 knowledge source\nAI Agent\n9m ago\nHi Josh! Sorry that’s happening. I can see gaps in delivery logs around that window. Can you confirm which events were affected?\n5m ago\nMostly thread.status_updated and customer.created.\nSupport Triage → Customer Agent\nadded label\nL2 Support\nAlex Whitney\nHey Josh! Good news, this is fixable on your end. Your endpoint was timing out/erroring during the spike, so after our retries ran out those events got marked failed.\nQuick fixes:\nReturn a 2xx right away, then process the payload async\nMake sure your endpoint can handle bursts around 200 events/min\nDouble check your TLS cert hasn't expired\nYou can see exactly which events failed and why via our\nwebhookDeliveryAttempts\nquery. Happy to pull that list for you if it'd help!\n1m ago\nJust did the quick fix and it looks like its working! Thnx\nDone\nCustomers reporting webhook events\nHave we found similar solutions to a past issues like this?\nLooking at the Linear trends...\nWebhook setup issues\nAsk a follow up\nHUNDREDS of fast-moving teams rely on plain\nTools add\ndistance.\nYour customers are talking to you in Slack, MS Teams, email, and inside your product – and your team is jumping between all those places. Insights are scattered, and each \"new support tool\" imposes their opinions on you.\nBut what if it was different?\nMeet a new approach:\nSupport Infrastructure\nConnect your channels. Orchestrate every conversation. Get smarter with each interaction, all inside one unified workspace built to scale intelligently with you.\nChannels\nConsolidate support\nConnect and scale Slack, Microsoft Teams, Discord, email, chat, portal and more.\nAssistant\nSupercharge your team\nGive your team an AI assistant that researches, triages and resolves across systems.\nAgents\nRun any AI agent\nRun multiple AI agents while humans stay in control of complex conversations.\nWorkflows\nAutomate everything\nAuto route, trigger investigations, notify teams, or take action in your own systems.\nInsights\nLearn from support\nAutomatically learn from your support. Spot themes, churn risks and upsell potential.\nAPI\nBuild anything\nEvery part of Plain can be extended, customized, or embedded into your own product and tooling.\n10x with agents\nPlain is completely open, so you orchestrate your workload across any number of AI agents.\nDiscover Agents\nOrchestrate actions\nRun multiple AI agents alongside human teammates. Plain gives you the infrastructure to coordinate them.\nUse Plain’s Customer Agent\nOur Customer Agent helps triage requests, investigate issues, and assist your team using the knowledge your team has already built.\nOur Customer Agent helps triage requests, investigate issues, and assist your team using the knowledge your team has built.\nLearn more about Customer Agent\nBuild your own agents\nBring your own agents\nConnect your own models and internal data to create agents tailored to your workflows, or bring a third party agent.\nAutomatically assign conversations, surface product issues, notify engineers, enrich conversations with customer data, or take action inside your own systems.\nDiscover Workflows\nConnect external systems\nRoute requests to any external service. Create a Linear issue, trigger a PagerDuty incident, or call your own API.\nBuild with AI\nLet AI decide how threads route – by context, tone, or anything else that's hard to capture with rules alone.\nAuto-triage\nAutomatically assign labels, detect urgency, and keep thread summaries up to date as conversations evolve.\nSidekick\nSidekick AGENT\nSave time\nSidekick helps you do customer work. It’s fully aware of customer context, product knowledge and historical interactions. Draft replies and find answers without ever leaving Plain.\nDiscover Sidekick\nKnows everything\n…so you can ask anything. Sidekick understands customer history, previous chats, and product context.\nAlways there\nSidekick is just a keyboard shortcut away – no setup required. Close those tabs, and open Sidekick instead.\nMultitalented\nGet key information, summarize, draft, and search all your knowledge sources without switching tools.\nLearn from customers\nMove beyond just answering tickets and drive product change instead. Get real-time, aggregated and automated insights from your support. Plain makes your data work for you.\nDiscover Insights\nDetect trends\nSpot recurring issues, trends, and opportunities across every conversation - without lifting a finger.\nCatch up instantly\nGet summaries and instant context on every thread – what’s changed, what’s new and what matters.\nGet the latest, every day\nGet daily summaries that surface what’s shifting across your customers, who's working on what, and what needs to happen next.\nSpeed, meet power.\nWe get it. When you’re comparing platforms, they all look the same. We’ll make it easy for you. Here’s why, and when, we win.\nWhen you need performance and scale\nDiscover our product\nPlain is designed for work, not to feel like work. Every aspect of the Plain interface has been forged, stress-tested and iterated on by and with some of the fastest-growing, and most demanding support teams in the world. They love it, and we think you will too.\nWhen you demand complete extensibility\nLearn about our API\nWe give you flexible building blocks, not rigid opinions. Plain is API-first, so everything you see in the product can be done programmatically. Extend workflows, automate the edge cases, or replace entire pieces with your own logic. If you can imagine it, you can ship it.\nWhen you want to enjoy the buying process\nSeriously. People often choose us because working together feels straightforward. We know you are not switching platforms all day because you love it. So we focus on clarity, honest guidance and removing friction. Our sales team knows the product deeply and works with you to get to a yes or no quickly, whichever is right.\nStart fast. Scale fearlessly.\nPlain isn’t just faster, it’s built to last.\nFast growing companies love plain\nTake their word for it\nCase study\nWe chose Plain because it was the right fit for our fast-moving team to get going quickly. It’s helped us stay organized & responsive as we 100x-ed our users, and we’re confident it will keep supporting us as we continue to grow.\nJo Barrow\nChief of Staff\nWith Plain powering our support, we don't have to think about scaling challenges. Everything just works.\nChristopher O'Neill\nHead of Developer Success\nWe see Plain as a tool very similar to Raycast. Focused on a great user experience, intelligent workflows, and truly empowering the teams that use it.\nDaniel Sequeira\nHead of Business Ops\nTime is money. Money is pizza.\nHere’s what you can do in 29 mins and 59 secs\n5 mins\n15 mins\n29 mins\nConnect Slack, Microsoft Teams, Discord and email\nConnect your CRMs and issue tracker\nRespond to your first ticket\nDeploy your first AI agent\nConfigure SLAs, business hours, and tiers\nAutomate queries with workflows\n30 mins\nGet themes with automated digests\nLaunch a knowledge base\nHelp customers help themselves with Ask AI\nDeploy an AI agent across all communication channels\nDefine SLAs, business hours, and customer tiers\nAutomatically generate AI insights from support requests\nDeploy a knowledge base, formed from your support messages\nEngineered with enterprise-level security. Built for everyone.\nWe don’t see security as a set of badges, but as a core engineering principle. Every part of our platform is architected to protect your data.\nJoin the teams who rely on Plain to provide world-class support\nStart for free\n© 2026 Plain\nNot Just Tickets Ltd\nPlain\nBroadcasts\nCareers\nOpen Infrastructure\nAI-Native\nHeadless\nMulti-Channel\nStartup Program\nMigrate to Plain\nCompare\nSlack\nMicrosoft Teams\nDiscord\nEmail\nHelp Center\nIn-app Forms\nLive Chat\nCommunity\nBlog\nEvents\nAPI Docs\nSecurity\nTrust Center\nIntegrations\nSupport\nPrivacy\nTerms\nData Processing\nStatus\n@plainsupport",
+    "status": "ok",
+    "http_status": 200,
+    "rendered_with": "requests",
+    "discovered_from": ""
+   },
+   {
+    "url": "https://plain.com/about",
+    "category": "about",
+    "title": "HTTP 404",
+    "text": "",
+    "status": "not_found",
+    "http_status": 404,
+    "rendered_with": "requests",
+    "discovered_from": "https://plain.com/"
+   },
+   {
+    "url": "https://www.plain.com/docs/product/security",
+    "category": "security",
+    "title": "Security at Plain - Plain Docs",
+    "text": "How Plain stores and protects your data, which certifications it holds, and who to contact about security.\nSecurity at Plain - Plain Docs\nDocumentation Index\nFetch the complete documentation index at:\n/docs/llms.txt\nUse this file to discover all available pages before exploring further.\nSkip to main content\nAssistant\nResponses are generated using AI and may contain mistakes.\nThis section collects the security commitments Plain makes about your data: where it is stored, who can reach it, what happens when AI features are on, and how to report a vulnerability. If your team needs something that isn’t here, email\nsecurity@plain.com\nCertifications and compliance\nPlain is SOC 2 Type II certified. Independent audits verify how Plain manages security, availability, and confidentiality.\nPlain’s systems are built in line with the General Data Protection Regulation (GDPR) and the UK Data Protection Act. A\nData Processing Agreement (DPA)\nis available for companies that need one.\nTo request the SOC 2 report or other security documentation, go to\ntrust.plain.com\n. Current system health is at\nstatus.plain.com\nHow data is stored\nAll data is encrypted in transit and at rest. Plain runs on Amazon Web Services in the\neu-west-2\n(London) region. Backups run on a regular schedule and are encrypted at rest.\nEngineers, systems, and roles get the least privilege needed to do their work. Every change to infrastructure, permissions, and code goes through code review. Administrator privileges are used only during serious incidents; routine maintenance runs through roles with fine-grained permissions.\nHow the API is protected\nEvery API request requires authentication. Requests Plain makes to your endpoints can be verified two ways:\nRequest signing\n: outbound requests to your webhook targets and customer card endpoints carry an HMAC-SHA256 signature made with a shared secret.\nmTLS\n: outbound requests present a client certificate you can verify against Plain’s CA certificate.\nThird-party vendors\nPlain reviews every third-party vendor before using it, and reviews what data each vendor can reach on an ongoing basis. The full list of sub-processors is in the\nDPA\nThe AI providers Plain uses are covered separately in\nAI and your data\n, including Plain’s zero data retention commitments.\nYour privacy rights\nThe\nPrivacy Policy\nand the\nset out what data Plain collects and how it is used. You can request, access, or delete your data at any time, and Plain never shares your data without consent.\nWhen workspaces are deleted\nA workspace with no activity for 6 months and no active billing subscription is deleted automatically. Workspace owners get an email first, and deletion goes ahead 14 days later unless an owner replies to cancel it.\nTo request a manual deletion, email\nsupport@plain.com\n. Plain support will ask you to confirm your identity before proceeding.\nWorkspace deletion is final. Deleted workspaces and their data cannot be recovered.\nReporting a security issue\nEmail\n. Keep the report concise, include steps to reproduce, and add a proof of concept if you can. Valid reports are acknowledged within 48 hours.\nIf you are testing Plain as a security researcher, read the\nresponsible disclosure policy\nfirst. It sets out the rules research must stay inside, what Plain commits to, and when a bounty is paid.\nWas this page helpful?",
+    "status": "ok",
+    "http_status": 200,
+    "rendered_with": "requests",
+    "discovered_from": "https://plain.com/"
+   },
+   {
+    "url": "https://trust.plain.com/",
+    "category": "trust",
+    "title": "Plain Trust Center",
+    "text": "The most collaborative AI-powered support platform for scaling B2B support teams.\nPlain Trust Center",
+    "status": "ok",
+    "http_status": 200,
+    "rendered_with": "requests",
+    "discovered_from": "https://plain.com/"
+   },
+   {
+    "url": "https://plain.com/customers",
+    "category": "customers",
+    "title": "Plain Customers — How B2B Teams Like Vercel, Cursor, and n8n Build Support Their Way",
+    "text": "See how leading B2B companies use Plain to consolidate Slack, Teams, and Discord support into one platform — cutting response times, scaling with AI, and building custom workflows with Plain's API.\nPlain Customers — How B2B Teams Like Vercel, Cursor, and n8n Build Support Their Way\nProduct\nSolutions\nResources\nCustomers\nPricing\nSign in\nBook a demo\nPlain is trusted by the world's best support teams\nHundreds of teams use Plain to provide world-class support for their customers.\nHow n8n built AI-first support that handles 60% of tickets automatically\nCase study\nHow Resend automated their way out of 100,000 tickets\nHow Granola’s support team learned to ship product, with Plain as the data layer\nHow Raycast replaced 5 disconnected support channels with one platform using Plain\nCASE\nSTUDY\nSaaS\nHow Vercel cut support volume 65% by connecting AI agents to Plain\nHow Framer rebuilt enterprise support on Plain in under two hours\nDeveloper Tools\nHow Sourcegraph replaced 3 tools with Plain and cut first response time by 67%\nHow Sanity saw 120% increase in team satisfaction after switching from Zendesk to Plain\nHow Buildkite achieves sub-5-minute SLAs across follow-the-sun support with Plain\nHow Tinybird cut Enterprise first response time from 1 hour to 12 minutes with Plain\nHow Clerk built custom prioritization workflows across 4 pricing tiers with Plain's API\nHow Stytch replaced Zendesk and Channeled with one platform using Plain\nHow Northflank improved response times by 50% and scaled enterprise Slack support with Plain\nHow Prisma migrated from Zendesk to Plain and built a support stack that matches their developer experience\nHow Depot manages hundreds of Slack Connect channels without a dedicated support team using Plain\nHow Fly.io saves 200+ hours of engineering time per year with Plain\nAI infrastructure\nWhy Voltage Park switched from Freshdesk to Plain to consolidate their support stack\nCustomer\nAI infrastructure platform for running inference, training, sandboxes, and batch jobs at scale\nEnterprise AI platform designed to create and deploy custom AI agents\nAI-assisted integrated development environment\nAI-powered personal executive assistant that organizes inboxes, auto-drafts replies, and automatically joins meetings\nNo-code workflow automation platform that automates repetitive tasks, orchestrates complex processes, and connects their entire technology stack\nFull-stack PHP ecosystem designed to ship robust subscription-based applications faster\nAI-native documentation platform designed for developers and product teams to create, maintain, and scale technical documentation\nOpen-source link management platform for creating branded short links, tracking real-time analytics, and managing affiliate programs\nCustomer identity and access management (CIAM) that can be deployed anywhere\nPlatform for creators, educators, and businesses to build, market, and sell online courses, communities, and digital products\nAI-powered \"interview intelligence\" platform that helps recruiting teams capture, summarize, and analyze candidate conversations\nAPI-first developer platform that enables teams to build, test, and deploy fast, conversational AI voice agents\nOpen-source scheduling infrastructure platform designed to streamline meeting management\nStarter kit for rapidly building and deploying TypeScript-based SaaS applications\nInfrastructure to handle concurrent edits on shared data, so people and AI agents can collaborate\nIntegration platform designed for developers to build, manage, and scale third-party API integrations\nServerless, cloud-based data warehouse designed to make analytics fast, efficient, and user-friendly\nGlobal energy transition collective\nRevenue management platform that manages complex billing, including usage-based pricing, subscriptions, quotes, and payments\nOpen-source, secure environment with real-world tools for enterprise-grade agents.\nan OpenTelemetry-native observability platform designed for fast troubleshooting, log analysis, and application performance monitoring\nWHere next?\nChoose your own adventure\nChangelog\nJoin the teams who rely on Plain to provide world-class support\nStart for free\n© 2026 Plain\nNot Just Tickets Ltd\nPlain\nCustomer Agent\nSidekick Agent\nBroadcasts\nCareers\nOpen Infrastructure\nAI-Native\nHeadless\nMulti-Channel\nStartup Program\nMigrate to Plain\nCompare\nChannels\nSlack\nMicrosoft Teams\nDiscord\nEmail\nHelp Center\nIn-app Forms\nLive Chat\nCommunity\nBlog\nEvents\nAPI Docs\nSecurity\nTrust Center\nIntegrations\nSupport\nPrivacy\nTerms\nData Processing\nStatus\n@plainsupport",
+    "status": "ok",
+    "http_status": 200,
+    "rendered_with": "requests",
+    "discovered_from": "https://plain.com/"
+   },
+   {
+    "url": "enrichment://apollo.io/plain.com",
+    "category": "enrichment",
+    "title": "Apollo.io company record for plain.com",
+    "text": "Apollo.io company record for plain.com (retrieved 2026-11-03). Headcount: 68 employees. Latest funding: Series A round (2025-02). Technologies detected: Amazon AWS; Google Cloud.",
+    "status": "ok",
+    "http_status": null,
+    "rendered_with": "requests",
+    "discovered_from": "Apollo.io"
+   }
+  ],
+  "discovered_links": {
+   "customers": [
+    "https://plain.com/customers",
+    "https://plain.com/customers/n8n",
+    "https://plain.com/customers/resend",
+    "https://plain.com/customers/sanity",
+    "https://plain.com/customers/stytch",
+    "https://plain.com/customers/granola",
+    "https://plain.com/customers/tinybird",
+    "https://www.plain.com/customers/granola"
+   ],
+   "pricing": [
+    "https://plain.com/pricing"
+   ],
+   "product": [
+    "https://plain.com/overview",
+    "https://plain.com/integrations",
+    "https://plain.com/solutions/ai-support",
+    "https://plain.com/solutions/headless-support",
+    "https://plain.com/solutions/multichannel-support",
+    "https://plain.com/solutions/agentic-infrastructure"
+   ],
+   "careers": [
+    "https://plain.com/careers"
+   ],
+   "news": [
+    "https://plain.com/blog"
+   ],
+   "security": [
+    "https://www.plain.com/docs/product/security"
+   ],
+   "trust": [
+    "https://trust.plain.com/"
+   ],
+   "legal": [
+    "https://www.plain.com/legal/dpa",
+    "https://www.plain.com/legal/privacy-policy",
+    "https://www.plain.com/legal/terms-and-conditions"
+   ]
+  },
+  "raw_text": "Plain is the AI support stack built for B2B teams. Composable infrastructure that gives you complete flexibility to build a support motion that grows with your business — no-code or all-code.\nPlain — The AI Support Stack Built for B2B\nProduct\nSolutions\nResources\nCustomers\nPricing\nSign in\nBook a demo\nBuild support\nyour own way\nPlain is AI support infrastructure that enables B2B teams to build anything – no-code or all-code.\nPlain is AI support infrastructure that enables B2B teams to build anything. No-code or all-code.\nStart a trial\nWebhook events dropping under load\nT-23434\nSlack 10m\nago\nJosh Henderson\n10m ago\nWe’re seeing webhook events getting dropped when traffic spikes above ~200 events/min. Any help?\nWorkflow\nInvestigate with AI\nassigned\nCustomer Agent\nCustomer Agent used 1 knowledge source\nAI Agent\n9m ago\nHi Josh! Sorry that’s happening. I can see gaps in delivery logs around that window. Can you confirm which events were affected?\n5m ago\nMostly thread.status_updated and customer.created.\nSupport Triage → Customer Agent\nadded label\nL2 Support\nAlex Whitney\nHey Josh! Good news, this is fixable on your end. Your endpoint was timing out/erroring during the spike, so after our retries ran out those events got marked failed.\nQuick fixes:\nReturn a 2xx right away, then process the payload async\nMake sure your endpoint can handle bursts around 200 events/min\nDouble check your TLS cert hasn't expired\nYou can see exactly which events failed and why via our\nwebhookDeliveryAttempts\nquery. Happy to pull that list for you if it'd help!\n1m ago\nJust did the quick fix and it looks like its working! Thnx\nDone\nCustomers reporting webhook events\nHave we found similar solutions to a past issues like this?\nLooking at the Linear trends...\nWebhook setup issues\nAsk a follow up\nHUNDREDS of fast-moving teams rely on plain\nTools add\ndistance.\nYour customers are talking to you in Slack, MS Teams, email, and inside your product – and your team is jumping between all those places. Insights are scattered, and each \"new support tool\" imposes their opinions on you.\nBut what if it was different?\nMeet a new approach:\nSupport Infrastructure\nConnect your channels. Orchestrate every conversation. Get smarter with each interaction, all inside one unified workspace built to scale intelligently with you.\nChannels\nConsolidate support\nConnect and scale Slack, Microsoft Teams, Discord, email, chat, portal and more.\nAssistant\nSupercharge your team\nGive your team an AI assistant that researches, triages and resolves across systems.\nAgents\nRun any AI agent\nRun multiple AI agents while humans stay in control of complex conversations.\nWorkflows\nAutomate everything\nAuto route, trigger investigations, notify teams, or take action in your own systems.\nInsights\nLearn from support\nAutomatically learn from your support. Spot themes, churn risks and upsell potential.\nAPI\nBuild anything\nEvery part of Plain can be extended, customized, or embedded into your own product and tooling.\n10x with agents\nPlain is completely open, so you orchestrate your workload across any number of AI agents.\nDiscover Agents\nOrchestrate actions\nRun multiple AI agents alongside human teammates. Plain gives you the infrastructure to coordinate them.\nUse Plain’s Customer Agent\nOur Customer Agent helps triage requests, investigate issues, and assist your team using the knowledge your team has already built.\nOur Customer Agent helps triage requests, investigate issues, and assist your team using the knowledge your team has built.\nLearn more about Customer Agent\nBuild your own agents\nBring your own agents\nConnect your own models and internal data to create agents tailored to your workflows, or bring a third party agent.\nAutomatically assign conversations, surface product issues, notify engineers, enrich conversations with customer data, or take action inside your own systems.\nDiscover Workflows\nConnect external systems\nRoute requests to any external service. Create a Linear issue, trigger a PagerDuty incident, or call your own API.\nBuild with AI\nLet AI decide how threads route – by context, tone, or anything else that's hard to capture with rules alone.\nAuto-triage\nAutomatically assign labels, detect urgency, and keep thread summaries up to date as conversations evolve.\nSidekick\nSidekick AGENT\nSave time\nSidekick helps you do customer work. It’s fully aware of customer context, product knowledge and historical interactions. Draft replies and find answers without ever leaving Plain.\nDiscover Sidekick\nKnows everything\n…so you can ask anything. Sidekick understands customer history, previous chats, and product context.\nAlways there\nSidekick is just a keyboard shortcut away – no setup required. Close those tabs, and open Sidekick instead.\nMultitalented\nGet key information, summarize, draft, and search all your knowledge sources without switching tools.\nLearn from customers\nMove beyond just answering tickets and drive product change instead. Get real-time, aggregated and automated insights from your support. Plain makes your data work for you.\nDiscover Insights\nDetect trends\nSpot recurring issues, trends, and opportunities across every conversation - without lifting a finger.\nCatch up instantly\nGet summaries and instant context on every thread – what’s changed, what’s new and what matters.\nGet the latest, every day\nGet daily summaries that surface what’s shifting across your customers, who's working on what, and what needs to happen next.\nSpeed, meet power.\nWe get it. When you’re comparing platforms, they all look the same. We’ll make it easy for you. Here’s why, and when, we win.\nWhen you need performance and scale\nDiscover our product\nPlain is designed for work, not to feel like work. Every aspect of the Plain interface has been forged, stress-tested and iterated on by and with some of the fastest-growing, and most demanding support teams in the world. They love it, and we think you will too.\nWhen you demand complete extensibility\nLearn about our API\nWe give you flexible building blocks, not rigid opinions. Plain is API-first, so everything you see in the product can be done programmatically. Extend workflows, automate the edge cases, or replace entire pieces with your own logic. If you can imagine it, you can ship it.\nWhen you want to enjoy the buying process\nSeriously. People often choose us because working together feels straightforward. We know you are not switching platforms all day because you love it. So we focus on clarity, honest guidance and removing friction. Our sales team knows the product deeply and works with you to get to a yes or no quickly, whichever is right.\nStart fast. Scale fearlessly.\nPlain isn’t just faster, it’s built to last.\nFast growing companies love plain\nTake their word for it\nCase study\nWe chose Plain because it was the right fit for our fast-moving team to get going quickly. It’s helped us stay organized & responsive as we 100x-ed our users, and we’re confident it will keep supporting us as we continue to grow.\nJo Barrow\nChief of Staff\nWith Plain powering our support, we don't have to think about scaling challenges. Everything just works.\nChristopher O'Neill\nHead of Developer Success\nWe see Plain as a tool very similar to Raycast. Focused on a great user experience, intelligent workflows, and truly empowering the teams that use it.\nDaniel Sequeira\nHead of Business Ops\nTime is money. Money is pizza.\nHere’s what you can do in 29 mins and 59 secs\n5 mins\n15 mins\n29 mins\nConnect Slack, Microsoft Teams, Discord and email\nConnect your CRMs and issue tracker\nRespond to your first ticket\nDeploy your first AI agent\nConfigure SLAs, business hours, and tiers\nAutomate queries with workflows\n30 mins\nGet themes with automated digests\nLaunch a knowledge base\nHelp customers help themselves with Ask AI\nDeploy an AI agent across all communication channels\nDefine SLAs, business hours, and customer tiers\nAutomatically generate AI insights from support requests\nDeploy a knowledge base, formed from your support messages\nEngineered with enterprise-level security. Built for everyone.\nWe don’t see security as a set of badges, but as a core engineering principle. Every part of our platform is architected to protect your data.\nJoin the teams who rely on Plain to provide world-class support\nStart for free\n© 2026 Plain\nNot Just Tickets Ltd\nPlain\nBroadcasts\nCareers\nOpen Infrastructure\nAI-Native\nHeadless\nMulti-Channel\nStartup Program\nMigrate to Plain\nCompare\nSlack\nMicrosoft Teams\nDiscord\nEmail\nHelp Center\nIn-app Forms\nLive Chat\nCommunity\nBlog\nEvents\nAPI Docs\nSecurity\nTrust Center\nIntegrations\nSupport\nPrivacy\nTerms\nData Processing\nStatus\n@plainsupport\n\nHow Plain stores and protects your data, which certifications it holds, and who to contact about security.\nSecurity at Plain - Plain Docs\nDocumentation Index\nFetch the complete documentation index at:\n/docs/llms.txt\nUse this file to discover all available pages before exploring further.\nSkip to main content\nAssistant\nResponses are generated using AI and may contain mistakes.\nThis section collects the security commitments Plain makes about your data: where it is stored, who can reach it, what happens when AI features are on, and how to report a vulnerability. If your team needs something that isn’t here, email\nsecurity@plain.com\nCertifications and compliance\nPlain is SOC 2 Type II certified. Independent audits verify how Plain manages security, availability, and confidentiality.\nPlain’s systems are built in line with the General Data Protection Regulation (GDPR) and the UK Data Protection Act. A\nData Processing Agreement (DPA)\nis available for companies that need one.\nTo request the SOC 2 report or other security documentation, go to\ntrust.plain.com\n. Current system health is at\nstatus.plain.com\nHow data is stored\nAll data is encrypted in transit and at rest. Plain runs on Amazon Web Services in the\neu-west-2\n(London) region. Backups run on a regular schedule and are encrypted at rest.\nEngineers, systems, and roles get the least privilege needed to do their work. Every change to infrastructure, permissions, and code goes through code review. Administrator privileges are used only during serious incidents; routine maintenance runs through roles with fine-grained permissions.\nHow the API is protected\nEvery API request requires authentication. Requests Plain makes to your endpoints can be verified two ways:\nRequest signing\n: outbound requests to your webhook targets and customer card endpoints carry an HMAC-SHA256 signature made with a shared secret.\nmTLS\n: outbound requests present a client certificate you can verify against Plain’s CA certificate.\nThird-party vendors\nPlain reviews every third-party vendor before using it, and reviews what data each vendor can reach on an ongoing basis. The full list of sub-processors is in the\nDPA\nThe AI providers Plain uses are covered separately in\nAI and your data\n, including Plain’s zero data retention commitments.\nYour privacy rights\nThe\nPrivacy Policy\nand the\nset out what data Plain collects and how it is used. You can request, access, or delete your data at any time, and Plain never shares your data without consent.\nWhen workspaces are deleted\nA workspace with no activity for 6 months and no active billing subscription is deleted automatically. Workspace owners get an email first, and deletion goes ahead 14 days later unless an owner replies to cancel it.\nTo request a manual deletion, email\nsupport@plain.com\n. Plain support will ask you to confirm your identity before proceeding.\nWorkspace deletion is final. Deleted workspaces and their data cannot be recovered.\nReporting a security issue\nEmail\n. Keep the report concise, include steps to reproduce, and add a proof of concept if you can. Valid reports are acknowledged within 48 hours.\nIf you are testing Plain as a security researcher, read the\nresponsible disclosure policy\nfirst. It sets out the rules research must stay inside, what Plain commits to, and when a bounty is paid.\nWas this page helpful?\n\nThe most collaborative AI-powered support platform for scaling B2B support teams.\nPlain Trust Center\n\nSee how leading B2B companies use Plain to consolidate Slack, Teams, and Discord support into one platform — cutting response times, scaling with AI, and building custom workflows with Plain's API.\nPlain Customers — How B2B Teams Like Vercel, Cursor, and n8n Build Support Their Way\nProduct\nSolutions\nResources\nCustomers\nPricing\nSign in\nBook a demo\nPlain is trusted by the world's best support teams\nHundreds of teams use Plain to provide world-class support for their customers.\nHow n8n built AI-first support that handles 60% of tickets automatically\nCase study\nHow Resend automated their way out of 100,000 tickets\nHow Granola’s support team learned to ship product, with Plain as the data layer\nHow Raycast replaced 5 disconnected support channels with one platform using Plain\nCASE\nSTUDY\nSaaS\nHow Vercel cut support volume 65% by connecting AI agents to Plain\nHow Framer rebuilt enterprise support on Plain in under two hours\nDeveloper Tools\nHow Sourcegraph replaced 3 tools with Plain and cut first response time by 67%\nHow Sanity saw 120% increase in team satisfaction after switching from Zendesk to Plain\nHow Buildkite achieves sub-5-minute SLAs across follow-the-sun support with Plain\nHow Tinybird cut Enterprise first response time from 1 hour to 12 minutes with Plain\nHow Clerk built custom prioritization workflows across 4 pricing tiers with Plain's API\nHow Stytch replaced Zendesk and Channeled with one platform using Plain\nHow Northflank improved response times by 50% and scaled enterprise Slack support with Plain\nHow Prisma migrated from Zendesk to Plain and built a support stack that matches their developer experience\nHow Depot manages hundreds of Slack Connect channels without a dedicated support team using Plain\nHow Fly.io saves 200+ hours of engineering time per year with Plain\nAI infrastructure\nWhy Voltage Park switched from Freshdesk to Plain to consolidate their support stack\nCustomer\nAI infrastructure platform for running inference, training, sandboxes, and batch jobs at scale\nEnterprise AI platform designed to create and deploy custom AI agents\nAI-assisted integrated development environment\nAI-powered personal executive assistant that organizes inboxes, auto-drafts replies, and automatically joins meetings\nNo-code workflow automation platform that automates repetitive tasks, orchestrates complex processes, and connects their entire technology stack\nFull-stack PHP ecosystem designed to ship robust subscription-based applications faster\nAI-native documentation platform designed for developers and product teams to create, maintain, and scale technical documentation\nOpen-source link management platform for creating branded short links, tracking real-time analytics, and managing affiliate programs\nCustomer identity and access management (CIAM) that can be deployed anywhere\nPlatform for creators, educators, and businesses to build, market, and sell online courses, communities, and digital products\nAI-powered \"interview intelligence\" platform that helps recruiting teams capture, summarize, and analyze candidate conversations\nAPI-first developer platform that enables teams to build, test, and deploy fast, conversational AI voice agents\nOpen-source scheduling infrastructure platform designed to streamline meeting management\nStarter kit for rapidly building and deploying TypeScript-based SaaS applications\nInfrastructure to handle concurrent edits on shared data, so people and AI agents can collaborate\nIntegration platform designed for developers to build, manage, and scale third-party API integrations\nServerless, cloud-based data warehouse designed to make analytics fast, efficient, and user-friendly\nGlobal energy transition collective\nRevenue management platform that manages complex billing, including usage-based pricing, subscriptions, quotes, and payments\nOpen-source, secure environment with real-world tools for enterprise-grade agents.\nan OpenTelemetry-native observability platform designed for fast troubleshooting, log analysis, and application performance monitoring\nWHere next?\nChoose your own adventure\nChangelog\nJoin the teams who rely on Plain to provide world-class support\nStart for free\n© 2026 Plain\nNot Just Tickets Ltd\nPlain\nCustomer Agent\nSidekick Agent\nBroadcasts\nCareers\nOpen Infrastructure\nAI-Native\nHeadless\nMulti-Channel\nStartup Program\nMigrate to Plain\nCompare\nChannels\nSlack\nMicrosoft Teams\nDiscord\nEmail\nHelp Center\nIn-app Forms\nLive Chat\nCommunity\nBlog\nEvents\nAPI Docs\nSecurity\nTrust Center\nIntegrations\nSupport\nPrivacy\nTerms\nData Processing\nStatus\n@plainsupport\n\nApollo.io company record for plain.com (retrieved 2026-11-03). Headcount: 68 employees. Latest funding: Series A round (2025-02). Technologies detected: Amazon AWS; Google Cloud.",
+  "scraping_status": "partial",
+  "errors": [
+   "https://plain.com/about: not_found"
+  ]
+ },
+ "extraction": {
+  "company_profile": {
+   "company_name": "Plain",
+   "domain": "plain.com",
+   "business_model": "B2B SaaS (rule-based assessment)",
+   "business_description": {
+    "finding": "Business description (homepage / meta description)",
+    "source_url": "https://plain.com/",
+    "excerpt": "Plain is the AI support stack built for B2B teams. Composable infrastructure that gives you complete flexibility to build a support motion that grows with your business — no-code or all-code.",
+    "evidence_type": "explicit",
+    "confidence": 0.7,
+    "category": "other"
+   },
+   "is_saas": true,
+   "is_saas_evidence": [
+    {
+     "finding": "Describes itself as SaaS",
+     "source_url": "https://plain.com/customers",
+     "excerpt": "Starter kit for rapidly building and deploying TypeScript-based SaaS applications",
+     "evidence_type": "explicit",
+     "confidence": 0.6,
+     "category": "saas_indicator"
+    },
+    {
+     "finding": "Self-serve free trial / sign-up",
+     "source_url": "https://plain.com/",
+     "excerpt": "Start for free",
+     "evidence_type": "explicit",
+     "confidence": 0.6,
+     "category": "saas_indicator"
+    },
+    {
+     "finding": "Product demo / sales-led motion",
+     "source_url": "https://plain.com/",
+     "excerpt": "Book a demo",
+     "evidence_type": "explicit",
+     "confidence": 0.6,
+     "category": "saas_indicator"
+    },
+    {
+     "finding": "Developer API",
+     "source_url": "https://plain.com/",
+     "excerpt": "Create a Linear issue, trigger a PagerDuty incident, or call your own API.",
+     "evidence_type": "inferred",
+     "confidence": 0.4,
+     "category": "saas_indicator"
+    },
+    {
+     "finding": "Product integrations",
+     "source_url": "https://plain.com/",
+     "excerpt": "Integrations",
+     "evidence_type": "inferred",
+     "confidence": 0.4,
+     "category": "saas_indicator"
+    },
+    {
+     "finding": "Platform positioning",
+     "source_url": "https://plain.com/",
+     "excerpt": "Every part of our platform is architected to protect your data.",
+     "evidence_type": "inferred",
+     "confidence": 0.4,
+     "category": "saas_indicator"
+    },
+    {
+     "finding": "Workflow / automation product",
+     "source_url": "https://plain.com/",
+     "excerpt": "Workflow",
+     "evidence_type": "inferred",
+     "confidence": 0.4,
+     "category": "saas_indicator"
+    }
+   ],
+   "employee_range": {
+    "value": "68 employees",
+    "evidence": {
+     "finding": "Headcount mention: 68 employees",
+     "source_url": "enrichment://apollo.io/plain.com",
+     "excerpt": "Headcount: 68 employees.",
+     "evidence_type": "explicit",
+     "confidence": 0.7,
+     "category": "other"
+    }
+   },
+   "funding_stage": {
+    "value": "Series A",
+    "evidence": {
+     "finding": "Funding announcement: Series A round",
+     "source_url": "enrichment://apollo.io/plain.com",
+     "excerpt": "Latest funding: Series A round (2025-02).",
+     "evidence_type": "explicit",
+     "confidence": 0.85,
+     "category": "funding"
+    }
+   },
+   "enterprise_customers": [
+    {
+     "finding": "Customer reference: powering our support, we don't have to think about scaling challenges",
+     "source_url": "https://plain.com/",
+     "excerpt": "With Plain powering our support, we don't have to think about scaling challenges.",
+     "evidence_type": "inferred",
+     "confidence": 0.55,
+     "category": "enterprise_customer"
+    },
+    {
+     "finding": "Customer reference: trusted by the world's best support teams",
+     "source_url": "https://plain.com/customers",
+     "excerpt": "Plain is trusted by the world's best support teams",
+     "evidence_type": "inferred",
+     "confidence": 0.55,
+     "category": "enterprise_customer"
+    },
+    {
+     "finding": "Customer stories page exists: Plain Customers — How B2B Teams Like Vercel, Cursor, and n8n Build Support Their Way",
+     "source_url": "https://plain.com/customers",
+     "excerpt": "See how leading B2B companies use Plain to consolidate Slack, Teams, and Discord support into one platform — cutting response times, scaling with AI, and building custom workflows with Plain's API.",
+     "evidence_type": "explicit",
+     "confidence": 0.6,
+     "category": "enterprise_customer"
+    }
+   ],
+   "customer_industries": [
+    {
+     "finding": "Serves or targets financial services",
+     "source_url": "https://plain.com/customers",
+     "excerpt": "Revenue management platform that manages complex billing, including usage-based pricing, subscriptions, quotes, and payments",
+     "evidence_type": "inferred",
+     "confidence": 0.55,
+     "category": "regulated_industry"
+    }
+   ],
+   "tech_stack": [
+    {
+     "finding": "Infrastructure: runs on Amazon Web Services",
+     "source_url": "https://www.plain.com/docs/product/security",
+     "excerpt": "Plain runs on Amazon Web Services in the",
+     "evidence_type": "explicit",
+     "confidence": 0.8,
+     "category": "other"
+    }
+   ]
+  },
+  "compliance_signals": {
+   "soc2_mentions": [
+    {
+     "finding": "Mentions SOC 2 Type II — appears to be held",
+     "source_url": "https://www.plain.com/docs/product/security",
+     "excerpt": "Plain is SOC 2 Type II certified.",
+     "evidence_type": "explicit",
+     "confidence": 0.8,
+     "category": "certification_held"
+    },
+    {
+     "finding": "Mentions SOC 2 — appears to be held",
+     "source_url": "https://www.plain.com/docs/product/security",
+     "excerpt": "To request the SOC 2 report or other security documentation, go to",
+     "evidence_type": "explicit",
+     "confidence": 0.8,
+     "category": "certification_held"
+    }
+   ],
+   "iso27001_mentions": [],
+   "gdpr_mentions": [
+    {
+     "finding": "Mentions GDPR",
+     "source_url": "https://www.plain.com/docs/product/security",
+     "excerpt": "Plain’s systems are built in line with the General Data Protection Regulation (GDPR) and the UK Data Protection Act.",
+     "evidence_type": "explicit",
+     "confidence": 0.6,
+     "category": "compliance_mention"
+    }
+   ],
+   "security_pages": [
+    {
+     "finding": "Security control described: encrypted in transit",
+     "source_url": "https://www.plain.com/docs/product/security",
+     "excerpt": "All data is encrypted in transit and at rest.",
+     "evidence_type": "explicit",
+     "confidence": 0.6,
+     "category": "security_page"
+    },
+    {
+     "finding": "Security control described: encrypted at rest",
+     "source_url": "https://www.plain.com/docs/product/security",
+     "excerpt": "Backups run on a regular schedule and are encrypted at rest.",
+     "evidence_type": "explicit",
+     "confidence": 0.6,
+     "category": "security_page"
+    }
+   ],
+   "trust_centre": true,
+   "trust_centre_evidence": [
+    {
+     "finding": "Trust centre page is live",
+     "source_url": "https://trust.plain.com/",
+     "excerpt": "Plain Trust Center",
+     "evidence_type": "explicit",
+     "confidence": 0.85,
+     "category": "trust_centre"
+    },
+    {
+     "finding": "References a Trust Center",
+     "source_url": "https://plain.com/",
+     "excerpt": "Trust Center",
+     "evidence_type": "explicit",
+     "confidence": 0.7,
+     "category": "trust_centre"
+    }
+   ],
+   "compliance_hiring": [],
+   "enterprise_security_signals": [
+    {
+     "finding": "Security review / procurement process: Data Processing Agreement",
+     "source_url": "https://www.plain.com/docs/product/security",
+     "excerpt": "Data Processing Agreement (DPA)",
+     "evidence_type": "explicit",
+     "confidence": 0.7,
+     "category": "security_review_pressure"
+    }
+   ]
+  },
+  "growth_signals": [
+   {
+    "finding": "Funding announcement: Series A round",
+    "source_url": "enrichment://apollo.io/plain.com",
+    "excerpt": "Latest funding: Series A round (2025-02).",
+    "evidence_type": "explicit",
+    "confidence": 0.85,
+    "category": "funding"
+   }
+  ],
+  "other_signals": [],
+  "potential_buying_moments": [
+   {
+    "signal": "Trust centre page is live",
+    "category": "trust_centre",
+    "source_url": "https://trust.plain.com/",
+    "evidence": "Plain Trust Center",
+    "why_it_matters": "A trust centre signals that customers are actively asking for security documentation during deals.",
+    "confidence": 0.85,
+    "requires_further_research": false,
+    "hook_phrase": "you've published a trust centre"
+   },
+   {
+    "signal": "Funding announcement: Series A round",
+    "category": "funding",
+    "source_url": "enrichment://apollo.io/plain.com",
+    "evidence": "Latest funding: Series A round (2025-02).",
+    "why_it_matters": "A new round usually funds go-to-market expansion into larger accounts, which brings security reviews with it.",
+    "confidence": 0.85,
+    "requires_further_research": false,
+    "hook_phrase": "your recent Series A announcement"
+   },
+   {
+    "signal": "Mentions SOC 2 Type II — appears to be held",
+    "category": "certification_held",
+    "source_url": "https://www.plain.com/docs/product/security",
+    "evidence": "Plain is SOC 2 Type II certified.",
+    "why_it_matters": "An existing certification must be renewed every year and usually expands to further frameworks as the customer base grows; continuous compliance becomes the ongoing cost.",
+    "confidence": 0.8,
+    "requires_further_research": false,
+    "hook_phrase": "your security page says \"Plain is SOC 2 Type II certified\""
+   },
+   {
+    "signal": "Security review / procurement process: Data Processing Agreement",
+    "category": "security_review_pressure",
+    "source_url": "https://www.plain.com/docs/product/security",
+    "evidence": "Data Processing Agreement (DPA)",
+    "why_it_matters": "References to security questionnaires, DPAs or procurement suggest deals already pass through vendor security review.",
+    "confidence": 0.7,
+    "requires_further_research": false,
+    "hook_phrase": "your security page says \"Data Processing Agreement (DPA)\""
+   },
+   {
+    "signal": "Customer stories page exists: Plain Customers — How B2B Teams Like Vercel, Cursor, and n8n Build Support Their Way",
+    "category": "enterprise_customer",
+    "source_url": "https://plain.com/customers",
+    "evidence": "See how leading B2B companies use Plain to consolidate Slack, Teams, and Discord support into one platform — cutting response times, scaling with AI, and building custom workflows with Plain's API.",
+    "why_it_matters": "Named larger customers suggest the company is already exposed to enterprise security requirements.",
+    "confidence": 0.6,
+    "requires_further_research": false,
+    "hook_phrase": "your customer stories features customer work with larger teams"
+   },
+   {
+    "signal": "Serves or targets financial services",
+    "category": "regulated_industry",
+    "source_url": "https://plain.com/customers",
+    "evidence": "Revenue management platform that manages complex billing, including usage-based pricing, subscriptions, quotes, and payments",
+    "why_it_matters": "Customers in regulated industries (finance, healthcare, public sector) routinely require formal attestations from vendors.",
+    "confidence": 0.55,
+    "requires_further_research": true,
+    "hook_phrase": "you work with customers in financial services"
+   }
+  ],
+  "missing_information": [
+   "security_hiring: Security, compliance or engineering hiring activity"
+  ],
+  "contradictory_information": [],
+  "provenance": "deterministic_fallback"
+ },
+ "extraction_notes": [
+  "Claude not configured — deterministic fallback extraction (not AI-verified)."
+ ],
+ "qualification": {
+  "qualified": true,
+  "decision_status": "qualified",
+  "recommended_action": "outreach",
+  "icp_fit_score": 77,
+  "buying_timing_score": 42,
+  "evidence_confidence": 0.75,
+  "icp_breakdown": [
+   {
+    "criterion": "SaaS business model",
+    "max_points": 25,
+    "points": 22.5,
+    "rationale": "SaaS model supported by 7 indicator(s).",
+    "evidence_ids": [
+     "b30577dac0",
+     "2276c8e474",
+     "4e069adbc2",
+     "b16e61b5bd",
+     "ef72ca197d",
+     "bbd113174d",
+     "84140c6db1"
+    ]
+   },
+   {
+    "criterion": "Relevant growth stage (Series A–C)",
+    "max_points": 15,
+    "points": 15.0,
+    "rationale": "Explicit Series A — inside Sprinto's sweet spot.",
+    "evidence_ids": [
+     "047a6b0f6f",
+     "9609ed4e71"
+    ]
+   },
+   {
+    "criterion": "Enterprise customer orientation",
+    "max_points": 20,
+    "points": 12.3,
+    "rationale": "3 enterprise reference(s) / enterprise-tier signals.",
+    "evidence_ids": [
+     "ea0ea12cf2",
+     "b10e2227d8",
+     "c5ff26d03c"
+    ]
+   },
+   {
+    "criterion": "Relevant customer industry",
+    "max_points": 10,
+    "points": 10.0,
+    "rationale": "Serves regulated industries: financial services",
+    "evidence_ids": [
+     "198d881801"
+    ]
+   },
+   {
+    "criterion": "Company scaling signals",
+    "max_points": 10,
+    "points": 0.0,
+    "rationale": "No scaling signals observed.",
+    "evidence_ids": []
+   },
+   {
+    "criterion": "Security / compliance complexity",
+    "max_points": 20,
+    "points": 17.0,
+    "rationale": "5 security/compliance artefact(s) on the site.",
+    "evidence_ids": [
+     "1989ccc720",
+     "2dcb913309",
+     "e1c5653500",
+     "4eb6784878",
+     "097212409c"
+    ]
+   }
+  ],
+  "timing_breakdown": [
+   {
+    "criterion": "Explicit SOC 2 / ISO 27001 / audit requirement",
+    "max_points": 30,
+    "points": 17.0,
+    "rationale": "Certification already held — renewal and multi-framework expansion, not a first audit.",
+    "evidence_ids": [
+     "4eb6784878",
+     "097212409c"
+    ]
+   },
+   {
+    "criterion": "Enterprise security review / procurement pressure",
+    "max_points": 25,
+    "points": 8.4,
+    "rationale": "1 reference(s) to security reviews, DPAs or procurement.",
+    "evidence_ids": [
+     "284fa597fb"
+    ]
+   },
+   {
+    "criterion": "Security or compliance hiring",
+    "max_points": 20,
+    "points": 0.0,
+    "rationale": "No security roles found.",
+    "evidence_ids": []
+   },
+   {
+    "criterion": "Trust centre or compliance activity",
+    "max_points": 10,
+    "points": 10.0,
+    "rationale": "Trust centre published.",
+    "evidence_ids": [
+     "bb12a66856",
+     "2cef1b868f"
+    ]
+   },
+   {
+    "criterion": "Recent enterprise expansion / scaling",
+    "max_points": 15,
+    "points": 6.8,
+    "rationale": "1 expansion / funding signal(s).",
+    "evidence_ids": [
+     "047a6b0f6f"
+    ]
+   }
+  ],
+  "penalties": [],
+  "qualification_reasoning": [
+   "Evidence Map → QUALIFY: SaaS, in the growth band, and preparing for an audit — all backed by cited evidence.",
+   "Scores: ICP 77/100, timing 42/100, evidence confidence 0.75.",
+   "Biggest ICP drivers: SaaS business model (22.5/25) — SaaS model supported by 7 indicator(s).; Security / compliance complexity (17/20) — 5 security/compliance artefact(s) on the site.",
+   "Biggest timing drivers: Explicit SOC 2 / ISO 27001 / audit requirement (17/30) — Certification already held — renewal and multi-framework expansion, not a first audit.; Trust centre or compliance activity (10/10) — Trust centre published.",
+   "Extraction ran in deterministic fallback mode (Claude not used); confidence capped at 0.75. Results are rule-based, not AI-verified."
+  ],
+  "positive_signals": [
+   "SaaS business model: SaaS model supported by 7 indicator(s). (+22.5/25)",
+   "Relevant growth stage (Series A–C): Explicit Series A — inside Sprinto's sweet spot. (+15/15)",
+   "Enterprise customer orientation: 3 enterprise reference(s) / enterprise-tier signals. (+12.3/20)",
+   "Relevant customer industry: Serves regulated industries: financial services (+10/10)",
+   "Security / compliance complexity: 5 security/compliance artefact(s) on the site. (+17/20)",
+   "Explicit SOC 2 / ISO 27001 / audit requirement: Certification already held — renewal and multi-framework expansion, not a first audit. (+17/30)",
+   "Enterprise security review / procurement pressure: 1 reference(s) to security reviews, DPAs or procurement. (+8.4/25)",
+   "Trust centre or compliance activity: Trust centre published. (+10/10)",
+   "Recent enterprise expansion / scaling: 1 expansion / funding signal(s). (+6.8/15)"
+  ],
+  "negative_signals": [
+   "Company scaling signals: No scaling signals observed.",
+   "Security or compliance hiring: No security roles found."
+  ],
+  "missing_information": [
+   "security_hiring: Security, compliance or engineering hiring activity"
+  ],
+  "risks_and_uncertainty": [
+   "7 of 23 evidence items are inferred rather than explicitly stated.",
+   "Unknown: Security, compliance or engineering hiring activity.",
+   "Company already holds SOC 2 — the conversation is about continuous compliance / extra frameworks, not a first audit.",
+   "Keyword rules can misread context (e.g. 'SOC 2' in a blog post about a customer, not the company itself)."
+  ],
+  "secondary_research_performed": false,
+  "research_rounds": 0,
+  "provenance": "deterministic_fallback",
+  "gate_decision": "QUALIFY",
+  "evidence_map": [
+   {
+    "key": "saas",
+    "question": "Is it a SaaS business?",
+    "core": true,
+    "answer": "yes",
+    "basis": "Subscription-software indicators found (pricing/trial/login/API).",
+    "evidence": [
+     "\"Starter kit for rapidly building and deploying TypeScript-based SaaS applications\" — https://plain.com/customers",
+     "\"Start for free\" — https://plain.com/"
+    ],
+    "tries_used": 1,
+    "limit": 3,
+    "if_unanswered": "Flag at review gate",
+    "short_circuit_hit": null
+   },
+   {
+    "key": "growth_stage",
+    "question": "Is it Series A–C / 50–200 employees?",
+    "core": true,
+    "answer": "yes",
+    "basis": "Inside the Series A–C / 50–200 employee band (Series A, 68 employees).",
+    "evidence": [
+     "\"Latest funding: Series A round (2025-02).\" — enrichment://apollo.io/plain.com",
+     "\"Headcount: 68 employees.\" — enrichment://apollo.io/plain.com"
+    ],
+    "tries_used": 0,
+    "limit": 3,
+    "if_unanswered": "Flag at review gate",
+    "short_circuit_hit": null
+   },
+   {
+    "key": "audit_intent",
+    "question": "Is it preparing for an audit (SOC 2 / ISO 27001)?",
+    "core": true,
+    "answer": "yes",
+    "basis": "Audit work, compliance hiring or security-review pressure observed.",
+    "evidence": [
+     "\"Data Processing Agreement (DPA)\" — https://www.plain.com/docs/product/security"
+    ],
+    "tries_used": 2,
+    "limit": 4,
+    "if_unanswered": "Nurture (right company, wrong time)",
+    "short_circuit_hit": null
+   },
+   {
+    "key": "clients",
+    "question": "Does it have >50 clients / larger customers?",
+    "core": false,
+    "answer": "yes",
+    "basis": "Customer base of meaningful size / named larger customers.",
+    "evidence": [
+     "\"With Plain powering our support, we don't have to think about scaling challenges.\" — https://plain.com/",
+     "\"Plain is trusted by the world's best support teams\" — https://plain.com/customers"
+    ],
+    "tries_used": 2,
+    "limit": 2,
+    "if_unanswered": "Neutral",
+    "short_circuit_hit": null
+   },
+   {
+    "key": "industry",
+    "question": "Does it serve a regulated industry?",
+    "core": false,
+    "answer": "yes",
+    "basis": "Serves regulated buyers: financial services.",
+    "evidence": [
+     "\"Revenue management platform that manages complex billing, including usage-based pricing, subscriptions, quotes, and payments\" — https://plain.com/customers"
+    ],
+    "tries_used": 1,
+    "limit": 1,
+    "if_unanswered": "Neutral",
+    "short_circuit_hit": null
+   },
+   {
+    "key": "cloud_stack",
+    "question": "Is it on AWS / GCP / Azure?",
+    "core": false,
+    "answer": "yes",
+    "basis": "Runs on a major cloud (Sprinto integrates with AWS/GCP/Azure).",
+    "evidence": [
+     "\"Plain runs on Amazon Web Services in the\" — https://www.plain.com/docs/product/security"
+    ],
+    "tries_used": 1,
+    "limit": 2,
+    "if_unanswered": "Neutral",
+    "short_circuit_hit": null
+   }
+  ],
+  "review_flags": []
+ },
+ "research_rounds": [],
+ "research_notes": [
+  "Stopped before round 1: Decision already well supported."
+ ],
+ "contact_selection": {
+  "status": "selected",
+  "contact": {
+   "first_name": "Matt",
+   "last_name": "Vagni",
+   "full_name": "Matt Vagni",
+   "job_title": "Co-founder & CTO",
+   "email": null,
+   "email_confidence": null,
+   "verification_status": "title verified on company site",
+   "department": null,
+   "seniority": null,
+   "linkedin_url": null,
+   "source": "plain.com author page",
+   "source_url": "https://www.plain.com/authors/matt-vagni"
+  },
+  "role_family": "CTO",
+  "selection_reasoning": "Matt Vagni, Co-founder & CTO (relevance 67.0): CTO: accountable for technical controls and usually sponsors the first SOC 2. A security function exists, so the CTO is one step removed from day-to-day compliance. No email address available — reachable only after manual verification. Email not yet verified — the test preview will show the prospect address as unavailable.",
+  "alternative_contacts": [],
+  "providers_tried": [
+   "Manual mapping (Apollo / research)",
+   "Company website (team page)"
+  ],
+  "provider_notes": [
+   "Hunter.io skipped: HUNTER_API_KEY not set.",
+   "Manual mapping returned 1 contact(s)",
+   "Company website listed 0 named leader(s)"
+  ]
+ },
+ "pain_points": {
+  "pain_points": [
+   {
+    "pain_point": "Security questionnaires and vendor reviews slowing enterprise deals",
+    "basis": "observed",
+    "reasoning": "The site points to an enterprise motion (Trust centre page is live); enterprise buyers send security questionnaires that usually land with the Co-founder & CTO.",
+    "supporting_evidence": [
+     "\"Plain Trust Center\" — https://trust.plain.com/",
+     "\"Trust Center\" — https://plain.com/",
+     "\"Data Processing Agreement (DPA)\" — https://www.plain.com/docs/product/security"
+    ],
+    "confidence": 0.9
+   },
+   {
+    "pain_point": "Keeping SOC 2 / ISO 27001 controls continuously audit-ready as the company scales",
+    "basis": "observed",
+    "reasoning": "Plain already references SOC 2; certifications must be re-evidenced every year while headcount and systems grow (Series A round).",
+    "supporting_evidence": [
+     "\"Latest funding: Series A round (2025-02).\" — enrichment://apollo.io/plain.com",
+     "\"Plain is SOC 2 Type II certified.\" — https://www.plain.com/docs/product/security",
+     "\"To request the SOC 2 report or other security documentation, go to\" — https://www.plain.com/docs/product/security"
+    ],
+    "confidence": 0.88
+   }
+  ],
+  "provenance": "deterministic_fallback"
+ },
+ "email": {
+  "recipient_name": "Matt Vagni",
+  "recipient_email": null,
+  "subject": "your trust centre at Plain",
+  "subject_candidates": [
+   "your trust centre at Plain",
+   "Plain and SOC 2",
+   "question on your trust centre"
+  ],
+  "subject_choice_reason": "Chosen for specificity to the observed signal and brevity (score 4 vs 4, 3).",
+  "email_body": "Hi Matt,\n\nNoticed you've published a trust centre. That usually means customers are asking for security documentation during deals.\n\nAre security questionnaires starting to slow down your larger deals?\n\nSprinto automates evidence collection and continuous control monitoring for SOC 2, ISO 27001 and GDPR, so audit prep stops being a side project for engineering. If it's relevant, would a 20-minute conversation be useful?\n\nBest,\nSprinto Growth Team",
+  "personalisation_hook": "you've published a trust centre",
+  "hook_source_url": "https://trust.plain.com/",
+  "pain_point_used": "Security questionnaires and vendor reviews slowing enterprise deals",
+  "why_this_email_was_written": "Trust centre page is live (https://trust.plain.com/) suggests a trust centre signals that customers are actively asking for security documentation during deals. Matt Vagni (Co-founder & CTO) is the likely owner of 'Security questionnaires and vendor reviews slowing enterprise deals'.",
+  "evidence_to_email_trace": [
+   {
+    "sentence": "Noticed you've published a trust centre.",
+    "purpose": "Website observation (hook)",
+    "evidence": "Plain Trust Center",
+    "source_url": "https://trust.plain.com/"
+   },
+   {
+    "sentence": "That usually means customers are asking for security documentation during deals.",
+    "purpose": "Business implication of the observation",
+    "evidence": "A trust centre signals that customers are actively asking for security documentation during deals.",
+    "source_url": "https://trust.plain.com/"
+   },
+   {
+    "sentence": "Are security questionnaires starting to slow down your larger deals?",
+    "purpose": "Role-specific challenge (observed)",
+    "evidence": "\"Plain Trust Center\" — https://trust.plain.com/; \"Trust Center\" — https://plain.com/",
+    "source_url": "https://trust.plain.com/"
+   },
+   {
+    "sentence": "Sprinto automates evidence collection and continuous control monitoring for SOC 2, ISO 27001 and GDPR, so audit prep stops being a side project for engineering.",
+    "purpose": "Relevant Sprinto value proposition (core product, no extra claims)",
+    "evidence": "",
+    "source_url": ""
+   },
+   {
+    "sentence": "If it's relevant, would a 20-minute conversation be useful?",
+    "purpose": "Single low-pressure CTA",
+    "evidence": "",
+    "source_url": ""
+   }
+  ],
+  "quality_checks": {
+   "length_60_110_words": true,
+   "greets_by_first_name": true,
+   "hook_is_grounded_in_evidence": true,
+   "no_banned_phrases": true,
+   "no_exclamation_marks": true,
+   "single_cta": true,
+   "no_unsupported_sprinto_claims": true
+  },
+  "word_count": 61,
+  "provenance": "deterministic_fallback"
+ },
+ "dispatch": {
+  "status": "pending_review",
+  "delivered_to": null,
+  "preview_path": "/Users/anishasarkar/sprinto-case-study/sprinto-signal-engine/output/review/plain-com.txt",
+  "message_id": null,
+  "detail": "Waiting for a human at the review gate."
+ },
+ "errors": {},
+ "ledger": {
+  "company": "Plain",
+  "domain": "plain.com",
+  "decision_status": "qualified",
+  "recommended_action": "outreach",
+  "icp_fit_score": 77,
+  "buying_timing_score": 42,
+  "evidence_confidence": 0.75,
+  "gate_decision": "QUALIFY",
+  "evidence_map": {
+   "saas": "yes",
+   "growth_stage": "yes",
+   "audit_intent": "yes",
+   "clients": "yes",
+   "industry": "yes",
+   "cloud_stack": "yes"
+  },
+  "review_flags": [],
+  "provenance": "deterministic_fallback",
+  "why_this_company": [
+   "SaaS business model +22.5/25: SaaS model supported by 7 indicator(s). [b30577dac0] \"Starter kit for rapidly building and deploying TypeScript-based SaaS applications\" (https://plain.com/customers); [2276c8e474] \"Start for free\" (https://plain.com/)",
+   "Relevant growth stage (Series A–C) +15/15: Explicit Series A — inside Sprinto's sweet spot. [047a6b0f6f] \"Latest funding: Series A round (2025-02).\" (enrichment://apollo.io/plain.com); [9609ed4e71] \"Headcount: 68 employees.\" (enrichment://apollo.io/plain.com)",
+   "Enterprise customer orientation +12.3/20: 3 enterprise reference(s) / enterprise-tier signals. [ea0ea12cf2] \"With Plain powering our support, we don't have to think about scaling challenges.\" (https://plain.com/); [b10e2227d8] \"Plain is trusted by the world's best support teams\" (https://plain.com/customers)",
+   "Relevant customer industry +10/10: Serves regulated industries: financial services [198d881801] \"Revenue management platform that manages complex billing, including usage-based pricing, subscriptions, quotes\" (https://plain.com/customers)",
+   "Security / compliance complexity +17/20: 5 security/compliance artefact(s) on the site. [1989ccc720] \"All data is encrypted in transit and at rest.\" (https://www.plain.com/docs/product/security); [2dcb913309] \"Backups run on a regular schedule and are encrypted at rest.\" (https://www.plain.com/docs/product/security)"
+  ],
+  "why_now": [
+   "Explicit SOC 2 / ISO 27001 / audit requirement +17/30: Certification already held — renewal and multi-framework expansion, not a first audit. [4eb6784878] \"Plain is SOC 2 Type II certified.\" (https://www.plain.com/docs/product/security); [097212409c] \"To request the SOC 2 report or other security documentation, go to\" (https://www.plain.com/docs/product/security)",
+   "Enterprise security review / procurement pressure +8.4/25: 1 reference(s) to security reviews, DPAs or procurement. [284fa597fb] \"Data Processing Agreement (DPA)\" (https://www.plain.com/docs/product/security)",
+   "Trust centre or compliance activity +10/10: Trust centre published. [bb12a66856] \"Plain Trust Center\" (https://trust.plain.com/); [2cef1b868f] \"Trust Center\" (https://plain.com/)",
+   "Recent enterprise expansion / scaling +6.8/15: 1 expansion / funding signal(s). [047a6b0f6f] \"Latest funding: Series A round (2025-02).\" (enrichment://apollo.io/plain.com)",
+   "Buying moment — Trust centre page is live: A trust centre signals that customers are actively asking for security documentation during deals. (https://trust.plain.com/)",
+   "Buying moment — Funding announcement: Series A round: A new round usually funds go-to-market expansion into larger accounts, which brings security reviews with it. (enrichment://apollo.io/plain.com)",
+   "Buying moment — Mentions SOC 2 Type II — appears to be held: An existing certification must be renewed every year and usually expands to further frameworks as the customer base grows; continuous compliance becomes the ongoing cost. (https://www.plain.com/docs/product/security)"
+  ],
+  "what_could_make_this_wrong": [
+   "7 of 23 evidence items are inferred rather than explicitly stated.",
+   "Unknown: Security, compliance or engineering hiring activity.",
+   "Company already holds SOC 2 — the conversation is about continuous compliance / extra frameworks, not a first audit.",
+   "Keyword rules can misread context (e.g. 'SOC 2' in a blog post about a customer, not the company itself)."
+  ],
+  "why_this_person": [
+   "Matt Vagni, Co-founder & CTO (relevance 67.0): CTO: accountable for technical controls and usually sponsors the first SOC 2. A security function exists, so the CTO is one step removed from day-to-day compliance. No email address available — reachable only after manual verification. Email not yet verified — the test preview will show the prospect address as unavailable."
+  ],
+  "why_this_pain_point": [
+   "Security questionnaires and vendor reviews slowing enterprise deals [observed, confidence 0.9]: The site points to an enterprise motion (Trust centre page is live); enterprise buyers send security questionnaires that usually land with the Co-founder & CTO. Evidence: \"Plain Trust Center\" — https://trust.plain.com/ | \"Trust Center\" — https://plain.com/",
+   "Keeping SOC 2 / ISO 27001 controls continuously audit-ready as the company scales [observed, confidence 0.88]: Plain already references SOC 2; certifications must be re-evidenced every year while headcount and systems grow (Series A round). Evidence: \"Latest funding: Series A round (2025-02).\" — enrichment://apollo.io/plain.com | \"Plain is SOC 2 Type II certified.\" — https://www.plain.com/docs/product/security"
+  ],
+  "why_this_email": [
+   "Hook: you've published a trust centre (https://trust.plain.com/)",
+   "Pain point used: Security questionnaires and vendor reviews slowing enterprise deals",
+   "Trust centre page is live (https://trust.plain.com/) suggests a trust centre signals that customers are actively asking for security documentation during deals. Matt Vagni (Co-founder & CTO) is the likely owner of 'Security questionnaires and vendor reviews slowing enterprise deals'."
+  ]
+ }
+}

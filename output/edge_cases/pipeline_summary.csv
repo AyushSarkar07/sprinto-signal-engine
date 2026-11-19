@@ -1,0 +1,2 @@
+company,domain,scraping_status,pages_read,decision_status,recommended_action,icp_fit_score,buying_timing_score,evidence_confidence,research_rounds,top_buying_moment,contact,contact_title,contact_email,email_subject,dispatch_status,provenance,errors
+Unreachable Example (robustness test),this-domain-does-not-exist-sprinto-test.invalid,failed,0,insufficient_data,manual_review,0,0,0.1,0,,,,,,,deterministic_fallback,

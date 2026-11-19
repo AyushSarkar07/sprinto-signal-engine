@@ -1,0 +1,20 @@
+REVIEW DRAFT — Plain
+Approve:  python main.py --approve "Plain"
+Reject:   python main.py --reject "Plain" --reason "..."
+
+No Evidence Map flags.
+Hook source: https://trust.plain.com/
+
+----- EDIT BELOW THIS LINE (keep the 'Subject:' line) -----
+Subject: your trust centre at Plain
+
+Hi Matt,
+
+Noticed you've published a trust centre. That usually means customers are asking for security documentation during deals.
+
+Are security questionnaires starting to slow down your larger deals?
+
+Sprinto automates evidence collection and continuous control monitoring for SOC 2, ISO 27001 and GDPR, so audit prep stops being a side project for engineering. If it's relevant, would a 20-minute conversation be useful?
+
+Best,
+Sprinto Growth Team

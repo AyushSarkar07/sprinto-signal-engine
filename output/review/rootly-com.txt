@@ -1,0 +1,20 @@
+REVIEW DRAFT — Rootly
+Approve:  python main.py --approve "Rootly"
+Reject:   python main.py --reject "Rootly" --reason "..."
+
+No Evidence Map flags.
+Hook source: https://security.rootly.com/
+
+----- EDIT BELOW THIS LINE (keep the 'Subject:' line) -----
+Subject: security reviews at Rootly
+
+Hi Quentin,
+
+Noticed your trust centre says "Start your security review". That usually means security questionnaires sit right inside the sales cycle.
+
+Are security questionnaires starting to slow down your larger deals?
+
+Sprinto automates evidence collection and continuous control monitoring for SOC 2, ISO 27001 and GDPR, so audit prep stops being a side project for engineering. If it's relevant, would a 20-minute conversation be useful?
+
+Best,
+Sprinto Growth Team
