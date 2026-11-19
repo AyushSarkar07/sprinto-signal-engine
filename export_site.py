@@ -29,10 +29,10 @@ def E(s) -> str:
     return html.escape(s.strip())
 TOUR = """
 <style>
-.tour-dim{position:fixed;inset:0;background:rgba(20,14,10,.28);z-index:40;pointer-events:none;opacity:0;transition:opacity .2s}
+.tour-dim{position:fixed;inset:0;background:rgba(14,18,13,.28);z-index:40;pointer-events:none;opacity:0;transition:opacity .2s}
 .tour-on .tour-dim{opacity:1}
 .tour-spot{position:relative;z-index:41;outline:3px solid var(--lime);outline-offset:6px;border-radius:14px;
-box-shadow:0 0 0 9999px rgba(20,14,10,.0);scroll-margin:120px 0 260px}
+box-shadow:0 0 0 9999px rgba(14,18,13,.0);scroll-margin:120px 0 260px}
 .tour-card{position:fixed;z-index:50;left:50%;bottom:22px;transform:translateX(-50%);width:min(520px,calc(100vw - 32px));
 background:var(--ink);color:var(--paper);border-radius:20px;padding:20px 22px 16px;box-shadow:0 18px 50px rgba(0,0,0,.28);display:none}
 .tour-on .tour-card{display:block}
@@ -283,7 +283,7 @@ def main() -> Path:
 <meta name="description" content="Evidence-driven outbound research for Sprinto: every decision cites its source.">
 {site_chrome.FONTS}{site_chrome.FAVICON}
 <style>
-:root{{--paper:#f3eee6;--card:#fbf8f3;--ink:#2a1f1a;--soft:#6f625a;--line:#e2d9cc;--lime:#e4ff5c;--limeink:#1d2400;
+:root{{--paper:#f2f4ee;--card:#ffffff;--ink:#1c211b;--soft:#5a6157;--line:#dce0d4;--lime:#e4ff5c;--limeink:#1d2400;
 --go:#1f6b4a;--gobg:#e3efe5;--flag:#8a5a00;--flagbg:#f8ecd2;--hold:#3e4f7a;--holdbg:#e6e9f3;--stop:#9b2c1f;--stopbg:#f6e2dd;
 --serif:"Instrument Serif",Georgia,"Times New Roman",serif;--sans:{site_chrome.SANS}}}
 @media (prefers-color-scheme:dark){{:root:not([data-theme="light"]){{--paper:#16110e;--card:#1f1915;--ink:#f1e9df;--soft:#a8998c;--line:#342b25;
@@ -292,7 +292,7 @@ def main() -> Path:
 --flagbg:#33270d;--flag:#f0c46a;--holdbg:#1d2438;--hold:#a9b8e8;--stopbg:#3a1913;--stop:#f29a8a}}
 *{{box-sizing:border-box}}html{{scroll-behavior:smooth}}
 body{{margin:0;background:var(--paper);color:var(--ink);font:15.5px/1.55 var(--sans);-webkit-font-smoothing:antialiased}}
-a{{color:inherit}}em{{font-family:var(--serif);font-style:italic;font-weight:400}}.tag{{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--soft);vertical-align:middle;margin-right:.3em}}::selection{{background:var(--lime);color:var(--limeink)}}:focus-visible{{outline:2px solid var(--ink);outline-offset:2px;border-radius:6px}}
+a{{color:inherit}}em{{font-family:var(--serif);font-style:italic;font-weight:400}}h2 em{{font-style:normal;color:var(--soft)}}.tag{{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--soft);vertical-align:middle;margin-right:.3em}}::selection{{background:var(--lime);color:var(--limeink)}}:focus-visible{{outline:2px solid var(--ink);outline-offset:2px;border-radius:6px}}
 .bar-top{{background:var(--ink);color:var(--paper);font-size:13px;text-align:center;padding:9px 16px}}
 .bar-top b{{background:var(--lime);color:var(--limeink);padding:1px 7px;border-radius:4px;margin-right:6px;font-weight:600}}
 {site_chrome.CSS}

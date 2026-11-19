@@ -205,9 +205,9 @@ def tok() -> str:
 # ================================================================ layout
 
 CSS = """
-:root{--paper:#f3eee6;--card:#fbf8f3;--ink:#2a1f1a;--soft:#6f625a;--line:#e2d9cc;--lime:#e4ff5c;--limeink:#1d2400;--side:#2a1f1a;--sideink:#f3eee6;
+:root{--paper:#f2f4ee;--card:#ffffff;--ink:#1c211b;--soft:#5a6157;--line:#dce0d4;--lime:#e4ff5c;--limeink:#1d2400;--side:#1c211b;--sideink:#f2f4ee;
 --go:#1f6b4a;--gobg:#e3efe5;--flag:#8a5a00;--flagbg:#f8ecd2;--hold:#3e4f7a;--holdbg:#e6e9f3;--stop:#9b2c1f;--stopbg:#f6e2dd;
---serif:"Instrument Serif",Georgia,serif;--sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+--serif:"Instrument Serif",Georgia,serif;--sans:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif}
 @media (prefers-color-scheme:dark){:root.dark-ok{--paper:#16110e;--card:#1f1915;--ink:#f1e9df;--soft:#a8998c;--line:#342b25;--side:#0f0b09;--sideink:#f1e9df;
 --gobg:#16301f;--go:#8fd8ad;--flagbg:#33270d;--flag:#f0c46a;--holdbg:#1d2438;--hold:#a9b8e8;--stopbg:#3a1913;--stop:#f29a8a}}
 *{box-sizing:border-box}::selection{background:var(--lime);color:var(--limeink)}

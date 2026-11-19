@@ -34,8 +34,11 @@ pipeline: scrape, extract, Evidence Map gate, contact, pain points, draft, revie
 - Claude extraction is optional; without a key a labelled rule-based fallback runs.
 
 ## Brand Commitments
-- Visual references chosen by the user: OGAKI, Lightship RV, UNESCO Virtual Museum, Breakthrough Energy (paper,
-  serif headlines, lime accent). A classmate's app (sprinto-outreach-delta.vercel.app) is a structural reference
+- Visual references chosen by the user: OGAKI, Lightship RV, UNESCO Virtual Museum, Breakthrough Energy (serif
+  headlines, lime accent). Since Nov 2026 the ground is a cool "ledger paper" (#f2f4ee, white cards, ink #1c211b) and
+  the text face is Schibsted Grotesk, replacing the cream ground and Instrument Sans the review flagged as generic.
+- One site, one look: landing /, results /dashboard, control panel /app share the menu, logo and tokens in
+  src/site_chrome.py. A classmate's app (sprinto-outreach-delta.vercel.app) is a structural reference
   only: never copy its wording.
 - No em dashes or en dashes in visible copy (the user reads them as machine-written).
 - "Case-study build, not affiliated with Sprinto."
