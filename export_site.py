@@ -18,7 +18,7 @@ import json
 from pathlib import Path
 
 from config import ROOT, load_settings
-from src import review_gate
+from src import review_gate, site_chrome
 from src.evidence_map import map_table
 from src.pipeline import Pipeline
 from src.qualification_engine import FALLBACK_CONFIDENCE_CAP, ICP_WEIGHTS, THRESHOLDS, TIMING_WEIGHTS
@@ -278,15 +278,14 @@ def main() -> Path:
   </div>
 </section>"""
 
-    page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sprinto Signal Engine</title>
+    page = f"""<!doctype html><html lang="en" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Results · Signal Engine</title>
 <meta name="description" content="Evidence-driven outbound research for Sprinto: every decision cites its source.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+{site_chrome.FONTS}{site_chrome.FAVICON}
 <style>
 :root{{--paper:#f3eee6;--card:#fbf8f3;--ink:#2a1f1a;--soft:#6f625a;--line:#e2d9cc;--lime:#e4ff5c;--limeink:#1d2400;
 --go:#1f6b4a;--gobg:#e3efe5;--flag:#8a5a00;--flagbg:#f8ecd2;--hold:#3e4f7a;--holdbg:#e6e9f3;--stop:#9b2c1f;--stopbg:#f6e2dd;
---serif:"Instrument Serif",Georgia,"Times New Roman",serif;--sans:"Inter Tight",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}}
+--serif:"Instrument Serif",Georgia,"Times New Roman",serif;--sans:{site_chrome.SANS}}}
 @media (prefers-color-scheme:dark){{:root:not([data-theme="light"]){{--paper:#16110e;--card:#1f1915;--ink:#f1e9df;--soft:#a8998c;--line:#342b25;
 --gobg:#16301f;--go:#8fd8ad;--flagbg:#33270d;--flag:#f0c46a;--holdbg:#1d2438;--hold:#a9b8e8;--stopbg:#3a1913;--stop:#f29a8a}}}}
 :root[data-theme="dark"]{{--paper:#16110e;--card:#1f1915;--ink:#f1e9df;--soft:#a8998c;--line:#342b25;--gobg:#16301f;--go:#8fd8ad;
@@ -296,7 +295,8 @@ body{{margin:0;background:var(--paper);color:var(--ink);font:15.5px/1.55 var(--s
 a{{color:inherit}}em{{font-family:var(--serif);font-style:italic;font-weight:400}}.tag{{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--soft);vertical-align:middle;margin-right:.3em}}::selection{{background:var(--lime);color:var(--limeink)}}:focus-visible{{outline:2px solid var(--ink);outline-offset:2px;border-radius:6px}}
 .bar-top{{background:var(--ink);color:var(--paper);font-size:13px;text-align:center;padding:9px 16px}}
 .bar-top b{{background:var(--lime);color:var(--limeink);padding:1px 7px;border-radius:4px;margin-right:6px;font-weight:600}}
-nav{{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 24px;
+{site_chrome.CSS}
+nav.pnav{{position:sticky;top:60px;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 24px;
 background:color-mix(in srgb,var(--paper) 86%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}}
 .brand{{font-weight:700;letter-spacing:-.02em;font-size:17px;text-decoration:none}}.brand span{{font-family:var(--serif);font-weight:400;font-style:italic;font-size:19px}}
 .links{{display:flex;gap:6px;flex-wrap:wrap}}.links a{{text-decoration:none;font-size:13px;padding:6px 12px;border-radius:999px;border:1px solid var(--line)}}
@@ -385,13 +385,14 @@ footer{{margin-top:80px;padding-top:22px;border-top:1px solid var(--line);displa
 .muted{{color:var(--soft)}}code{{font-size:12px}}
 @media (max-width:900px){{.co-grid,.two{{grid-template-columns:1fr}}.stats,.hero-stats{{grid-template-columns:repeat(2,1fr)}}.rule{{grid-template-columns:1fr 1fr}}
 .hero-stats div:nth-child(3){{padding-left:0;border-left:0}}.hero{{padding:40px 22px 28px}}}}
-@media (max-width:640px){{main{{padding:0 16px 60px}}nav{{padding:10px 16px}}.links{{display:none}}.co{{padding:20px}}.co-head h3{{font-size:34px}}
+@media (max-width:640px){{main{{padding:0 16px 60px}}nav.pnav{{padding:10px 16px;top:0;position:static}}.links{{display:none}}.co{{padding:20px}}.co-head h3{{font-size:34px}}
 .row,.thead{{grid-template-columns:1fr auto 44px 52px}}.row .p,.row .arrow,.row .cf,.thead .p,.thead .x,.thead .cf{{display:none}}.row .c{{font-size:22px}}
 .fun{{grid-template-columns:110px 1fr 26px}}.queue .qrow{{grid-template-columns:1fr .7fr .8fr}}.queue .qrow>:nth-child(2),.queue .qrow>:nth-child(5){{display:none}}
 .rule{{grid-template-columns:1fr}}.stat b{{font-size:30px}}.hero-stats b{{font-size:36px}}}}
 </style></head><body>
 <div class="bar-top"><b>Controlled demo</b>Prospects are never contacted. Drafts can only reach the operator's own test inbox, after human approval.</div>
-<nav><a class="brand" href="#top">Sprinto <span>Signal Engine</span></a>
+{site_chrome.sitebar("results")}
+<nav class="pnav" aria-label="On this page"><a class="brand" href="#top">Results <span>of the latest run</span></a>
 <div class="links"><a href="#pipeline">Pipeline</a><a href="#revenue">Revenue</a><a href="#companies">Companies</a><a href="#scoring">Scoring</a><a href="#map">Evidence Map</a></div></nav>
 <main id="top">
 <header class="hero">
@@ -400,7 +401,7 @@ footer{{margin-top:80px;padding-top:22px;border-top:1px solid var(--line);displa
   Each decision cites the page it came from; anything the evidence can't support is flagged, not invented.</p>
   <div class="ctas"><button class="btn tour" type="button" data-tour-start>Take a tutorial ✦</button><a class="btn ghost" href="#companies">See the companies →</a><a class="btn ghost" href="#map">How the gate decides</a></div>
   <p class="snap">Snapshot of the latest run, published {dt.datetime.now().strftime('%d %b %Y')}. Want to try it on another company?
-  <a href="https://sprinto-panel.vercel.app" target="_blank" rel="noopener"><b>Research a company live ↗</b></a> (public sandbox: nothing is saved or sent).</p>
+  <a href="/run"><b>Research a company live</b></a> (public sandbox: nothing is saved or sent).</p>
   <div class="hero-stats">
     <div><b>{len(runs)}</b><span>companies researched</span></div>
     <div><b>{qualified}</b><span>qualified at the gate</span></div>

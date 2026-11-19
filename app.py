@@ -36,11 +36,11 @@ import traceback
 from collections import Counter
 from pathlib import Path
 
-from flask import Flask, abort, redirect, request, url_for
+from flask import Flask, abort, redirect, request, send_from_directory, url_for
 
 from config import ROOT, load_settings, setup_logging
 from export_site import E, GATE_LABEL, GATE_TONE
-from src import feedback_loop, review_gate, run_history
+from src import feedback_loop, review_gate, run_history, site_chrome
 from src.decision_ledger import write_outputs
 from src.lead_finder import find_leads, funding_leads
 from src.llm import make_llm
@@ -207,8 +207,8 @@ def tok() -> str:
 CSS = """
 :root{--paper:#f3eee6;--card:#fbf8f3;--ink:#2a1f1a;--soft:#6f625a;--line:#e2d9cc;--lime:#e4ff5c;--limeink:#1d2400;--side:#2a1f1a;--sideink:#f3eee6;
 --go:#1f6b4a;--gobg:#e3efe5;--flag:#8a5a00;--flagbg:#f8ecd2;--hold:#3e4f7a;--holdbg:#e6e9f3;--stop:#9b2c1f;--stopbg:#f6e2dd;
---serif:"Instrument Serif",Georgia,serif;--sans:"Inter Tight",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-@media (prefers-color-scheme:dark){:root{--paper:#16110e;--card:#1f1915;--ink:#f1e9df;--soft:#a8998c;--line:#342b25;--side:#0f0b09;--sideink:#f1e9df;
+--serif:"Instrument Serif",Georgia,serif;--sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+@media (prefers-color-scheme:dark){:root.dark-ok{--paper:#16110e;--card:#1f1915;--ink:#f1e9df;--soft:#a8998c;--line:#342b25;--side:#0f0b09;--sideink:#f1e9df;
 --gobg:#16301f;--go:#8fd8ad;--flagbg:#33270d;--flag:#f0c46a;--holdbg:#1d2438;--hold:#a9b8e8;--stopbg:#3a1913;--stop:#f29a8a}}
 *{box-sizing:border-box}::selection{background:var(--lime);color:var(--limeink)}
 ::placeholder{color:var(--soft);opacity:1}input[type=checkbox]{width:20px;height:20px;accent-color:var(--ink);vertical-align:-5px}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}:focus-visible{outline:2px solid var(--ink);outline-offset:2px;border-radius:6px}
@@ -217,15 +217,15 @@ aside :focus-visible{outline-color:var(--lime)}.icon{width:16px;height:16px;flex
 .dark{background:var(--side);color:var(--sideink);border-color:transparent}.dark .tagline{color:var(--lime);font-weight:600;font-size:13px}
 .section{border-top:1px solid var(--line);margin-top:18px;padding-top:16px}
 body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 var(--sans)}a{color:inherit}
-.shell{display:grid;grid-template-columns:232px minmax(0,1fr);min-height:100vh}.shell>*{min-width:0}main{min-width:0}
-aside{background:var(--side);color:var(--sideink);padding:18px 14px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:4px}
+.shell{display:grid;grid-template-columns:232px minmax(0,1fr);min-height:calc(100vh - 60px)}.shell>*{min-width:0}main{min-width:0}
+aside{background:var(--side);color:var(--sideink);padding:18px 14px;position:sticky;top:60px;height:calc(100vh - 60px);display:flex;flex-direction:column;gap:4px}
 .logo{font-weight:700;font-size:16px;padding:4px 10px 16px;text-decoration:none}.logo em{font-family:var(--serif);font-weight:400;font-size:19px}
 .navh{font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:.55;padding:14px 10px 6px}
 .nav{display:flex;justify-content:space-between;align-items:center;padding:8px 10px;border-radius:10px;text-decoration:none;font-size:14.5px;opacity:.85}
 .nav:hover{background:rgba(255,255,255,.07);opacity:1}.nav.on{background:var(--lime);color:var(--limeink);opacity:1;font-weight:600}
 .nav b{font-size:12px;background:rgba(255,255,255,.14);border-radius:999px;padding:1px 8px}.nav.on b{background:rgba(0,0,0,.12)}
 .side-note{margin-top:auto;font-size:12px;opacity:.6;padding:10px;line-height:1.45}
-.top{display:flex;align-items:center;gap:12px;padding:14px 28px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--paper);z-index:3}
+.top{display:flex;align-items:center;gap:12px;padding:14px 28px;border-bottom:1px solid var(--line);position:sticky;top:60px;background:var(--paper);z-index:3}
 .search{flex:1;max-width:420px;display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:8px 14px}
 .search input{border:0;background:transparent;font:inherit;color:inherit;outline:none;flex:1}.kbd{font-size:11px;border:1px solid var(--line);border-radius:6px;padding:1px 6px;color:var(--soft)}
 .chip{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:7px 12px;background:var(--card);white-space:nowrap}.chip i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--go);margin-right:6px}
@@ -278,7 +278,7 @@ textarea{width:100%;min-height:200px;resize:vertical;line-height:1.55}.full{widt
 .feed div{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-size:13.5px}
 pre.md{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;font:13px/1.55 ui-monospace,Menlo,monospace}
 @media (max-width:960px){.shell{grid-template-columns:minmax(0,1fr)}aside{position:static;height:auto;flex-direction:row;flex-wrap:nowrap;overflow-x:auto;gap:2px}
-.nav{white-space:nowrap;flex:none}.logo{flex:none;padding:8px 10px}.navh,.side-note{display:none}.kbd{display:none}.top{padding:12px 16px}.search{max-width:none;flex:1 1 100%}
+.nav{white-space:nowrap;flex:none}.logo{flex:none;padding:8px 10px}.navh,.side-note{display:none}.kbd{display:none}.top{padding:12px 16px;position:static}.search{max-width:none;flex:1 1 100%}
 main{padding:18px 16px 60px}.chip{white-space:normal}
 .g2,.g3,.loop,.split{grid-template-columns:1fr}.g6{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(4,1fr);row-gap:14px}.top{flex-wrap:wrap}}
 """
@@ -311,11 +311,10 @@ def layout(title: str, active: str, body: str, s, runs, reviews) -> str:
 
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{E(title)} · Signal Engine</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232a1f1a'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23e4ff5c'/%3E%3C/svg%3E">
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>{CSS}</style></head><body><div class="shell">
-<aside><a class="logo" href="/">Sprinto <em>Signal Engine</em></a>
-<div class="navh">Pipeline</div>{nav('home', 'Overview', '/')}{nav('run', 'Run research', '/run')}{nav('companies', 'Accounts', '/companies', len(runs))}
+{site_chrome.FAVICON}{site_chrome.FONTS}
+<style>{site_chrome.CSS}{CSS}</style></head><body>{site_chrome.sitebar("panel")}<div class="shell">
+<aside><a class="logo" href="/app">Control <em>panel</em></a>
+<div class="navh">Pipeline</div>{nav('home', 'Overview', '/app')}{nav('run', 'Run research', '/run')}{nav('companies', 'Accounts', '/companies', len(runs))}
 <div class="navh">People decide</div>{nav('review', 'Decision desk', '/review', flagged)}{nav('drafts', 'Draft desk', '/drafts', drafts)}
 <div class="navh">Improve</div>{nav('loop', 'Learning log', '/loop')}
 <div class="side-note">The Evidence Map decides, quotes back every claim, and you sign off every email. Test inbox only.
@@ -327,7 +326,35 @@ def layout(title: str, active: str, body: str, s, runs, reviews) -> str:
 
 # ================================================================ pages
 
+def _site_dir() -> Path:
+    built = ROOT / "site"            # the Vercel bundle (build_panel_deploy.sh)
+    return built if built.exists() else ROOT / "signal-engine-landing"
+
+
 @app.get("/")
+def landing():
+    return send_from_directory(_site_dir(), "index.html")
+
+
+@app.get("/dashboard")
+def dashboard():
+    built = ROOT / "site" / "dashboard.html"
+    if built.exists():
+        return send_from_directory(ROOT / "site", "dashboard.html")
+    return send_from_directory(ROOT / "sprinto-dashboard", "index.html")
+
+
+@app.get("/<any('favicon.svg', 'share.jpg'):name>")
+def site_file(name: str):
+    return send_from_directory(_site_dir(), name)
+
+
+@app.get("/assets/<path:path>")
+def site_assets(path: str):
+    return send_from_directory(_site_dir() / "assets", path)
+
+
+@app.get("/app")
 def home():
     s = settings()
     _, runs, reviews = load(s)

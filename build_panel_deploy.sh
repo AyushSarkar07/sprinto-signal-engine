@@ -1,5 +1,6 @@
 #!/bin/sh
-# Assemble sprinto-panel/: the public control panel for Vercel (public sandbox mode, see app.py).
+# Assemble sprinto-panel/: the whole public site for Vercel (public sandbox mode, see app.py):
+# landing page at /, results dashboard at /dashboard, control panel at /app.
 # Vercel detects the Flask app in app.py. Includes code + a read-only snapshot of results. Never includes .env, credentials, caches or logs.
 set -e
 cd "$(dirname "$0")"
@@ -8,6 +9,11 @@ cp app.py config.py export_site.py main.py sprinto-panel/
 cp -R src prompts data sprinto-panel/
 for d in state review revenue company_reports feedback; do [ -d "output/$d" ] && cp -R "output/$d" sprinto-panel/snapshot/; done
 for f in decision_ledger.json pipeline_summary.csv pipeline_report.md runs.jsonl; do [ -f "output/$f" ] && cp "output/$f" sprinto-panel/snapshot/; done
+# the landing page and the dashboard, served by app.py (no kit check files, screenshots or notes)
+mkdir -p sprinto-panel/site
+cp signal-engine-landing/index.html signal-engine-landing/favicon.svg signal-engine-landing/share.jpg sprinto-panel/site/
+cp -R signal-engine-landing/assets sprinto-panel/site/
+cp sprinto-dashboard/index.html sprinto-panel/site/dashboard.html
 find sprinto-panel -name "__pycache__" -type d -prune -exec rm -rf {} +
 cat > sprinto-panel/requirements.txt <<'REQ'
 requests>=2.31

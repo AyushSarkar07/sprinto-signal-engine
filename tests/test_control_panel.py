@@ -39,7 +39,7 @@ def test_research_validates_the_domain_and_starts_a_run(client):
 
 def test_every_page_renders_without_any_runs(client):
     panel, c = client
-    assert "Signal Engine overview" in c.get("/").get_data(as_text=True)
+    assert "Signal Engine overview" in c.get("/app").get_data(as_text=True)
     run = c.get("/run").get_data(as_text=True)
     assert "Research these websites" in run and "Scan funding news" in run and panel.TOKEN in run
     for path in ("/companies", "/review", "/drafts", "/loop"):
@@ -77,3 +77,13 @@ def test_lead_finder_needs_a_key_and_filters_noise_and_known_domains():
 
     items, _ = find_leads("KEY", {"rootly.com"}, queries={"q": "x"}, session=S())
     assert [(c.domain, c.name) for c in items] == [("acme.io", "Acme")]
+
+
+def test_one_site_serves_landing_dashboard_and_panel(client):
+    panel, c = client
+    home = c.get("/").get_data(as_text=True)
+    assert "Signal Engine" in home and 'href="/dashboard"' in home and 'href="/app"' in home
+    assert c.get("/dashboard").status_code == 200 and c.get("/favicon.svg").status_code == 200
+    assert c.get("/assets/system.css").status_code == 200
+    page = c.get("/app").get_data(as_text=True)
+    assert 'class="sitebar"' in page and 'aria-current=page>Control panel' in page
