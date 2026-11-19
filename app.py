@@ -36,11 +36,11 @@ import traceback
 from collections import Counter
 from pathlib import Path
 
-from flask import Flask, abort, redirect, request, send_from_directory, url_for
+from flask import Flask, Response, abort, redirect, request, send_from_directory, url_for
 
 from config import ROOT, load_settings, setup_logging
 from export_site import E, GATE_LABEL, GATE_TONE
-from src import feedback_loop, review_gate, run_history, site_chrome
+from src import feedback_loop, review_gate, run_history, site_chrome, site_home
 from src.decision_ledger import write_outputs
 from src.lead_finder import find_leads, funding_leads
 from src.llm import make_llm
@@ -313,8 +313,8 @@ def layout(title: str, active: str, body: str, s, runs, reviews) -> str:
 
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{E(title)} · Signal Engine</title>
-{site_chrome.FAVICON}{site_chrome.FONTS}
-<style>{site_chrome.CSS}{CSS}</style></head><body>{site_chrome.sitebar("panel")}<div class="shell">
+{site_chrome.HEAD}
+<style>{CSS}</style></head><body>{site_chrome.sitebar("panel")}<div class="shell">
 <aside><a class="logo" href="/app">Control <em>panel</em></a>
 <div class="navh">Pipeline</div>{nav('home', 'Overview', '/app')}{nav('run', 'Run research', '/run')}{nav('companies', 'Accounts', '/companies', len(runs))}
 <div class="navh">People decide</div>{nav('review', 'Decision desk', '/review', flagged)}{nav('drafts', 'Draft desk', '/drafts', drafts)}
@@ -328,14 +328,11 @@ def layout(title: str, active: str, body: str, s, runs, reviews) -> str:
 
 # ================================================================ pages
 
-def _site_dir() -> Path:
-    built = ROOT / "site"            # the Vercel bundle (build_panel_deploy.sh)
-    return built if built.exists() else ROOT / "signal-engine-landing"
-
-
 @app.get("/")
 def landing():
-    return send_from_directory(_site_dir(), "index.html")
+    s = settings()
+    _, runs, _ = load(s)
+    return site_home.render(runs, run_history.history(s.output_dir))
 
 
 @app.get("/dashboard")
@@ -346,14 +343,19 @@ def dashboard():
     return send_from_directory(ROOT / "sprinto-dashboard", "index.html")
 
 
-@app.get("/<any('favicon.svg', 'share.jpg'):name>")
-def site_file(name: str):
-    return send_from_directory(_site_dir(), name)
+@app.get("/theme.css")
+def theme_css():
+    return Response(site_chrome.THEME_CSS, mimetype="text/css", headers={"Cache-Control": "public, max-age=300"})
 
 
-@app.get("/assets/<path:path>")
-def site_assets(path: str):
-    return send_from_directory(_site_dir() / "assets", path)
+@app.get("/theme.js")
+def theme_js():
+    return Response(site_chrome.THEME_JS, mimetype="text/javascript", headers={"Cache-Control": "public, max-age=300"})
+
+
+@app.get("/favicon.svg")
+def favicon():
+    return Response(site_chrome.FAVICON_SVG, mimetype="image/svg+xml", headers={"Cache-Control": "public, max-age=86400"})
 
 
 @app.get("/app")
@@ -458,7 +460,7 @@ def run_page():
 <p class="lede">Point it at websites you already have in mind, or let it scan funding news for SaaS accounts and keep researching until the target is met.</p>
 <div class="grid g2">
 <section class="card" style="margin:0"><h2>Research these websites</h2><p class="hint">Up to {MAX_DOMAINS}, separated by commas or new lines.</p>
-<form method="post" action="/research">{tok()}<textarea name="domains" style="min-height:96px" placeholder="acme.com&#10;example.io" required></textarea>
+<form method="post" action="/research">{tok()}<textarea name="domains" style="min-height:96px" placeholder="acme.com&#10;example.io" required>{E(request.args.get('domain', ''))}</textarea>
 <div class="row" style="margin-top:10px">{'' if PUBLIC else "<label class='muted small'><input type='checkbox' name='keep' value='1' checked> add to my prospect list</label>"}
 <button class="btn lime" {busy} onclick="this.textContent='Researching…'">Start research →</button></div></form>
 {"<p class='hint'>Public demo: one domain per run, up to 4 runs an hour, results in a temporary sandbox. Nothing is ever emailed.</p>" if PUBLIC else ''}</section>

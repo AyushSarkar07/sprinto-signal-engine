@@ -281,7 +281,7 @@ def main() -> Path:
     page = f"""<!doctype html><html lang="en" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Results · Signal Engine</title>
 <meta name="description" content="Evidence-driven outbound research for Sprinto: every decision cites its source.">
-{site_chrome.FONTS}{site_chrome.FAVICON}
+{site_chrome.HEAD}
 <style>
 :root{{--paper:#f2f4ee;--card:#ffffff;--ink:#1c211b;--soft:#5a6157;--line:#dce0d4;--lime:#e4ff5c;--limeink:#1d2400;
 --go:#1f6b4a;--gobg:#e3efe5;--flag:#8a5a00;--flagbg:#f8ecd2;--hold:#3e4f7a;--holdbg:#e6e9f3;--stop:#9b2c1f;--stopbg:#f6e2dd;
@@ -295,7 +295,6 @@ body{{margin:0;background:var(--paper);color:var(--ink);font:15.5px/1.55 var(--s
 a{{color:inherit}}em{{font-family:var(--serif);font-style:italic;font-weight:400}}h2 em{{font-style:normal;color:var(--soft)}}.tag{{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--soft);vertical-align:middle;margin-right:.3em}}::selection{{background:var(--lime);color:var(--limeink)}}:focus-visible{{outline:2px solid var(--ink);outline-offset:2px;border-radius:6px}}
 .bar-top{{background:var(--ink);color:var(--paper);font-size:13px;text-align:center;padding:9px 16px}}
 .bar-top b{{background:var(--lime);color:var(--limeink);padding:1px 7px;border-radius:4px;margin-right:6px;font-weight:600}}
-{site_chrome.CSS}
 nav.pnav{{position:sticky;top:60px;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 24px;
 background:color-mix(in srgb,var(--paper) 86%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}}
 .brand{{font-weight:700;letter-spacing:-.02em;font-size:17px;text-decoration:none}}.brand span{{font-family:var(--serif);font-weight:400;font-style:italic;font-size:19px}}
@@ -355,7 +354,7 @@ border-radius:999px;font-weight:600;font-size:14px;background:var(--ink);color:v
 .dot{{font-size:14px}}.dot.yes{{color:var(--go)}}.dot.no{{color:var(--stop)}}.dot.unk{{color:var(--soft)}}
 .ans{{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.07em}}.ans.yes{{color:var(--go)}}.ans.no{{color:var(--stop)}}.ans.unk{{color:var(--soft)}}
 .basis{{max-width:75ch;margin:3px 0 0 30px;color:var(--soft);font-size:13.5px}}.ev{{margin:6px 0 0 30px;padding:0;list-style:none;display:grid;gap:6px}}
-.ev li{{font-size:13.5px;position:relative;padding-left:16px}}.ev li:before{{content:'';position:absolute;left:0;top:.6em;width:7px;height:7px;border-radius:2px;background:var(--lime);box-shadow:0 0 0 1px var(--ink)}}.ev q{{font-family:var(--serif);font-size:16px;font-style:italic}}
+.ev li{{font-size:13.5px;position:relative;padding-left:16px}}.ev li:before{{content:'';position:absolute;left:0;top:.6em;width:7px;height:7px;border-radius:2px;background:var(--lime);box-shadow:0 0 0 1px var(--ink)}}.ev q{{font-family:var(--mono);font-size:14px;font-style:normal}}
 .flags{{margin:18px 0 0;background:var(--flagbg);color:var(--ink);border-radius:14px;padding:14px 18px;font-size:14px}}.flags ul{{margin:6px 0 0;padding-left:18px}}
 .letter{{margin-top:20px;border-top:1px dashed var(--line);padding-top:14px}}.letter summary{{cursor:pointer;display:flex;gap:10px;align-items:center;flex-wrap:wrap;list-style:none}}
 .letter summary::-webkit-details-marker{{display:none}}.letter summary span{{font-size:12px;color:var(--soft);font-weight:600;text-transform:uppercase;letter-spacing:.08em}}

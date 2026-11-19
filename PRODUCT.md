@@ -34,12 +34,13 @@ pipeline: scrape, extract, Evidence Map gate, contact, pain points, draft, revie
 - Claude extraction is optional; without a key a labelled rule-based fallback runs.
 
 ## Brand Commitments
-- Visual references chosen by the user: OGAKI, Lightship RV, UNESCO Virtual Museum, Breakthrough Energy (serif
-  headlines, lime accent). Since Nov 2026 the ground is a cool "ledger paper" (#f2f4ee, white cards, ink #1c211b) and
-  the text face is Schibsted Grotesk, replacing the cream ground and Instrument Sans the review flagged as generic.
-- One site, one look: landing /, results /dashboard, control panel /app share the menu, logo and tokens in
-  src/site_chrome.py. A classmate's app (sprinto-outreach-delta.vercel.app) is a structural reference
-  only: never copy its wording.
+- Own design system (Nov 2026), built to look unlike classmates' kit-made sites: an instrument panel. Dark ground,
+  one phosphor accent (amber by default), Archivo wide headlines, IBM Plex Mono for every reading (quotes, numbers,
+  labels), a live scope on the home page. Reference studied: fraxbit.com (big grotesk type, sticky heading with a
+  numbered list, big-type lists); nothing copied.
+- Customisable: a Tune panel on every page (accent, dark or light ground, wide / narrow / serif headlines, motion),
+  remembered in the visitor's browser. Tokens, menu and Tune live in src/site_chrome.py; the home page is
+  src/site_home.py and is drawn from the real results. signal-engine-landing/ is the retired kit-built page.
 - No em dashes or en dashes in visible copy (the user reads them as machine-written).
 - "Case-study build, not affiliated with Sprinto."
 
