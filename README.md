@@ -66,26 +66,25 @@ logging filter also redacts any configured secret that reaches a log line.
 
 ## Control panel (`app.py`)
 
-A local web app, so the pipeline can be driven without the command line:
+A local multi-page web app, so the pipeline can be driven without the command line:
 
 ```bash
 .venv/bin/python app.py          # open http://127.0.0.1:5050
 ```
 
-| Panel section | What it does |
+| Page | What it does |
 |---|---|
-| **Research a company** | Type a name and website; the full pipeline runs on it (optionally added to `data/prospects.csv`) |
-| **Current run** | Live log of the run in progress |
-| **Find more leads** | Web search (Serper, `SERPER_API_KEY`) for SaaS companies with audit footprints; each candidate has a **Research** button. Candidates are unverified until researched |
-| **Companies researched** | Gate, scores, contact and email status per company, with **Report** and **Re-run** buttons, plus **Re-run all** |
-| **Review drafts** | Edit subject and body, then **Approve**, **Save edits** or **Reject** (the human review gate) |
-| **Log an outcome** | contacted, opened, replied, meeting, opportunity, won or lost, with a deal value |
-| **Publish the dashboard** | Rebuilds the public page and deploys it to Vercel |
+| **Overview** | Status, the route from website to signed-off email with counts, both desks, a per-run scorecard (qualified, sent to your desk, pages read, rewritten by you), why accounts were ruled out, which gaps reached a person, latest reactions |
+| **Run research** | Research up to 3 websites; **Scan funding news** (Series A to C headlines, ranked, websites resolved, keeps researching until N qualify); list sites showing audit signals; live log; past runs |
+| **Accounts** | Every account, searchable (⌘K) and filterable; each opens **How it decided**: rule-outs, the three deciding questions and extra colour, each with its quote, source and date, plus scores, who to write to and the draft |
+| **Decision desk** | Accounts with a gap in the map: mark as qualified or out of scope (a reason is required), or research again |
+| **Draft desk** | Tweak, sign off or decline drafts; quick verdict ticks; why this person, the opening fact, line-by-line sources; log real replies |
+| **Learning log** | Write, react, log, distil, recall, use: lessons kept from repeated reviewer reactions, applied to later drafts, with "lesson used vs not" edit rates and a switch-off control |
 
-The panel listens only on 127.0.0.1, and every form carries a per-session token, so other websites can't
-trigger runs. It has no extra powers: sending still needs `DRY_RUN=false` and goes only to `TEST_TO_EMAIL`.
-The public Vercel page is a read-only snapshot on purpose. A public "run" button would let anyone scrape
-sites and spend your API credits.
+Structure was informed by a classmate's app (used only as a structural reference; all wording is our own). The panel
+listens only on 127.0.0.1, every form carries a per-session token, and it has no extra powers: sending still needs
+`DRY_RUN=false`, a sign-off, and goes only to `TEST_TO_EMAIL`. Design reviewed with Impeccable (product brief in
+`PRODUCT.md`) and tested with Playwright in Chrome, Firefox, WebKit and on iPhone 15 (screenshots in `test-screenshots/`).
 
 ### Online version: https://sprinto-panel.vercel.app
 
@@ -308,15 +307,38 @@ take over. Companies still in progress don't count as failures; only a `lost` ou
 **Edit `data/revenue_assumptions.json`** with Sprinto's real ACV and historical rates. The shipped numbers
 are placeholders. Defaults: reply 5%, meeting 50%, opportunity 50%, won 33%, ACV USD 6k/12k/25k by headcount band.
 
-## Demo results (real run, 3 Nov 2026, deterministic fallback — no Claude key on this machine)
+## Demo results (real run, 19 Nov 2026, rule-based reading: no Claude key on this machine)
 
-| Company | Decision | ICP | Timing | Confidence | Research rounds | Outcome |
-|---|---|---|---|---|---|---|
-| Rootly | **QUALIFY** | 80 | 36 | 0.74 | 1 | Growth stage was unknown from the site (flag); Apollo enrichment: Series A (2023-08), 92 employees → flag cleared. CTO found on rootly.com/about; draft waiting at review gate |
-| Attio | **QUALIFY** | 62 | 47 | 0.75 | 2 | Series C, 190+ team members, open Security Engineering Lead role; CTO Alexander Christie (title verified on attio.com); draft at review gate |
-| Plain | **QUALIFY** | 69 | 35 | 0.75 | 0 | Apollo enrichment: Series A (2025-02), 68 employees → flag cleared; CTO Matt Vagni (title verified on plain.com); draft at review gate |
-| incident.io | **NURTURE** | 68 | 15 | 0.74 | 2 | ICP fit; already SOC 2 Type I & II, no audit preparation observed |
-| Sweetgreen | **DROP** (short-circuit) | 0 | 0 | 0.58 | 2 | Not SaaS (restaurant control case) |
+| Company | Decision | Why (each reason is quoted from their own pages in the company report) |
+|---|---|---|
+| Attio | **DROP** | Trust centre runs on **Vanta** (found `vanta-entry-loader` in trust.attio.com's page source): a competitor is already in place |
+| Plain | **DROP** | Trust centre runs on **Vanta** (trust.plain.com page source); already SOC 2 Type II certified |
+| Rootly | **NURTURE** | Already holds SOC 2 (plus GDPR, CCPA) and runs its trust centre on **SafeBase**; nothing points to a new audit |
+| incident.io | **NURTURE** | Already SOC 2 Type I & II; nothing points to a new audit |
+| Sweetgreen | **DROP** (short-circuit) | Not SaaS (restaurant control case) |
+
+**None of these five is a lead today, and that is the correct answer.** An earlier version qualified Rootly, Attio and
+Plain. A manual review found the reasons were false buying signals: Rootly's "Start your security review" is a
+SafeBase trust-centre button for *its customers*, and Plain's "Data Processing Agreement" is a document Plain *offers*.
+Both show a mature programme, not a need. The guardrails below now prevent this, and the three stale drafts were
+withdrawn automatically. New leads come from **Run research → Scan funding news** (needs a Serper key) or from
+researching specific websites.
+
+## Guardrails against false buying signals
+
+| Guardrail | What it stops |
+|---|---|
+| **Trust-centre platform read from the page source** (`scraper.detect_trust_platform`) | Vanta, Drata, Secureframe, Sprinto, Thoropass, Scrut, Oneleet, Delve or TrustCloud behind a trust centre drops the account. SafeBase, Conveyor or Whistic marks a mature programme. Matched only on specific signatures (loader names, "Powered by" lines, platform hosts), so a SafeBase page that lists Drata hosts in its own configuration is not misread. |
+| **Trust-centre buttons and offered documents are not pressure** | "Start your security review", "Request access", "Get access", offered DPAs and subprocessor lists show the company *answering* reviews. |
+| **Audit intent must look forward** | Only a certification in progress, or a security/GRC job post 90 days old or newer, counts as "preparing for an audit". A held certificate, a trust centre or a timing score alone never qualifies an account. |
+| **Mature programme → nurture** | Held certificate plus no forward signal means "check back later", not outreach. |
+| **JavaScript trust centres** | When a trust centre is drawn by JavaScript, its certifications are marked *unknown*, never "none claimed". |
+| **Own pages only for "is it SaaS?"** | Customer stories, blog posts and job ads describe other companies; the word "SaaS" only counts in the company's own title or description. |
+| **Industry needs two mentions** | Its own compliance (HIPAA) or insurance ("Cyber Insurance") is not a customer industry; one passing mention is not enough. |
+| **Customer size needs a count or a named scale** | Testimonials do not count; "Fortune 500" is a scale claim, not a count of 500. |
+| **Stale drafts are withdrawn** | If new evidence or a rule change disqualifies an account, its pending draft leaves the desk and can never be signed off. |
+| **Lessons never carry facts between accounts** | A reviewer sentence with numbers, money or names is never reused on another account. |
+
 
 Open `output/company_reports/rootly-com.md` for the full journey. Scores change when Claude extraction is enabled,
 since it reads context better than regex rules.
@@ -336,7 +358,7 @@ since it reads context better than regex rules.
 
 ---
 
-## Tests (`pytest -q` → **90 passed**)
+## Tests (`pytest -q` → **108 passed**)
 
 | Scenario required | Test |
 |---|---|

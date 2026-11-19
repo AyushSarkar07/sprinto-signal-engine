@@ -24,7 +24,7 @@ def client(settings, monkeypatch):
 
 def test_posts_without_the_session_token_are_rejected(client):
     panel, c = client
-    for path in ("/research", "/rerun", "/leads", "/review", "/outcome", "/publish"):
+    for path in ("/research", "/rerun", "/leads", "/review", "/outcome", "/publish", "/find", "/override", "/rate", "/retire"):
         assert c.post(path, data={"domain": "acme.com"}).status_code == 403
 
 
@@ -37,10 +37,20 @@ def test_research_validates_the_domain_and_starts_a_run(client):
     assert any("started [('Acme', 'acme.com')]" in m for m in panel.FLASH)
 
 
-def test_home_page_renders_without_any_runs(client):
+def test_every_page_renders_without_any_runs(client):
     panel, c = client
-    page = c.get("/").get_data(as_text=True)
-    assert "Research a company" in page and "Find more leads" in page and panel.TOKEN in page
+    assert "Signal Engine overview" in c.get("/").get_data(as_text=True)
+    run = c.get("/run").get_data(as_text=True)
+    assert "Research these websites" in run and "Scan funding news" in run and panel.TOKEN in run
+    for path in ("/companies", "/review", "/drafts", "/loop"):
+        assert c.get(path).status_code == 200
+
+
+def test_research_accepts_up_to_three_domains(client):
+    panel, c = client
+    c.post("/research", data={"token": panel.TOKEN, "domains": "acme.com, beta.io\ngamma.ai delta.dev"})
+    started = [m for m in panel.FLASH if m.startswith("started")]
+    assert started and "delta.dev" not in started[0] and "gamma.ai" in started[0]
 
 
 def test_review_edits_are_saved_in_the_reviewer_file(tmp_path):

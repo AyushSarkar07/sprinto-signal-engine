@@ -1,6 +1,6 @@
 # Sweetgreen — Sprinto Signal Engine research report
 
-*Domain:* `sweetgreen.com` · *Generated:* 2026-11-03 15:49 · *Extraction:* deterministic fallback — rule-based, not AI-verified
+*Domain:* `sweetgreen.com` · *Generated:* 2026-11-19 11:08 · *Extraction:* deterministic fallback — rule-based, not AI-verified
 
 ## Decision
 
@@ -23,11 +23,13 @@
 
 | Question (core in bold) | Answer | Basis | Pages read / budget | If unanswered | Evidence |
 |---|---|---|---|---|---|
+| Is there still something to certify? | UNKNOWN | No security or trust page read yet. | 0/2 | Treat as pass | — |
+| Is it free of a competing compliance platform? | UNKNOWN | No security or trust page read yet. | 0/2 | Treat as pass | — |
 | **Is it a SaaS business?** | NO | Evidence describes a non-software business. | 4/3 | Flag at review gate | "Our restaurants" — https://careers.sweetgreen.com/<br>"Check out our regional bakery partners" — https://sweetgreen.com/ |
 | **Is it Series A–C / 50–200 employees?** | UNKNOWN | Neither funding stage nor headcount stated on the pages read. | 1/3 | Flag at review gate | — |
-| **Is it preparing for an audit (SOC 2 / ISO 27001)?** | NO | No audit preparation found after reading 1 security/trust/careers page(s) (timing 0/100). | 1/4 | Nurture (right company, wrong time) | — |
+| **Is it preparing for an audit (SOC 2 / ISO 27001)?** | NO | No certification under way and no security/compliance hire on the 1 security, trust or careers page(s) read. | 1/4 | Nurture (right company, wrong time) | — |
 | Does it have >50 clients / larger customers? | UNKNOWN | No customer references found. | 1/2 | Neutral | — |
-| Does it serve a regulated industry? | UNKNOWN | Customer industries not identified as regulated. | 2/1 | Neutral | — |
+| Does it serve a regulated industry? | UNKNOWN | Customer industries not identified as regulated. | 1/2 | Neutral | — |
 | Is it on AWS / GCP / Azure? | UNKNOWN | Cloud provider not stated. | 1/2 | Neutral | — |
 
 ## 1. Website intelligence

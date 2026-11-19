@@ -6,11 +6,7 @@
   "scrape",
   "extract",
   "qualify",
-  "research",
-  "contact",
-  "pain_points",
-  "email",
-  "dispatch"
+  "research"
  ],
  "scrape": {
   "company": "Attio",
@@ -41,7 +37,7 @@
     "url": "https://attio.com/security",
     "category": "security",
     "title": "Attio Trust Center",
-    "text": "Security and Compliance represent key aspects of any product your team uses. Attio is committed to securing access to your data, eliminating systems vulnerabilities and ensuring continuity of access. Attio uses an array of industry-technologies and services to protect your data against unauthorized access, disclosure, use, and loss.\nAttio Trust Center",
+    "text": "Trust centre platform: Vanta (found 'vanta-entry-loader' in the page source)\nSecurity and Compliance represent key aspects of any product your team uses. Attio is committed to securing access to your data, eliminating systems vulnerabilities and ensuring continuity of access. Attio uses an array of industry-technologies and services to protect your data against unauthorized access, disclosure, use, and loss.\nAttio Trust Center",
     "status": "ok",
     "http_status": 200,
     "rendered_with": "requests",
@@ -51,7 +47,7 @@
     "url": "https://trust.attio.com/",
     "category": "trust",
     "title": "Attio Trust Center",
-    "text": "Security and Compliance represent key aspects of any product your team uses. Attio is committed to securing access to your data, eliminating systems vulnerabilities and ensuring continuity of access. Attio uses an array of industry-technologies and services to protect your data against unauthorized access, disclosure, use, and loss.\nAttio Trust Center",
+    "text": "Trust centre platform: Vanta (found 'vanta-entry-loader' in the page source)\nSecurity and Compliance represent key aspects of any product your team uses. Attio is committed to securing access to your data, eliminating systems vulnerabilities and ensuring continuity of access. Attio uses an array of industry-technologies and services to protect your data against unauthorized access, disclosure, use, and loss.\nAttio Trust Center",
     "status": "ok",
     "http_status": 200,
     "rendered_with": "requests",
@@ -66,46 +62,6 @@
     "http_status": 200,
     "rendered_with": "requests",
     "discovered_from": "https://attio.com/"
-   },
-   {
-    "url": "https://attio.com/compliance",
-    "category": "compliance",
-    "title": "HTTP 404",
-    "text": "",
-    "status": "not_found",
-    "http_status": 404,
-    "rendered_with": "requests",
-    "discovered_from": "research_agent"
-   },
-   {
-    "url": "https://attio.com/privacy-preferences",
-    "category": "legal",
-    "title": "Your privacy choices | Attio",
-    "text": "Opt out of the sale or sharing of your personal information for targeted advertising on attio.com.\nYour privacy choices | Attio\nYour privacy choices\nCertain US state privacy laws give you the right to opt out of the sale or sharing of your personal information for targeted advertising. You can do that below, for this browser, without creating an account.\nMarketing and advertising\nAttio works with advertising partners so that the ads you see elsewhere are more relevant. To do that we let those partners set cookies on attio.com, and we send them information about your visit — such as the pages you viewed and the ad that brought you here. Under certain US state privacy laws that counts as a “sale” or “sharing” of personal information, or as “targeted advertising”.\nWhat your choice applies to\nBecause we do not ask you to sign in to make this choice (we store it in a cookie on this browser), you will need to make it again on another browser or device, or if you clear your cookies. It does not affect the cookies the site needs to work, or the analytics we use to measure it, which do not count as selling or sharing for these purposes.\nFor further information on the data we collect and how we use it, please see our\nPrivacy Policy",
-    "status": "ok",
-    "http_status": 200,
-    "rendered_with": "requests",
-    "discovered_from": "research_agent"
-   },
-   {
-    "url": "https://attio.com/careers",
-    "category": "careers",
-    "title": "Careers | Attio",
-    "text": "Looking for your next challenge? Changing paradigms isn't easy and we're looking for more exceptional people to join the team and change CRM forever.\nCareers | Attio\nFeatures, improvements, milestones over time.\n190+ team members.\nBuilding from our HQ in London,\nand across Europe and the US.\nWe’ve sharpened our skills at...\nBuild with love.\nWe believe in building with heart, creating something that not only works but feels thoughtfully crafted.\nContext over control.\nWe build trust in individuals to make decisions and move forward without rigid hierarchy.\nChallenge ideas, not people.\nWe always keep the focus on challenging ideas, not the individuals behind them.\nBreak it down, amp it up.\nWe encourage bold, creative ideas that go beyond the limits of what’s achievable.\nFilter by location\nFilter by team\nSearch open positions\n23 open positions match the current filters.\nEngineering\nSecurity Engineering Lead\nLondon\n[Hybrid]\nPoland, Portugal, Ireland, Germany\n[Remote]\nUnited Kingdom\nSenior Platform Engineer\nLondon, United Kingdom\nSenior Product Engineer [Backend]\nStaff Product Engineer\nGTM\nAccount Executive\nNew York\nSan Francisco\nSales Development Representative\nSolutions Engineer [Pre and Post-Sales] - Mid-Market\nMarketing\nCommunications Lead\nDemand Generation Lead\nStartups Lead\nProduct\nProduct Lead\nLondon, United Kingdom, Portugal, Ireland, Germany, Europe\nOpen Applications\nGeneral Application\nAll locations\nRight role, right time.\nWe'll share relevant opportunities when they open up.\nLinkedIn\nKeep up to date with what the team is building.\nStay in the loop with what we're working on.\nBlog\nBe the first to get new Attio updates.\nChangelog\nStay on top of all releases and new features.",
-    "status": "ok",
-    "http_status": 200,
-    "rendered_with": "requests",
-    "discovered_from": "research_agent"
-   },
-   {
-    "url": "https://attio.com/customers/modal",
-    "category": "customers",
-    "title": "Modal's Story | Attio",
-    "text": "How Modal uses Attio to accelerate product-led growth.\nModal's Story | Attio\nCustomers\nModal\n[CS\nAbout\nModal is a serverless platform which makes it easy for developers to run generative AI models, large scale batch jobs, job queues, and more.\nIndustry\nArtificial Intelligence\nCompany size\n100-200\nHeadquarters\nNew York City, New York\nFounded\n2021\nFunding raised\n$750M\nSeries D\nKey features\nWorkspaces object\nIntegrations\nWorkflows\nChallenge\nModal was struggling to align their product-led growth (PLG) motion with HubSpot’s inflexible data model, leading to inefficiencies and a lack of visibility into key customer data.\nSolution\nUse Attio as the central foundation for their product and customer data, on top of which they build high-impact workflows to drive PLG.\nResults\nAn automations engine which accelerates their PLG motion\nA CRM which reflects their data structures and deeply integrates with their stack\nAn efficient and collaborative tool which scales with their business\nIn 2021, Erik Bernhardsson started a project to build a simple way to deploy arbitrary workloads to the cloud, without the hassle of managing infrastructure.\nHis goal was to create a tool that would allow him to iterate on ideas faster, without getting bogged down in the complexities of Kubernetes clusters, containers and hardware requirements.\nWhat began as a convenient solution for himself quickly turned into Modal, a serverless computer platform that makes it easy for developers to launch and manage compute-intensive tasks, particularly those related to AI and ML. In 2026 they raised a 355$m Series C, with an impressive roster of customers including Ramp, Substack, Lovable, and Meta.\n“Modal is an infrastructure product which aims to make it really easy for developers to launch arbitrary cloud workloads, particularly those that are very compute intensive,” says Margaret Shen, Head of Business Operations at Modal. “We work especially closely with teams building AI products or features, and help them to fine-tune and deploy their machine learning models.”\nPLG hindered by HubSpot\nThe dream of every PLG startup is to have a centralized place that tracks both product and customer data, so that GTM teams can get detailed insight into every user, identify PQLs, build personal customer relationships, and reduce churn.\nLike many startups, Modal tried using HubSpot to unify their data, but they struggled to build a CRM which actually represented their business.\n“It was really difficult to set up HubSpot to reflect our data structure,” says Margaret. “The way it represents different objects and relationships felt really clunky, and we quickly ended up with a CRM cluttered with all sorts of floating records, duplicate companies, and mismatches between records.”\nHubSpot’s lack of flexibility also created issues for Modal. “As a PLG business, the notion of workspaces is really key for us to track product data. HubSpot does not have native support for that type of data. Trying to create a workaround was so confusing that we could never quite figure out how to set it up in an optimal way,” says Margaret.\nGiven the huge expense of HubSpot and the hassle of trying to force PLG motion to fit its data structures, Modal knew they needed to find a CRM that could truly represent their business.\nThe Attio moment\nWhen Modal heard about Attio, they were immediately excited by the prospect of a modern CRM.\n“When I first opened Attio, I instantly got the feeling that this was the start of the next generation of CRM,” says Margaret.\nMargaret was thoroughly impressed by Attio’s powerful data model. “For there to be such a powerful and flexible object relational system was incredible. It finally felt like I could configure our CRM to fit our business needs, rather than the other way around,” says Margaret.\nModal also loved the product design. “Attio is so sleek and modern that it’s ultimately just a delight to work in. I genuinely feel happy when I’m in the product, which is almost unheard of in the CRM space.”\nModal uses Attio as the central engine for their PLG motion. “Attio gives us confidence that we have a strong foundation of customer data that we can trust, which enables us to build very high leverage, high impact workflows and automations to drive our GTM motion.”\nA single source of truth for customer and product data\nThe native Workspaces object has enabled Margaret to rapidly tailor Attio to fit Modal’s data model.\n“Our whole product revolves around the notion of workspaces, so for there to be native support for this was game-changing,” says Margaret. “Being able to intuitively establish one-to-many and many-to-many relationships is crucial to making our data clean and understandable.”\nModal uses Attio’s native Segment integration to ensure their CRM is constantly up-to-date with the latest product data.\n“We use Segment to pull in all of our workspace information, and then associate this with the correct companies and people. We’ve also been importing various product intent signals, such as usage data, to help us identify and preemptively reach out to churn risk accounts. Being able to map and transform this data so easily has drastically improved our retention rates,” says Margaret.\nAutomate, iterate, and accelerate\nUsing Automations, Modal has built a number of workflows on top of Attio to power their lead generation.\n“We’re constantly using Attio to identify users who may be willing to upgrade their account, or customers from key companies that we’d like to offer more direct support,” says Margaret. “Using workflows, we’ve been able to turn this process into an engine for growth.”\nAs a result, Modal has now built a range of automated workflows around Attio, which are deeply integrated with their stack. By drawing on Attio as their single source of truth, they can proactively engage with warm leads in a far more efficient way.\n“Attio’s data enrichment capabilities make it really easy to identify potential leads. We have a number of workflows to filter leads by enriched attributes, such as\nand\nEstimated ARR\n, and product usage data, which enables us to conduct highly targeted and customized outreach,” says Margaret.\nBy automating these processes in Attio, Modal can prioritize more strategic initiatives to accelerate their growth.\nThe center of their GTM stack\nIn addition to the native Segment integration, Modal has also worked with the Attio API to build some of their own integrations.\n“Attio’s API documentation is incredibly thorough and intuitive, which made it easy to write integrations to other tools in our stack,” says Margaret. “For example, I’ve set up an integration with our email campaign platform, Loops, which enables us to trigger marketing campaigns based off of people I’ve identified in Attio.”\nModal has also linked Tally, a form builder, to their Attio workspace. “Using the webhook of Tally I can instantly send events over to Attio, which ingests the people who have completed the form into a list. This makes it really easy for me to process and act on this data,” says Margaret.\nScaling up alongside Attio\nModal sees Attio playing a key role in driving their future growth. “The product is continually evolving–you can see distinct improvements on a month by month basis, which you just don’t get with the incumbents,” says Margaret.\nFor Modal, Attio has been incredibly influential at getting the team on the same page and accelerating their PLG motion.\n“To see the whole team, including the co-founders, be excited about Attio is incredible,” says Margaret. “Everyone is noticeably bought into the product, and actually happy to look at data in Attio, add notes, create lists, and interact with the platform as a whole. I’ve never seen people so engaged in a CRM.”\n“We’re looking forward to building more workflows on top of Attio, and integrating it even more deeply with the rest of our stack. I’m excited to see the product evolve in the years to come, and have faith in Attio’s ability to scale with Modal as we grow.”\nThe CRM behind\nthousands of companies.\nStart for free\nTalk to sales",
-    "status": "ok",
-    "http_status": 200,
-    "rendered_with": "requests",
-    "discovered_from": "research_agent"
    }
   ],
   "discovered_links": {
@@ -145,8 +101,8 @@
     "https://attio.com/legal/services-agreement"
    ]
   },
-  "raw_text": "### SOURCE: https://attio.com/\nThe system for revenue teams to build pipeline, accelerate deals, and grow accounts around the clock.\nAttio: The CRM for agentic revenue\nGTM lessons from Elena Verna and more\nWelcome to agentic revenue.\nAttio is the platform that builds pipeline, advances deals, and grows accounts around the clock.\nTalk to sales\nStart for free\nProduct Demo w/ GreenLeaf\n10:00\n28:14\nMeeting\nTranscript\nSpeakers\nAshley\n0:02\nEverything's in spreadsheets right now and it's getting unmanageable. I'd like the whole team moved over by Monday if we can.\nSam\n0:11\nWe can have you live well before then. How many seats are you thinking?\n0:24\nSix, on the Pro plan. I'll be the one signing off.\n0:38\nPerfect — I'll send a Pro quote over today. It covers the workflow automations you flagged.\n0:55\nCan we bring our existing deal history across too?\n1:09\nYep — we'll map it during onboarding, and I'll include a migration checklist.\n1:23\nLove it. Looking forward to finally getting off spreadsheets.\n# pipeline\nMarcus\n10:24\n@Attio\nwhat deals should I focus on today?\nAttio\nApp\nGreenLeaf\n(verbal yes, no quote out) and Ramp (stalled in Legal 5d).\nScore companies from recent activity and write the score back to Attio.\nRan 3 commands\nsearch-notes-by-metadata\nsearch-emails-by-metadata\nupdate-record\nRanked companies by engagement drop-off and pushed updated health scores to Attio.\n▶▶ auto\nOpus 4.8 · 1M context\nPlatform\nThe intelligent system that never sleeps.\nPicks up leads at 2am. Catches renewals before they slip. Hands you the answer before you ask.\nYour team, amplified.\nAgents prospect and reach out when buyers are looking, building a pipeline of deals ready to win.\nCompanies to work\nShare\nAsk Attio\nAll Companies\nView settings\nNew person\nCompany\nOpenAI\nHarvey\nBrowserbase\nCursor\nNotion\nGranola\nRamp\nElevenlabs\nLinear\nICP Score\nOwner\nIsla Harrington\nGeorge Wilkes\nTheo Marshall\nAmelia Carter\nNathan Cole\nDaniel Fraser\nMaxwell Turner\nSamuel Clarke\nResearch agent\nOpened 40+ GTM roles\nHired a new CRO\nBuilding its first GTM team\nOpened 14 AE roles this quarter\nOpening a new sales hub\nRaised $125M Series C\nDoubling its sales org this year\nNew VP Sales from enterprise SaaS\nMade its first sales hires\nSend email\nSend follow up email to Maya White\nThe intro email ties Maya's new VP role, the Series C, and 14 open AE roles to faster hiring.\nMaya White\nCC / BCC\nDiscard\nSave draft\nFree your reps to sell.\nAgents handle the research and busywork. Reps focus their time where deals get won.\nAsk something...\n10 accounts ready for outreach\nBuilding out its sales team\nScaling faster than it can hire\nShopify\nDoubling down on enterprise sales\nDropbox\nGTM reset under a new CRO\nAgents dig. You close.\nEvery lead is enriched and qualified, so reps know when and why to engage.\nSpeed to lead, every time.\nNew leads get enriched, scored, and routed to the right rep before they ever cool off.\nTrigger\nRecord created\nNew record created\nWeb agent\nEnrich lead with web research\nCustom agent\nScore lead for ICP fit\nRoute lead by segment\nTrue\nFalse\nEnroll in sequence\nEnterprise sequence\nSMB sequence\nRun every motion, your way.\nPipeline built for how you sell, while agents brief the meetings and keep deals moving.\nDiscovery\nLumio AI\nSep 30, 2026\nUSD\n$20,800\nSet Next step...\n12d\nVerda Labs\nSep 10, 2026\n$36,400\nGeorge Hall\nScheduling demo\n15d\nDemo\nCortexa\nAug 28, 2026\n$54,000\nDemo went well, sending fo...\nProposal\nDriftwave\nJul 31, 2026\n$31,200\nProposal sent, in procurem...\n22d\nSynthred\nAug 12, 2026\n$62,500\nSecurity review underway\n25d\nPinevox\nJul 20, 2026\n$11,000\nRachel Adams\nAdd note...\nNegotiation\nNorthpeak\nJun 30, 2026\n$78,000\nSamuel\nVerbal yes, drafting contract\n31d\nWestwind\nJul 8, 2026\n$26,400\nPaul\nFinalizing terms\n18d\nCatch changes to the deal.\nSpot new stakeholders, competitor moves, and stalls before your next call.\nMichael James\nVP Sales at Cortexa\nmichael@cortexa.ai\nSan Francisco, California\nSkip the review scramble.\nWalk in with quota coverage, deal velocity, and potential risks already mapped.\nThinking\nDeals at Risk\nThese are in late stages but showing warning signs:\nForage - Negotiation, $29,288. Close date passed today with no signature. Jordan asked for a demo to share internally, a sign a new stakeholder needs convincing.\nHelix - Procurement/Signing, $18,280. Unsigned since June 1 despite a June 15 follow-up. Stalling in legal.\nFor the people who own the number.\nAsk any revenue question. From the weekly forecast to performance by rep, get the answer in seconds.\nWhat is the estimate of this week’s closed-won deal value\n2 tools used\nAttributes searched:\n19 results\nSQL query executed:\n1452 rows in 6.2s\nSQL\nShow all\nKeep more. Grow more.\nAgents track the whole book, so you save what's slipping and grow what's rising.\nBook Size - ARR\nEMEA\n1.4m\n0.7m\n0.0m\nAccount Health\nHealthy\nWatch\nAt risk\nCount\n100\nJan\nFeb\nMar\nApr\nMay\nHere are the top 5 accounts at risk that CS should prioritize this week:\n1. Brightloop — $107,000 ARR\nHigh\nBrightloop\nRisk Signals:\nLast two invoices failed in Stripe (card declined). Logins down 40% over 30 days.\nCSM Tier:\nNamed T0\nAction:\nReach out today to fix the card on file, and check whether the usage drop signals broader churn\n2. Vela — $86,000 ARR\nVela\nSubscription past due. Renews June 30 — two weeks out, no renewal call booked.\nNamed T1\nConfirm renewal intent and clear the past-due balance before June 30.\nSpot the shift early.\nWhether an account's climbing or cooling, you'll know weeks before the call.\nDrew Austin\nChanged roles\nHead of IT\nNew funding round\n$250M\nJoshua Reed\nUpcoming renewal date\nJoshua to send documentation on the public API\nThe move's ready. You make the call.\nSave, upsell, or renewal, agents draft the play for you to approve and run.\nEmail suggestion\nLooking for more seats?\nHi Marcus, saw Quanta's usage jumped 42% this month. Looks like the team is scaling fast. Happy to add more seats on your plan so no one gets blocked.\nAhead of your renewal\nHi Joshua, your renewal is coming up at the end of the month. Happy to review usage together beforehand and make sure the plan still fits where the team is headed.\nSelf-building\nLive from day one.\nConnect your inbox and calendar. Attio learns your business and builds itself around it, before your first agent even gets to work.\nSarah Johnson\nCompose email\nHighlights\nSummary\nSarah Johnson, the Head of IT, is leading the initiative to modernize their data infrastructure, which aligns with GreenLeaf’s growth and sustainability goals. A successful demo call on August 29 confirmed the need for Attio’s solutions, and the opportunity is moving forward with a 75% confidence level.\nLinkedIn\nsarahjohnson\nUpcoming\nDemo Call\nAug 29, 10:40 AM\nTHU\nGreenLeaf Inc.\nSan Francisco, CA\nSales Outreach\nStep\nAutomated email\nActivity\nMichael Chang\nattended an\nin-person meeting\n6 hours ago\nevent\n2 days ago\nmade an\noutbound phone call\n4 days ago\nThe only CRM with\nUniversal Context\nIt logs itself.\nEmails, calls, product, billing, captured automatically.\nYour tools finally talk.\nGranola, Slack, your whole stack, always in sync.\nGets to know you.\nSo each play is sharper than the last.\nAsk, and it's there.\nAny record, any answer, in a second.\nNo agent left guessing.\nWorking from the same facts as your team.\nSignals\nAll of the signals, none of the noise.\nReady to act on.\nSee more\nContext\nEmails, calls, records, product usage, connected tools. All live.\nAgents + automations\nEcosystem\nAn always-on revenue engine. Prospect, follow-up, research, running 24/7.\nAttio wherever you work. Browser, inbox, Slack, terminal, agents.\nConnectivity\nYour whole stack, connected.\nClaude, Slack, Clay, Linear, Notion, and anything your team and agents run on.\nExplore the ecosystem\nSDK. API. MCP.\nBuild anything on Attio.\nView docs\n“When\nfirst\nopened\nAttio,\ninstantly\ngot\nthe\nfeeling\nthis\nwas\nnext\ngeneration\nCRM.”\nMargaret Shen\nHead of Business Operations · Modal\nBuild to scale\nRun at any scale.\nProduction-grade for your team and agents.\n30M\nMCP tool calls/month\n2.6B\nAPI requests/month\n76k\nactive customer agents\n15M\nemails synced/day\nCustomer stories\nTrusted by 30,000+ customers.\nFrom first agent to enterprise scale.\nRead more\nArtificial Intelligence:\n83% faster lead triage\nHow Granola turns product signals into revenue at scale\nArtificial Intelligence\nChangelog\nBetter as you grow.\nNew features every week to keep pace with you.\nView all\nOctober 29, 2026\nActivities\nCapture anything that moves a deal.\nWorkflows updates\nPut more of your process on autopilot.\nYour new inbox\nStay on top of what needs you most.\nRedesigned record pages\nAll your data right where you need it.\nStay ahead of GTM.\nProduct updates in your inbox.\nAgentic revenue runs on Attio.\n\n### SOURCE: https://attio.com/about\nLooking for your next challenge? Changing paradigms isn't easy and we're looking for more exceptional people to join the team and change CRM forever.\nCareers | Attio\nFeatures, improvements, milestones over time.\n190+ team members.\nBuilding from our HQ in London,\nand across Europe and the US.\nWe’ve sharpened our skills at...\nBuild with love.\nWe believe in building with heart, creating something that not only works but feels thoughtfully crafted.\nContext over control.\nWe build trust in individuals to make decisions and move forward without rigid hierarchy.\nChallenge ideas, not people.\nWe always keep the focus on challenging ideas, not the individuals behind them.\nBreak it down, amp it up.\nWe encourage bold, creative ideas that go beyond the limits of what’s achievable.\nFilter by location\nFilter by team\nSearch open positions\n23 open positions match the current filters.\nEngineering\nSecurity Engineering Lead\nLondon\n[Hybrid]\nPoland, Portugal, Ireland, Germany\n[Remote]\nUnited Kingdom\nSenior Platform Engineer\nLondon, United Kingdom\nSenior Product Engineer [Backend]\nStaff Product Engineer\nGTM\nAccount Executive\nNew York\nSan Francisco\nSales Development Representative\nSolutions Engineer [Pre and Post-Sales] - Mid-Market\nMarketing\nCommunications Lead\nDemand Generation Lead\nStartups Lead\nProduct\nProduct Lead\nLondon, United Kingdom, Portugal, Ireland, Germany, Europe\nOpen Applications\nGeneral Application\nAll locations\nRight role, right time.\nWe'll share relevant opportunities when they open up.\nLinkedIn\nKeep up to date with what the team is building.\nStay in the loop with what we're working on.\nBlog\nBe the first to get new Attio updates.\nChangelog\nStay on top of all releases and new features.\n\n### SOURCE: https://attio.com/security\nSecurity and Compliance represent key aspects of any product your team uses. Attio is committed to securing access to your data, eliminating systems vulnerabilities and ensuring continuity of access. Attio uses an array of industry-technologies and services to protect your data against unauthorized access, disclosure, use, and loss.\nAttio Trust Center\n\n### SOURCE: https://trust.attio.com/\nSecurity and Compliance represent key aspects of any product your team uses. Attio is committed to securing access to your data, eliminating systems vulnerabilities and ensuring continuity of access. Attio uses an array of industry-technologies and services to protect your data against unauthorized access, disclosure, use, and loss.\nAttio Trust Center\n\n### SOURCE: https://attio.com/customers\nDiscover how thousands of companies use Attio to scale their business.\nCustomers | Attio\nSaaS\n$125M\nSeries C\n83% faster lead triage.\nHow Granola turns product signals into revenue at scale.\nRead case study\nArtificial Intelligence\n$750M\nSeries D\nWorkflow automation at scale.\nHow Modal uses Attio to accelerate product-led growth.\n$100M\nSeries B\nCloud infrastructure magic.\nHow Railway turned usage data into revenue with Attio.\nCreator Economy\n$15M\nSeries A\n25% revenue boost.\nHow Passionfroot built a creator-first CRM which scales.\nVenture Capital\nFrom fragmented to unified.\nHow USV turned siloed data into a source of truth with Attio.\n$70M\nComplete GTM visibility.\nWhy Snackpass switched from Salesforce to Attio.\n4X faster deals.\nHow Taskrabbit is scaling partnerships with Attio..\nAttio\nthe\nbest\nCRM\nyou\nwill\never\nuse,\nand\nlikely\nlast\nneed.”\nJamie Marshall\nCo-founder and COO at Snackpass\nThe CRM behind\nthousands of companies.\nStart for free\nTalk to sales\n\n### SOURCE: https://attio.com/privacy-preferences\nOpt out of the sale or sharing of your personal information for targeted advertising on attio.com.\nYour privacy choices | Attio\nYour privacy choices\nCertain US state privacy laws give you the right to opt out of the sale or sharing of your personal information for targeted advertising. You can do that below, for this browser, without creating an account.\nMarketing and advertising\nAttio works with advertising partners so that the ads you see elsewhere are more relevant. To do that we let those partners set cookies on attio.com, and we send them information about your visit — such as the pages you viewed and the ad that brought you here. Under certain US state privacy laws that counts as a “sale” or “sharing” of personal information, or as “targeted advertising”.\nWhat your choice applies to\nBecause we do not ask you to sign in to make this choice (we store it in a cookie on this browser), you will need to make it again on another browser or device, or if you clear your cookies. It does not affect the cookies the site needs to work, or the analytics we use to measure it, which do not count as selling or sharing for these purposes.\nFor further information on the data we collect and how we use it, please see our\nPrivacy Policy\n\n### SOURCE: https://attio.com/careers\nLooking for your next challenge? Changing paradigms isn't easy and we're looking for more exceptional people to join the team and change CRM forever.\nCareers | Attio\nFeatures, improvements, milestones over time.\n190+ team members.\nBuilding from our HQ in London,\nand across Europe and the US.\nWe’ve sharpened our skills at...\nBuild with love.\nWe believe in building with heart, creating something that not only works but feels thoughtfully crafted.\nContext over control.\nWe build trust in individuals to make decisions and move forward without rigid hierarchy.\nChallenge ideas, not people.\nWe always keep the focus on challenging ideas, not the individuals behind them.\nBreak it down, amp it up.\nWe encourage bold, creative ideas that go beyond the limits of what’s achievable.\nFilter by location\nFilter by team\nSearch open positions\n23 open positions match the current filters.\nEngineering\nSecurity Engineering Lead\nLondon\n[Hybrid]\nPoland, Portugal, Ireland, Germany\n[Remote]\nUnited Kingdom\nSenior Platform Engineer\nLondon, United Kingdom\nSenior Product Engineer [Backend]\nStaff Product Engineer\nGTM\nAccount Executive\nNew York\nSan Francisco\nSales Development Representative\nSolutions Engineer [Pre and Post-Sales] - Mid-Market\nMarketing\nCommunications Lead\nDemand Generation Lead\nStartups Lead\nProduct\nProduct Lead\nLondon, United Kingdom, Portugal, Ireland, Germany, Europe\nOpen Applications\nGeneral Application\nAll locations\nRight role, right time.\nWe'll share relevant opportunities when they open up.\nLinkedIn\nKeep up to date with what the team is building.\nStay in the loop with what we're working on.\nBlog\nBe the first to get new Attio updates.\nChangelog\nStay on top of all releases and new features.\n\n### SOURCE: https://attio.com/customers/modal\nHow Modal uses Attio to accelerate product-led growth.\nModal's Story | Attio\nCustomers\nModal\n[CS\nAbout\nModal is a serverless platform which makes it easy for developers to run generative AI models, large scale batch jobs, job queues, and more.\nIndustry\nArtificial Intelligence\nCompany size\n100-200\nHeadquarters\nNew York City, New York\nFounded\n2021\nFunding raised\n$750M\nSeries D\nKey features\nWorkspaces object\nIntegrations\nWorkflows\nChallenge\nModal was struggling to align their product-led growth (PLG) motion with HubSpot’s inflexible data model, leading to inefficiencies and a lack of visibility into key customer data.\nSolution\nUse Attio as the central foundation for their product and customer data, on top of which they build high-impact workflows to drive PLG.\nResults\nAn automations engine which accelerates their PLG motion\nA CRM which reflects their data structures and deeply integrates with their stack\nAn efficient and collaborative tool which scales with their business\nIn 2021, Erik Bernhardsson started a project to build a simple way to deploy arbitrary workloads to the cloud, without the hassle of managing infrastructure.\nHis goal was to create a tool that would allow him to iterate on ideas faster, without getting bogged down in the complexities of Kubernetes clusters, containers and hardware requirements.\nWhat began as a convenient solution for himself quickly turned into Modal, a serverless computer platform that makes it easy for developers to launch and manage compute-intensive tasks, particularly those related to AI and ML. In 2026 they raised a 355$m Series C, with an impressive roster of customers including Ramp, Substack, Lovable, and Meta.\n“Modal is an infrastructure product which aims to make it really easy for developers to launch arbitrary cloud workloads, particularly those that are very compute intensive,” says Margaret Shen, Head of Business Operations at Modal. “We work especially closely with teams building AI products or features, and help them to fine-tune and deploy their machine learning models.”\nPLG hindered by HubSpot\nThe dream of every PLG startup is to have a centralized place that tracks both product and customer data, so that GTM teams can get detailed insight into every user, identify PQLs, build personal customer relationships, and reduce churn.\nLike many startups, Modal tried using HubSpot to unify their data, but they struggled to build a CRM which actually represented their business.\n“It was really difficult to set up HubSpot to reflect our data structure,” says Margaret. “The way it represents different objects and relationships felt really clunky, and we quickly ended up with a CRM cluttered with all sorts of floating records, duplicate companies, and mismatches between records.”\nHubSpot’s lack of flexibility also created issues for Modal. “As a PLG business, the notion of workspaces is really key for us to track product data. HubSpot does not have native support for that type of data. Trying to create a workaround was so confusing that we could never quite figure out how to set it up in an optimal way,” says Margaret.\nGiven the huge expense of HubSpot and the hassle of trying to force PLG motion to fit its data structures, Modal knew they needed to find a CRM that could truly represent their business.\nThe Attio moment\nWhen Modal heard about Attio, they were immediately excited by the prospect of a modern CRM.\n“When I first opened Attio, I instantly got the feeling that this was the start of the next generation of CRM,” says Margaret.\nMargaret was thoroughly impressed by Attio’s powerful data model. “For there to be such a powerful and flexible object relational system was incredible. It finally felt like I could configure our CRM to fit our business needs, rather than the other way around,” says Margaret.\nModal also loved the product design. “Attio is so sleek and modern that it’s ultimately just a delight to work in. I genuinely feel happy when I’m in the product, which is almost unheard of in the CRM space.”\nModal uses Attio as the central engine for their PLG motion. “Attio gives us confidence that we have a strong foundation of customer data that we can trust, which enables us to build very high leverage, high impact workflows and automations to drive our GTM motion.”\nA single source of truth for customer and product data\nThe native Workspaces object has enabled Margaret to rapidly tailor Attio to fit Modal’s data model.\n“Our whole product revolves around the notion of workspaces, so for there to be native support for this was game-changing,” says Margaret. “Being able to intuitively establish one-to-many and many-to-many relationships is crucial to making our data clean and understandable.”\nModal uses Attio’s native Segment integration to ensure their CRM is constantly up-to-date with the latest product data.\n“We use Segment to pull in all of our workspace information, and then associate this with the correct companies and people. We’ve also been importing various product intent signals, such as usage data, to help us identify and preemptively reach out to churn risk accounts. Being able to map and transform this data so easily has drastically improved our retention rates,” says Margaret.\nAutomate, iterate, and accelerate\nUsing Automations, Modal has built a number of workflows on top of Attio to power their lead generation.\n“We’re constantly using Attio to identify users who may be willing to upgrade their account, or customers from key companies that we’d like to offer more direct support,” says Margaret. “Using workflows, we’ve been able to turn this process into an engine for growth.”\nAs a result, Modal has now built a range of automated workflows around Attio, which are deeply integrated with their stack. By drawing on Attio as their single source of truth, they can proactively engage with warm leads in a far more efficient way.\n“Attio’s data enrichment capabilities make it really easy to identify potential leads. We have a number of workflows to filter leads by enriched attributes, such as\nand\nEstimated ARR\n, and product usage data, which enables us to conduct highly targeted and customized outreach,” says Margaret.\nBy automating these processes in Attio, Modal can prioritize more strategic initiatives to accelerate their growth.\nThe center of their GTM stack\nIn addition to the native Segment integration, Modal has also worked with the Attio API to build some of their own integrations.\n“Attio’s API documentation is incredibly thorough and intuitive, which made it easy to write integrations to other tools in our stack,” says Margaret. “For example, I’ve set up an integration with our email campaign platform, Loops, which enables us to trigger marketing campaigns based off of people I’ve identified in Attio.”\nModal has also linked Tally, a form builder, to their Attio workspace. “Using the webhook of Tally I can instantly send events over to Attio, which ingests the people who have completed the form into a list. This makes it really easy for me to process and act on this data,” says Margaret.\nScaling up alongside Attio\nModal sees Attio playing a key role in driving their future growth. “The product is continually evolving–you can see distinct improvements on a month by month basis, which you just don’t get with the incumbents,” says Margaret.\nFor Modal, Attio has been incredibly influential at getting the team on the same page and accelerating their PLG motion.\n“To see the whole team, including the co-founders, be excited about Attio is incredible,” says Margaret. “Everyone is noticeably bought into the product, and actually happy to look at data in Attio, add notes, create lists, and interact with the platform as a whole. I’ve never seen people so engaged in a CRM.”\n“We’re looking forward to building more workflows on top of Attio, and integrating it even more deeply with the rest of our stack. I’m excited to see the product evolve in the years to come, and have faith in Attio’s ability to scale with Modal as we grow.”\nThe CRM behind\nthousands of companies.\nStart for free\nTalk to sales",
-  "scraping_status": "partial",
+  "raw_text": "The system for revenue teams to build pipeline, accelerate deals, and grow accounts around the clock.\nAttio: The CRM for agentic revenue\nGTM lessons from Elena Verna and more\nWelcome to agentic revenue.\nAttio is the platform that builds pipeline, advances deals, and grows accounts around the clock.\nTalk to sales\nStart for free\nProduct Demo w/ GreenLeaf\n10:00\n28:14\nMeeting\nTranscript\nSpeakers\nAshley\n0:02\nEverything's in spreadsheets right now and it's getting unmanageable. I'd like the whole team moved over by Monday if we can.\nSam\n0:11\nWe can have you live well before then. How many seats are you thinking?\n0:24\nSix, on the Pro plan. I'll be the one signing off.\n0:38\nPerfect — I'll send a Pro quote over today. It covers the workflow automations you flagged.\n0:55\nCan we bring our existing deal history across too?\n1:09\nYep — we'll map it during onboarding, and I'll include a migration checklist.\n1:23\nLove it. Looking forward to finally getting off spreadsheets.\n# pipeline\nMarcus\n10:24\n@Attio\nwhat deals should I focus on today?\nAttio\nApp\nGreenLeaf\n(verbal yes, no quote out) and Ramp (stalled in Legal 5d).\nScore companies from recent activity and write the score back to Attio.\nRan 3 commands\nsearch-notes-by-metadata\nsearch-emails-by-metadata\nupdate-record\nRanked companies by engagement drop-off and pushed updated health scores to Attio.\n▶▶ auto\nOpus 4.8 · 1M context\nPlatform\nThe intelligent system that never sleeps.\nPicks up leads at 2am. Catches renewals before they slip. Hands you the answer before you ask.\nYour team, amplified.\nAgents prospect and reach out when buyers are looking, building a pipeline of deals ready to win.\nCompanies to work\nShare\nAsk Attio\nAll Companies\nView settings\nNew person\nCompany\nOpenAI\nHarvey\nBrowserbase\nCursor\nNotion\nGranola\nRamp\nElevenlabs\nLinear\nICP Score\nOwner\nIsla Harrington\nGeorge Wilkes\nTheo Marshall\nAmelia Carter\nNathan Cole\nDaniel Fraser\nMaxwell Turner\nSamuel Clarke\nResearch agent\nOpened 40+ GTM roles\nHired a new CRO\nBuilding its first GTM team\nOpened 14 AE roles this quarter\nOpening a new sales hub\nRaised $125M Series C\nDoubling its sales org this year\nNew VP Sales from enterprise SaaS\nMade its first sales hires\nSend email\nSend follow up email to Maya White\nThe intro email ties Maya's new VP role, the Series C, and 14 open AE roles to faster hiring.\nMaya White\nCC / BCC\nDiscard\nSave draft\nFree your reps to sell.\nAgents handle the research and busywork. Reps focus their time where deals get won.\nAsk something...\n10 accounts ready for outreach\nBuilding out its sales team\nScaling faster than it can hire\nShopify\nDoubling down on enterprise sales\nDropbox\nGTM reset under a new CRO\nAgents dig. You close.\nEvery lead is enriched and qualified, so reps know when and why to engage.\nSpeed to lead, every time.\nNew leads get enriched, scored, and routed to the right rep before they ever cool off.\nTrigger\nRecord created\nNew record created\nWeb agent\nEnrich lead with web research\nCustom agent\nScore lead for ICP fit\nRoute lead by segment\nTrue\nFalse\nEnroll in sequence\nEnterprise sequence\nSMB sequence\nRun every motion, your way.\nPipeline built for how you sell, while agents brief the meetings and keep deals moving.\nDiscovery\nLumio AI\nSep 30, 2026\nUSD\n$20,800\nSet Next step...\n12d\nVerda Labs\nSep 10, 2026\n$36,400\nGeorge Hall\nScheduling demo\n15d\nDemo\nCortexa\nAug 28, 2026\n$54,000\nDemo went well, sending fo...\nProposal\nDriftwave\nJul 31, 2026\n$31,200\nProposal sent, in procurem...\n22d\nSynthred\nAug 12, 2026\n$62,500\nSecurity review underway\n25d\nPinevox\nJul 20, 2026\n$11,000\nRachel Adams\nAdd note...\nNegotiation\nNorthpeak\nJun 30, 2026\n$78,000\nSamuel\nVerbal yes, drafting contract\n31d\nWestwind\nJul 8, 2026\n$26,400\nPaul\nFinalizing terms\n18d\nCatch changes to the deal.\nSpot new stakeholders, competitor moves, and stalls before your next call.\nMichael James\nVP Sales at Cortexa\nmichael@cortexa.ai\nSan Francisco, California\nSkip the review scramble.\nWalk in with quota coverage, deal velocity, and potential risks already mapped.\nThinking\nDeals at Risk\nThese are in late stages but showing warning signs:\nForage - Negotiation, $29,288. Close date passed today with no signature. Jordan asked for a demo to share internally, a sign a new stakeholder needs convincing.\nHelix - Procurement/Signing, $18,280. Unsigned since June 1 despite a June 15 follow-up. Stalling in legal.\nFor the people who own the number.\nAsk any revenue question. From the weekly forecast to performance by rep, get the answer in seconds.\nWhat is the estimate of this week’s closed-won deal value\n2 tools used\nAttributes searched:\n19 results\nSQL query executed:\n1452 rows in 6.2s\nSQL\nShow all\nKeep more. Grow more.\nAgents track the whole book, so you save what's slipping and grow what's rising.\nBook Size - ARR\nEMEA\n1.4m\n0.7m\n0.0m\nAccount Health\nHealthy\nWatch\nAt risk\nCount\n100\nJan\nFeb\nMar\nApr\nMay\nHere are the top 5 accounts at risk that CS should prioritize this week:\n1. Brightloop — $107,000 ARR\nHigh\nBrightloop\nRisk Signals:\nLast two invoices failed in Stripe (card declined). Logins down 40% over 30 days.\nCSM Tier:\nNamed T0\nAction:\nReach out today to fix the card on file, and check whether the usage drop signals broader churn\n2. Vela — $86,000 ARR\nVela\nSubscription past due. Renews June 30 — two weeks out, no renewal call booked.\nNamed T1\nConfirm renewal intent and clear the past-due balance before June 30.\nSpot the shift early.\nWhether an account's climbing or cooling, you'll know weeks before the call.\nDrew Austin\nChanged roles\nHead of IT\nNew funding round\n$250M\nJoshua Reed\nUpcoming renewal date\nJoshua to send documentation on the public API\nThe move's ready. You make the call.\nSave, upsell, or renewal, agents draft the play for you to approve and run.\nEmail suggestion\nLooking for more seats?\nHi Marcus, saw Quanta's usage jumped 42% this month. Looks like the team is scaling fast. Happy to add more seats on your plan so no one gets blocked.\nAhead of your renewal\nHi Joshua, your renewal is coming up at the end of the month. Happy to review usage together beforehand and make sure the plan still fits where the team is headed.\nSelf-building\nLive from day one.\nConnect your inbox and calendar. Attio learns your business and builds itself around it, before your first agent even gets to work.\nSarah Johnson\nCompose email\nHighlights\nSummary\nSarah Johnson, the Head of IT, is leading the initiative to modernize their data infrastructure, which aligns with GreenLeaf’s growth and sustainability goals. A successful demo call on August 29 confirmed the need for Attio’s solutions, and the opportunity is moving forward with a 75% confidence level.\nLinkedIn\nsarahjohnson\nUpcoming\nDemo Call\nAug 29, 10:40 AM\nTHU\nGreenLeaf Inc.\nSan Francisco, CA\nSales Outreach\nStep\nAutomated email\nActivity\nMichael Chang\nattended an\nin-person meeting\n6 hours ago\nevent\n2 days ago\nmade an\noutbound phone call\n4 days ago\nThe only CRM with\nUniversal Context\nIt logs itself.\nEmails, calls, product, billing, captured automatically.\nYour tools finally talk.\nGranola, Slack, your whole stack, always in sync.\nGets to know you.\nSo each play is sharper than the last.\nAsk, and it's there.\nAny record, any answer, in a second.\nNo agent left guessing.\nWorking from the same facts as your team.\nSignals\nAll of the signals, none of the noise.\nReady to act on.\nSee more\nContext\nEmails, calls, records, product usage, connected tools. All live.\nAgents + automations\nEcosystem\nAn always-on revenue engine. Prospect, follow-up, research, running 24/7.\nAttio wherever you work. Browser, inbox, Slack, terminal, agents.\nConnectivity\nYour whole stack, connected.\nClaude, Slack, Clay, Linear, Notion, and anything your team and agents run on.\nExplore the ecosystem\nSDK. API. MCP.\nBuild anything on Attio.\nView docs\n“When\nfirst\nopened\nAttio,\ninstantly\ngot\nthe\nfeeling\nthis\nwas\nnext\ngeneration\nCRM.”\nMargaret Shen\nHead of Business Operations · Modal\nBuild to scale\nRun at any scale.\nProduction-grade for your team and agents.\n30M\nMCP tool calls/month\n2.6B\nAPI requests/month\n76k\nactive customer agents\n15M\nemails synced/day\nCustomer stories\nTrusted by 30,000+ customers.\nFrom first agent to enterprise scale.\nRead more\nArtificial Intelligence:\n83% faster lead triage\nHow Granola turns product signals into revenue at scale\nArtificial Intelligence\nChangelog\nBetter as you grow.\nNew features every week to keep pace with you.\nView all\nOctober 29, 2026\nActivities\nCapture anything that moves a deal.\nWorkflows updates\nPut more of your process on autopilot.\nYour new inbox\nStay on top of what needs you most.\nRedesigned record pages\nAll your data right where you need it.\nStay ahead of GTM.\nProduct updates in your inbox.\nAgentic revenue runs on Attio.\n\nLooking for your next challenge? Changing paradigms isn't easy and we're looking for more exceptional people to join the team and change CRM forever.\nCareers | Attio\nFeatures, improvements, milestones over time.\n190+ team members.\nBuilding from our HQ in London,\nand across Europe and the US.\nWe’ve sharpened our skills at...\nBuild with love.\nWe believe in building with heart, creating something that not only works but feels thoughtfully crafted.\nContext over control.\nWe build trust in individuals to make decisions and move forward without rigid hierarchy.\nChallenge ideas, not people.\nWe always keep the focus on challenging ideas, not the individuals behind them.\nBreak it down, amp it up.\nWe encourage bold, creative ideas that go beyond the limits of what’s achievable.\nFilter by location\nFilter by team\nSearch open positions\n23 open positions match the current filters.\nEngineering\nSecurity Engineering Lead\nLondon\n[Hybrid]\nPoland, Portugal, Ireland, Germany\n[Remote]\nUnited Kingdom\nSenior Platform Engineer\nLondon, United Kingdom\nSenior Product Engineer [Backend]\nStaff Product Engineer\nGTM\nAccount Executive\nNew York\nSan Francisco\nSales Development Representative\nSolutions Engineer [Pre and Post-Sales] - Mid-Market\nMarketing\nCommunications Lead\nDemand Generation Lead\nStartups Lead\nProduct\nProduct Lead\nLondon, United Kingdom, Portugal, Ireland, Germany, Europe\nOpen Applications\nGeneral Application\nAll locations\nRight role, right time.\nWe'll share relevant opportunities when they open up.\nLinkedIn\nKeep up to date with what the team is building.\nStay in the loop with what we're working on.\nBlog\nBe the first to get new Attio updates.\nChangelog\nStay on top of all releases and new features.\n\nTrust centre platform: Vanta (found 'vanta-entry-loader' in the page source)\nSecurity and Compliance represent key aspects of any product your team uses. Attio is committed to securing access to your data, eliminating systems vulnerabilities and ensuring continuity of access. Attio uses an array of industry-technologies and services to protect your data against unauthorized access, disclosure, use, and loss.\nAttio Trust Center\n\nTrust centre platform: Vanta (found 'vanta-entry-loader' in the page source)\nSecurity and Compliance represent key aspects of any product your team uses. Attio is committed to securing access to your data, eliminating systems vulnerabilities and ensuring continuity of access. Attio uses an array of industry-technologies and services to protect your data against unauthorized access, disclosure, use, and loss.\nAttio Trust Center\n\nDiscover how thousands of companies use Attio to scale their business.\nCustomers | Attio\nSaaS\n$125M\nSeries C\n83% faster lead triage.\nHow Granola turns product signals into revenue at scale.\nRead case study\nArtificial Intelligence\n$750M\nSeries D\nWorkflow automation at scale.\nHow Modal uses Attio to accelerate product-led growth.\n$100M\nSeries B\nCloud infrastructure magic.\nHow Railway turned usage data into revenue with Attio.\nCreator Economy\n$15M\nSeries A\n25% revenue boost.\nHow Passionfroot built a creator-first CRM which scales.\nVenture Capital\nFrom fragmented to unified.\nHow USV turned siloed data into a source of truth with Attio.\n$70M\nComplete GTM visibility.\nWhy Snackpass switched from Salesforce to Attio.\n4X faster deals.\nHow Taskrabbit is scaling partnerships with Attio..\nAttio\nthe\nbest\nCRM\nyou\nwill\never\nuse,\nand\nlikely\nlast\nneed.”\nJamie Marshall\nCo-founder and COO at Snackpass\nThe CRM behind\nthousands of companies.\nStart for free\nTalk to sales",
+  "scraping_status": "success",
   "errors": []
  },
  "extraction": {
@@ -165,14 +121,6 @@
    "is_saas": true,
    "is_saas_evidence": [
     {
-     "finding": "Describes itself as SaaS",
-     "source_url": "https://attio.com/",
-     "excerpt": "New VP Sales from enterprise SaaS",
-     "evidence_type": "explicit",
-     "confidence": 0.6,
-     "category": "saas_indicator"
-    },
-    {
      "finding": "Self-serve free trial / sign-up",
      "source_url": "https://attio.com/",
      "excerpt": "Start for free",
@@ -189,25 +137,9 @@
      "category": "saas_indicator"
     },
     {
-     "finding": "Customer login to a hosted product",
-     "source_url": "https://attio.com/privacy-preferences",
-     "excerpt": "Because we do not ask you to sign in to make this choice (we store it in a cookie on this browser), you will need to make it again on another browser or device, or if you clear your cookies.",
-     "evidence_type": "explicit",
-     "confidence": 0.6,
-     "category": "saas_indicator"
-    },
-    {
      "finding": "Developer API",
      "source_url": "https://attio.com/",
      "excerpt": "Joshua to send documentation on the public API",
-     "evidence_type": "inferred",
-     "confidence": 0.4,
-     "category": "saas_indicator"
-    },
-    {
-     "finding": "Product integrations",
-     "source_url": "https://attio.com/customers/modal",
-     "excerpt": "Integrations",
      "evidence_type": "inferred",
      "confidence": 0.4,
      "category": "saas_indicator"
@@ -288,24 +220,15 @@
      "category": "trust_centre"
     },
     {
-     "finding": "References a Trust Center",
+     "finding": "References a Trust centre",
      "source_url": "https://attio.com/security",
-     "excerpt": "Attio Trust Center",
+     "excerpt": "Trust centre platform: Vanta (found 'vanta-entry-loader' in the page source)",
      "evidence_type": "explicit",
      "confidence": 0.7,
      "category": "trust_centre"
     }
    ],
-   "compliance_hiring": [
-    {
-     "finding": "Open security/compliance role: Security Engineering Lead",
-     "source_url": "https://attio.com/careers",
-     "excerpt": "JOB: Security Engineering Lead",
-     "evidence_type": "explicit",
-     "confidence": 0.85,
-     "category": "compliance_hiring"
-    }
-   ],
+   "compliance_hiring": [],
    "enterprise_security_signals": []
   },
   "growth_signals": [
@@ -316,52 +239,27 @@
     "evidence_type": "explicit",
     "confidence": 0.85,
     "category": "funding"
-   },
-   {
-    "finding": "Open engineering role: Senior Platform Engineer",
-    "source_url": "https://attio.com/careers",
-    "excerpt": "JOB: Senior Platform Engineer",
-    "evidence_type": "explicit",
-    "confidence": 0.75,
-    "category": "engineering_hiring"
-   },
-   {
-    "finding": "Open engineering role: Senior Product Engineer [Backend]",
-    "source_url": "https://attio.com/careers",
-    "excerpt": "JOB: Senior Product Engineer [Backend]",
-    "evidence_type": "explicit",
-    "confidence": 0.75,
-    "category": "engineering_hiring"
-   },
-   {
-    "finding": "Open engineering role: Staff Product Engineer",
-    "source_url": "https://attio.com/careers",
-    "excerpt": "JOB: Staff Product Engineer",
-    "evidence_type": "explicit",
-    "confidence": 0.75,
-    "category": "engineering_hiring"
-   },
-   {
-    "finding": "Open engineering role: Solutions Engineer [Pre and Post-Sales] - Mid-Market",
-    "source_url": "https://attio.com/careers",
-    "excerpt": "JOB: Solutions Engineer [Pre and Post-Sales] - Mid-Market",
-    "evidence_type": "explicit",
-    "confidence": 0.75,
-    "category": "engineering_hiring"
    }
   ],
-  "other_signals": [],
-  "potential_buying_moments": [
+  "other_signals": [
    {
-    "signal": "Open security/compliance role: Security Engineering Lead",
-    "category": "compliance_hiring",
-    "source_url": "https://attio.com/careers",
-    "evidence": "JOB: Security Engineering Lead",
-    "why_it_matters": "Hiring for security or compliance shows the company is building the function now; new owners typically choose tooling in their first months.",
-    "confidence": 0.85,
-    "requires_further_research": false,
-    "hook_phrase": "you're hiring for a Security Engineering Lead"
+    "finding": "Trust centre runs on Vanta",
+    "source_url": "https://attio.com/security",
+    "excerpt": "Trust centre platform: Vanta (found 'vanta-entry-loader' in the page source)",
+    "evidence_type": "explicit",
+    "confidence": 0.9,
+    "category": "competitor_platform"
    },
+   {
+    "finding": "Trust centre runs on Vanta",
+    "source_url": "https://trust.attio.com/",
+    "excerpt": "Trust centre platform: Vanta (found 'vanta-entry-loader' in the page source)",
+    "evidence_type": "explicit",
+    "confidence": 0.9,
+    "category": "competitor_platform"
+   }
+  ],
+  "potential_buying_moments": [
    {
     "signal": "Trust centre page is live",
     "category": "trust_centre",
@@ -383,16 +281,6 @@
     "hook_phrase": "your recent Series C announcement"
    },
    {
-    "signal": "Open engineering role: Senior Platform Engineer",
-    "category": "engineering_hiring",
-    "source_url": "https://attio.com/careers",
-    "evidence": "JOB: Senior Platform Engineer",
-    "why_it_matters": "A growing engineering team multiplies the systems, access and change-management evidence an auditor will ask for.",
-    "confidence": 0.75,
-    "requires_further_research": false,
-    "hook_phrase": "you're hiring engineers"
-   },
-   {
     "signal": "Customer stories page exists: Customers | Attio",
     "category": "enterprise_customer",
     "source_url": "https://attio.com/customers",
@@ -404,7 +292,8 @@
    }
   ],
   "missing_information": [
-   "compliance_status: Any SOC 2 / ISO 27001 / GDPR status"
+   "compliance_status: Any SOC 2 / ISO 27001 / GDPR status",
+   "security_hiring: Security, compliance or engineering hiring activity"
   ],
   "contradictory_information": [],
   "provenance": "deterministic_fallback"
@@ -413,25 +302,22 @@
   "Claude not configured — deterministic fallback extraction (not AI-verified)."
  ],
  "qualification": {
-  "qualified": true,
-  "decision_status": "qualified",
-  "recommended_action": "outreach",
-  "icp_fit_score": 56,
-  "buying_timing_score": 34,
-  "evidence_confidence": 0.75,
+  "qualified": false,
+  "decision_status": "not_qualified",
+  "recommended_action": "disqualify",
+  "icp_fit_score": 46,
+  "buying_timing_score": 7,
+  "evidence_confidence": 0.72,
   "icp_breakdown": [
    {
     "criterion": "SaaS business model",
     "max_points": 25,
     "points": 22.5,
-    "rationale": "SaaS model supported by 8 indicator(s).",
+    "rationale": "SaaS model supported by 5 indicator(s).",
     "evidence_ids": [
-     "8549084bff",
      "363b00a68e",
      "1e938472fe",
-     "2e512dfc5f",
      "cae74f4992",
-     "572c7bd359",
      "5541433d8f",
      "46f2433c77"
     ]
@@ -466,14 +352,9 @@
    {
     "criterion": "Company scaling signals",
     "max_points": 10,
-    "points": 10.0,
-    "rationale": "4 scaling signal(s) (hiring, expansion, funding).",
-    "evidence_ids": [
-     "9b03975d25",
-     "af4e01a655",
-     "f082c9450a",
-     "a21f5a0262"
-    ]
+    "points": 0.0,
+    "rationale": "No scaling signals observed.",
+    "evidence_ids": []
    },
    {
     "criterion": "Security / compliance complexity",
@@ -501,15 +382,9 @@
    {
     "criterion": "Security or compliance hiring",
     "max_points": 20,
-    "points": 16.9,
-    "rationale": "1 security/compliance role(s) open; 4 engineering role signal(s).",
-    "evidence_ids": [
-     "be535ca80d",
-     "9b03975d25",
-     "af4e01a655",
-     "f082c9450a",
-     "a21f5a0262"
-    ]
+    "points": 0.0,
+    "rationale": "No security roles found.",
+    "evidence_ids": []
    },
    {
     "criterion": "Trust centre or compliance activity",
@@ -518,7 +393,7 @@
     "rationale": "Trust centre published.",
     "evidence_ids": [
      "6266911d73",
-     "1d4338cc38"
+     "0b5e63181c"
     ]
    },
    {
@@ -531,51 +406,86 @@
     ]
    }
   ],
-  "penalties": [],
+  "penalties": [
+   "-10 timing: compliance platform already visible (Trust centre runs on Vanta) — this is a displacement, not a greenfield, conversation."
+  ],
   "qualification_reasoning": [
-   "Evidence Map → QUALIFY: SaaS, in the growth band, and preparing for an audit — all backed by cited evidence.",
-   "Scores: ICP 56/100, timing 34/100, evidence confidence 0.75.",
-   "Biggest ICP drivers: SaaS business model (22.5/25) — SaaS model supported by 8 indicator(s).; Relevant growth stage (Series A–C) (15/15) — Explicit Series C — inside Sprinto's sweet spot.",
-   "Biggest timing drivers: Security or compliance hiring (16.9/20) — 1 security/compliance role(s) open; 4 engineering role signal(s).; Trust centre or compliance activity (10/10) — Trust centre published.",
+   "Evidence Map → DROP: Short-circuit on 'Is it free of a competing compliance platform?': Already uses Vanta; a displacement, not a first purchase. Not cold outbound.",
+   "Scores: ICP 46/100, timing 7/100, evidence confidence 0.72.",
+   "Biggest ICP drivers: SaaS business model (22.5/25) — SaaS model supported by 5 indicator(s).; Relevant growth stage (Series A–C) (15/15) — Explicit Series C — inside Sprinto's sweet spot.",
+   "Biggest timing drivers: Trust centre or compliance activity (10/10) — Trust centre published.; Recent enterprise expansion / scaling (6.8/15) — 1 expansion / funding signal(s).",
    "Extraction ran in deterministic fallback mode (Claude not used); confidence capped at 0.75. Results are rule-based, not AI-verified."
   ],
   "positive_signals": [
-   "SaaS business model: SaaS model supported by 8 indicator(s). (+22.5/25)",
+   "SaaS business model: SaaS model supported by 5 indicator(s). (+22.5/25)",
    "Relevant growth stage (Series A–C): Explicit Series C — inside Sprinto's sweet spot. (+15/15)",
    "Enterprise customer orientation: 2 enterprise reference(s) / enterprise-tier signals. (+8.9/20)",
-   "Company scaling signals: 4 scaling signal(s) (hiring, expansion, funding). (+10/10)",
-   "Security or compliance hiring: 1 security/compliance role(s) open; 4 engineering role signal(s). (+16.9/20)",
    "Trust centre or compliance activity: Trust centre published. (+10/10)",
    "Recent enterprise expansion / scaling: 1 expansion / funding signal(s). (+6.8/15)"
   ],
   "negative_signals": [
    "Relevant customer industry: Customer industries not identified.",
+   "Company scaling signals: No scaling signals observed.",
    "Security / compliance complexity: No security/compliance content observed.",
    "Explicit SOC 2 / ISO 27001 / audit requirement: No explicit audit or certification requirement observed.",
-   "Enterprise security review / procurement pressure: No security-review pressure observed."
+   "Enterprise security review / procurement pressure: No security-review pressure observed.",
+   "Security or compliance hiring: No security roles found.",
+   "-10 timing: compliance platform already visible (Trust centre runs on Vanta) — this is a displacement, not a greenfield, conversation."
   ],
   "missing_information": [
-   "compliance_status: Any SOC 2 / ISO 27001 / GDPR status"
+   "compliance_status: Any SOC 2 / ISO 27001 / GDPR status",
+   "security_hiring: Security, compliance or engineering hiring activity"
   ],
   "risks_and_uncertainty": [
-   "5 of 20 evidence items are inferred rather than explicitly stated.",
+   "4 of 14 evidence items are inferred rather than explicitly stated.",
    "Unknown: Any SOC 2 / ISO 27001 / GDPR status.",
+   "Unknown: Security, compliance or engineering hiring activity.",
+   "A compliance automation vendor already appears on the site; switching costs may block a deal.",
    "Keyword rules can misread context (e.g. 'SOC 2' in a blog post about a customer, not the company itself)."
   ],
-  "secondary_research_performed": true,
-  "research_rounds": 1,
+  "secondary_research_performed": false,
+  "research_rounds": 0,
   "provenance": "deterministic_fallback",
-  "gate_decision": "QUALIFY",
+  "gate_decision": "DROP",
   "evidence_map": [
+   {
+    "key": "certifications",
+    "question": "Is there still something to certify?",
+    "core": false,
+    "role": "gate",
+    "answer": "unknown",
+    "basis": "Its trust centre is drawn by JavaScript, so the certifications it lists could not be read.",
+    "evidence": [],
+    "tries_used": 2,
+    "limit": 2,
+    "if_unanswered": "Treat as pass",
+    "short_circuit_hit": null
+   },
+   {
+    "key": "competitor_vendor",
+    "question": "Is it free of a competing compliance platform?",
+    "core": false,
+    "role": "gate",
+    "answer": "no",
+    "basis": "Trust centre runs on Vanta (detected in its page source).",
+    "evidence": [
+     "\"Trust centre platform: Vanta (found 'vanta-entry-loader' in the page source)\" — https://attio.com/security"
+    ],
+    "tries_used": 2,
+    "limit": 2,
+    "if_unanswered": "Treat as pass",
+    "short_circuit_hit": "Already uses Vanta; a displacement, not a first purchase. Not cold outbound."
+   },
    {
     "key": "saas",
     "question": "Is it a SaaS business?",
     "core": true,
+    "role": "core",
     "answer": "yes",
     "basis": "Subscription-software indicators found (pricing/trial/login/API).",
     "evidence": [
-     "\"New VP Sales from enterprise SaaS\" — https://attio.com/",
-     "\"Start for free\" — https://attio.com/"
+     "\"Start for free\" — https://attio.com/",
+     "\"Talk to sales\" — https://attio.com/"
     ],
     "tries_used": 1,
     "limit": 3,
@@ -586,13 +496,14 @@
     "key": "growth_stage",
     "question": "Is it Series A–C / 50–200 employees?",
     "core": true,
+    "role": "core",
     "answer": "yes",
     "basis": "Inside the Series A–C / 50–200 employee band (Series C, 190+ team members).",
     "evidence": [
      "\"Raised $125M Series C\" — https://attio.com/",
      "\"190+ team members.\" — https://attio.com/about"
     ],
-    "tries_used": 2,
+    "tries_used": 1,
     "limit": 3,
     "if_unanswered": "Flag at review gate",
     "short_circuit_hit": null
@@ -601,12 +512,11 @@
     "key": "audit_intent",
     "question": "Is it preparing for an audit (SOC 2 / ISO 27001)?",
     "core": true,
-    "answer": "yes",
-    "basis": "Audit work, compliance hiring or security-review pressure observed.",
-    "evidence": [
-     "\"JOB: Security Engineering Lead\" — https://attio.com/careers"
-    ],
-    "tries_used": 3,
+    "role": "core",
+    "answer": "no",
+    "basis": "No certification under way and no security/compliance hire on the 2 security, trust or careers page(s) read.",
+    "evidence": [],
+    "tries_used": 2,
     "limit": 4,
     "if_unanswered": "Nurture (right company, wrong time)",
     "short_circuit_hit": null
@@ -615,12 +525,13 @@
     "key": "clients",
     "question": "Does it have >50 clients / larger customers?",
     "core": false,
+    "role": "supporting",
     "answer": "yes",
-    "basis": "Customer base of meaningful size / named larger customers.",
+    "basis": "A stated customer count of 50 or more.",
     "evidence": [
      "\"Trusted by 30,000+ customers.\" — https://attio.com/"
     ],
-    "tries_used": 3,
+    "tries_used": 2,
     "limit": 2,
     "if_unanswered": "Neutral",
     "short_circuit_hit": null
@@ -629,11 +540,12 @@
     "key": "industry",
     "question": "Does it serve a regulated industry?",
     "core": false,
+    "role": "supporting",
     "answer": "unknown",
     "basis": "Customer industries not identified as regulated.",
     "evidence": [],
-    "tries_used": 1,
-    "limit": 1,
+    "tries_used": 3,
+    "limit": 2,
     "if_unanswered": "Neutral",
     "short_circuit_hit": null
    },
@@ -641,10 +553,11 @@
     "key": "cloud_stack",
     "question": "Is it on AWS / GCP / Azure?",
     "core": false,
+    "role": "supporting",
     "answer": "unknown",
     "basis": "Cloud provider not stated.",
     "evidence": [],
-    "tries_used": 2,
+    "tries_used": 1,
     "limit": 2,
     "if_unanswered": "Neutral",
     "short_circuit_hit": null
@@ -652,181 +565,30 @@
   ],
   "review_flags": []
  },
- "research_rounds": [
-  {
-   "round": 1,
-   "missing_before": [
-    "What is its SOC 2 / ISO 27001 / GDPR status?",
-    "Is it hiring for security, compliance or engineering?",
-    "Is there any evidence compliance matters right now?"
-   ],
-   "pages_targeted": [
-    "https://attio.com/compliance [compliance] — What is its SOC 2 / ISO 27001 / GDPR status?",
-    "https://attio.com/privacy-preferences [legal] — What is its SOC 2 / ISO 27001 / GDPR status?",
-    "https://attio.com/careers [careers] — Is it hiring for security, compliance or engineering?, Is there any evidence compliance matters right now?",
-    "https://attio.com/customers/modal [customers] — Is there any evidence compliance matters right now?"
-   ],
-   "pages_successfully_read": [
-    "https://attio.com/privacy-preferences",
-    "https://attio.com/careers",
-    "https://attio.com/customers/modal"
-   ],
-   "new_findings": [
-    "Customer login to a hosted product (https://attio.com/privacy-preferences)",
-    "Product integrations (https://attio.com/customers/modal)",
-    "Open security/compliance role: Security Engineering Lead (https://attio.com/careers)",
-    "Open engineering role: Senior Platform Engineer (https://attio.com/careers)",
-    "Open engineering role: Senior Product Engineer [Backend] (https://attio.com/careers)",
-    "Open engineering role: Staff Product Engineer (https://attio.com/careers)",
-    "Open engineering role: Solutions Engineer [Pre and Post-Sales] - Mid-Market (https://attio.com/careers)"
-   ],
-   "icp_before": 46,
-   "icp_after": 56,
-   "timing_before": 17,
-   "timing_after": 34,
-   "decision_before": "not_qualified",
-   "decision_after": "qualified",
-   "what_changed": "ICP 46→56, timing 17→34, decision not_qualified→qualified. 7 new evidence item(s)."
-  }
- ],
+ "research_rounds": [],
  "research_notes": [
-  "Stopped before round 2: Decision already well supported."
+  "Stopped before round 1: Clear disqualification — further research would not change the outcome."
  ],
- "contact_selection": {
-  "status": "selected",
-  "contact": {
-   "first_name": "Alexander",
-   "last_name": "Christie",
-   "full_name": "Alexander Christie",
-   "job_title": "CTO & Co-founder",
-   "email": null,
-   "email_confidence": null,
-   "verification_status": "title verified on company site",
-   "department": null,
-   "seniority": null,
-   "linkedin_url": null,
-   "source": "attio.com engineering blog byline",
-   "source_url": "https://attio.com/engineering/blog/introducing-universal-context"
-  },
-  "role_family": "CTO",
-  "selection_reasoning": "Alexander Christie, CTO & Co-founder (relevance 67.0): CTO: accountable for technical controls and usually sponsors the first SOC 2. A security function exists, so the CTO is one step removed from day-to-day compliance. No email address available — reachable only after manual verification. Email not yet verified — the test preview will show the prospect address as unavailable.",
-  "alternative_contacts": [],
-  "providers_tried": [
-   "Manual mapping (Apollo / research)",
-   "Company website (team page)"
-  ],
-  "provider_notes": [
-   "Hunter.io skipped: HUNTER_API_KEY not set.",
-   "Manual mapping returned 1 contact(s)",
-   "Company website listed 0 named leader(s)"
-  ]
- },
- "pain_points": {
-  "pain_points": [
-   {
-    "pain_point": "Standing up a compliance programme before a dedicated security team exists",
-    "basis": "observed",
-    "reasoning": "Attio is growing (Security Engineering Lead) and no dedicated security lead is visible; until one exists, compliance work usually falls to the CTO & Co-founder.",
-    "supporting_evidence": [
-     "\"JOB: Security Engineering Lead\" — https://attio.com/careers",
-     "\"Raised $125M Series C\" — https://attio.com/"
-    ],
-    "confidence": 0.8
-   },
-   {
-    "pain_point": "Security questionnaires and vendor reviews slowing enterprise deals",
-    "basis": "inferred",
-    "reasoning": "The site points to an enterprise motion (Trust centre page is live); enterprise buyers send security questionnaires that usually land with the CTO & Co-founder.",
-    "supporting_evidence": [
-     "\"Attio Trust Center\" — https://trust.attio.com/",
-     "\"Attio Trust Center\" — https://attio.com/security",
-     "\"Discover how thousands of companies use Attio to scale their business.\" — https://attio.com/customers"
-    ],
-    "confidence": 0.75
-   }
-  ],
-  "provenance": "deterministic_fallback"
- },
- "email": {
-  "recipient_name": "Alexander Christie",
-  "recipient_email": null,
-  "subject": "the security hire at Attio",
-  "subject_candidates": [
-   "the security hire at Attio",
-   "Attio and SOC 2",
-   "question on the security hire"
-  ],
-  "subject_choice_reason": "Chosen for specificity to the observed signal and brevity (score 4 vs 4, 3).",
-  "email_body": "Hi Alexander,\n\nNoticed you're hiring for a Security Engineering Lead. Teams at that point often find the new hire spends their first months chasing evidence rather than improving security.\n\nIs compliance sitting with you until that security hire lands?\n\nSprinto automates evidence collection and continuous control monitoring for SOC 2, ISO 27001 and GDPR, so audit prep stops being a side project for engineering. If it's relevant, would a 20-minute conversation be useful?\n\nBest,\nSprinto Growth Team",
-  "personalisation_hook": "you're hiring for a Security Engineering Lead",
-  "hook_source_url": "https://attio.com/careers",
-  "pain_point_used": "Standing up a compliance programme before a dedicated security team exists",
-  "why_this_email_was_written": "Open security/compliance role: Security Engineering Lead (https://attio.com/careers) suggests hiring for security or compliance shows the company is building the function now; new owners typically choose tooling in their first months. Alexander Christie (CTO & Co-founder) is the likely owner of 'Standing up a compliance programme before a dedicated security team exists'.",
-  "evidence_to_email_trace": [
-   {
-    "sentence": "Noticed you're hiring for a Security Engineering Lead.",
-    "purpose": "Website observation (hook)",
-    "evidence": "JOB: Security Engineering Lead",
-    "source_url": "https://attio.com/careers"
-   },
-   {
-    "sentence": "Teams at that point often find the new hire spends their first months chasing evidence rather than improving security.",
-    "purpose": "Business implication of the observation",
-    "evidence": "Hiring for security or compliance shows the company is building the function now; new owners typically choose tooling in their first months.",
-    "source_url": "https://attio.com/careers"
-   },
-   {
-    "sentence": "Is compliance sitting with you until that security hire lands?",
-    "purpose": "Role-specific challenge (observed)",
-    "evidence": "\"JOB: Security Engineering Lead\" — https://attio.com/careers; \"Raised $125M Series C\" — https://attio.com/",
-    "source_url": "https://attio.com/careers"
-   },
-   {
-    "sentence": "Sprinto automates evidence collection and continuous control monitoring for SOC 2, ISO 27001 and GDPR, so audit prep stops being a side project for engineering.",
-    "purpose": "Relevant Sprinto value proposition (core product, no extra claims)",
-    "evidence": "",
-    "source_url": ""
-   },
-   {
-    "sentence": "If it's relevant, would a 20-minute conversation be useful?",
-    "purpose": "Single low-pressure CTA",
-    "evidence": "",
-    "source_url": ""
-   }
-  ],
-  "quality_checks": {
-   "length_60_110_words": true,
-   "greets_by_first_name": true,
-   "hook_is_grounded_in_evidence": true,
-   "no_banned_phrases": true,
-   "no_exclamation_marks": true,
-   "single_cta": true,
-   "no_unsupported_sprinto_claims": true
-  },
-  "word_count": 71,
-  "provenance": "deterministic_fallback"
- },
- "dispatch": {
-  "status": "pending_review",
-  "delivered_to": null,
-  "preview_path": "/Users/anishasarkar/sprinto-case-study/sprinto-signal-engine/output/review/attio-com.txt",
-  "message_id": null,
-  "detail": "Waiting for a human at the review gate."
- },
+ "contact_selection": null,
+ "pain_points": null,
+ "email": null,
+ "dispatch": null,
  "errors": {},
  "ledger": {
   "company": "Attio",
   "domain": "attio.com",
-  "decision_status": "qualified",
-  "recommended_action": "outreach",
-  "icp_fit_score": 56,
-  "buying_timing_score": 34,
-  "evidence_confidence": 0.75,
-  "gate_decision": "QUALIFY",
+  "decision_status": "not_qualified",
+  "recommended_action": "disqualify",
+  "icp_fit_score": 46,
+  "buying_timing_score": 7,
+  "evidence_confidence": 0.72,
+  "gate_decision": "DROP",
   "evidence_map": {
+   "certifications": "unknown",
+   "competitor_vendor": "no",
    "saas": "yes",
    "growth_stage": "yes",
-   "audit_intent": "yes",
+   "audit_intent": "no",
    "clients": "yes",
    "industry": "unknown",
    "cloud_stack": "unknown"
@@ -834,35 +596,24 @@
   "review_flags": [],
   "provenance": "deterministic_fallback",
   "why_this_company": [
-   "SaaS business model +22.5/25: SaaS model supported by 8 indicator(s). [8549084bff] \"New VP Sales from enterprise SaaS\" (https://attio.com/); [363b00a68e] \"Start for free\" (https://attio.com/)",
+   "SaaS business model +22.5/25: SaaS model supported by 5 indicator(s). [363b00a68e] \"Start for free\" (https://attio.com/); [1e938472fe] \"Talk to sales\" (https://attio.com/)",
    "Relevant growth stage (Series A–C) +15/15: Explicit Series C — inside Sprinto's sweet spot. [950dd2cfe3] \"Raised $125M Series C\" (https://attio.com/); [af49a70815] \"190+ team members.\" (https://attio.com/about)",
-   "Enterprise customer orientation +8.9/20: 2 enterprise reference(s) / enterprise-tier signals. [7468d1a24f] \"Trusted by 30,000+ customers.\" (https://attio.com/); [5c78683444] \"Discover how thousands of companies use Attio to scale their business.\" (https://attio.com/customers)",
-   "Company scaling signals +10/10: 4 scaling signal(s) (hiring, expansion, funding). [9b03975d25] \"JOB: Senior Platform Engineer\" (https://attio.com/careers); [af4e01a655] \"JOB: Senior Product Engineer [Backend]\" (https://attio.com/careers)"
+   "Enterprise customer orientation +8.9/20: 2 enterprise reference(s) / enterprise-tier signals. [7468d1a24f] \"Trusted by 30,000+ customers.\" (https://attio.com/); [5c78683444] \"Discover how thousands of companies use Attio to scale their business.\" (https://attio.com/customers)"
   ],
   "why_now": [
-   "Security or compliance hiring +16.9/20: 1 security/compliance role(s) open; 4 engineering role signal(s). [be535ca80d] \"JOB: Security Engineering Lead\" (https://attio.com/careers); [9b03975d25] \"JOB: Senior Platform Engineer\" (https://attio.com/careers)",
-   "Trust centre or compliance activity +10/10: Trust centre published. [6266911d73] \"Attio Trust Center\" (https://trust.attio.com/); [1d4338cc38] \"Attio Trust Center\" (https://attio.com/security)",
+   "Trust centre or compliance activity +10/10: Trust centre published. [6266911d73] \"Attio Trust Center\" (https://trust.attio.com/); [0b5e63181c] \"Trust centre platform: Vanta (found 'vanta-entry-loader' in the page source)\" (https://attio.com/security)",
    "Recent enterprise expansion / scaling +6.8/15: 1 expansion / funding signal(s). [950dd2cfe3] \"Raised $125M Series C\" (https://attio.com/)",
-   "Buying moment — Open security/compliance role: Security Engineering Lead: Hiring for security or compliance shows the company is building the function now; new owners typically choose tooling in their first months. (https://attio.com/careers)",
    "Buying moment — Trust centre page is live: A trust centre signals that customers are actively asking for security documentation during deals. (https://trust.attio.com/)",
-   "Buying moment — Funding announcement: Raised $125M Series C: A new round usually funds go-to-market expansion into larger accounts, which brings security reviews with it. (https://attio.com/)"
+   "Buying moment — Funding announcement: Raised $125M Series C: A new round usually funds go-to-market expansion into larger accounts, which brings security reviews with it. (https://attio.com/)",
+   "Buying moment — Customer stories page exists: Customers | Attio: Named larger customers suggest the company is already exposed to enterprise security requirements. (https://attio.com/customers)"
   ],
   "what_could_make_this_wrong": [
-   "5 of 20 evidence items are inferred rather than explicitly stated.",
+   "4 of 14 evidence items are inferred rather than explicitly stated.",
    "Unknown: Any SOC 2 / ISO 27001 / GDPR status.",
-   "Keyword rules can misread context (e.g. 'SOC 2' in a blog post about a customer, not the company itself)."
-  ],
-  "why_this_person": [
-   "Alexander Christie, CTO & Co-founder (relevance 67.0): CTO: accountable for technical controls and usually sponsors the first SOC 2. A security function exists, so the CTO is one step removed from day-to-day compliance. No email address available — reachable only after manual verification. Email not yet verified — the test preview will show the prospect address as unavailable."
-  ],
-  "why_this_pain_point": [
-   "Standing up a compliance programme before a dedicated security team exists [observed, confidence 0.8]: Attio is growing (Security Engineering Lead) and no dedicated security lead is visible; until one exists, compliance work usually falls to the CTO & Co-founder. Evidence: \"JOB: Security Engineering Lead\" — https://attio.com/careers | \"Raised $125M Series C\" — https://attio.com/",
-   "Security questionnaires and vendor reviews slowing enterprise deals [inferred, confidence 0.75]: The site points to an enterprise motion (Trust centre page is live); enterprise buyers send security questionnaires that usually land with the CTO & Co-founder. Evidence: \"Attio Trust Center\" — https://trust.attio.com/ | \"Attio Trust Center\" — https://attio.com/security"
-  ],
-  "why_this_email": [
-   "Hook: you're hiring for a Security Engineering Lead (https://attio.com/careers)",
-   "Pain point used: Standing up a compliance programme before a dedicated security team exists",
-   "Open security/compliance role: Security Engineering Lead (https://attio.com/careers) suggests hiring for security or compliance shows the company is building the function now; new owners typically choose tooling in their first months. Alexander Christie (CTO & Co-founder) is the likely owner of 'Standing up a compliance programme before a dedicated security team exists'."
+   "Unknown: Security, compliance or engineering hiring activity.",
+   "A compliance automation vendor already appears on the site; switching costs may block a deal.",
+   "Keyword rules can misread context (e.g. 'SOC 2' in a blog post about a customer, not the company itself).",
+   "-10 timing: compliance platform already visible (Trust centre runs on Vanta) — this is a displacement, not a greenfield, conversation."
   ]
  }
 }

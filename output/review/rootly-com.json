@@ -1,11 +1,14 @@
 {
   "slug": "rootly-com",
   "company": "Rootly",
-  "status": "pending",
-  "created": "2026-11-03T14:50:22",
+  "status": "withdrawn",
+  "created": "2026-11-19T10:58:25",
+  "learnings_applied": [],
   "original_subject": "security reviews at Rootly",
   "original_body": "Hi Quentin,\n\nNoticed your trust centre says \"Start your security review\". That usually means security questionnaires sit right inside the sales cycle.\n\nAre security questionnaires starting to slow down your larger deals?\n\nSprinto automates evidence collection and continuous control monitoring for SOC 2, ISO 27001 and GDPR, so audit prep stops being a side project for engineering. If it's relevant, would a 20-minute conversation be useful?\n\nBest,\nSprinto Growth Team",
   "flags": [],
   "pain_family": "questionnaires",
-  "hook_source_url": "https://security.rootly.com/"
+  "hook_source_url": "https://security.rootly.com/",
+  "reason": "No longer qualifies: NURTURE",
+  "decided": "2026-11-19T11:08:36"
 }

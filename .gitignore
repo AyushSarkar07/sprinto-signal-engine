@@ -10,3 +10,6 @@ deploy-panel/
 .claude/
 .pytest_cache/
 .DS_Store
+test-screenshots/
+.playwright-cli/
+.vercel

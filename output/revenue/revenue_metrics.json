@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-03T15:49:30",
+  "generated": "2026-11-19T11:08:36",
   "currency": "USD",
   "funnel": [
     [
@@ -12,15 +12,15 @@
     ],
     [
       "Qualified",
-      3
+      0
     ],
     [
       "Decision-maker found",
-      3
+      0
     ],
     [
       "Email ready",
-      3
+      0
     ],
     [
       "Approved at review",
@@ -81,59 +81,26 @@
     "won_revenue": 12000.0,
     "deals_won": 1,
     "open_pipeline_value": 0,
-    "expected_revenue": 640.0,
+    "expected_revenue": 0,
     "blocked_no_contact": 0.0,
     "blocked_no_email": 0.0,
     "avg_deal_size": 12000.0
   },
   "conversion": {
-    "qualification_rate": 0.6,
+    "qualification_rate": 0.0,
     "contacted_to_reply": "1/1",
     "open_rate": "1/1",
     "contacted_to_won_observed": "1/1",
     "contacted_to_won_estimated": 0.0212
   },
-  "variants": {
-    "questionnaires": {
-      "replies": 1,
-      "contacted": 1,
-      "reply_rate": 1.0
-    }
-  },
+  "variants": {},
   "optimizer_active": false,
   "min_sends_to_learn": 10,
-  "priority_queue": [
-    {
-      "company": "Plain",
-      "domain": "plain.com",
-      "stage": "not contacted",
-      "icp": 77,
-      "timing": 42,
-      "acv": 12000.0,
-      "acv_basis": "assumed ACV for \u2264200 employees (site says '68 employees')",
-      "p_win": 0.0284,
-      "expected_revenue": 340.32,
-      "timing_lift": 1.34,
-      "next_action": "Contact now (email ready)"
-    },
-    {
-      "company": "Attio",
-      "domain": "attio.com",
-      "stage": "not contacted",
-      "icp": 56,
-      "timing": 34,
-      "acv": 12000.0,
-      "acv_basis": "assumed ACV for \u2264200 employees (site says '190+ team members')",
-      "p_win": 0.025,
-      "expected_revenue": 299.68,
-      "timing_lift": 1.18,
-      "next_action": "Contact now (email ready)"
-    }
-  ],
+  "priority_queue": [],
   "outcomes_recorded": 1,
   "review": {
-    "drafts": 3,
-    "pending": 3,
+    "drafts": 0,
+    "pending": 0,
     "approved": 0,
     "rejected": 0,
     "approval_rate": null,

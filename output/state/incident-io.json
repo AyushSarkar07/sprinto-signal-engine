@@ -158,14 +158,6 @@
    "is_saas": true,
    "is_saas_evidence": [
     {
-     "finding": "Describes itself as SaaS",
-     "source_url": "https://incident.io/customers/fin",
-     "excerpt": "something we shipped for them whilst on a train to Marseille for a company offsite! This responsiveness showed alignment with Intercom's needs as a fast-moving SaaS company, further strengthening their decision.",
-     "evidence_type": "explicit",
-     "confidence": 0.6,
-     "category": "saas_indicator"
-    },
-    {
      "finding": "Self-serve free trial / sign-up",
      "source_url": "https://incident.io/",
      "excerpt": "Get started for free",
@@ -255,16 +247,7 @@
      "category": "enterprise_customer"
     }
    ],
-   "customer_industries": [
-    {
-     "finding": "Serves or targets financial services",
-     "source_url": "https://incident.io/customers/etsy",
-     "excerpt": "I've even gotten teams like payments, member support, trust and safety, and security interested, too,” says Jeremy.",
-     "evidence_type": "inferred",
-     "confidence": 0.55,
-     "category": "regulated_industry"
-    }
-   ],
+   "customer_industries": [],
    "tech_stack": []
   },
   "compliance_signals": {
@@ -362,16 +345,6 @@
     "confidence": 0.6,
     "requires_further_research": false,
     "hook_phrase": "your customer stories features customer work with larger teams"
-   },
-   {
-    "signal": "Serves or targets financial services",
-    "category": "regulated_industry",
-    "source_url": "https://incident.io/customers/etsy",
-    "evidence": "I've even gotten teams like payments, member support, trust and safety, and security interested, too,” says Jeremy.",
-    "why_it_matters": "Customers in regulated industries (finance, healthcare, public sector) routinely require formal attestations from vendors.",
-    "confidence": 0.55,
-    "requires_further_research": true,
-    "hook_phrase": "you work with customers in financial services"
    }
   ],
   "missing_information": [
@@ -387,17 +360,16 @@
   "qualified": false,
   "decision_status": "not_qualified",
   "recommended_action": "nurture",
-  "icp_fit_score": 68,
+  "icp_fit_score": 58,
   "buying_timing_score": 15,
-  "evidence_confidence": 0.74,
+  "evidence_confidence": 0.75,
   "icp_breakdown": [
    {
     "criterion": "SaaS business model",
     "max_points": 25,
     "points": 22.5,
-    "rationale": "SaaS model supported by 6 indicator(s).",
+    "rationale": "SaaS model supported by 5 indicator(s).",
     "evidence_ids": [
-     "71e4866cff",
      "081a3ff82e",
      "d0086179a5",
      "cd7894810b",
@@ -429,11 +401,9 @@
    {
     "criterion": "Relevant customer industry",
     "max_points": 10,
-    "points": 10.0,
-    "rationale": "Serves regulated industries: financial services",
-    "evidence_ids": [
-     "10b3b23746"
-    ]
+    "points": 0.0,
+    "rationale": "Customer industries not identified.",
+    "evidence_ids": []
    },
    {
     "criterion": "Company scaling signals",
@@ -500,22 +470,22 @@
    "-10 timing: compliance platform already visible (Vanta) — this is a displacement, not a greenfield, conversation."
   ],
   "qualification_reasoning": [
-   "Evidence Map → NURTURE: ICP fit, but 'Is it preparing for an audit (SOC 2 / ISO 27001)?' stayed unanswered after research — right company, wrong time → nurture.",
-   "Scores: ICP 68/100, timing 15/100, evidence confidence 0.74.",
-   "Biggest ICP drivers: SaaS business model (22.5/25) — SaaS model supported by 6 indicator(s).; Enterprise customer orientation (15.8/20) — 4 enterprise reference(s) / enterprise-tier signals.",
+   "Evidence Map → NURTURE: A SaaS fit, but nothing shows an audit coming: check back later.",
+   "Scores: ICP 58/100, timing 15/100, evidence confidence 0.75.",
+   "Biggest ICP drivers: SaaS business model (22.5/25) — SaaS model supported by 5 indicator(s).; Enterprise customer orientation (15.8/20) — 4 enterprise reference(s) / enterprise-tier signals.",
    "Biggest timing drivers: Explicit SOC 2 / ISO 27001 / audit requirement (17/30) — Certification already held — renewal and multi-framework expansion, not a first audit.; Trust centre or compliance activity (8.2/10) — Trust centre published.",
    "Extraction ran in deterministic fallback mode (Claude not used); confidence capped at 0.75. Results are rule-based, not AI-verified."
   ],
   "positive_signals": [
-   "SaaS business model: SaaS model supported by 6 indicator(s). (+22.5/25)",
+   "SaaS business model: SaaS model supported by 5 indicator(s). (+22.5/25)",
    "Relevant growth stage (Series A–C): No funding stage stated; headcount mention ('200+ people') used as a weak proxy. (+7/15)",
    "Enterprise customer orientation: 4 enterprise reference(s) / enterprise-tier signals. (+15.8/20)",
-   "Relevant customer industry: Serves regulated industries: financial services (+10/10)",
    "Security / compliance complexity: 4 security/compliance artefact(s) on the site. (+13/20)",
    "Explicit SOC 2 / ISO 27001 / audit requirement: Certification already held — renewal and multi-framework expansion, not a first audit. (+17/30)",
    "Trust centre or compliance activity: Trust centre published. (+8.2/10)"
   ],
   "negative_signals": [
+   "Relevant customer industry: Customer industries not identified.",
    "Company scaling signals: No scaling signals observed.",
    "Enterprise security review / procurement pressure: No security-review pressure observed.",
    "Security or compliance hiring: No security roles found.",
@@ -526,7 +496,7 @@
    "security_hiring: Security, compliance or engineering hiring activity"
   ],
   "risks_and_uncertainty": [
-   "7 of 19 evidence items are inferred rather than explicitly stated.",
+   "6 of 17 evidence items are inferred rather than explicitly stated.",
    "Unknown: Security, compliance or engineering hiring activity.",
    "A compliance automation vendor already appears on the site; switching costs may block a deal.",
    "Company already holds SOC 2 — the conversation is about continuous compliance / extra frameworks, not a first audit.",
@@ -538,14 +508,45 @@
   "gate_decision": "NURTURE",
   "evidence_map": [
    {
+    "key": "certifications",
+    "question": "Is there still something to certify?",
+    "core": false,
+    "role": "gate",
+    "answer": "yes",
+    "basis": "Holds SOC 2 but not every framework; renewals and the next framework are still open.",
+    "evidence": [
+     "\"We're SOC 2 Type I & II and GDPR compliant to ensure your data stays safe.\" — https://incident.io/security"
+    ],
+    "tries_used": 1,
+    "limit": 2,
+    "if_unanswered": "Treat as pass",
+    "short_circuit_hit": null
+   },
+   {
+    "key": "competitor_vendor",
+    "question": "Is it free of a competing compliance platform?",
+    "core": false,
+    "role": "gate",
+    "answer": "yes",
+    "basis": "A compliance vendor is mentioned (e.g. as a customer), but not as the platform behind their trust centre.",
+    "evidence": [
+     "\"Link to https://incident.io/customers/vanta\" — https://incident.io/"
+    ],
+    "tries_used": 1,
+    "limit": 2,
+    "if_unanswered": "Treat as pass",
+    "short_circuit_hit": null
+   },
+   {
     "key": "saas",
     "question": "Is it a SaaS business?",
     "core": true,
+    "role": "core",
     "answer": "yes",
     "basis": "Subscription-software indicators found (pricing/trial/login/API).",
     "evidence": [
-     "\"something we shipped for them whilst on a train to Marseille for a company offsite! This responsiveness showed alignment with Intercom's nee\" — https://incident.io/customers/fin",
-     "\"Get started for free\" — https://incident.io/"
+     "\"Get started for free\" — https://incident.io/",
+     "\"Get a demo\" — https://incident.io/"
     ],
     "tries_used": 1,
     "limit": 3,
@@ -556,6 +557,7 @@
     "key": "growth_stage",
     "question": "Is it Series A–C / 50–200 employees?",
     "core": true,
+    "role": "core",
     "answer": "yes",
     "basis": "Inside the Series A–C / 50–200 employee band (200+ people).",
     "evidence": [
@@ -570,9 +572,12 @@
     "key": "audit_intent",
     "question": "Is it preparing for an audit (SOC 2 / ISO 27001)?",
     "core": true,
-    "answer": "unknown",
-    "basis": "Weak or unread audit signals (timing 15/100, 2 relevant page(s) read).",
-    "evidence": [],
+    "role": "core",
+    "answer": "no",
+    "basis": "Mature programme: already holds SOC 2. Nothing read points to a new audit.",
+    "evidence": [
+     "\"We're SOC 2 Type I & II and GDPR compliant to ensure your data stays safe.\" — https://incident.io/security"
+    ],
     "tries_used": 2,
     "limit": 4,
     "if_unanswered": "Nurture (right company, wrong time)",
@@ -582,11 +587,11 @@
     "key": "clients",
     "question": "Does it have >50 clients / larger customers?",
     "core": false,
-    "answer": "yes",
-    "basis": "Customer base of meaningful size / named larger customers.",
+    "role": "supporting",
+    "answer": "unknown",
+    "basis": "Customer references exist but size and count are unclear.",
     "evidence": [
-     "\"Trusted by industry leaders\" — https://incident.io/customers",
-     "\"Why we’re loved by users and easily adopted\" — https://incident.io/customers/fin"
+     "\"Trusted by industry leaders\" — https://incident.io/customers"
     ],
     "tries_used": 4,
     "limit": 2,
@@ -597,13 +602,12 @@
     "key": "industry",
     "question": "Does it serve a regulated industry?",
     "core": false,
-    "answer": "yes",
-    "basis": "Serves regulated buyers: financial services.",
-    "evidence": [
-     "\"I've even gotten teams like payments, member support, trust and safety, and security interested, too,” says Jeremy.\" — https://incident.io/customers/etsy"
-    ],
-    "tries_used": 2,
-    "limit": 1,
+    "role": "supporting",
+    "answer": "unknown",
+    "basis": "Customer industries not identified as regulated.",
+    "evidence": [],
+    "tries_used": 5,
+    "limit": 2,
     "if_unanswered": "Neutral",
     "short_circuit_hit": null
    },
@@ -611,6 +615,7 @@
     "key": "cloud_stack",
     "question": "Is it on AWS / GCP / Azure?",
     "core": false,
+    "role": "supporting",
     "answer": "unknown",
     "basis": "Cloud provider not stated.",
     "evidence": [],
@@ -641,7 +646,6 @@
     "https://incident.io/customers/fin"
    ],
    "new_findings": [
-    "Describes itself as SaaS (https://incident.io/customers/fin)",
     "Customer reference: loved by users and easily adopted (https://incident.io/customers/fin)",
     "Headcount mention: 200+\npeople (https://incident.io/careers)"
    ],
@@ -649,9 +653,9 @@
    "icp_after": 55,
    "timing_before": 15,
    "timing_after": 15,
-   "decision_before": "insufficient_data",
+   "decision_before": "not_qualified",
    "decision_after": "not_qualified",
-   "what_changed": "ICP 44→55, timing 15→15, decision insufficient_data→not_qualified. 3 new evidence item(s)."
+   "what_changed": "ICP 44→55, timing 15→15, decision not_qualified→not_qualified. 2 new evidence item(s)."
   },
   {
    "round": 2,
@@ -666,16 +670,15 @@
     "https://incident.io/customers/etsy"
    ],
    "new_findings": [
-    "Customer reference: loved by users and easily adopted (https://incident.io/customers/etsy)",
-    "Serves or targets financial services (https://incident.io/customers/etsy)"
+    "Customer reference: loved by users and easily adopted (https://incident.io/customers/etsy)"
    ],
    "icp_before": 55,
-   "icp_after": 68,
+   "icp_after": 58,
    "timing_before": 15,
    "timing_after": 15,
    "decision_before": "not_qualified",
    "decision_after": "not_qualified",
-   "what_changed": "ICP 55→68, timing 15→15, decision not_qualified→not_qualified. 2 new evidence item(s)."
+   "what_changed": "ICP 55→58, timing 15→15, decision not_qualified→not_qualified. 1 new evidence item(s)."
   }
  ],
  "research_notes": [],
@@ -689,25 +692,26 @@
   "domain": "incident.io",
   "decision_status": "not_qualified",
   "recommended_action": "nurture",
-  "icp_fit_score": 68,
+  "icp_fit_score": 58,
   "buying_timing_score": 15,
-  "evidence_confidence": 0.74,
+  "evidence_confidence": 0.75,
   "gate_decision": "NURTURE",
   "evidence_map": {
+   "certifications": "yes",
+   "competitor_vendor": "yes",
    "saas": "yes",
    "growth_stage": "yes",
-   "audit_intent": "unknown",
-   "clients": "yes",
-   "industry": "yes",
+   "audit_intent": "no",
+   "clients": "unknown",
+   "industry": "unknown",
    "cloud_stack": "unknown"
   },
   "review_flags": [],
   "provenance": "deterministic_fallback",
   "why_this_company": [
-   "SaaS business model +22.5/25: SaaS model supported by 6 indicator(s). [71e4866cff] \"something we shipped for them whilst on a train to Marseille for a company offsite! This responsiveness showed\" (https://incident.io/customers/fin); [081a3ff82e] \"Get started for free\" (https://incident.io/)",
+   "SaaS business model +22.5/25: SaaS model supported by 5 indicator(s). [081a3ff82e] \"Get started for free\" (https://incident.io/); [d0086179a5] \"Get a demo\" (https://incident.io/)",
    "Relevant growth stage (Series A–C) +7/15: No funding stage stated; headcount mention ('200+ people') used as a weak proxy. [6d5ebb4cef] \"200+ people across NY, SF and London\" (https://incident.io/careers)",
    "Enterprise customer orientation +15.8/20: 4 enterprise reference(s) / enterprise-tier signals. [7b81626994] \"Trusted by industry leaders\" (https://incident.io/customers); [58197f3299] \"Why we’re loved by users and easily adopted\" (https://incident.io/customers/fin)",
-   "Relevant customer industry +10/10: Serves regulated industries: financial services [10b3b23746] \"I've even gotten teams like payments, member support, trust and safety, and security interested, too,” says Je\" (https://incident.io/customers/etsy)",
    "Security / compliance complexity +13/20: 4 security/compliance artefact(s) on the site. [2427b61ace] \"Vulnerability Disclosure Policy\" (https://incident.io/security); [b9d8554ab3] \"We encrypt your data using AES-256, the gold standard in encryption technology and safeguard passwords using a\" (https://incident.io/security)"
   ],
   "why_now": [
@@ -718,7 +722,7 @@
    "Buying moment — Customer stories page exists: Customers | incident.io: Named larger customers suggest the company is already exposed to enterprise security requirements. (https://incident.io/customers)"
   ],
   "what_could_make_this_wrong": [
-   "7 of 19 evidence items are inferred rather than explicitly stated.",
+   "6 of 17 evidence items are inferred rather than explicitly stated.",
    "Unknown: Security, compliance or engineering hiring activity.",
    "A compliance automation vendor already appears on the site; switching costs may block a deal.",
    "Company already holds SOC 2 — the conversation is about continuous compliance / extra frameworks, not a first audit.",

@@ -13,6 +13,7 @@ import datetime as dt
 import json
 import logging
 import re
+from urllib.parse import urlparse
 from typing import Iterable, Optional
 
 from src.llm import ClaudeJSON, LLMUnavailable, load_prompt
@@ -117,15 +118,18 @@ NON_SAAS = [
     (r"\bcoffee\b.*\broast|\bbakery\b|\bbrewery\b", "Food & beverage"),
 ]
 INDUSTRIES = {
-    "healthcare": r"\bhealthcare\b|\bhospitals?\b|\bpatients?\b|\bclinical\b|\bHIPAA\b|\bhealth systems?\b",
-    "financial services": r"\bfintech\b|\bbanks?\b|\bbanking\b|\bfinancial (services|institutions)\b|\blending\b|\bpayments?\b|\binsurance\b|\binsurers?\b",
+    # A company's own compliance (HIPAA) or its own cover ("cyber insurance") says nothing about whom it sells to.
+    "healthcare": r"\bhealthcare (providers?|organi[sz]ations|companies|teams)\b|\bhospitals?\b|\bhealth systems?\b|\bclinics\b",
+    "financial services": r"\bfintechs?\b|\bbanks\b|\bbanking\b|\bfinancial (services|institutions)\b|\blenders\b|\binsurers\b|\binsurance (companies|carriers|providers)\b",
     "government / public sector": r"\bgovernment\b|\bpublic sector\b|\bfederal\b|\bFedRAMP\b",
     "education": r"\buniversit(y|ies)\b|\bhigher education\b|\bK-12\b",
     "legal": r"\blegal teams?\b|\blaw firms\b",
 }
 REGULATED = {"healthcare", "financial services", "government / public sector"}
 COMPETITORS = {"vanta": "Vanta", "drata": "Drata", "secureframe": "Secureframe", "sprinto": "Sprinto",
-               "thoropass": "Thoropass", "scrut": "Scrut"}
+               "thoropass": "Thoropass", "scrut": "Scrut", "oneleet": "Oneleet", "delve": "Delve", "trustcloud": "TrustCloud"}
+TRUST_ONLY_PLATFORMS = {"SafeBase", "Conveyor", "Whistic"}   # trust-centre / questionnaire tools, not compliance automation
+PLATFORM_LINE = r"Trust centre platform: (\w+) \(found '[^']*' in the page source\)"
 
 # Customer stories and blog posts describe OTHER companies or generic topics.
 ABOUT_OTHERS = {"customers", "news"}
@@ -145,9 +149,22 @@ SECURITY_ROLE = re.compile(r"\b(security|CISO|GRC|compliance|trust|privacy|risk|
 ENG_ROLE = re.compile(r"\b(engineer|engineering|developer|SRE|devops|architect|platform|infrastructure|data scientist)\b", re.I)
 
 
+OFFERED_DOCS = r"\b(start your security review|request (access|our|the)|get access|download (our|the)|data processing (agreement|addendum)|\bDPA\b|sub-?processors?)"
+
+
+def _is_trust_portal(p: PageRecord) -> bool:
+    host = urlparse(p.url).netloc.lower()
+    return host.startswith(("trust.", "security.")) or bool(re.search(r"trust (center|centre)", p.title or "", re.I)) \
+        or p.text.startswith("Trust centre platform:")
+
+
 def _saas_assessment(pages: list[PageRecord]) -> tuple[Optional[bool], list[Evidence], list[Evidence]]:
-    strong = [e for pat, f in SAAS_STRONG for e in find_all(pages, pat, "saas_indicator", f, 0.6, limit=1)]
-    support = [e for pat, f in SAAS_SUPPORT for e in find_all(pages, pat, "saas_indicator", f, 0.4, "inferred", limit=1)]
+    # Only the company's own product pages describe the company; customer stories, posts and job ads describe others.
+    own = [p for p in pages if p.category not in ("customers", "news", "careers", "enrichment")]
+    first = [p.model_copy(update={"text": "\n".join(p.text.splitlines()[:2])}) for p in own]  # title / meta description
+    strong = [e for e in find_all(first, SAAS_STRONG[0][0], "saas_indicator", SAAS_STRONG[0][1], 0.6, limit=1)]
+    strong += [e for pat, f in SAAS_STRONG[1:] for e in find_all(own, pat, "saas_indicator", f, 0.6, limit=1)]
+    support = [e for pat, f in SAAS_SUPPORT for e in find_all(own, pat, "saas_indicator", f, 0.4, "inferred", limit=1)]
     non = [e for pat, f in NON_SAAS for e in find_all(pages, pat, "non_saas_indicator", f, 0.6, limit=1)]
     explicit_saas = any("Describes itself as SaaS" == e.finding for e in strong)
     score = len(strong) * 2 + len(support) - len(non) * 2
@@ -226,7 +243,8 @@ def extract_deterministic(rec: ScrapeRecord) -> ExtractionResult:
     # Industries
     for ind, pat in INDUSTRIES.items():
         for e in find_all(pages, pat, "regulated_industry" if ind in REGULATED else "other",
-                          f"Serves or targets {ind}", 0.55, "inferred", limit=1, exclude={"careers", "legal", "news"}):
+                          f"Serves or targets {ind}", 0.55, "inferred", limit=2,
+                          exclude={"careers", "legal", "news", "security", "trust", "compliance", "enrichment"}):
             profile.customer_industries.append(e)
 
     # Enterprise
@@ -239,9 +257,13 @@ def extract_deterministic(rec: ScrapeRecord) -> ExtractionResult:
                                      for p in pages if p.category == "customers"][:1]
     comp.enterprise_security_signals = find_all(pages, ENTERPRISE, "enterprise_orientation", "Enterprise orientation: {match}", 0.65,
                                                 limit=3, exclude={"customers", "news", "careers"})
-    comp.enterprise_security_signals += find_all(pages, REVIEW_PRESSURE, "security_review_pressure",
-                                                 "Security review / procurement process: {match}", 0.7, limit=3,
-                                                 exclude={"customers", "news", "careers"})
+    # A trust centre's "Start your security review" / "Request access" buttons and an offered DPA are the company
+    # ANSWERING its customers' reviews: proof of a mature programme, not of a need. Never read them as pressure.
+    not_portal = [p for p in pages if p.category not in ("trust",) and not _is_trust_portal(p)]
+    comp.enterprise_security_signals += [e for e in find_all(not_portal, REVIEW_PRESSURE, "security_review_pressure",
+                                                             "Security review / procurement process: {match}", 0.7, limit=3,
+                                                             exclude={"customers", "news", "careers"})
+                                         if not re.search(OFFERED_DOCS, e.excerpt, re.I)]
     # Marketing pages render product mock-ups (e.g. a CRM deal stage "Security review underway"). Outside
     # security/trust/legal pages, only full sentences count as evidence of the company's own process.
     comp.enterprise_security_signals = [e for e in comp.enterprise_security_signals
@@ -282,6 +304,17 @@ def extract_deterministic(rec: ScrapeRecord) -> ExtractionResult:
                                                        excerpt=f"Link to {link}", confidence=0.6, evidence_type="explicit",
                                                        category="trust_centre"))
     comp.trust_centre = bool(comp.trust_centre_evidence)
+
+    # Platform behind the trust centre, read from the page source by the scraper
+    for p in pages:
+        m = re.match(PLATFORM_LINE, p.text)
+        if not m:
+            continue
+        name = m.group(1)
+        ev = Evidence(finding=f"Trust centre runs on {name}", source_url=p.url, excerpt=m.group(0), confidence=0.9,
+                      category="competitor_platform" if name not in TRUST_ONLY_PLATFORMS else "trust_centre")
+        (other if ev.category == "competitor_platform" else comp.trust_centre_evidence).append(ev)
+    comp.trust_centre = comp.trust_centre or bool(comp.trust_centre_evidence)
 
     # Incumbent compliance tooling
     for key, name in COMPETITORS.items():

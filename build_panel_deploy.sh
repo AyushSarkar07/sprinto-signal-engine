@@ -6,8 +6,8 @@ cd "$(dirname "$0")"
 rm -rf sprinto-panel && mkdir -p sprinto-panel/snapshot
 cp app.py config.py export_site.py main.py sprinto-panel/
 cp -R src prompts data sprinto-panel/
-for d in state review revenue company_reports; do [ -d "output/$d" ] && cp -R "output/$d" sprinto-panel/snapshot/; done
-for f in decision_ledger.json pipeline_summary.csv pipeline_report.md; do [ -f "output/$f" ] && cp "output/$f" sprinto-panel/snapshot/; done
+for d in state review revenue company_reports feedback; do [ -d "output/$d" ] && cp -R "output/$d" sprinto-panel/snapshot/; done
+for f in decision_ledger.json pipeline_summary.csv pipeline_report.md runs.jsonl; do [ -f "output/$f" ] && cp "output/$f" sprinto-panel/snapshot/; done
 find sprinto-panel -name "__pycache__" -type d -prune -exec rm -rf {} +
 cat > sprinto-panel/requirements.txt <<'REQ'
 requests>=2.31

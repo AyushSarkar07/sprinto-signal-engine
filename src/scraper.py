@@ -96,6 +96,34 @@ def classify_url(url: str, anchor: str = "") -> Optional[str]:
     return None
 
 
+# Platforms that host trust centres. Matched only on specific signatures (loader names, "Powered by" lines,
+# platform hosts), never on a bare vendor name: a SafeBase page, for example, lists Drata hosts in its own
+# configuration, and that must not be read as the company's choice.
+TRUST_PLATFORM_SIGNATURES = [
+    ("Vanta", r"vanta-entry-loader|powered by vanta|trust\.vanta\.com"),
+    ("Drata", r"powered by drata|trust\.drata\.com|drata-trust-center"),
+    ("Secureframe", r"powered by secureframe|trust\.secureframe\.com"),
+    ("Sprinto", r"powered by sprinto|trust\.sprinto\.com|sprinto-trust"),
+    ("Thoropass", r"powered by thoropass"), ("Scrut", r"powered by scrut"), ("Oneleet", r"powered by oneleet|trust\.oneleet\.com"),
+    ("Delve", r"powered by delve"), ("TrustCloud", r"powered by trustcloud|trustcloud\.ai/trust"),
+    ("SafeBase", r"powered by safebase|app\.safebase\.io|cdn\.safebase\.io"),
+    ("Conveyor", r"powered by conveyor|conveyor\.com/trust"), ("Whistic", r"powered by whistic|whistic\.com/profile"),
+]
+
+
+def detect_trust_platform(html: str, title: str = "", url: str = "") -> Optional[tuple[str, str]]:
+    """Name the platform a trust/security page runs on, with the exact signature found. Only trust-like pages."""
+    host = urlparse(url).netloc.lower()
+    trustlike = re.search(r"trust|security", host + " " + (title or ""), re.I) or "/trust" in url.lower()
+    if not trustlike:
+        return None
+    for name, pat in TRUST_PLATFORM_SIGNATURES:
+        m = re.search(pat, html[:400_000], re.I)
+        if m:
+            return name, m.group(0)[:60]
+    return None
+
+
 def clean_html(html: str) -> tuple[str, str]:
     """Strip scripts, navigation, cookie banners and repeated lines; return (title, text)."""
     soup = BeautifulSoup(html, "html.parser")
@@ -246,6 +274,18 @@ class Scraper:
 
     # ---------- page level ----------
     def scrape_page(self, url: str, category: str = "other", discovered_from: str = "") -> tuple[PageRecord, str]:
+        rec, html = self._scrape_page(url, category, discovered_from)
+        if html and rec.status in ("ok", "empty"):
+            found = detect_trust_platform(html, rec.title, rec.url)
+            if found:
+                name, sig = found
+                # Many trust centres are drawn by JavaScript, so the platform never appears in visible text.
+                # Record it as a plainly labelled line taken from the page source, so it can be cited and checked.
+                rec.text = f"Trust centre platform: {name} (found '{sig}' in the page source)\n{rec.text}"
+                rec.status = "ok"
+        return rec, html
+
+    def _scrape_page(self, url: str, category: str = "other", discovered_from: str = "") -> tuple[PageRecord, str]:
         """Fetch and clean one page. Returns (PageRecord, raw_html)."""
         res = self.fetch(url)
         if res["status"] != "ok":
@@ -365,6 +405,16 @@ def finalise(rec: ScrapeRecord) -> ScrapeRecord:
     return rec
 
 
+def _posted_date(job: dict) -> str:
+    """Posting date from Greenhouse (first_published / updated_at), Lever (createdAt, ms) or Ashby (publishedAt)."""
+    import datetime as _dt
+    raw = job.get("first_published") or job.get("publishedAt") or job.get("updated_at") or job.get("createdAt")
+    if isinstance(raw, (int, float)) and raw > 1e11:
+        return _dt.datetime.fromtimestamp(raw / 1000, _dt.timezone.utc).date().isoformat()
+    m = re.match(r"\d{4}-\d{2}-\d{2}", str(raw or ""))
+    return m.group(0) if m else ""
+
+
 def fetch_ats_jobs(scraper: Scraper, ats_url: str) -> Optional[PageRecord]:
     """Read public job-board APIs (Greenhouse / Lever / Ashby) linked from the company site."""
     for name, pat in ATS_PATTERNS.items():
@@ -400,7 +450,9 @@ def fetch_ats_jobs(scraper: Scraper, ats_url: str) -> Optional[PageRecord]:
             # Keep only sentences in the JD that mention compliance terms — that is the signal we need.
             hits = [s.strip() for s in re.split(r"(?<=[.!?])\s+", body_text)
                     if re.search(r"SOC ?2|ISO ?27001|GDPR|HIPAA|compliance|audit|security review", s, re.I)][:3]
-            lines.append(f"JOB: {title}" + (f" | Team: {dept}" if dept else "") + ("".join(f"\n  JD: {h[:300]}" for h in hits)))
+            posted = _posted_date(j)
+            lines.append(f"JOB: {title}" + (f" | Team: {dept}" if dept else "") + (f" | posted: {posted}" if posted else "")
+                         + ("".join(f"\n  JD: {h[:300]}" for h in hits)))
         text = f"Open roles listed on {name} job board ({len(jobs or [])} total)\n" + "\n".join(lines)
         return PageRecord(url=api, category="careers", title=f"{name} job board", text=text, status="ok",
                           rendered_with=f"{name}-api", discovered_from=ats_url)

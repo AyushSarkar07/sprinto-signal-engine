@@ -47,6 +47,7 @@ def submit(slug: str, company: str, email, flags: list[str], pain_family: str, o
     if existing and existing["status"] != "pending":
         return existing
     rec = {"slug": slug, "company": company, "status": "pending", "created": dt.datetime.now().isoformat(timespec="seconds"),
+           "learnings_applied": list(getattr(email, "learnings_applied", []) or []),
            "original_subject": email.subject, "original_body": email.email_body, "flags": flags, "pain_family": pain_family,
            "hook_source_url": email.hook_source_url}
     header = [f"REVIEW DRAFT — {company}", "Approve:  python main.py --approve \"" + company + "\"",
@@ -88,6 +89,20 @@ def approve(slug: str, out_dir: Path, reviewer: str = "") -> dict:
     rec.update(status="approved", approved_subject=subject, approved_body=body, change_ratio=ratio,
                heavy_edit=ratio > HEAVY_EDIT, decided=dt.datetime.now().isoformat(timespec="seconds"), reviewer=reviewer)
     _save(rec, out_dir)
+    from src.feedback_loop import edit_ops, log_signal
+    log_signal(out_dir, "draft_approved", slug, rec["company"],
+               {"change_ratio": ratio, "edits": [list(o) for o in edit_ops(rec["original_body"], body)][:12],
+                "learnings_applied": rec.get("learnings_applied", [])})
+    return rec
+
+
+def withdraw(slug: str, out_dir: Path, reason: str) -> Optional[dict]:
+    """The account no longer qualifies (new evidence or a rule change): take its pending draft off the desk."""
+    rec = load(slug, out_dir)
+    if not rec or rec["status"] != "pending":
+        return None
+    rec.update(status="withdrawn", reason=reason, decided=dt.datetime.now().isoformat(timespec="seconds"))
+    _save(rec, out_dir)
     return rec
 
 
@@ -97,6 +112,8 @@ def reject(slug: str, out_dir: Path, reason: str) -> dict:
         raise ValueError("No draft is waiting for review for that company.")
     rec.update(status="rejected", reason=reason or "not given", decided=dt.datetime.now().isoformat(timespec="seconds"))
     _save(rec, out_dir)
+    from src.feedback_loop import log_signal
+    log_signal(out_dir, "draft_rejected", slug, rec["company"], {"reason": rec["reason"]})
     return rec
 
 
@@ -106,6 +123,7 @@ def all_records(out_dir: Path) -> list[dict]:
 
 def stats(out_dir: Path) -> dict:
     recs = all_records(out_dir)
+    recs = [r for r in recs if r["status"] != "withdrawn"]
     decided = [r for r in recs if r["status"] in ("approved", "rejected")]
     approved = [r for r in recs if r["status"] == "approved"]
     by_family: dict[str, list[float]] = {}

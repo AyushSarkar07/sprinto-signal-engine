@@ -20,7 +20,7 @@ from src.decision_ledger import write_outputs
 from src.email_dispatcher import Dispatcher, render_preview
 from src.email_generator import generate_email
 from src.external_sources import add_external_pages
-from src import review_gate
+from src import feedback_loop, review_gate, run_history
 from src.revenue_tracker import pain_family
 from src.llm import ClaudeJSON
 from src.models import (ContactSelection, DispatchResult, ExtractionResult, GeneratedEmail, PainPointResult, Qualification,
@@ -168,6 +168,10 @@ class Pipeline:
                 run.scrape, run.extraction, run.qualification, self.scraper, self.llm, s.prompts_dir,
                 s.max_research_rounds, s.research_page_budget, self.search)
             run.qualification = critic_review(run.qualification, run.extraction, self.llm, s.prompts_dir)
+            override = feedback_loop.overrides(s.output_dir).get(run.slug)
+            if override:
+                run.qualification = feedback_loop.apply_override(run.qualification, override)
+                self.emit(f"  · human override applied: {override['decision']} ({override['reason']})")
             q = run.qualification
             self.emit(f"  · {q.decision_status.upper()} (ICP {q.icp_fit_score}, timing {q.buying_timing_score}, "
                       f"confidence {q.evidence_confidence}, research rounds {q.research_rounds})")
@@ -176,6 +180,8 @@ class Pipeline:
             if not self._stage(run, name, fn):
                 return run
         if not run.qualification.qualified:
+            if review_gate.withdraw(run.slug, s.output_dir, f"No longer qualifies: {run.qualification.gate_decision}"):
+                self.emit("  · pending draft withdrawn: the account no longer qualifies")
             return run
 
         def do_contact():
@@ -194,8 +200,12 @@ class Pipeline:
                 run.pain_points.pain_points = self.optimizer.rank(run.pain_points.pain_points)
                 if run.pain_points.pain_points and run.pain_points.pain_points[0].pain_point != before:
                     self.emit("  · optimiser: leading with the better-converting evidence-backed angle")
+            lessons = feedback_loop.active_writer_learnings(s.output_dir)
             run.email = generate_email(run.extraction, cs.contact, cs.role_family, run.pain_points.pain_points, self.llm,
-                                       s.prompts_dir, s.sender_name)
+                                       s.prompts_dir, s.sender_name, learnings=lessons)
+            if run.email and run.email.learnings_applied:
+                feedback_loop.count_use(s.output_dir, run.email.learnings_applied)
+                self.emit(f"  · applied {len(run.email.learnings_applied)} reviewer learning(s) to the draft")
             if run.email:
                 self.emit(f"  · email drafted: \"{run.email.subject}\" ({run.email.word_count} words)")
             else:
@@ -227,14 +237,19 @@ class Pipeline:
                 return run
         return run
 
-    def run(self, prospects: list[tuple[str, str]], resume: bool = False) -> tuple[list[CompanyRun], dict]:
+    def run(self, prospects: list[tuple[str, str]], resume: bool = False, mode: str = "batch") -> tuple[list[CompanyRun], dict]:
         runs = []
+        feedback_loop.learn(self.s.output_dir, review_gate.all_records(self.s.output_dir))  # store step, before any drafting
         self.optimizer = load_optimizer(self.load_all(), self.s.outcomes_csv, Assumptions.load(self.s.revenue_assumptions))
         for i, (company, domain) in enumerate(prospects, 1):
             self.emit(f"[{i}/{len(prospects)}] {company} ({domain})")
             runs.append(self.run_company(company, domain, resume))
         for r in runs:
             self._save(r)
+        entry = run_history.record(self.s.output_dir, runs, self.s.initial_page_budget + self.s.research_page_budget,
+                                   self.llm.calls if self.llm else 0, mode)
+        self.emit(f"Run {entry['run']}: {entry['qualified']}/{entry['researched']} qualified, "
+                  f"{entry['needs_human']} need a human, {entry['dropped']} dropped")
         # Consolidated reports always cover every company researched so far, not just this batch.
         everything = self.load_all()
         paths = write_outputs(everything, self.s.output_dir)

@@ -1,6 +1,6 @@
 company,domain,scraping_status,pages_read,decision_status,recommended_action,icp_fit_score,buying_timing_score,evidence_confidence,research_rounds,top_buying_moment,contact,contact_title,contact_email,email_subject,dispatch_status,provenance,errors
-Attio,attio.com,partial,8,qualified,outreach,56,34,0.75,1,Open security/compliance role: Security Engineering Lead,Alexander Christie,CTO & Co-founder,,the security hire at Attio,pending_review,deterministic_fallback,
-incident.io,incident.io,partial,8,not_qualified,nurture,68,15,0.74,2,Mentions SOC 2 Type I — appears to be held,,,,,,deterministic_fallback,
-Plain,plain.com,partial,5,qualified,outreach,77,42,0.75,0,Trust centre page is live,Matt Vagni,Co-founder & CTO,,your trust centre at Plain,pending_review,deterministic_fallback,
-Rootly,rootly.com,partial,9,qualified,outreach,80,39,0.74,1,Mentions SOC2 — appears to be held,Quentin Rousseau,CTO and Co-founder,,security reviews at Rootly,pending_review,deterministic_fallback,
+Attio,attio.com,success,5,not_qualified,disqualify,46,7,0.72,0,Trust centre page is live,,,,,,deterministic_fallback,
+incident.io,incident.io,partial,8,not_qualified,nurture,58,15,0.75,2,Mentions SOC 2 Type I — appears to be held,,,,,,deterministic_fallback,
+Plain,plain.com,partial,5,not_qualified,disqualify,67,24,0.75,0,Trust centre page is live,,,,,,deterministic_fallback,
+Rootly,rootly.com,partial,10,not_qualified,nurture,80,32,0.74,2,Trust centre runs on SafeBase,,,,,,deterministic_fallback,
 Sweetgreen,sweetgreen.com,partial,6,not_qualified,disqualify,0,0,0.58,2,,,,,,,deterministic_fallback,

@@ -13,6 +13,7 @@ from typing import Optional
 
 from pydantic import BaseModel
 
+from src.feedback_loop import apply_to_body, prompt_notes
 from src.llm import ClaudeJSON, LLMUnavailable, load_prompt
 from src.models import BuyingMoment, Contact, ExtractionResult, GeneratedEmail, PainPoint, TraceLine
 
@@ -161,7 +162,8 @@ class ClaudeEmailDraft(BaseModel):
 
 
 def generate_email(extraction: ExtractionResult, contact: Contact, role_family: str, pains: list[PainPoint],
-                   llm: Optional[ClaudeJSON], prompts_dir, sender: str = "") -> Optional[GeneratedEmail]:
+                   llm: Optional[ClaudeJSON], prompts_dir, sender: str = "",
+                   learnings: Optional[list[dict]] = None) -> Optional[GeneratedEmail]:
     """Return a validated email, or None when there is no grounded hook (we never fabricate one)."""
     pain = pains[0] if pains else None
     hook = choose_hook(extraction, pain)
@@ -175,6 +177,8 @@ def generate_email(extraction: ExtractionResult, contact: Contact, role_family: 
                 f"Hook evidence: {hook.model_dump()}\nPrimary pain point: {pain.model_dump()}\n"
                 f"Other buying moments: {[m.model_dump() for m in extraction.potential_buying_moments[:4]]}\n"
                 f"Sign off as: {sender or 'Sprinto Growth Team'}\nRequired JSON schema: {ClaudeEmailDraft.model_json_schema()}")
+        if learnings:
+            user += "\n\n" + prompt_notes(learnings)
         system = load_prompt(prompts_dir, "email_prompt.txt")
         for attempt in range(2):
             try:
@@ -192,6 +196,12 @@ def generate_email(extraction: ExtractionResult, contact: Contact, role_family: 
             user += f"\n\nYour previous draft failed these checks: {failed}. Hook URL must be {hook.source_url}. Rewrite."
     if email is None:
         email = compose_deterministic(extraction, contact, role_family, pain, hook, sender)
+    if learnings:
+        hook_sentence = next((t.sentence for t in email.evidence_to_email_trace if "hook" in t.purpose.lower()), "")
+        body, applied = apply_to_body(email.email_body, learnings, protect=hook_sentence)
+        if applied:
+            email.email_body, email.learnings_applied = body, applied
+            email.evidence_to_email_trace = [t for t in email.evidence_to_email_trace if t.sentence in body]
     email.quality_checks = quality_checks(email.email_body, contact.first_name, email.hook_source_url, grounded)
     email.word_count = word_count(email.email_body)
     return email

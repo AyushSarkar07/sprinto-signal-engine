@@ -37,8 +37,8 @@ box-shadow:0 0 0 9999px rgba(20,14,10,.0);scroll-margin:120px 0 260px}
 background:var(--ink);color:var(--paper);border-radius:20px;padding:20px 22px 16px;box-shadow:0 18px 50px rgba(0,0,0,.28);display:none}
 .tour-on .tour-card{display:block}
 .tour-card .tstep{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;opacity:.65}
-.tour-card h4{font-family:var(--serif);font-weight:400;font-size:28px;line-height:1.05;margin:6px 0 8px}
-.tour-card p{margin:0;font-size:15px;line-height:1.5;opacity:.9}
+.tour-card .ttitle{font-family:var(--serif);font-weight:400;font-size:28px;line-height:1.05;margin:6px 0 8px}
+.tour-card .tbody{margin:0;font-size:15px;line-height:1.5;opacity:.9}
 .tour-card .tnav{display:flex;align-items:center;gap:8px;margin-top:16px}
 .tour-card button{font:600 14px var(--sans);border-radius:999px;padding:9px 16px;cursor:pointer;border:1px solid currentColor;background:transparent;color:inherit}
 .tour-card button.tnext{background:var(--lime);color:var(--limeink);border-color:var(--lime)}
@@ -48,13 +48,13 @@ background:var(--ink);color:var(--paper);border-radius:20px;padding:20px 22px 16
 .tour-fab{position:fixed;right:18px;bottom:18px;z-index:30;display:inline-flex;align-items:center;gap:8px;background:var(--lime);color:var(--limeink);
 border:0;border-radius:999px;padding:12px 18px;font:700 14px var(--sans);cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.18)}
 .tour-on .tour-fab{display:none}
-@media (max-width:640px){.tour-card h4{font-size:23px}.tour-card p{font-size:14px}.tour-fab{right:12px;bottom:12px}}
+@media (max-width:640px){.tour-card .ttitle{font-size:23px}.tour-card .tbody{font-size:14px}.tour-fab{right:12px;bottom:12px}}
 </style>
 <button class="tour-fab" type="button" data-tour-start>Take a tutorial ✦</button>
 <div class="tour-dim"></div>
 <div class="tour-card" role="dialog" aria-live="polite" aria-label="Tutorial">
   <button class="tour-close" type="button" aria-label="Close tutorial">×</button>
-  <div class="tstep"></div><h4></h4><p></p>
+  <div class="tstep"></div><p class="ttitle"></p><p class="tbody"></p>
   <div class="tnav"><button class="tback" type="button">Back</button><button class="tnext" type="button">Next</button><div class="tdots"></div></div>
 </div>
 <script>
@@ -83,8 +83,8 @@ border:0;border-radius:999px;padding:12px 18px;font:700 14px var(--sans);cursor:
     if (el){ if (s.open && el.tagName === "DETAILS") el.open = true; el.classList.add("tour-spot"); cur = el;
       el.scrollIntoView({behavior:"smooth", block: el.offsetHeight > window.innerHeight * .6 ? "start" : "center"}); }
     card.querySelector(".tstep").textContent = "Step " + (i + 1) + " of " + steps.length;
-    card.querySelector("h4").textContent = s.t;
-    card.querySelector("p").textContent = s.p;
+    card.querySelector(".ttitle").textContent = s.t;
+    card.querySelector(".tbody").textContent = s.p;
     card.querySelector(".tback").style.visibility = i ? "visible" : "hidden";
     card.querySelector(".tnext").textContent = i === steps.length - 1 ? "Finish" : "Next";
     Array.prototype.forEach.call(dots.children, function(d, k){ d.className = k === i ? "on" : ""; });
@@ -135,7 +135,7 @@ def breakdown(q) -> str:
             f"<div class='crit'><div class='ct'><span>{E(c.criterion)}</span><b>{c.points:g}<i>/{c.max_points}</i></b></div>"
             f"<div class='cb'><i style='width:{100 * c.points / c.max_points:.0f}%'></i></div><p>{E(c.rationale)}</p></div>"
             for c in items)
-        return f"<div class='bcol'><h5>{title} <b>{total}/100</b></h5>{rows}</div>"
+        return f"<div class='bcol'><h4>{title} <b>{total}/100</b></h4>{rows}</div>"
     pens = "".join(f"<li>{E(p_)}</li>" for p_ in q.penalties)
     return (f"<details class='bd'><summary><span>(Score breakdown)</span> <b>ICP {q.icp_fit_score} · Timing {q.buying_timing_score}"
             f" · Confidence {q.evidence_confidence:.2f}</b></summary><div class='bgrid'>{col('ICP fit', q.icp_fit_score, q.icp_breakdown)}"
@@ -148,18 +148,17 @@ def scoring_section() -> str:
     def weights(title: str, w: dict) -> str:
         rows = "".join(f"<div class='wrow'><span>{E(k)}</span><div class='cb'><i style='width:{v * 100 / max(w.values()):.0f}%'></i></div>"
                        f"<b>{v}</b></div>" for k, v in w.items())
-        return f"<div class='panel'><h4>{title}</h4>{rows}<p class='note'>Total {sum(w.values())} points.</p></div>"
+        return f"<div class='panel'><h3>{title}</h3>{rows}<p class='note'>Total {sum(w.values())} points.</p></div>"
     conf = [("Average confidence of the evidence items", 35), ("Key questions answered (of 6)", 35),
             ("Share stated directly, not inferred", 15), ("Pages read (4 or more = full)", 15)]
     crows = "".join(f"<div class='wrow'><span>{E(k)}</span><div class='cb'><i style='width:{v * 100 / 35:.0f}%'></i></div><b>{v}%</b></div>"
                     for k, v in conf)
     return f"""
 <section id="scoring" class="sec">
-  <div class="sec-head"><span class="label">(04) How scoring works</span>
-  <h2>Three scores, kept apart. <em>Every point</em> traces to a quote.</h2></div>
+  <div class="sec-head"><h2><span class="tag">(How scoring works)</span> Three scores, kept apart. <em>Every point</em> traces to a quote.</h2></div>
   <div class="three">{weights('ICP fit: is this Sprinto\'s kind of company?', ICP_WEIGHTS)}
   {weights('Buying timing: does compliance matter now?', TIMING_WEIGHTS)}
-  <div class="panel"><h4>Evidence confidence: how much to trust them?</h4>{crows}
+  <div class="panel"><h3>Evidence confidence: how much to trust them?</h3>{crows}
   <p class="note">Minus 0.05 per contradiction. Capped at {FALLBACK_CONFIDENCE_CAP} when the rule-based fallback reads the pages instead of Claude.</p></div></div>
   <div class="rules">
     <div><b>No double counting</b>One piece of evidence earns points for one criterion per score.</div>
@@ -234,7 +233,7 @@ def main() -> Path:
     runs.sort(key=lambda r: (order.get(r.qualification.gate_decision, 5), -r.qualification.icp_fit_score))
     metrics_path = s.output_dir / "revenue" / "revenue_metrics.json"
     rev = json.loads(metrics_path.read_text()) if metrics_path.exists() else None
-    reviews = {r["slug"]: r for r in review_gate.all_records(s.output_dir)}
+    reviews = {r["slug"]: r for r in review_gate.all_records(s.output_dir) if r["status"] != "withdrawn"}
     qualified = sum(1 for r in runs if r.qualification.qualified)
     drafts = sum(1 for r in runs if r.email)
 
@@ -262,8 +261,7 @@ def main() -> Path:
                         f"<span class='act'>{E(x['next_action'])}</span></div>" for x in rev["priority_queue"])
         rev_html = f"""
 <section id="revenue" class="sec">
-  <div class="sec-head"><span class="label">(02) Revenue &amp; conversion</span>
-  <h2>What the pipeline is worth, with <em>measured</em> kept apart from <em>estimated</em>.</h2></div>
+  <div class="sec-head"><h2><span class="tag">(Revenue &amp; conversion)</span> What the pipeline is worth, with <em>measured</em> kept apart from <em>estimated</em>.</h2></div>
   <div class="stats">
     <div class="stat hi"><span>Won revenue · measured</span><b>{cur} {won:,.0f}</b><i>{r_['deals_won']} deal(s) logged</i></div>
     <div class="stat"><span>Open pipeline · measured</span><b>{cur} {r_['open_pipeline_value']:,.0f}</b><i>logged opportunities</i></div>
@@ -271,10 +269,10 @@ def main() -> Path:
     <div class="stat"><span>Blocked by missing contact</span><b>{cur} {r_['blocked_no_contact']:,.0f}</b><i>estimated</i></div>
   </div>
   <div class="two">
-    <div class="panel"><h4>Funnel</h4>{bars}
+    <div class="panel"><h3>Funnel</h3>{bars}
       <p class="note">Open rate {E(rev['conversion'].get('open_rate', 'no data'))} · reply {E(rev['conversion']['contacted_to_reply'])} ·
       won {E(rev['conversion']['contacted_to_won_observed'])}. One logged deal swings every estimate, so treat it as directional.</p></div>
-    <div class="panel"><h4>Priority queue</h4><div class="queue">
+    <div class="panel"><h3>Priority queue</h3><div class="queue">
       <div class="qrow hdr"><span>Company</span><span>Stage</span><span class="n">P(win)</span><span class="n">Expected</span><span>Next</span></div>
       {queue or "<p class='muted'>Nothing open.</p>"}</div></div>
   </div>
@@ -295,7 +293,7 @@ def main() -> Path:
 --flagbg:#33270d;--flag:#f0c46a;--holdbg:#1d2438;--hold:#a9b8e8;--stopbg:#3a1913;--stop:#f29a8a}}
 *{{box-sizing:border-box}}html{{scroll-behavior:smooth}}
 body{{margin:0;background:var(--paper);color:var(--ink);font:15.5px/1.55 var(--sans);-webkit-font-smoothing:antialiased}}
-a{{color:inherit}}em{{font-family:var(--serif);font-style:italic;font-weight:400}}
+a{{color:inherit}}em{{font-family:var(--serif);font-style:italic;font-weight:400}}.tag{{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--soft);vertical-align:middle;margin-right:.3em}}::selection{{background:var(--lime);color:var(--limeink)}}:focus-visible{{outline:2px solid var(--ink);outline-offset:2px;border-radius:6px}}
 .bar-top{{background:var(--ink);color:var(--paper);font-size:13px;text-align:center;padding:9px 16px}}
 .bar-top b{{background:var(--lime);color:var(--limeink);padding:1px 7px;border-radius:4px;margin-right:6px;font-weight:600}}
 nav{{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 24px;
@@ -335,7 +333,7 @@ border-radius:999px;font-weight:600;font-size:14px;background:var(--ink);color:v
 .stat span{{font-size:12.5px;color:var(--soft)}}.stat b{{display:block;font-family:var(--serif);font-weight:400;font-size:38px;line-height:1.1;margin:6px 0 2px}}
 .stat i{{font-style:normal;font-size:12px;color:var(--soft)}}.stat.hi{{background:var(--lime);color:var(--limeink);border-color:transparent}}.stat.hi span,.stat.hi i{{color:var(--limeink);opacity:.75}}
 .two{{display:grid;grid-template-columns:1fr 1.15fr;gap:12px;margin-top:12px}}.panel{{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}}
-.panel h4{{margin:0 0 12px;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--soft)}}
+.panel h3{{margin:0 0 12px;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--soft)}}
 .fun{{display:grid;grid-template-columns:150px 1fr 30px;gap:12px;align-items:center;margin:7px 0;font-size:14px}}
 .fun .bar{{height:10px;border-radius:99px;background:var(--line);overflow:hidden}}.fun .bar i{{display:block;height:100%;border-radius:99px;background:var(--ink)}}
 .fun b{{text-align:right;font-variant-numeric:tabular-nums}}.note{{font-size:12.5px;color:var(--soft);margin:14px 0 0}}
@@ -357,7 +355,7 @@ border-radius:999px;font-weight:600;font-size:14px;background:var(--ink);color:v
 .dot{{font-size:14px}}.dot.yes{{color:var(--go)}}.dot.no{{color:var(--stop)}}.dot.unk{{color:var(--soft)}}
 .ans{{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.07em}}.ans.yes{{color:var(--go)}}.ans.no{{color:var(--stop)}}.ans.unk{{color:var(--soft)}}
 .basis{{margin:3px 0 0 30px;color:var(--soft);font-size:13.5px}}.ev{{margin:6px 0 0 30px;padding:0;list-style:none;display:grid;gap:6px}}
-.ev li{{font-size:13.5px;border-left:2px solid var(--lime);padding-left:10px}}.ev q{{font-family:var(--serif);font-size:16px;font-style:italic}}
+.ev li{{font-size:13.5px;position:relative;padding-left:16px}}.ev li:before{{content:'';position:absolute;left:0;top:.6em;width:7px;height:7px;border-radius:2px;background:var(--lime);box-shadow:0 0 0 1px var(--ink)}}.ev q{{font-family:var(--serif);font-size:16px;font-style:italic}}
 .flags{{margin:18px 0 0;background:var(--flagbg);color:var(--ink);border-radius:14px;padding:14px 18px;font-size:14px}}.flags ul{{margin:6px 0 0;padding-left:18px}}
 .letter{{margin-top:20px;border-top:1px dashed var(--line);padding-top:14px}}.letter summary{{cursor:pointer;display:flex;gap:10px;align-items:center;flex-wrap:wrap;list-style:none}}
 .letter summary::-webkit-details-marker{{display:none}}.letter summary span{{font-size:12px;color:var(--soft);font-weight:600;text-transform:uppercase;letter-spacing:.08em}}
@@ -365,7 +363,7 @@ border-radius:999px;font-weight:600;font-size:14px;background:var(--ink);color:v
 .letter summary:after{{content:"+";margin-left:auto;font-size:22px;line-height:1}}.letter[open] summary:after{{content:"×"}}
 .paper{{margin-top:14px;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px 24px;max-width:660px}}
 .paper .subj{{font-weight:600;margin-bottom:12px}}.paper pre{{white-space:pre-wrap;font:15px/1.65 var(--sans);margin:0}}.hook{{font-size:12.5px;color:var(--soft);margin:14px 0 0}}
-.tbl{{overflow-x:auto;border-top:1px solid var(--ink)}}table{{width:100%;border-collapse:collapse;font-size:13.5px;min-width:900px}}
+.tbl{{overflow-x:auto;border-top:1px solid var(--ink);padding-top:6px}}table{{width:100%;border-collapse:collapse;font-size:13.5px;min-width:900px}}
 th,td{{text-align:left;padding:12px 10px 12px 0;border-bottom:1px solid var(--line);vertical-align:top}}th{{font-size:11.5px;color:var(--soft);text-transform:uppercase;letter-spacing:.06em}}
 td:first-child{{font-weight:600;min-width:180px}}tr.worst td{{background:var(--flagbg)}}
 .rule{{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:0 0 22px}}.rule div{{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;font-size:13.5px}}
@@ -373,8 +371,8 @@ td:first-child{{font-weight:600;min-width:180px}}tr.worst td{{background:var(--f
 .bd{{margin-top:18px;border-top:1px dashed var(--line);padding-top:14px}}.bd summary{{cursor:pointer;display:flex;gap:10px;align-items:center;flex-wrap:wrap;list-style:none}}
 .bd summary::-webkit-details-marker{{display:none}}.bd summary span{{font-size:12px;color:var(--soft);font-weight:600;text-transform:uppercase;letter-spacing:.08em}}
 .bd summary b{{font-family:var(--serif);font-weight:400;font-size:22px}}.bd summary:after{{content:"+";margin-left:auto;font-size:22px;line-height:1}}.bd[open] summary:after{{content:"×"}}
-.bgrid{{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:16px}}.bcol h5{{margin:0 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--soft);display:flex;justify-content:space-between;border-bottom:1px solid var(--ink);padding-bottom:8px}}
-.bcol h5 b{{color:var(--ink)}}.crit{{padding:10px 0;border-bottom:1px solid var(--line)}}.ct{{display:flex;justify-content:space-between;gap:12px;font-size:14.5px;font-weight:600}}
+.bgrid{{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:16px}}.bcol h4{{margin:0 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--soft);display:flex;justify-content:space-between;border-bottom:1px solid var(--ink);padding-bottom:8px}}
+.bcol h4 b{{color:var(--ink)}}.crit{{padding:10px 0;border-bottom:1px solid var(--line)}}.ct{{display:flex;justify-content:space-between;gap:12px;font-size:14.5px;font-weight:600}}
 .ct b{{font-variant-numeric:tabular-nums}}.ct i{{font-style:normal;color:var(--soft);font-weight:400}}
 .cb{{height:4px;border-radius:9px;background:var(--line);overflow:hidden;margin:7px 0 6px}}.cb i{{display:block;height:100%;background:var(--ink);border-radius:9px}}
 .crit p{{margin:0;font-size:13px;color:var(--soft)}}.pens{{margin-top:14px;font-size:13.5px}}.pens ul{{margin:4px 0 0;padding-left:18px}}
@@ -397,7 +395,6 @@ footer{{margin-top:80px;padding-top:22px;border-top:1px solid var(--line);displa
 <div class="links"><a href="#pipeline">Pipeline</a><a href="#revenue">Revenue</a><a href="#companies">Companies</a><a href="#scoring">Scoring</a><a href="#map">Evidence Map</a></div></nav>
 <main id="top">
 <header class="hero">
-  <span class="label">(Signal Engine) Outbound research for Sprinto</span>
   <h1>Find the <mark>buying moment</mark>, <b>not just the inbox.</b></h1>
   <p class="lede">Every company is researched, scored and gated against an Evidence Map before anyone is contacted.
   Each decision cites the page it came from; anything the evidence can't support is flagged, not invented.</p>
@@ -415,19 +412,19 @@ footer{{margin-top:80px;padding-top:22px;border-top:1px solid var(--line);displa
 </header>
 
 <section id="pipeline" class="sec">
-  <div class="sec-head"><span class="label">(01) Pipeline results</span><h2>{len(runs)} companies in, {qualified} worth a conversation <em>today</em>.</h2></div>
+  <div class="sec-head"><h2><span class="tag">(Pipeline results)</span> {len(runs)} companies in, {qualified} worth a conversation <em>today</em>.</h2></div>
   <div class="table"><div class="thead"><span>Company</span><span>Gate</span><span>ICP</span><span>Timing</span><span class="cf">Confidence</span><span class="p">Decision-maker</span><span class="x"></span></div>
   {summary}</div>
 </section>
 {rev_html}
 <section id="companies" class="sec">
-  <div class="sec-head"><span class="label">(03) Companies</span><h2>Each answer, <em>with its receipt.</em></h2></div>
+  <div class="sec-head"><h2><span class="tag">(Companies)</span> Each answer, <em>with its receipt.</em></h2></div>
   {''.join(company_card(i, r, reviews.get(r.slug)) for i, r in enumerate(runs, 1))}
 </section>
 
 {scoring_section()}
 <section id="map" class="sec">
-  <div class="sec-head"><span class="label">(05) The Evidence Map</span><h2>Written down <em>before</em> any scoring.</h2></div>
+  <div class="sec-head"><h2><span class="tag">(The Evidence Map)</span> Written down <em>before</em> any scoring.</h2></div>
   <div class="rule">
     <div>{pill('Drop', 'stop')}<b>Any short-circuit</b>Not SaaS, or already a Sprinto customer.</div>
     <div>{pill('Drop / nurture', 'stop')}<b>A core answer is no</b>Nurture if only audit intent is missing.</div>

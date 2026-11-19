@@ -267,6 +267,7 @@ class GeneratedEmail(BaseModel):
     quality_checks: dict[str, bool] = {}
     word_count: int = 0
     provenance: Provenance = "deterministic_fallback"
+    learnings_applied: list[str] = []        # ids of reviewer learnings applied to this draft
 
 
 class DispatchResult(BaseModel):

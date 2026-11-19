@@ -1,3 +1,1 @@
 company,domain,stage,icp,timing,acv,acv_basis,timing_lift,p_win,expected_revenue,next_action
-Plain,plain.com,not contacted,77,42,12000.0,assumed ACV for ≤200 employees (site says '68 employees'),1.34,0.0284,340.32,Contact now (email ready)
-Attio,attio.com,not contacted,56,34,12000.0,assumed ACV for ≤200 employees (site says '190+ team members'),1.18,0.025,299.68,Contact now (email ready)
