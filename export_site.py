@@ -307,10 +307,10 @@ main{{max-width:1180px;margin:0 auto;padding:0 24px 80px}}
 background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
 background-size:88px 88px;background-position:-1px -1px;mask-image:radial-gradient(circle at 70% 40%,#000 0,transparent 75%)}}
 .hero>*{{position:relative}}.label{{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--soft)}}
-.hero h1{{font-family:var(--serif);font-weight:400;font-size:clamp(42px,6.4vw,86px);line-height:.98;letter-spacing:-.02em;margin:14px 0 18px;max-width:15ch}}
+.hero h1{{font-family:var(--serif);font-weight:400;font-size:clamp(38px,4.8vw,64px);line-height:1;letter-spacing:-.02em;margin:14px 0 18px;max-width:16ch}}
 .hero h1 b{{font-family:var(--sans);font-weight:700;letter-spacing:-.045em;font-size:.86em}}
 .hero h1 mark{{-webkit-box-decoration-break:clone;box-decoration-break:clone;background:var(--lime);color:var(--limeink);padding:0 .12em;border-radius:.12em}}
-.hero p.lede{{max-width:62ch;color:var(--soft);font-size:17px;margin:0 0 28px}}
+.hero p.lede{{max-width:60ch;color:var(--soft);font-size:17px;margin:0 0 28px}}
 .ctas{{display:flex;gap:10px;flex-wrap:wrap}}.btn{{display:inline-flex;align-items:center;gap:10px;text-decoration:none;padding:12px 20px;
 border-radius:999px;font-weight:600;font-size:14px;background:var(--ink);color:var(--paper)}}button.btn{{border:0;cursor:pointer;font-family:var(--sans)}}.btn.tour{{background:var(--lime);color:var(--limeink)}}.btn.ghost{{background:transparent;color:var(--ink);border:1px solid var(--ink)}}
 .snap{{font-size:13px;color:var(--soft);margin:16px 0 0;max-width:70ch}}
@@ -354,7 +354,7 @@ border-radius:999px;font-weight:600;font-size:14px;background:var(--ink);color:v
 .qa{{display:grid;grid-template-columns:20px 1fr auto;gap:10px;align-items:baseline}}.q.core .qt{{font-weight:700}}.qt{{font-size:15px}}
 .dot{{font-size:14px}}.dot.yes{{color:var(--go)}}.dot.no{{color:var(--stop)}}.dot.unk{{color:var(--soft)}}
 .ans{{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.07em}}.ans.yes{{color:var(--go)}}.ans.no{{color:var(--stop)}}.ans.unk{{color:var(--soft)}}
-.basis{{margin:3px 0 0 30px;color:var(--soft);font-size:13.5px}}.ev{{margin:6px 0 0 30px;padding:0;list-style:none;display:grid;gap:6px}}
+.basis{{max-width:75ch;margin:3px 0 0 30px;color:var(--soft);font-size:13.5px}}.ev{{margin:6px 0 0 30px;padding:0;list-style:none;display:grid;gap:6px}}
 .ev li{{font-size:13.5px;position:relative;padding-left:16px}}.ev li:before{{content:'';position:absolute;left:0;top:.6em;width:7px;height:7px;border-radius:2px;background:var(--lime);box-shadow:0 0 0 1px var(--ink)}}.ev q{{font-family:var(--serif);font-size:16px;font-style:italic}}
 .flags{{margin:18px 0 0;background:var(--flagbg);color:var(--ink);border-radius:14px;padding:14px 18px;font-size:14px}}.flags ul{{margin:6px 0 0;padding-left:18px}}
 .letter{{margin-top:20px;border-top:1px dashed var(--line);padding-top:14px}}.letter summary{{cursor:pointer;display:flex;gap:10px;align-items:center;flex-wrap:wrap;list-style:none}}
@@ -364,7 +364,7 @@ border-radius:999px;font-weight:600;font-size:14px;background:var(--ink);color:v
 .paper{{margin-top:14px;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px 24px;max-width:660px}}
 .paper .subj{{font-weight:600;margin-bottom:12px}}.paper pre{{white-space:pre-wrap;font:15px/1.65 var(--sans);margin:0}}.hook{{font-size:12.5px;color:var(--soft);margin:14px 0 0}}
 .tbl{{overflow-x:auto;border-top:1px solid var(--ink);padding-top:6px}}table{{width:100%;border-collapse:collapse;font-size:13.5px;min-width:900px}}
-th,td{{text-align:left;padding:12px 10px 12px 0;border-bottom:1px solid var(--line);vertical-align:top}}th{{font-size:11.5px;color:var(--soft);text-transform:uppercase;letter-spacing:.06em}}
+th,td{{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}}th{{font-size:11.5px;color:var(--soft);text-transform:uppercase;letter-spacing:.06em}}
 td:first-child{{font-weight:600;min-width:180px}}tr.worst td{{background:var(--flagbg)}}
 .rule{{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:0 0 22px}}.rule div{{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;font-size:13.5px}}
 .rule b{{display:block;margin:8px 0 2px}}

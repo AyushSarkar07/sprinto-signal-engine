@@ -233,7 +233,9 @@ aside{background:var(--side);color:var(--sideink);padding:18px 14px;position:sti
 main{padding:26px 28px 80px;max-width:1180px}.lbl{display:block;font-size:13px;font-weight:600;margin:14px 0 6px}.stat .meter{margin-top:8px}.stat strong{color:var(--ink);font-weight:600}
 h1{font-family:var(--serif);font-weight:400;font-size:clamp(34px,4.6vw,52px);line-height:1.02;margin:8px 0 8px;letter-spacing:-.01em}
 h2{font-family:var(--serif);font-weight:400;font-size:28px;margin:0 0 4px;line-height:1.1}h3{margin:0;font-size:16px}
-.lede{color:var(--soft);max-width:62ch;margin:0 0 18px}.sub{color:var(--soft);font-size:15px;margin:-2px 0 6px}.hint{color:var(--soft);font-size:13.5px;margin:4px 0 12px}
+.lede{color:var(--soft);max-width:62ch;margin:0 0 18px}.sub{color:var(--soft);font-size:15px;margin:-2px 0 6px}.hint{color:var(--soft);font-size:13.5px;margin:4px 0 12px;max-width:75ch}.sub{max-width:75ch}
+.stage-t{font:600 16px/1.3 var(--sans);margin:4px 0}
+.card.dark{background:var(--side);color:var(--sideink)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin:14px 0}
 .grid{display:grid;gap:12px}.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g6{grid-template-columns:repeat(6,1fr)}
 .kpi{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px}.kpi span{font-size:11.5px;color:var(--soft);text-transform:uppercase;letter-spacing:.06em}
@@ -682,7 +684,7 @@ def loop_page():
     stages = [("1", "Write", L["act"], "drafts produced"), ("2", "React", L["signal"], "changes, ticks, decisions, replies"),
               ("3", "Log", sum(L["capture"].values()), "reactions on file"), ("4", "Distil", L["store"], "lessons switched on"),
               ("5", "Recall", L["retrieve"], "times a lesson was loaded"), ("6", "Use", L["apply"], "drafts changed by a lesson")]
-    st = "".join(f"<div class='stage'><small>{n}</small><h3 style='margin:4px 0'>{t}</h3><b>{v}</b><p>{d}</p></div>" for n, t, v, d in stages)
+    st = "".join(f"<div class='stage'><small>{n}</small><h2 class='stage-t'>{t}</h2><b>{v}</b><p>{d}</p></div>" for n, t, v, d in stages)
     kinds = "".join(f"<div class='row' style='justify-content:space-between'><span>{E(k.replace('_', ' '))}</span><b>{v}</b></div>" for k, v in Counter(x["kind"] for x in sig).most_common())
     lrows = "".join(f"<tr><td>{pill(l['scope'], 'hold')}<br><span class='small muted'>{E(l['kind'].replace('_', ' '))}</span></td><td class='small'>{E(l['lesson'])}</td>"
                     f"<td class='small muted'>{E(l.get('applies_to', ''))}</td><td class='n'>{l['support']}</td><td class='n'>{l.get('used', 0)}</td>"
@@ -696,11 +698,11 @@ def loop_page():
 <p class="lede">Write, react, log, distil, recall, use. A lesson needs the same reaction on at least {feedback_loop.MIN_SUPPORT} different accounts; a single edit never changes how drafts are written.</p>
 <p>{pill(f"{L['stages_with_data']} of 6 parts have data", 'go' if L['stages_with_data'] == 6 else 'hold')}</p>
 <div class="loop">{st}</div>
-<div class="grid g2" style="margin-top:14px"><section class="card" style="margin:0"><h3>Are the lessons paying off?</h3><p class="hint">How much of each signed-off draft you rewrote</p>
+<div class="grid g2" style="margin-top:14px"><section class="card" style="margin:0"><h2>Are the lessons paying off?</h2><p class="hint">How much of each signed-off draft you rewrote</p>
 <div class="grid g2"><div class="stat"><b style="font-size:40px">{fmt(L['edit_without'])}</b><span><strong>No lesson used</strong> {L['n_without']} signed off</span></div>
 <div class="stat"><b style="font-size:40px">{fmt(L['edit_with'])}</b><span><strong>Lesson used</strong> {L['n_with']} signed off</span></div></div>
 <p class="hint">If the right-hand number is lower, the lessons are saving you edits. With few sign-offs this moves a lot.</p></section>
-<section class="card" style="margin:0"><h3>Reactions logged</h3><p class="hint">{len(sig)} so far</p>{kinds or "<p class='muted small'>Nothing logged yet.</p>"}</section></div>
+<section class="card" style="margin:0"><h2>Reactions logged</h2><p class="hint">{len(sig)} so far</p>{kinds or "<p class='muted small'>Nothing logged yet.</p>"}</section></div>
 <section class="card"><h2>Lessons kept</h2><p class="hint">Switch a lesson off at any time; switched-off lessons stay listed so you can see what changed.</p>
 <div class="tw"><table><thead><tr><th>Area</th><th>Lesson</th><th>Where</th><th>Backed by</th><th>Times used</th><th>State</th><th></th></tr></thead>
 <tbody>{lrows or "<tr><td colspan=7 class='muted'>No lessons yet. They appear once you make the same change or tick on two accounts.</td></tr>"}</tbody></table></div></section>
